@@ -90,9 +90,11 @@ while True:
         }
 
         context = get_context(query_context, graph_context, embedding_context, API_KEY)
-        #for key in context:
-        #    print(f"Node ID: {key}\nContent: {context[key]}\n")
-        #    print("-"*100)
+        with open(f"{root_path}/answering/context.txt","w") as f:
+            for key in context:
+                f.write("Node ID: {}\n".format(key))
+                f.write("Content: {}\n".format(context[key]))
+                f.write("-" * 100 + "\n")
         finish_retrieval_time = time.time()
         print(f"Total retrieval time: {finish_retrieval_time - start:.2f} seconds.")
         print("Number of retrieved context nodes:", len(context))
@@ -100,11 +102,13 @@ while True:
         full_context = "\n\n".join(context.values())
         prompt = answer_prompt(full_context, question)
         answer = call_gemini(prompt)
-        print("Answer:")
+        print("Answer Generated#")
         print(answer)
+        with open(f"{root_path}/answering/answer.txt","w") as f:
+            f.write(answer)
         print("-"*100)
         print(f"Answer generation time: {time.time() - finish_retrieval_time:.2f} seconds.")
         print(f"Total time taken: {time.time() - start:.2f} seconds.")
     except Exception as e:
         print("An error occurred:", str(e))
-    print(loop_sep)
+    print(loop_sep*10)

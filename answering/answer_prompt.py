@@ -13,6 +13,5 @@ Short Paragraph
 {context}
 ---Query---
 {query}
-Response Prompt
 """
     return prompt

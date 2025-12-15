@@ -1,7 +1,6 @@
 from answering.question_decompose_prompt import question_decompose_prompt
 from retrieval.retrieval import retrieve_relevant_nodes
 from google import genai
-import os
 import json
 import numpy as np
 import time
