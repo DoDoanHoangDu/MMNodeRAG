@@ -1,8 +1,4 @@
 Context 1/16: 
-Node ID: medical-37-S-4
-Content: If surgery is not an option, radiation therapy is typically used as an alternative.
-----------------------------------------------------------------------------------------------------
-Context 2/16: 
 Node ID: medical-H-14
 Content: Here are the distinct categories of high-level information extracted from the provided text data:
 
@@ -33,6 +29,10 @@ Content: Here are the distinct categories of high-level information extracted fr
 **7. Specific Cancer Types and Subtypes**
 
 *   **Description:** While not exhaustive, the data clusters around discussions of specific cancers and their unique characteristics. Examples include basal cell skin cancer (highly treatable), lung nodules (detection and diagnosis), mouth cancer, primary CNS lymphoma (prognosis and treatment), translocation RCC (genetic fusions, age of diagnosis), and various renal cell carcinomas (Collecting duct RCC, Renal medullary carcinoma). Information is also provided on HPV testing for oropharyngeal cancer and thyroid cancer in young adults.
+----------------------------------------------------------------------------------------------------
+Context 2/16: 
+Node ID: medical-3
+Content: Recurrence is when basal cell skin cancer returns to the area where it was originally found, or it has metastasized (spread) to the lymph nodes or to distant parts of the body. But there are several options for how to treat it. Read more about how your cancer is treated in Chapter 3: Types of treatment and Chapter 4: Treatment by risk and recurrence. What can you do to get the best care? Advocate for yourself. You have an important role to play in your care. In fact, you’re more likely to get the care you want by asking questions and making shared decisions with your care team. With better understanding, you’ll be more prepared to discuss your care with your team and share your concerns. Many people feel more satisfied when they play an active role in their care. You may not know what to ask your care team. That’s common. Each chapter in this book ends with an important section called Questions to ask. These suggested questions will help you get more information on all aspects of your care. Take the next step and keep reading to learn what is the best care for you! Why you should read this resource Making decisions about cancer care can be stressful. You may need to make tough decisions under pressure about complex choices. The NCCN Guidelines for Patients are trusted by patients and providers. They clearly explain current care recommendations made by respected experts in the field. Recommendations are based on the latest research and practices at leading cancer centers. Cancer care is not the same for everyone. By following expert recommendations for your situation, you are more likely to improve your care and have better outcomes as a result. Use this book as your guide to find the information you need to make important decisions. 2 Testing for basal cell skin cancer 10 General health tests 12 Biopsy 13 Imaging 13 What’s next 14 Key points 14 Questions to ask Treatment planning starts with testing. Accurate testing is needed to diagnose and then treat basal cell skin cancer. This chapter presents an overview of the tests you might receive and what to expect. Whether you or your doctor found a concerning lesion on your skin, testing is needed to identify and diagnose basal cell skin cancer.
 ----------------------------------------------------------------------------------------------------
 Context 3/16: 
 Node ID: medical-H-16
@@ -71,6 +71,14 @@ Content: Here are the distinct categories of high-level information extracted fr
 *   **Description:** This category specifically addresses Carcinoma in situ (Tis), defining it as the earliest form of malignancy where cancerous cells are confined to their original layer and have not invaded surrounding tissues. It is presented as a precursor to more invasive cancer stages, emphasizing its significance in early detection and intervention.
 ----------------------------------------------------------------------------------------------------
 Context 4/16: 
+Node ID: medical-490-S-1
+Content: For most individuals with bladder cancer, treatment leads to a longer, more comfortable life with reduced symptoms. It is crucial to understand that bladder cancer frequently recurs even after treatment, necessitating ongoing monitoring by patients and healthcare providers for any signs of return. However, hope exists, as recurrent cancer is treatable, and many people manage to live with bladder cancer while maintaining a good quality of life.
+----------------------------------------------------------------------------------------------------
+Context 5/16: 
+Node ID: medical-42-S-4
+Content: After completing treatment, regular skin exams by a doctor are crucial to monitor for the return of squamous cell skin cancer and the development of other skin cancers, as individuals who have had CSCC are at a higher risk.
+----------------------------------------------------------------------------------------------------
+Context 6/16: 
 Node ID: medical-H-11
 Content: Here's a breakdown of the distinct categories of high-level information extracted from the clustered text data:
 
@@ -122,7 +130,7 @@ Content: Here's a breakdown of the distinct categories of high-level information
 *   **Title:** Patient-Physician Communication and Shared Decision-Making
 *   **Description:** Effective communication between patients and their care teams is paramount. Discussing treatment options, personal preferences, and understanding biopsy results and pathology reports empowers patients to actively participate in their care journey and make informed decisions. Maintaining readily available contact information for the care team is also advised.
 ----------------------------------------------------------------------------------------------------
-Context 5/16: 
+Context 7/16: 
 Node ID: medical-H-21
 Content: Here are distinct categories of high-level information extracted from the provided text cluster:
 
@@ -166,102 +174,59 @@ Content: Here are distinct categories of high-level information extracted from t
 *   **Title:** Patient Feedback for Enhancing Cancer Information
 *   **Description:** The NCCN actively seeks feedback through surveys to improve the clarity, helpfulness, and accessibility of their cancer information and guidelines. This iterative process ensures that patient resources remain relevant and effective.
 ----------------------------------------------------------------------------------------------------
-Context 6/16: 
-Node ID: medical-218-S-3
-Content: Chapter 4 explains supportive care and potential side effects associated with treatment.
-----------------------------------------------------------------------------------------------------
-Context 7/16: 
-Node ID: medical-116-S-4
-Content: There is no single best treatment plan for everyone, and options often include clinical trials, which study the safety and effectiveness of investigational treatments.
-----------------------------------------------------------------------------------------------------
 Context 8/16: 
-Node ID: medical-82-S-2
-Content: Your preferences regarding treatment are always important when making decisions about your care.
+Node ID: medical-2
+Content: Causes and risk factors Basal cell skin cancer is caused by exposure to UV radiation from the sun or other sources like tanning beds. UV radiation can harm the DNA inside basal skin cells. DNA controls how cells grow and function. If the DNA inside cells becomes damaged, the cells can become abnormal and grow out of control. You’re more likely to have basal cell skin cancer if you have certain risk factors. A risk factor increases the chance of developing cancer. Fair skin, red or blond hair, or light eye color – People with lighter-colored skin are at a higher risk of developing skin cancer because melanin (skin pigment) filters out the sun's harmful UV rays. Age – Risk increases with age because sun exposure builds up over time. But skin cancer is becoming more common in younger people. History of skin cancer – If you or someone in your family has had skin cancer, you’re more likely to develop any type of skin cancer. Radiation therapy – Radiation treatment for other conditions, especially at a young age, can cause skin cancer. Immune suppression – People with weakened immune systems from organ transplants or autoimmune diseases are at higher risk for basal cell skin cancer. How is basal cell skin cancer treated? Basal cell skin cancer is highly treatable and curable. Catching it and treating it early is key. Surgery is the most common treatment for basal cell skin cancer. In some cases, radiation therapy or systemic therapy might be used to treat it. Following your treatment, you will have full skin exams with your doctor at least once a year. Between these periods, prevention is important. See Chapter 4: Treatment by risk and recurrence for more information. Recurrence is when basal cell skin cancer returns to the area where it was originally found, or it has metastasized (spread) to the lymph nodes or to distant parts of the body. But there are several options for how to treat it. Read more about how your cancer is treated in Chapter 3: Types of treatment and Chapter 4: Treatment by risk and recurrence. What can you do to get the best care? Advocate for yourself. You have an important role to play in your care. In fact, you’re more likely to get the care you want by asking questions and making shared decisions with your care team.
 ----------------------------------------------------------------------------------------------------
 Context 9/16: 
-Node ID: medical-H-3
-Content: Here's a breakdown of the distinct categories of high-level information extracted from the provided text data:
+Node ID: medical-H-24
+Content: Here are distinct categories of high-level information extracted from the provided text data:
 
-### Treatment Modalities
+### **1. Skin Cancer Origins and Anatomy**
 
-**Title:** Surgical Interventions for Skin Cancers
-**Description:** Focuses on various surgical techniques like excision, Mohs surgery (also known as PDEMA), and curettage and electrodesiccation (C&E) for treating squamous cell skin cancer. It highlights the goal of complete removal while preserving surrounding tissue and the role of immediate microscopic assessment in Mohs surgery.
+*   **Title:** Skin Cancer Origin and Anatomy
+*   **Description:** Basal cell and squamous cell skin cancers arise from specific cell types within the skin's epidermis. Basal cells, found in the lower epidermis, continuously divide to create new cells. Squamous cells, flat cells forming the skin's surface, are also the origin of squamous cell carcinoma. The skin's layered structure (epidermis, dermis, hypodermis) and the role of melanocytes in UV protection are fundamental to understanding these cancers.
 
-**Title:** Radiation Therapy for Cancer Treatment
-**Description:** Details the use of high-energy radiation beams (electrons, photons, protons) to eliminate cancer cells. It covers different types like External Beam Radiation Therapy (EBRT) and brachytherapy, their administration methods, potential side effects (short-term and long-term), and contraindications. It also mentions its use as adjuvant therapy and in palliative care.
+### **2. Risk Factors and Predisposing Conditions**
 
-**Title:** Systemic Therapies in Cancer Care
-**Description:** Encompasses treatments like chemotherapy (platinum-based, combination regimens), targeted therapy, and immunotherapy that circulate throughout the body to kill cancer cells. It discusses their use as neoadjuvant, adjuvant, or primary treatments for various cancers and their role when other modalities are not feasible.
+*   **Title:** Risk Factors and Predisposing Conditions
+*   **Description:** Ultraviolet (UV) radiation from the sun and tanning beds is a primary cause of skin cancer, damaging DNA in skin cells. Increased risk is associated with lighter skin, hair, and eye color due to less melanin. Age, personal or family history of skin cancer, radiation therapy, weakened immune systems, and conditions like actinic keratoses (pre-cancerous sun-damaged lesions) significantly elevate the likelihood of developing basal cell and squamous cell skin cancers.
 
-**Title:** Chemoradiation: A Combined Approach
-**Description:** Explains the concurrent administration of chemotherapy and radiation therapy, highlighting its effectiveness, particularly for locally advanced or non-metastatic cancers where surgery may not be the primary option. It details its application in cervical, anal, and bladder cancers.
+### **3. Manifestations and Appearance**
 
-**Title:** Radioactive Iodine (RAI) Therapy for Thyroid Cancer
-**Description:** Describes the oral administration of iodine-131 to target and destroy thyroid cancer cells that absorb iodine, often used after total thyroidectomy to eliminate residual disease. It notes its limitations for certain thyroid cancer types and the need for a low-iodine diet prior to treatment.
+*   **Title:** Manifestations and Appearance
+*   **Description:** Basal cell skin cancer can present as flat, pale or yellow scar-like areas, itchy red patches, shiny bumps with unusual color variations, or non-healing sores. In darker skin tones, it may appear as a brown or glossy black bump with a rolled border. Squamous cell skin cancer often begins as a scaly or rough patch (actinic keratosis) and can evolve into solid, misshapen growths. Early detection and vigilance for new or changing skin growths are crucial.
 
-**Title:** Surgical Removal of Thyroid Gland
-**Description:** Outlines surgical approaches for thyroid cancer, including lobectomy (removal of one lobe) for small, low-risk cancers and total thyroidectomy (complete removal of the gland) for more advanced or high-risk cases. It discusses the implications for hormone replacement therapy and the importance of post-operative pathology.
+### **4. Treatment Modalities**
 
-### Diagnostic and Staging Procedures
+*   **Title:** Treatment Modalities
+*   **Description:** A range of treatments are available for skin cancers, tailored to the cancer's extent and individual factors. These include superficial therapies (acting on the top skin layer), topical treatments (creams like 5-fluorouracil and imiquimod), photodynamic therapy (PDT), cryotherapy (freezing), curettage (scraping), surgical excision (including Mohs surgery), and radiation therapy. Systemic therapies (chemotherapy, targeted therapy, immunotherapy) are used for more advanced or widespread cases.
 
-**Title:** Cancer Staging: Anatomical and Prognostic Assessment
-**Description:** Explains the process of staging cancer based on tumor size (T), lymph node involvement (N), and distant metastasis (M). It distinguishes between anatomic and prognostic staging, noting that staging is often performed twice – before and after surgery for more precise details.
+### **5. Diagnostic Pathways and Prognosis**
 
-**Title:** Sentinel Lymph Node Biopsy (SLNB)
-**Description:** Details the procedure of identifying and removing the initial lymph node(s) to which cancer cells are most likely to spread. It involves injecting a radioactive and/or blue-colored substance to locate these nodes for examination, aiding in cancer staging and treatment planning.
+*   **Title:** Diagnostic Pathways and Prognosis
+*   **Description:** Diagnosis typically involves a medical history, visual examination of suspicious lesions, and a definitive skin biopsy analyzed by a pathologist. The subtype and stage of the cancer, tumor depth, and its location and size influence its risk level and potential for recurrence or spread. Squamous cell skin cancer, while the second most common, is often highly treatable and curable, especially with early detection.
 
-**Title:** Pathological Examination of Tissue Samples
-**Description:** Emphasizes the critical role of pathologists in examining tissue samples under a microscope to detect cancer cells, assess margins of excised tissue, and determine the precise stage and characteristics of the cancer, especially after surgery.
+### **6. Follow-Up Care and Recurrence**
 
-### Key Cancer Concepts and Classifications
+*   **Title:** Follow-Up Care and Recurrence
+*   **Description:** Regular, comprehensive skin exams are vital after treatment to monitor for recurrence at the original site or spread to lymph nodes/distant parts, and for the development of new skin cancers. Individuals treated for skin cancer are at a higher risk. Follow-up schedules are guided by the cancer's initial classification (local vs. regional) and involve full-body checks and examination of nearby lymph nodes.
 
-**Title:** Cutaneous Squamous Cell Carcinoma (CSCC)
-**Description:** Defines CSCC as a common skin cancer, often appearing as scaly patches or growths, primarily affecting sun-exposed areas and lighter-skinned individuals. It notes its potential for local spread but rarity of distant metastasis and its curability through surgical removal.
+### **7. Distinguishing Skin Cancer from Other Conditions**
 
-**Title:** Risk Stratification of Squamous Cell Carcinoma (CSCC)
-**Description:** Categorizes CSCC into low-risk, high-risk, and very high-risk based on factors like tumor invasion, location, and metastatic potential. This stratification guides treatment decisions, with higher-risk categories often requiring more aggressive interventions.
+*   **Title:** Distinguishing Skin Cancer from Other Conditions
+*   **Description:** It is important to differentiate skin cancer from other skin conditions, such as primary cutaneous lymphomas (PCLs), which originate from lymphocytes, not skin cells. Genetic testing for mutations like BRCA1/BRCA2 can also identify predispositions to various cancers, including skin cancer and melanoma, highlighting the interplay between genetics and disease risk.
 
-**Title:** Differentiated Thyroid Cancers
-**Description:** Groups papillary, follicular, and oncocytic carcinomas as differentiated thyroid cancers, characterized by slow growth and generally favorable treatment outcomes. It highlights their origin from thyroid follicular cells and distinct histological features.
+### **8. Role of Pre-Cancerous Lesions**
 
-**Title:** Aggressive Thyroid Cancer Types
-**Description:** Identifies medullary thyroid cancer as potentially inherited and anaplastic thyroid cancer as the most aggressive and rare type, primarily affecting older adults, necessitating prompt and intensive treatment.
-
-### Anatomical and Physiological Information
-
-**Title:** Thyroid Gland Anatomy and Function
-**Description:** Describes the thyroid gland's butterfly shape, location in the neck, and its production of essential hormones (T3 and T4) using iodine from the diet, which regulate metabolism, body temperature, heart rate, and weight. It also mentions the parathyroid glands' role in calcium regulation.
-
-**Title:** Skin Cancer Manifestations and Locations
-**Description:** Details how squamous cell skin cancers typically present as scaly patches or growths and are commonly found on sun-exposed areas like the head, neck, face, hands, and feet, areas also identified as high-risk for skin cancer.
-
-### Treatment Considerations and Outcomes
-
-**Title:** Surgical Margins in Cancer Excision
-**Description:** Defines the surgical margin as the normal tissue surrounding a removed lesion and emphasizes its importance. A clear margin (at least 1 cm free of cancer) often means no further treatment, while positive or close margins necessitate re-excision or adjuvant therapy.
-
-**Title:** Wound Healing Post-Surgery
-**Description:** Discusses different wound healing processes, including secondary intention healing (natural closure) and linear closure (reshaping for stitching). It also covers skin grafts and the typical healing timeframes and aftercare required.
-
-**Title:** Hormone Replacement Therapy After Thyroidectomy
-**Description:** Explains the necessity of lifelong thyroid hormone replacement (e.g., Levothyroxine) after total thyroidectomy and for some lobectomy patients to maintain TSH levels, crucial for metabolic function and preventing recurrence in higher-risk cancers.
-
-**Title:** Long-Term Side Effects of Radiation Therapy
-**Description:** Outlines potential long-term consequences of radiation, including skin and tissue hardening, color changes, spider veins, non-healing ulcers, and a rare risk of secondary cancers, particularly in younger patients treated many years prior.
-
-**Title:** Management of Metastatic Cancer
-**Description:** Addresses treatment strategies for cancer that has spread to distant sites, often involving systemic therapies (chemotherapy, immunotherapy), targeted therapies, and palliative radiation or ablative therapies to manage symptoms and tumor growth.
-
-**Title:** Importance of Multidisciplinary Cancer Care Teams
-**Description:** Highlights the collaborative approach involving various specialists (oncologists, surgeons, radiologists, pathologists) in developing comprehensive and individualized treatment plans for complex cancers.
-
-**Title:** Role of Clinical Trials in Cancer Treatment
-**Description:** Positions clinical trials as an avenue for accessing investigational treatments, particularly for advanced or recurrent cancers, offering potential access to novel therapies like chemotherapy, targeted therapy, or immunotherapy.
-
-**Title:** Vaginal Stenosis and Management
-**Description:** Describes vaginal stenosis as a side effect of pelvic radiation therapy or surgery, causing narrowing and shortening of the vagina. It introduces vaginal dilator therapy as a method to manage this condition and improve sexual health and comfort.
+*   **Title:** Role of Pre-Cancerous Lesions
+*   **Description:** Actinic keratoses (AKs) are scaly or rough patches on the skin resulting from sun exposure. These lesions are considered pre-cancerous and have the potential to develop into squamous cell skin cancer. Their presence signals heightened risk, necessitating medical evaluation and often leading to treatments like superficial therapies, topical medications, PDT, or cryotherapy.
 ----------------------------------------------------------------------------------------------------
 Context 10/16: 
+Node ID: medical-2-S-2
+Content: Basal cell skin cancer is highly treatable and curable, with early detection and treatment being crucial. Surgery is the primary treatment, though radiation or systemic therapy may also be used. Regular annual skin exams by a doctor are necessary post-treatment, and prevention remains important between these appointments. Recurrence, where the cancer returns or spreads, has several treatment options, detailed in Chapters 3 and 4.
+----------------------------------------------------------------------------------------------------
+Context 11/16: 
 Node ID: medical-H-2
 Content: Here's a breakdown of distinct high-level information categories extracted from the provided text, focusing on significance and diversity:
 
@@ -310,7 +275,7 @@ Content: Here's a breakdown of distinct high-level information categories extrac
 *   **Title:** Empowering Patient-Doctor Dialogue
 *   **Description:** Key questions patients should ask their healthcare providers revolve around understanding their specific cancer subtype, its implications for prognosis and treatment, the availability of specialized centers, the types and frequency of tests, insurance coverage, and who will discuss next steps and when. This emphasizes a collaborative approach to cancer care.
 ----------------------------------------------------------------------------------------------------
-Context 11/16: 
+Context 12/16: 
 Node ID: medical-H-10
 Content: Here are distinct categories of high-level information extracted from the provided text data:
 
@@ -354,58 +319,80 @@ Content: Here are distinct categories of high-level information extracted from t
 
 *   **Description:** Certain cancers and conditions require highly specific diagnostic tools and considerations. Examples include biochemical tests for adrenal tumors to detect hormone secretion, p16 (HPV) testing for throat cancer, panoramic dental X-rays for oral cancer treatment planning, HIV testing in relation to cancer treatment, and monitoring iron levels due to their vital role in bodily functions and potential for overload.
 ----------------------------------------------------------------------------------------------------
-Context 12/16: 
-Node ID: medical-H-19
-Content: Here are distinct categories of high-level information extracted from the provided text data:
-
-### **1. Clinical Trials: Process and Purpose**
-
-*   **Title:** Understanding Clinical Trials
-*   **Description:** Clinical trials are research studies designed to test the safety and effectiveness of new treatments for diseases like cancer. They involve multiple phases (Phase 1 for safety and dosage, Phase 2 for efficacy, Phase 3 for comparison to standard treatments, and Phase 4 for long-term monitoring) and are overseen by a research team. The ultimate goal is to find new therapies that can be approved by regulatory bodies like the FDA.
-
-### **2. Eligibility and Participation in Clinical Trials**
-
-*   **Title:** Who Can Participate and How?
-*   **Description:** Participation in clinical trials is guided by specific "eligibility criteria" (e.g., age, cancer type and stage, treatment history, general health) to ensure participant comparability and safety. Potential participants must give "informed consent" after thorough explanation of risks and benefits by the research team. Crucially, participation is voluntary, and individuals can withdraw at any time. Proactive discussion with one's doctor is encouraged to explore options.
-
-### **3. Costs and Misconceptions of Clinical Trials**
-
-*   **Title:** Financial Aspects and Common Myths
-*   **Description:** There are no enrollment fees for clinical trials; the study sponsor covers research-related costs, including the study drug. However, participants may incur indirect costs (e.g., transportation, childcare). Standard care during the trial is usually covered by insurance, with the patient responsible for copays. A common misconception is the use of placebos; they are rarely used alone in cancer trials and are always disclosed to participants.
-
-### **4. Treatment Planning and Personalization**
-
-*   **Title:** Tailoring Treatment Strategies
-*   **Description:** Treatment plans are dynamic and personalized, acknowledging that there isn't a single "best" approach for everyone. Factors influencing decisions include new test results, patient preferences, and the emergence of side effects. Options often include clinical trials, alongside standard treatments. Prior diagnostic information, like surgical records, is essential for current treatment teams.
-
-### **5. Biomarker and Diagnostic Testing**
-
-*   **Title:** Advanced Diagnostic Tools
-*   **Description:** Various diagnostic tests are used to identify and monitor cancer. These include identifying specific surface proteins on cancer cells (e.g., CD20, CD200, LEF1 for CLL), cell-free DNA (ctDNA) testing (liquid biopsy) for monitoring treatment response and recurrence, and hepatitis blood tests to check for viral infections that could be reactivated by cancer treatments. These tests can also inform eligibility for clinical trials.
-
-### **6. Potential Side Effects of Cancer Therapies**
-
-*   **Title:** Managing Treatment Side Effects
-*   **Description:** Cancer treatments, including Photodynamic Therapy (PDT) and steroids, can cause various side effects. PDT commonly leads to itching, burning, pain, and redness. Steroids can cause increased hunger, sleep disturbances, slow wound healing, mood changes, and elevated blood sugar. Patients are encouraged to discuss side effects and management strategies with their treatment team.
-
-### **5. Cancer Treatment Modalities**
-
-*   **Title:** Diverse Therapeutic Approaches
-*   **Description:** Cancer treatment encompasses a range of approaches, including standard therapies, investigational treatments explored in clinical trials, and intensive procedures like stem cell rescue. The choice of treatment is based on a comprehensive evaluation of the patient's health, cancer type and stage, prior treatments, and personal goals. The development of new drugs involves rigorous testing, including clinical trials, before potential FDA approval.
-----------------------------------------------------------------------------------------------------
 Context 13/16: 
-Node ID: medical-308-S-15
-Content: Inflammatory breast cancer is treatable through local therapy, systemic therapy, or a combination of both, with local therapy targeting the breast, chest wall, and lymph node area.
+Node ID: medical-H-5
+Content: Here are the distinct categories of high-level information extracted from the provided text data:
+
+**1. Patient Empowerment & Information Management**
+
+*   **Title:** Proactive Patient Engagement
+*   **Description:** Emphasizes the critical role of patients in actively managing their health journey. This includes understanding test results, actively participating in appointments, preparing questions, taking notes, and organizing medical documents. It highlights the importance of building a rapport with the care team and advocating for oneself.
+
+**2. The Care Team & Multidisciplinary Approach**
+
+*   **Title:** Collaborative Healthcare Providers
+*   **Description:** Details the composition and function of the care team, emphasizing the collaborative, multidisciplinary nature of cancer care. This includes various specialists (oncologists, radiologists, surgeons, etc.), allied health professionals (NPs, PAs), and the importance of knowing their roles and contact information for effective communication and integrated treatment planning.
+
+**3. Medical Documentation & Organization**
+
+*   **Title:** Organizing Your Medical Journey
+*   **Description:** Stresses the necessity of meticulously organizing all medical documents, including insurance forms, medical records, and test results. This is often achieved through physical binders, digital files, and accessible contact lists, crucial for efficient management, second opinions, and emergency situations.
+
+**4. Test Results & Diagnostic Interpretation**
+
+*   **Title:** Decoding Your Health Data
+*   **Description:** Focuses on the significance of test results from various sources (blood, imaging, biopsy) in diagnosing conditions, determining cancer stage, and guiding treatment plans. It highlights the importance of understanding these results, asking questions, and accessing them through online portals.
+
+**5. Treatment Planning & Personalization**
+
+*   **Title:** Tailored Treatment Strategies
+*   **Description:** Explains that treatment plans are personalized and determined by a comprehensive evaluation of test results, patient preferences, and performance status (e.g., ECOG scale). This process is collaborative between the patient and their care team, and plans can evolve over time.
+
+**6. Support Systems & Emotional Well-being**
+
+*   **Title:** The Power of a Support Network
+*   **Description:** Underscores the vital role of social support—friends, family, peers—during diagnosis and treatment. This support encompasses practical assistance (transportation, meals) and crucial emotional encouragement, often involving companions in appointments and communication.
+
+**7. Communication & Information Access Channels**
+
+*   **Title:** Bridging Communication Gaps
+*   **Description:** Outlines various methods for effective communication with the care team, including in-person visits, telehealth, online patient portals (MyChart), and the importance of clarifying communication protocols, especially for emergencies. It also emphasizes the role of written questions and notes.
+
+**8. Performance Status (PS) in Treatment Decisions**
+
+*   **Title:** Assessing General Fitness for Treatment
+*   **Description:** Defines Performance Status (PS) as a measure of a patient's general health and ability to perform daily tasks, often rated on the ECOG scale. It explains that PS is a significant factor considered alongside patient preferences when selecting treatment plans.
+
+**9. Fertility Preservation Considerations**
+
+*   **Title:** Planning for Future Parenthood
+*   **Description:** Addresses the potential impact of cancer treatments on fertility and encourages patients of childbearing age to discuss these risks with their care team, including options for fertility preservation counseling.
+
+**10. Second Opinions & Expert Consultation**
+
+*   **Title:** Seeking Expert Clarification
+*   **Description:** Promotes the practice of obtaining a second opinion as a normal and advisable step in cancer care, even for medical professionals. It emphasizes the importance of organized medical records and understanding insurance policies for this process.
+
+**11. Supportive Care & Quality of Life**
+
+*   **Title:** Enhancing Comfort and Well-being
+*   **Description:** Defines supportive care as an essential component of cancer treatment focused on relieving symptoms, managing side effects, and improving overall quality of life, irrespective of the stage of illness. It can include palliative care for advanced cancers.
 ----------------------------------------------------------------------------------------------------
 Context 14/16: 
-Node ID: medical-308-S-5
-Content: Radiation therapists deliver radiotherapy treatments to patients.
+Node ID: medical-N-68-A-0
+Content: Recurrence, also known as relapse, is the unwelcome return of cancer after a period of treatment, a shadow that can fall across the path of survivorship. It signifies that the battle isn't over, necessitating a renewed and often complex fight. The precise approach to tackling this resurgence is dictated by its location – whether it reappears in the original site, nearby lymph nodes, or has ventured to distant organs like the liver or lungs. Doctors meticulously assess the characteristics of the cancer and individual risk factors to predict the likelihood of its return, a crucial step in proactive care.
+
+The arsenal for combating recurrence is varied. Surgery remains a cornerstone, particularly for cancers that can be precisely excised. Radiation and targeted therapies, including innovative biomarker-based treatments for cancers with specific genetic signatures, offer powerful alternatives when surgery isn't feasible or when the cancer is progressing. Systemic treatments, like chemotherapy, are deployed for cancers with a high risk of recurrence, with specific regimens chosen based on the cancer type and stage. For certain cancers, like bladder cancer, intravesical treatments such as BCG therapy are employed to actively lower the chances of recurrence.
+
+Surveillance plays a vital role in the ongoing journey. Regular check-ups, including physical exams, blood tests, and advanced imaging techniques like MRI and PET scans, are employed to catch any signs of recurrence early. These scans, utilizing strong magnets and radio waves to peer inside the body, are invaluable for visualizing internal structures, identifying potential regrowth, and guiding subsequent treatment plans. The frequency and type of follow-up imaging are often tailored to the specific cancer and its stage, with scans ordered particularly if new or worsening symptoms arise or if other findings suggest a potential return.
+
+Even after successful treatment, the vigilance for recurrence can mean lifelong monitoring. For thyroid cancer survivors, regular neck ultrasounds are standard. For those who have undergone total thyroidectomy, lifelong hormone replacement therapy is essential, with medication dosages adjusted to maintain suppressed TSH levels if there are signs of recurrence or higher-risk cancers. Ultimately, recurrence is a testament to the persistent nature of cancer, but also highlights the advancements in medical understanding and treatment strategies that offer renewed hope and options for patients facing its return.
 ----------------------------------------------------------------------------------------------------
 Context 15/16: 
-Node ID: medical-352-S-10
-Content: Surgery is not always a viable option for initial treatment.
+Node ID: medical-N-0-A-0
+Content: Basal Cell Skin Cancer, often called Basal Cell Carcinoma (BCC), is the most common form of its kind, an unwelcome visitor that affects millions each year. It's a condition born from our skin's basal cells, those fundamental cells in the epidermis, deciding to grow beyond control, often under the relentless gaze of the sun. These cancers commonly choose exposed territories like the face, head, neck, arms, and legs as their staging ground, though they can appear anywhere. While anyone can develop it, those with lighter skin, hair, and eyes are particularly vulnerable, their skin offering less natural defense against the damaging UV radiation from the sun or tanning beds. For those with fair complexions, BCC can manifest as subtle yet concerning changes: flat, scar-like patches, itchy red areas, small shiny bumps with unusual hues, or persistent sores that bleed. In darker skin tones, it might present as a glossy black or brown bump with a distinct, raised border, sometimes mistaken for a mole. The key to overcoming this unwelcome growth lies in vigilance and early detection, for it is highly treatable and, more importantly, curable, with surgery serving as its primary adversary. Though radiation and systemic therapies offer additional strategies, the narrative of BCC is one of resilience and recovery, especially when caught early. Yet, it’s a foe that can sometimes return, either to its original spot or, in rarer cases, spreading to lymph nodes or distant parts of the body, requiring continued monitoring and prompt intervention. Understanding its origins—primarily UV exposure and specific risk factors such as a history of skin cancer, radiation therapy, or a compromised immune system—empowers individuals to actively participate in their care, making informed decisions alongside their medical team.
 ----------------------------------------------------------------------------------------------------
 Context 16/16: 
-Node ID: medical-308-S-16
-Content: Treatment for inflammatory breast cancer includes mastectomy and radiation therapy as local therapies, and systemic therapy which works throughout the body.
+Node ID: medical-3-S-0
+Content: Recurrence of basal cell skin cancer means it has returned to its original location or spread to lymph nodes or distant body parts. Treatment options are available, and patients can take an active role in their care by asking questions and making shared decisions with their care team.
 ----------------------------------------------------------------------------------------------------
