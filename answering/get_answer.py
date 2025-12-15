@@ -48,10 +48,10 @@ with open(f"{root_path}/API_KEY.txt", "r", encoding="utf-8") as f:
 def call_gemini(text):
     client = genai.Client(api_key = API_KEY)
     response = client.models.generate_content(
-        model="gemini-2.5-flash",
+        model="gemini-2.5-flash-lite",
         contents=text
     )
-    return response.text
+    return response
 
 #Context setup
 graph_context = {
@@ -79,9 +79,9 @@ while True:
             break
 
         ppr_context = {
-            'k_ppr': None,
+            'k_ppr': 8,
             'alpha': 0.5,
-            't':2
+            't':5
         }
         query_context = {
             'question': question,
@@ -91,22 +91,30 @@ while True:
 
         context = get_context(query_context, graph_context, embedding_context, API_KEY)
         with open(f"{root_path}/answering/context.txt","w") as f:
+            c = 1
             for key in context:
+                f.write(f"Context {c}/{len(context.keys())}: \n")
                 f.write("Node ID: {}\n".format(key))
                 f.write("Content: {}\n".format(context[key]))
                 f.write("-" * 100 + "\n")
+                c += 1
         finish_retrieval_time = time.time()
         print(f"Total retrieval time: {finish_retrieval_time - start:.2f} seconds.")
         print("Number of retrieved context nodes:", len(context))
         print("-"*100)
         full_context = "\n\n".join(context.values())
         prompt = answer_prompt(full_context, question)
-        answer = call_gemini(prompt)
-        print("Answer Generated#")
-        print(answer)
+        response = call_gemini(prompt)
+        answer = response.text
+        print("Answer Generated")
+        #print(answer)
         with open(f"{root_path}/answering/answer.txt","w") as f:
             f.write(answer)
-        print("-"*100)
+        #print("-"*100)
+        usage = response.usage_metadata
+        print(f"Prompt Tokens (Input): {usage.prompt_token_count}")
+        print(f"Candidate Tokens (Output): {usage.candidates_token_count}")
+        print(f"Total Tokens: {usage.total_token_count}")
         print(f"Answer generation time: {time.time() - finish_retrieval_time:.2f} seconds.")
         print(f"Total time taken: {time.time() - start:.2f} seconds.")
     except Exception as e:

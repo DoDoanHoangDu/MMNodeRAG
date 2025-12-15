@@ -32,7 +32,8 @@ def shallow_ppr_local(nodes_dict, entry_ids, ppr_context):
         pi[node_id] = -1.0  #exclude entry nodes
     #get top k nodes by PPR scores
     if not k:
-        k = max(len(entry_ids), 8)
+        k = len(entry_ids)
+    k = max(k,8)
     top_nodes = sorted(pi.items(), key=lambda x: x[1], reverse=True)[:k]
     print(f"PPR selected nodes: {len(top_nodes)}")
     return dict(top_nodes)

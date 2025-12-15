@@ -46,6 +46,7 @@ def retrieve_relevant_nodes(graph_context, embedding_context, query_context):
 
     #combine entry node ids
     entry_node_ids = set(embedding_node_ids).union(entity_node_ids)
+    print("Number of entry nodes:", len(entry_node_ids))
 
     #perform PPR from entry nodes to find cross nodes
     ppr_search_results = shallow_ppr_local(graph, entry_node_ids, ppr_context)
