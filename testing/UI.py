@@ -1,60 +1,83 @@
 import tkinter as tk
 import os
+import pandas as pd
 
+#load data
 dir_path = os.path.dirname(os.path.abspath(__file__))
-FILE1 = os.path.join(dir_path, "context.txt")
-FILE2 = os.path.join(dir_path, "answer.txt")
+FILE = os.path.join(dir_path, "medical_questions_answered.parquet")
+data = pd.read_parquet(FILE)
 
-def refresh():
-    text1.config(state=tk.NORMAL)
-    text2.config(state=tk.NORMAL)
+COLUMNS = ["question", "answer", "LLM_answer", "LLM_context"]
+HEIGHTS = {
+    "question": 4,
+    "answer": 4,
+    "LLM_answer": 4,
+    "LLM_context": 16,
+}
+QUESTION_TYPES = sorted(data["question_type"].dropna().unique())
 
-    text1.delete("1.0", tk.END)
-    text2.delete("1.0", tk.END)
 
-    try:
-        with open(FILE1, "r") as f:
-            text1.insert(tk.END, f.read())
-    except IOError:
-        pass
+def load_random_row():
+    qtype = selected_qtype.get()
+    if qtype:
+        subset = data[data["question_type"] == qtype]
+    else:
+        subset = data
+    if subset.empty:
+        return
+    row = subset.sample(1).iloc[0]
 
-    try:
-        with open(FILE2, "r") as f:
-            text2.insert(tk.END, f.read())
-    except IOError:
-        pass
-
-    text1.config(state=tk.DISABLED)
-    text2.config(state=tk.DISABLED)
+    for col, text_widget in text_boxes.items():
+        text_widget.config(state="normal")
+        text_widget.delete("1.0", tk.END)
+        value = "" if pd.isna(row[col]) else str(row[col])
+        if col == "LLM_context":
+            sep = "\n\n" + "-" * 100 + "\n\n"
+            parts = value.split(sep)
+            parts = [f"Context {i+1}/{len(parts)}:\n{parts[i]}" for i in range(len(parts))]
+            value = sep.join(parts)
+        text_widget.insert(tk.END, value)
+        text_widget.config(state="disabled")
 
 root = tk.Tk()
-root.title("Answer")
-root.grid_rowconfigure(0, weight=1)
-root.grid_rowconfigure(1, weight=1)
-root.grid_columnconfigure(1, weight=1)
+root.title("Random QA Viewer")
+root.geometry("900x700")
+root.resizable(True, True)
+selected_qtype = tk.StringVar()
+selected_qtype.set(QUESTION_TYPES[0])
 
-tk.Label(root, text="Context").grid(row=0, column=0, sticky="nw", padx=5, pady=5)
-tk.Label(root, text="Answer").grid(row=1, column=0, sticky="nw", padx=5, pady=5)
+text_boxes = {}
+for col in COLUMNS:
+    label = tk.Label(root, text=col.upper(), font=("Arial", 10, "bold"))
+    label.pack(anchor="w", padx=10, pady=(10, 0))
 
-text1 = tk.Text(root, width=60, height=10, state=tk.DISABLED, wrap="word")
-scroll1 = tk.Scrollbar(root, command=text1.yview)
-text1.config(yscrollcommand=scroll1.set)
+    frame = tk.Frame(root)
+    frame.pack(fill="both", expand=True, padx=10)
 
-text1.grid(row=0, column=1, sticky="nsew", padx=5, pady=5)
-scroll1.grid(row=0, column=2, sticky="ns")
+    scrollbar = tk.Scrollbar(frame)
+    scrollbar.pack(side="right", fill="y")
 
-text2 = tk.Text(root, width=60, height=10, state=tk.DISABLED, wrap="word")
-scroll2 = tk.Scrollbar(root, command=text2.yview)
-text2.config(yscrollcommand=scroll2.set)
+    text = tk.Text(
+        frame,
+        height=HEIGHTS[col],
+        wrap="word",
+        yscrollcommand=scrollbar.set
+    )
+    text.pack(side="left", fill="both", expand=True)
+    scrollbar.config(command=text.yview)
 
-text2.grid(row=1, column=1, sticky="nsew", padx=5, pady=5)
-scroll2.grid(row=1, column=2, sticky="ns")
+    text.config(state="disabled")
+    text_boxes[col] = text
 
-tk.Button(root, text="Refresh", command=refresh)\
-    .grid(row=2, column=0, columnspan=3, pady=10)
+# dropdown
+row = tk.Frame(root)
+row.pack(anchor="w", padx=10, pady=(10, 0))
+tk.Label(row, text="QUESTION TYPE:", font=("Arial", 10, "bold")).pack(side="left")
+dropdown = tk.OptionMenu(row, selected_qtype, *QUESTION_TYPES)
+dropdown.pack(side="left", padx=10)
 
-refresh()
+btn = tk.Button(root, text="Load Random Row", command=load_random_row)
+btn.pack(pady=10)
+
+load_random_row()
 root.mainloop()
-
-
-
