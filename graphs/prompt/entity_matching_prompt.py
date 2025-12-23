@@ -8,10 +8,9 @@ Rules (apply in order):
 1. Exact Match: Case-insensitive, ignore whitespace.
 2. Suffix-Agnostic: Match after removing "inc", "llc", "ltd", "co", "corp", "corporation", "company", "plc" (and dots). 
 3. Acronyms: Match if initials of one equal the other (e.g., "WHO" = "World Health Organization").
-4. Whole-word Substring: One contains the other as a full-word sequence (e.g., "IBM" in "IBM Research").
-5. Orthographic Var: Small character variations/formatting (e.g., "U.S.A." vs "USA", "O'Neil" vs "Oneil").
-6. Explicit Alias: Direct links via "aka", "formerly", "/", "—".
-7. Semantic Equivalence: Match if the candidate is a globally recognized synonym, brand rename, or parent company. Use conservatively.
+4. Orthographic Var: Small character variations/formatting (e.g., "U.S.A." vs "USA", "O'Neil" vs "Oneil").
+5. Explicit Alias: Direct links via "aka", "formerly", "/", "—".
+6. Semantic Equivalence: Match if the candidate is a globally recognized synonym, brand rename, or parent company. Use conservatively.
 
 Selection Constraints:
 - Use only provided LIST_OF_ENTITIES; no external knowledge.
