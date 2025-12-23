@@ -1,0 +1,162 @@
+[
+  {
+    "semantic_unit": "Rectal cancer treatment, particularly external beam radiation therapy (EBRT), can damage the ovaries and impair fertility by stopping hormone production needed for natural pregnancy. To preserve fertility, options include freezing tissue containing eggs for later use and ovarian transposition (oophoropexy), a surgical procedure that moves ovaries out of the radiation beam's range. Patients should discuss future fertility options, related risks of their treatment plan, and preservation choices with their care team and doctor.",
+    "entities": [
+      "FROZEN TISSUE",
+      "EGGS",
+      "BODY",
+      "OVARIAN TRANSPOSITION",
+      "RECTAL CANCER TREATMENT",
+      "EXTERNAL BEAM RADIATION THERAPY (EBRT)",
+      "RADIATION",
+      "OVARIES",
+      "HORMONES",
+      "NATURAL PREGNANCY",
+      "SURGERY",
+      "RADIATION BEAM",
+      "OOPHOPEXY",
+      "CHILDREN",
+      "FUTURE",
+      "CARE TEAM",
+      "DOCTOR",
+      "FERTILITY-RELATED RISKS",
+      "TREATMENT PLAN",
+      "FERTILITY"
+    ],
+    "relationships": [
+      "FROZEN TISSUE, contains, EGGS",
+      "FROZEN TISSUE, can be unfrozen and put back in, BODY",
+      "RECTAL CANCER TREATMENT, may involve, EXTERNAL BEAM RADIATION THERAPY (EBRT)",
+      "EXTERNAL BEAM RADIATION THERAPY (EBRT), damages, OVARIES",
+      "RADIATION, damages, OVARIES",
+      "OVARIES, stop producing, HORMONES",
+      "HORMONES, are needed for, NATURAL PREGNANCY",
+      "OVARIAN TRANSPOSITION, is a type of, SURGERY",
+      "OVARIAN TRANSPOSITION, moves, OVARIES",
+      "OVARIES, moved out of range of, RADIATION BEAM",
+      "OOPHOPEXY, is the medical name for, OVARIAN TRANSPOSITION",
+      "CARE TEAM, should be told about the option of having, CHILDREN",
+      "DOCTOR, will inform about, FERTILITY-RELATED RISKS",
+      "DOCTOR, will inform about, TREATMENT PLAN",
+      "DOCTOR, will inform about options for preserving, FERTILITY"
+    ]
+  },
+  {
+    "semantic_unit": "For rectal cancer diagnosis and staging, all rectal tumors must be tested for biomarkers such as mismatch repair deficiency (dMMR) or high microsatellite instability (MSI-H); cancers lacking these are termed mismatch repair proficient (pMMR) or microsatellite stable (MSS). Additionally, family health history is crucial. Imaging techniques like MRI of the pelvis, using a rectal cancer staging technique, reveal the cancer's extent in the rectum and nearby lymph nodes, while CT scans of the chest and abdomen show if the cancer has spread to the liver, lungs, or other organs.",
+    "entities": [
+      "RECTAL TUMORS",
+      "MISMATCH REPAIR DEFICIENCY (dMMR)",
+      "HIGH MICROSATELLITE INSTABILITY (MSI-H)",
+      "BIOMARKER",
+      "CANCERS",
+      "MISMATCH REPAIR PROFICIENT (pMMR)",
+      "MICROSATELLITE STABLE (MSS)",
+      "RECTAL CANCER",
+      "FAMILY HEALTH HISTORY",
+      "MRI OF THE PELVIS",
+      "RECTAL CANCER STAGING TECHNIQUE",
+      "CANCER",
+      "RECTUM",
+      "LYMPH NODES",
+      "CT OF THE CHEST AND ABDOMEN",
+      "LIVER",
+      "LUNGS",
+      "OTHER ORGANS"
+    ],
+    "relationships": [
+      "RECTAL TUMORS, should be tested for, MISMATCH REPAIR DEFICIENCY (dMMR)",
+      "RECTAL TUMORS, should be tested for, HIGH MICROSATELLITE INSTABILITY (MSI-H)",
+      "CANCERS, that don't have this BIOMARKER are called, MISMATCH REPAIR PROFICIENT (pMMR)",
+      "CANCERS, that don't have this BIOMARKER are called, MICROSATELLITE STABLE (MSS)",
+      "RECTAL CANCER, should involve asking about, FAMILY HEALTH HISTORY",
+      "MRI OF THE PELVIS, uses, RECTAL CANCER STAGING TECHNIQUE",
+      "MRI OF THE PELVIS, can show extent of, CANCER",
+      "CANCER, can be in, RECTUM",
+      "CANCER, can be in nearby, LYMPH NODES",
+      "CT OF THE CHEST AND ABDOMEN, can show if, CANCER has spread",
+      "CANCER, can spread to, LIVER",
+      "CANCER, can spread to, LUNGS",
+      "CANCER, can spread to, OTHER ORGANS"
+    ]
+  },
+  {
+    "semantic_unit": "When seeking health information, especially at 1 AM, it's advisable to avoid 'Dr. Google' and instead consult reputable, medically reviewed websites that provide patient and caregiver information and resources, as these are more reliable than random search engine results.",
+    "entities": [
+      "1 AM",
+      "DR. GOOGLE",
+      "REPUTABLE SITES",
+      "PATIENT/CAREGIVER INFORMATION",
+      "RESOURCES",
+      "MEDICALLY REVIEWED RESOURCES",
+      "GOOGLE RESULTS"
+    ],
+    "relationships": [
+      "DR. GOOGLE, should not be used at, 1 AM",
+      "REPUTABLE SITES, have, PATIENT/CAREGIVER INFORMATION",
+      "REPUTABLE SITES, have, RESOURCES",
+      "MEDICALLY REVIEWED RESOURCES, are more valuable than, GOOGLE RESULTS"
+    ]
+  },
+  {
+    "semantic_unit": "This chapter provides an overview of treatment for rectal cancer that has not spread to distant areas, encompassing categories such as non-metastatic cancer, polyps with cancer, early rectal cancer, locally advanced cancer, and recurrence. It notes that rectal cancer often originates in polyps on the lining of the rectum but can also form as lesions.",
+    "entities": [
+      "TREATMENT",
+      "NON-METASTATIC CANCER",
+      "POLYPS WITH CANCER",
+      "EARLY RECTAL CANCER",
+      "LOCALLY ADVANCED CANCER",
+      "RECURRENCE",
+      "RECTAL CANCER",
+      "POLYPS",
+      "LINING OF THE RECTUM",
+      "LESIONS",
+      "AREAS FAR FROM THE RECTUM",
+      "THIS CHAPTER"
+    ],
+    "relationships": [
+      "RECTAL CANCER, often forms in, POLYPS",
+      "POLYPS, are on the, LINING OF THE RECTUM",
+      "RECTAL CANCER, can also form as, LESIONS",
+      "THIS CHAPTER, explains, TREATMENT for RECTAL CANCER",
+      "RECTAL CANCER, has not spread to, AREAS FAR FROM THE RECTUM"
+    ]
+  },
+  {
+    "semantic_unit": "Polyps are overgrowths of cells on the inner lining of the rectal wall, which can develop into invasive cancer, with adenomas being the most common type, forming an adenocarcinoma. Polyps have two primary shapes: pedunculated, which are mushroom-shaped with a stalk and round top, protruding from the colon wall; and sessile, which are flatter and lack a stalk. A polyp where cancer has just begun to grow is called a malignant (cancerous) polyp, and most can be removed during a colonoscopy through a minor surgical procedure known as a polypectomy.",
+    "entities": [
+      "POLYPS",
+      "CANCER",
+      "OVERGROWTH OF CELLS",
+      "INNER LINING OF THE RECTAL WALL",
+      "ADENOMAS",
+      "INVASIVE CANCER",
+      "ADENOCARCINOMA",
+      "PEDUNCULATED POLYPS",
+      "MUSHROOMS",
+      "COLON WALL",
+      "STALK",
+      "ROUND TOP",
+      "SESSILE POLYPS",
+      "MALIGNANT (CANCEROUS) POLYP",
+      "COLONOSCOPY",
+      "MINOR SURGICAL PROCEDURE",
+      "POLYPECTOMY"
+    ],
+    "relationships": [
+      "POLYP, is an, OVERGROWTH OF CELLS",
+      "OVERGROWTH OF CELLS, is on the, INNER LINING OF THE RECTAL WALL",
+      "ADENOMAS, are the most common type of, POLYPS",
+      "ADENOMAS, can become, INVASIVE CANCER",
+      "CANCER, that forms in an ADENOMA is called, ADENOCARCINOMA",
+      "POLYPS, have, 2 MAIN SHAPES",
+      "PEDUNCULATED POLYPS, are shaped like, MUSHROOMS",
+      "PEDUNCULATED POLYPS, stick out from the, COLON WALL",
+      "PEDUNCULATED POLYPS, have a, STALK",
+      "PEDUNCULATED POLYPS, have a, ROUND TOP",
+      "SESSILE POLYPS, are flatter and do not have a, STALK",
+      "MALIGNANT (CANCEROUS) POLYP, is a POLYP in which, CANCER has just started to grow",
+      "POLYPS, can be removed during a, COLONOSCOPY",
+      "POLYPECTOMY, is a, MINOR SURGICAL PROCEDURE"
+    ]
+  }
+]

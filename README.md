@@ -1,1 +1,1 @@
-/mnt/c/Users/HP/Desktop/Projects/NodeRAG
+Chunking -> Text Decomposition -> Graphs

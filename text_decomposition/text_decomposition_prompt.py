@@ -9,6 +9,13 @@ Perform the following tasks:
 --Requirement--
 1. Temporal Entities: Represent time entities based on the available details without filling in missing parts. Use specific formats based on what parts of the date or time are mentioned in the text.
 2. Each semantic unit should be represented as a dictionary containing three keys: semantic_unit (a paraphrased summary of each semantic unit), entities (a list of entities extracted directly from the original text of each semantic unit, formatted in UPPERCASE), and relationships (a list of extracted relationship strings that contain three elements, where the relationship type is a descriptive sentence). All these dictionaries should be stored in a list to facilitate management and access.
+3. Coreference Resolution:
+- Resolve all pronouns and referring expressions (e.g., he, she, it, they, this, that, the company, the organization) to their explicit entity names.
+- Do NOT include pronouns or vague references as entities.
+- If a semantic unit contains references whose antecedents appear in earlier semantic units, include those antecedent entities explicitly in the current unit’s entity list.
+- If a sentence refers to an entity mentioned earlier in the text or in a previous semantic unit, use the canonical entity name.
+- All entities used in relationships must be explicit, fully resolved, and appear in the entities list.
+
 --Example--
 Text:
 In September 2024, Dr. Emily Roberts traveled to Paris to attend the International Conference on Renewable Energy. During her visit, she explored partnerships with several European companies and presented her latest research on solar panel efficiency improvements. Meanwhile, on the other side of the world, her colleague, Dr. John Miller, was conducting fieldwork in the Amazon Rainforest. He documented several new species and observed the effects of deforestation on the local wildlife. Both scholars' work is essential in their respective fields and contributes significantly to environmental conservation efforts.
