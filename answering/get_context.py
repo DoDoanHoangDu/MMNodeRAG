@@ -53,7 +53,7 @@ def get_context(query_context, graph_context, embedding_context, API_KEY, debug 
         entity_node = graph[entity_node_id]
         if not entity_node.source:
             continue
-        synonym_ids = list(entity_node.source.split(","))
+        synonym_ids = list(entity_node.source)
         synonyms = [graph[synonym_id].content for synonym_id in synonym_ids]
         all_synonyms.extend(synonyms)
     if debug:

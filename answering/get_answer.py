@@ -48,7 +48,7 @@ with open(f"{root_path}/API_KEY.txt", "r", encoding="utf-8") as f:
 def call_gemini(text):
     client = genai.Client(api_key = API_KEY)
     response = client.models.generate_content(
-        model="gemini-2.5-flash-lite",
+        model="gemini-2.5-flash",
         contents=text
     )
     return response
@@ -79,7 +79,7 @@ while True:
             break
 
         ppr_context = {
-            'k_ppr': 8,
+            'k_ppr': None,
             'alpha': 0.5,
             't':5
         }

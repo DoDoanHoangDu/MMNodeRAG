@@ -53,11 +53,15 @@ def retrieve_relevant_nodes(graph_context, embedding_context, query_context, deb
     ppr_search_results = shallow_ppr_local(graph, entry_node_ids, ppr_context, debug = debug)
     cross_node_ids = set(ppr_search_results.keys())
 
-    #combine all relevant nodes
-    relevant_node_ids = entry_node_ids.union(cross_node_ids)
     #content
     content = {}
-    for node_id in relevant_node_ids:
+    for node_id in entry_node_ids:
+        node = graph[node_id]
+        if node.node_type in ['N','O']: #remove non-informative nodes
+            continue
+        content[node_id] = node.content
+
+    for node_id in cross_node_ids:
         node = graph[node_id]
         if node.node_type in ['N','O']: #remove non-informative nodes
             continue
