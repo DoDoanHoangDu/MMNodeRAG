@@ -90,7 +90,7 @@ while True:
         }
 
         context = get_context(query_context, graph_context, embedding_context, API_KEY)
-        with open(f"{root_path}/answering/context.txt","w") as f:
+        with open(f"{root_path}/answering/context.txt","w",  encoding="utf-8") as f:
             c = 1
             for key in context:
                 f.write(f"Context {c}/{len(context.keys())}: \n")
@@ -104,6 +104,7 @@ while True:
         print("-"*100)
         full_context = "\n\n".join(context.values())
         prompt = answer_prompt(full_context, question)
+        """
         response = call_gemini(prompt)
         answer = response.text
         print("Answer Generated")
@@ -115,6 +116,7 @@ while True:
         print(f"Prompt Tokens (Input): {usage.prompt_token_count}")
         print(f"Candidate Tokens (Output): {usage.candidates_token_count}")
         print(f"Total Tokens: {usage.total_token_count}")
+        """
         print(f"Answer generation time: {time.time() - finish_retrieval_time:.2f} seconds.")
         print(f"Total time taken: {time.time() - start:.2f} seconds.")
     except Exception as e:

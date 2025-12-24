@@ -8,7 +8,7 @@ import time
 def call_gemini(text, API_KEY):
     client = genai.Client(api_key = API_KEY)
     response = client.models.generate_content(
-        model="gemini-2.5-flash-lite",
+        model="gemini-2.5-flash",
         contents=text,
         config={ "response_mime_type": "application/json"}
     )

@@ -13,13 +13,13 @@ def refresh():
     text2.delete("1.0", tk.END)
 
     try:
-        with open(FILE1, "r") as f:
+        with open(FILE1, "r", encoding="utf-8") as f:
             text1.insert(tk.END, f.read())
     except IOError:
         pass
 
     try:
-        with open(FILE2, "r") as f:
+        with open(FILE2, "r", encoding="utf-8") as f:
             text2.insert(tk.END, f.read())
     except IOError:
         pass
