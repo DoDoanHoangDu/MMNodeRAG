@@ -4,7 +4,7 @@ import pandas as pd
 
 #load data
 dir_path = os.path.dirname(os.path.abspath(__file__))
-FILE = os.path.join(dir_path, "medical_questions_answered.parquet")
+FILE = os.path.join(dir_path, "data/medical_questions_answered.parquet")
 data = pd.read_parquet(FILE)
 
 COLUMNS = ["question", "answer", "LLM_answer", "LLM_context"]
