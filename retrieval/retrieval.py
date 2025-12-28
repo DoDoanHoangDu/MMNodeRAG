@@ -1,6 +1,7 @@
 import re
 from graphs.Node import Node
 from retrieval.ppr_local import shallow_ppr_local
+from retrieval.shortest_path import all_pairs_shortest_paths
 
 
 def find_relevant_embeddings(embedding_index, query_embedding, k_embedding):
@@ -25,7 +26,7 @@ def find_relevant_entities(graph_context,query_entities):
         entity_ids.update(matching_node_ids)
     return entity_ids
 
-def retrieve_relevant_nodes(graph_context, embedding_context, query_context, debug = True):
+def retrieve_relevant_nodes(graph_context, embedding_context, query_context, debug = True, reasoning = False):
     #Get values:
     query_entities = query_context['entities']
     query_embedding = query_context['embedding']
@@ -52,20 +53,30 @@ def retrieve_relevant_nodes(graph_context, embedding_context, query_context, deb
     #perform PPR from entry nodes to find cross nodes
     ppr_search_results = shallow_ppr_local(graph, entry_node_ids, ppr_context, debug = debug)
     cross_node_ids = set(ppr_search_results.keys())
-
+    all_nodes_ids = entry_node_ids.union(cross_node_ids)
+    if reasoning:
+        #find shortest paths between entry nodes
+        reasoning_node_ids = set()
+        reasoning_entities = [node_id for node_id in entry_node_ids if graph[node_id].node_type in ['N']]
+        paths = all_pairs_shortest_paths(graph, reasoning_entities, debug = debug)
+        for i in reasoning_entities:
+            for j in reasoning_entities:
+                path_ij = paths[i][j]
+                if not path_ij or len(path_ij) <= 2:
+                    continue
+                for node_id in path_ij:
+                    if node_id not in all_nodes_ids:
+                        #print("Adding reasoning node:", node_id)
+                        all_nodes_ids.add(node_id)
+                        reasoning_node_ids.add(node_id)
+        if debug:
+            print("Number of reasoning nodes added:", len(reasoning_node_ids))
+            print("Reasoning nodes:", reasoning_node_ids)
     #content
     content = {}
-    for node_id in entry_node_ids:
+    for node_id in all_nodes_ids:
         node = graph[node_id]
         if node.node_type in ['N','O']: #remove non-informative nodes
-            continue
-        content[node_id] = node.content
-
-    for node_id in cross_node_ids:
-        node = graph[node_id]
-        if node.node_type in ['N','O']: #remove non-informative nodes
-            continue
-        if node_id in content:
             continue
         content[node_id] = node.content
     return content

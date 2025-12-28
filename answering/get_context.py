@@ -14,7 +14,7 @@ def call_gemini(text, API_KEY):
     )
     return response.text
 
-def get_context(query_context, graph_context, embedding_context, API_KEY, debug = True):
+def get_context(query_context, graph_context, embedding_context, API_KEY, debug = True, reasoning = False):
     #Get values
     question = query_context['question']
     embedding_model = embedding_context['model']
@@ -67,7 +67,7 @@ def get_context(query_context, graph_context, embedding_context, API_KEY, debug 
     query_context['embedding'] = embedding_model.encode([question], convert_to_numpy=True).astype(np.float32)
 
     #Retrieve relevant nodes
-    context = retrieve_relevant_nodes(graph_context, embedding_context, query_context, debug = debug)
+    context = retrieve_relevant_nodes(graph_context, embedding_context, query_context, debug = debug, reasoning = reasoning)
     if debug:
         print(f"Retrieval time: {time.time() - finish_decomposition_time:.2f} seconds.")
     return context

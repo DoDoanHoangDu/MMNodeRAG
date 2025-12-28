@@ -51,7 +51,9 @@ def shallow_ppr_local(nodes_dict, entry_ids, ppr_context, debug=True):
     if debug:
         print(f"PPR selected nodes: {len(top_nodes)}")
     top_nodes = dict(top_nodes)
+    """
     if debug:
         for key in top_nodes:
             print(f"{key}: {top_nodes[key]}")
+    """
     return top_nodes

@@ -71,12 +71,22 @@ print(f"Load time: {time.time() - start:.2f} seconds.")
 loop_sep = "#"*100 + "\n"
 while True:
     try:
+        reasoning = False
         question = input("Enter your medical question (or 'quit' to quit): ")
-        print("-"*100)
-        start = time.time()
         if question.lower() == 'quit':
             print(loop_sep)
             break
+        
+        reason_input = input("Enable reasoning mode? (y/n): ").strip().lower()
+        if reason_input == 'y':
+            reasoning = True
+        elif reason_input == 'n':
+            reasoning = False
+        else:
+            print("Invalid input for reasoning mode. Defaulting to 'n'.")
+            reasoning = False
+        print("-"*100)
+        start = time.time()
 
         ppr_context = {
             'k_ppr': None,
@@ -89,7 +99,7 @@ while True:
             'ppr': ppr_context
         }
 
-        context = get_context(query_context, graph_context, embedding_context, API_KEY)
+        context = get_context(query_context, graph_context, embedding_context, API_KEY, True, reasoning)
         with open(f"{root_path}/answering/context.txt","w",  encoding="utf-8") as f:
             c = 1
             for key in context:
@@ -102,19 +112,22 @@ while True:
         print(f"Total retrieval time: {finish_retrieval_time - start:.2f} seconds.")
         print("Number of retrieved context nodes:", len(context))
         print("-"*100)
-        full_context = "\n\n".join(context.values())
-        prompt = answer_prompt(full_context, question)
-        response = call_gemini(prompt)
-        answer = response.text
-        print("Answer Generated")
-        #print(answer)
-        with open(f"{root_path}/answering/answer.txt","w") as f:
-            f.write(answer)
-        #print("-"*100)
-        usage = response.usage_metadata
-        print(f"Prompt Tokens (Input): {usage.prompt_token_count}")
-        print(f"Candidate Tokens (Output): {usage.candidates_token_count}")
-        print(f"Total Tokens: {usage.total_token_count}")
+        #Generate answer
+        generate_answer = False
+        if generate_answer:
+            full_context = "\n\n".join(context.values())
+            prompt = answer_prompt(full_context, question)
+            response = call_gemini(prompt)
+            answer = response.text
+            print("Answer Generated")
+            #print(answer)
+            with open(f"{root_path}/answering/answer.txt","w") as f:
+                f.write(answer)
+            #print("-"*100)
+            usage = response.usage_metadata
+            print(f"Prompt Tokens (Input): {usage.prompt_token_count}")
+            print(f"Candidate Tokens (Output): {usage.candidates_token_count}")
+            print(f"Total Tokens: {usage.total_token_count}")
         print(f"Answer generation time: {time.time() - finish_retrieval_time:.2f} seconds.")
         print(f"Total time taken: {time.time() - start:.2f} seconds.")
     except Exception as e:
