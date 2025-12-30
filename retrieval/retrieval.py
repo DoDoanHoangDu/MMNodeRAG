@@ -71,7 +71,7 @@ def retrieve_relevant_nodes(graph_context, embedding_context, query_context, deb
                         reasoning_node_ids.add(node_id)
         if debug:
             print("Number of reasoning nodes added:", len(reasoning_node_ids))
-            print("Reasoning nodes:", reasoning_node_ids)
+            #print("Reasoning nodes:", reasoning_node_ids)
     #content
     content = {}
     for node_id in all_nodes_ids:
