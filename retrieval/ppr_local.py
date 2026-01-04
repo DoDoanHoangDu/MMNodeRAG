@@ -33,7 +33,7 @@ def shallow_ppr_local(nodes_dict, entry_ids, ppr_context, debug=True):
         pi.pop(node_id)
     #get top k nodes by PPR scores
     pi_sorted = sorted(pi.items(), key=lambda x: x[1], reverse=True)
-    if not k:
+    if k is None:
         top_nodes = []
         total_mass = sum([pi[key] for key in pi.keys() if pi[key] > 0])
         mass = 0
