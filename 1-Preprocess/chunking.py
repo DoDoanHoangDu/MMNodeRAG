@@ -2,6 +2,7 @@ import json
 import spacy
 import os
 #Chunking logic
+print("Starting chunking process...")
 nlp = spacy.load("en_core_web_sm", disable=["ner", "tagger", "lemmatizer"])
 nlp.enable_pipe("senter")
  
@@ -78,6 +79,7 @@ except FileNotFoundError:
 	pass
  
 #Read data and run all logic line by line
+print("Reading corpus and processing...")
 chunks_path = os.path.join(DIR_PATH, "data/chunks.jsonl")
 corpus_path = os.path.normpath(os.path.join(BASE_DIR, "InfoSeek", "Wiki6M_ver_1_0.jsonl"))
 with open(corpus_path, "r", encoding = "utf-8") as fin, \
@@ -96,7 +98,7 @@ with open(corpus_path, "r", encoding = "utf-8") as fin, \
     for line in fin:
         progress += 1
         record = json.loads(line)
-        rid = str(record["id"])
+        rid = str(record["wikidata_id"])
 
         if rid in processed_ids:
             continue
