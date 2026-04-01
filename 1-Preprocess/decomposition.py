@@ -1,5 +1,5 @@
 from text_decomposition_prompt import text_decomposition_prompt
-from LLM import call_LLM
+from llm import call_LLM
 import os
 import json
 DIR_PATH = os.path.dirname(os.path.abspath(__file__))
@@ -74,72 +74,43 @@ with open(output_path, "a", encoding="utf-8") as outfile, \
         outfile.flush()
 
     for line in chunks:
-
         record = json.loads(line)
-
         rid = str(record["chunk_id"])
-
         if rid in processed_ids:
-
             continue
 
         content = record.get("chunk_content", "")
-
         if not content:
-
             continue
 
         prompt = text_decomposition_prompt(content)
-
         max_retries = 20
-
         success = False
-
         for attempt in range(max_retries):
-
             try:
-
                 response, token = call_LLM(prompt)
-
                 response = extract_json(response)
-
                 if not is_valid_schema(response):
-
                     raise ValueError("Invalid schema")
 
                 data = {
-
                     "chunk_id": rid,
-
                     "response": response,
-
                     "token": token
-
                 }
-
                 write(data)
-
                 success = True
-
                 break
 
             except Exception as e:
-
                 if attempt == max_retries - 1:
-
                     print(f"Failed on chunk {rid}: {e}")
-
                     failed_count += 1
-
                 continue
  
         if success:
-
             idfile.write(rid + "\n")
-
             idfile.flush()
-
             processed_ids.add(rid)
- 
 print("Failed count: ",failed_count)
  
