@@ -4,7 +4,7 @@ Given a text, segment it into multiple semantic units, each containing detailed 
 Perform the following tasks:
 --Steps--
 1. Provide a summary for each semantic unit while retaining all crucial details relevant to the original context.
-2. Extract all entities directly from the original text of each semantic unit, not from the paraphrased. Format each entity name in UPPERCASE. You should extract all entities including times, locations, people, organizations and all kinds of entities.
+2. Extract all entities directly from the original text of each semantic unit, not from the paraphrased. Format each entity name in UPPERCASE. You should extract all entities including times, locations, people, organizations, diseases, animals, objects, natural phenomena and all kinds of entities.
 3. From the entities extracted in Step 2, list all relationships within the semantic unit and the corresponding original context in the form of string separated by comma: "ENTITY_A, RELATION_TYPE, ENTITY_B". The RELATION_TYPE could be a descriptive sentence, while the entities involved in the relationship must come from the entity names extracted in Step 2. Please make sure the string contains three elements representing two entities and the relationship type.
 --Requirement--
 1. Temporal Entities: Represent time entities based on the available details without filling in missing parts. Use specific formats based on what parts of the date or time are mentioned in the text.
@@ -23,9 +23,9 @@ In September 2024, Dr. Emily Roberts traveled to Paris to attend the Internation
 Output:
 [
 {{
-semantic_unit: In September 2024, Dr. Emily Roberts attended the International Conference on Renewable Energy in Paris, where she presented her research on solar panel efficiency improvements and explored partnerships with European companies.,
-entities: ["DR. EMILY ROBERTS", "2024-09", "PARIS", "INTERNATIONAL CONFERENCE ON RENEWABLE ENERGY", "EUROPEAN COMPANIES", "SOLAR PANEL EFFICIENCY"], 
-relationships:
+"semantic_unit": "In September 2024, Dr. Emily Roberts attended the International Conference on Renewable Energy in Paris, where she presented her research on solar panel efficiency improvements and explored partnerships with European companies.",
+"entities": ["DR. EMILY ROBERTS", "2024-09", "PARIS", "INTERNATIONAL CONFERENCE ON RENEWABLE ENERGY", "EUROPEAN COMPANIES", "SOLAR PANEL EFFICIENCY"], 
+"relationships":
 [
 "DR. EMILY ROBERTS, attended, INTERNATIONAL CONFERENCE ON RENEWABLE ENERGY",
 "DR. EMILY ROBERTS, explored partnerships with, EUROPEAN COMPANIES",
@@ -33,9 +33,9 @@ relationships:
 ]
 }},
 {{
-semantic_unit: Dr. John Miller conducted fieldwork in the Amazon Rainforest, documenting several new species and observing the effects of deforestation on local wildlife.",
-entities: ["DR. JOHN MILLER", "AMAZON RAINFOREST", "NEW SPECIES", "DEFORESTATION", "LOCAL WILDLIFE"],
-relationships:
+"semantic_unit": "Dr. John Miller conducted fieldwork in the Amazon Rainforest, documenting several new species and observing the effects of deforestation on local wildlife.",
+"entities": ["DR. JOHN MILLER", "AMAZON RAINFOREST", "NEW SPECIES", "DEFORESTATION", "LOCAL WILDLIFE"],
+"relationships":
 [
 "DR. JOHN MILLER, conducted fieldwork in, AMAZON RAINFOREST",
 "DR. JOHN MILLER, documented, NEW SPECIES",
@@ -43,9 +43,9 @@ relationships:
 ]
 }},
 {{
-semantic_unit: "The work of both Dr. Emily Roberts and Dr. John Miller is crucial in their respective fields and contributes significantly to environmental conservation efforts.",
-entities: ["DR. EMILY ROBERTS", "DR. JOHN MILLER", "ENVIRONMENTAL CONSERVATION"], 
-relationships: 
+"semantic_unit": "The work of both Dr. Emily Roberts and Dr. John Miller is crucial in their respective fields and contributes significantly to environmental conservation efforts.",
+"entities": ["DR. EMILY ROBERTS", "DR. JOHN MILLER", "ENVIRONMENTAL CONSERVATION"], 
+"relationships": 
 [
 "DR. EMILY ROBERTS, contributes to, ENVIRONMENTAL CONSERVATION",
 "DR. JOHN MILLER, contributes to, ENVIRONMENTAL CONSERVATION"

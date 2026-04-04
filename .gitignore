@@ -1,3 +1,7 @@
 .venv/
+.env
 InfoSeek/
 data/
+API_KEY.txt
+nhap.ipynb
+__pycache__/

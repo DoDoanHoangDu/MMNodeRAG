@@ -4,20 +4,26 @@ import os
 DIR_PATH = os.path.dirname(os.path.abspath(__file__))
 BASE_DIR = os.path.dirname(DIR_PATH)
 
+#relevant entity ids
 entity_ids = set()
-train_kb_path = os.path.normpath(os.path.join(BASE_DIR, "InfoSeek", "infoseek_train_withkb.jsonl"))
-val_kb_path = os.path.normpath(os.path.join(BASE_DIR, "InfoSeek", "infoseek_val_withkb.jsonl"))
-with open(train_kb_path, 'r', encoding='utf-8') as f:
-    for line in f:
-        line = json.loads(line)
-        entity_ids.add(line["entity_id"])
+IMAGE_EXTENSIONS = {".jpg", ".jpeg", ".png", ".bmp", ".gif", ".webp"}
+image_dir = os.path.normpath(os.path.join(BASE_DIR, "InfoSeek", "wikipedia_images_sampled"))
 
-with open(val_kb_path, 'r', encoding='utf-8') as f:
-    for line in f:
-        line = json.loads(line)
-        entity_ids.add(line["entity_id"])
+def is_image_file(filename):
+    return os.path.splitext(filename)[1].lower() in IMAGE_EXTENSIONS
+
+def extract_id(filename):
+    return os.path.splitext(filename)[0]
+
+for file in os.listdir(image_dir):
+    if not is_image_file(file):
+        continue
+
+    file_id = extract_id(file)
+    entity_ids.add(file_id)
 
 
+#Write sampled knowledge base
 corpus_path = os.path.normpath(os.path.join(BASE_DIR, "InfoSeek", "Wiki6M_ver_1_0.jsonl"))
 knowledge_base_path = os.path.normpath(os.path.join(BASE_DIR, "InfoSeek", "KnowledgeBase.jsonl"))
 with open(corpus_path, 'r', encoding='utf-8') as f:
@@ -27,7 +33,8 @@ if os.path.exists(knowledge_base_path):
     os.remove(knowledge_base_path)
 
 record_count = 0
-sample_rate = 100000 / original_count
+word_count = 0
+sample_rate = 0 * len(entity_ids) / original_count
 with open(corpus_path, 'r', encoding='utf-8') as f, \
     open(knowledge_base_path, 'a', encoding='utf-8') as kf:
     for line in f:
@@ -36,6 +43,10 @@ with open(corpus_path, 'r', encoding='utf-8') as f, \
             kf.write(json.dumps(line, ensure_ascii=False) + "\n")
             kf.flush()
             record_count += 1
+            word_count += len(line["wikipedia_content"].split())
         else:
             continue
+
+
 print(f"Total records written to knowledge base: {record_count}")
+print(f"Total words in knowledge base: {word_count}")
