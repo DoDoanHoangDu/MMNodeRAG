@@ -108,8 +108,10 @@ with open(output_path, "a", encoding="utf-8") as outfile, \
             except Exception as e:
                 if attempt == max_retries - 1:
                     print(f"Failed on chunk {rid}: {e}")
-                    time.sleep(10 * (attempt + 1))  # wait before next attempt
                     failed_count += 1
+                else:
+                    time.sleep(10 * (attempt + 1))  # wait before next attempt
+                
                 continue
  
         if success:

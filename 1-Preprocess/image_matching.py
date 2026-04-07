@@ -2,8 +2,8 @@ import json
 import os
 from sentence_transformers import SentenceTransformer
 import faiss
-
 import torch
+
 DIR_PATH = os.path.dirname(os.path.abspath(__file__))
 BASE_DIR = os.path.dirname(DIR_PATH)
 IMAGE_EXTENSIONS = {".jpg", ".jpeg", ".png", ".bmp", ".gif", ".webp"}
