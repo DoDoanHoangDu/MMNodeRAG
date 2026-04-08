@@ -122,6 +122,7 @@ with open(output_path, "a", encoding="utf-8") as f:
                 f.flush()
                 break
             except Exception as e:
+                print(f"Attempt {attempt} failed for entity {node_id}: {e}")
                 if attempt == MAX_ATTEMPTS:
                     print(f"Failed on entity {node_id} with context length {len(prompt.split())}: {e}")
                     continue

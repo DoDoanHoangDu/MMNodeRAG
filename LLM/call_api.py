@@ -1,22 +1,38 @@
 import os
 from openai import OpenAI
+from google import genai
 from dotenv import load_dotenv
 load_dotenv()
 
-client = OpenAI(
+openai_client = OpenAI(
     base_url="https://openrouter.ai/api/v1",
-    api_key=os.getenv("API_KEY")
+    api_key=os.getenv("OPENAI_KEY")
 )
 
-def call_api(content, model="qwen/qwen3.6-plus:free"):
-    response = client.chat.completions.create(
-    model= model,
-    messages=[
-            {
-                "role": "user",
-                "content": content
-            }
-            ],
-    extra_body={"reasoning": {"enabled": False}}
-    )
-    return response.choices[0].message.content, response.usage.total_tokens
+gemini_client = genai.Client(api_key = os.getenv("GEMINI_KEY"))
+
+def call_api(content, model="qwen/qwen3.6-plus:free", mode = "openai", thinking = False):
+    if mode == "openai":
+        response = openai_client.chat.completions.create(
+            model= model,
+            messages=[
+                    {
+                        "role": "user",
+                        "content": content
+                    }
+                    ],
+            extra_body={"reasoning": {"enabled": thinking}}
+        )
+        return response.choices[0].message.content, response.usage.total_tokens
+    elif mode == "gemini":
+        thinking_level = "low" if thinking else "minimal" 
+        response = gemini_client.models.generate_content(
+            model= model,
+            contents= content,
+            config= genai.types.GenerateContentConfig(
+                thinking_config = genai.types.ThinkingConfig(thinking_level = thinking_level)
+            )
+        )
+        return response.text, response.usage.total_token_count
+    else:
+        raise ValueError("Unsupported API type.")

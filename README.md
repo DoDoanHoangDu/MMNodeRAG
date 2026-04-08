@@ -1,1 +1,1 @@
-Preprocess -> Build Graph -> Evaluation -> Answering
+Preprocess -> Build Graph -> Retrieval -> Answering -> Evaluation
