@@ -110,7 +110,7 @@ with open(output_path, "a", encoding="utf-8") as f:
         MAX_ATTEMPTS = 30
         for attempt in range(1, MAX_ATTEMPTS+1):
             try:
-                response, token = call_api(prompt)
+                response, token = call_api(prompt, model="gemini-3-flash", mode="gemini")
                 line = {
                     "entity_id": node_id,
                     "semantic_units": semantic_units,
