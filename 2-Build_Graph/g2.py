@@ -8,7 +8,7 @@ from tqdm import tqdm
 DIR_PATH = os.path.dirname(os.path.abspath(__file__))
 BASE_PATH = os.path.dirname(DIR_PATH)
 g1_path = os.path.join(BASE_PATH, "2-Build_Graph/data/g1.pkl")
-g2_path = os.path.join(BASE_PATH, "2-Build_Graph/data/g1.pkl")
+g2_path = os.path.join(BASE_PATH, "2-Build_Graph/data/g2.pkl")
 attributes_path = os.path.join(BASE_PATH, "2-Build_Graph/data/attributes.jsonl")
 
 with open(g1_path, "rb") as f:

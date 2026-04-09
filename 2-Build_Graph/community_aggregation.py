@@ -2,7 +2,6 @@ from Node import Node
 import pickle
 import os
 import json
-import ast
 from tqdm import tqdm
 import igraph as ig
 from leidenalg import find_partition, ModularityVertexPartition
@@ -16,7 +15,7 @@ import time
 #load data
 DIR_PATH = os.path.dirname(os.path.abspath(__file__))
 BASE_PATH = os.path.dirname(DIR_PATH)
-g2_path = os.path.join(BASE_PATH, "2-Build_Graph/data/g1.pkl")
+g2_path = os.path.join(BASE_PATH, "2-Build_Graph/data/g2.pkl")
 
 with open(g2_path, "rb") as f:
     nodes = pickle.load(f)
@@ -49,7 +48,7 @@ communities = defaultdict(list)
 for node,community in node_communities.items():
     community_id = f'H{community:06d}'
     communities[community_id].append(node)
-print(f"Number of communities detected: {communities}")
+print(f"Number of communities detected: {len(communities)}")
 
 #get LLM summaries
 def format_list(l):
@@ -62,17 +61,14 @@ community_summaries = {}
 for community_id in tqdm(communities):
     if community_id in community_summaries:
         continue
-    semantic_count = 0
     nodes_id = communities[community_id]
     content = []
     for nid in nodes_id:
         node = nodes[nid]
-        if node.node_type == "S":
-            semantic_count+=1
         if node.node_type in ["R", "N", "V"]:
             continue
         content.append(node.content)
-    if semantic_count < 2:
+    if len(content) < 3:
         continue
     else:
         content = format_list(content)
@@ -80,9 +76,12 @@ for community_id in tqdm(communities):
         MAX_ATTEMPTS = 30
         for attempt in range(1, MAX_ATTEMPTS + 1):
             try:
-                response, token = call_api(prompt, model="", mode="gemini")
+                response, token = call_api(prompt, model="gemini-2.5-pro", mode="gemini")
+                if not response.strip():
+                    raise ValueError("Empty summary response")
                 community_summaries[community_id] = (response, token)
-                time.sleep(3)
+                time.sleep(1)
+                break
             except Exception as e:
                 print(f"Attempt {attempt} failed for community {community_id}: {e}")
                 if attempt == MAX_ATTEMPTS:
@@ -96,8 +95,12 @@ print(f"Number of communities summarized: {len(community_summaries)}")
 def validate_overview(overview):
     if not isinstance(overview, list):
         return False
+    if not (3 <= len(overview) <= 50):
+        return False
     for o in overview:
         if not isinstance(o, str):
+            return False
+        if not o.strip():
             return False
     return True
 
@@ -110,12 +113,14 @@ for community_id in tqdm(community_summaries.keys()):
     MAX_ATTEMPTS = 30
     for attempt in range(1, MAX_ATTEMPTS + 1):
         try:
-            overview, token =  call_api(prompt, model="", mode="gemini")
-            overview = ast.literal_eval(overview)
+            overview, token =  call_api(prompt, model="gemini-2.5-pro", mode="gemini")
+            overview = json.loads(overview)
             if not validate_overview(overview):
                 raise ValueError("Invalid overview format")
+            overview = [o.strip().upper() for o in overview]
             community_overviews[community_id] = (overview, token)
-            time.sleep(3)
+            time.sleep(1)
+            break
         except Exception as e:
             print(f"Attempt {attempt} failed for community {community_id}: {e}")
             if attempt == MAX_ATTEMPTS:
