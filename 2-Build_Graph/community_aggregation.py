@@ -44,23 +44,23 @@ def leiden_community_detection(node_dict):
     communities = {idx_to_id[i] : membership[i] for i in range(len(node_dict))}
     return communities
 
-node_communities = leiden_community_detection(nodes)
 communities = defaultdict(list)
-for node,community in node_communities.items():
-    community_id = f'H{community:06d}'
-    communities[community_id].append(node)
-print(f"Number of communities detected: {len(communities)}")
-
-#get LLM summaries
-def format_list(l):
-    ans = []
-    for i in range(len(l)):
-        ans.append(f"[{i+1}] {l[i]}")
-    return "\n".join(ans)
-
 community_summaries = {}
 communities_summaries_path = os.path.join(DIR_PATH, "data", "communities_summaries.jsonl")
 if not os.path.exists(communities_summaries_path):
+    node_communities = leiden_community_detection(nodes)
+    for node,community in node_communities.items():
+        community_id = f'H{community:06d}'
+        communities[community_id].append(node)
+    print(f"Number of communities detected: {len(communities)}")
+
+    #get LLM summaries
+    def format_list(l):
+        ans = []
+        for i in range(len(l)):
+            ans.append(f"[{i+1}] {l[i]}")
+        return "\n".join(ans)
+
     for community_id in tqdm(communities):
         if community_id in community_summaries:
             continue
@@ -112,11 +112,24 @@ else:
             community_id = line["community_id"]
             summary = line["summary"]
             token_summary = line["token_summary"]
+            members = line["members"]
+            communities[community_id] = members
             community_summaries[community_id] = (summary, token_summary)
         
 print(f"Number of communities summarized: {len(community_summaries)}")
 
 #get llm overviews
+def simple_strip(text):
+    text = text.strip()
+    if text.startswith("```json"):
+        text = text[7:] # Remove ```json
+    elif text.startswith("```"):
+        text = text[3:] # Remove ```
+    
+    if text.endswith("```"):
+        text = text[:-3] # Remove closing ```
+    return text.strip()
+
 def validate_overview(overview):
     if not isinstance(overview, list):
         return False
@@ -139,7 +152,7 @@ for community_id in tqdm(community_summaries.keys()):
     for attempt in range(1, MAX_ATTEMPTS + 1):
         try:
             overview_text, token =  call_api(prompt, model="gemini-2.5-pro", mode="gemini")
-            overview = ast.literal_eval(overview_text)
+            overview = ast.literal_eval(simple_strip(overview_text))
             if not validate_overview(overview):
                 raise ValueError("Invalid overview format")
             overview = [o.strip().upper() for o in overview]
