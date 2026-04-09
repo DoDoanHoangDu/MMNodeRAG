@@ -10,6 +10,7 @@ from LLM.call_api import call_api
 from LLM.prompts.high_level_elements_prompt import high_level_elements_prompt
 from LLM.prompts.high_level_overview_prompt import high_level_overview_prompt
 import time
+import ast
 
 
 #load data
@@ -58,36 +59,60 @@ def format_list(l):
     return "\n".join(ans)
 
 community_summaries = {}
-for community_id in tqdm(communities):
-    if community_id in community_summaries:
-        continue
-    nodes_id = communities[community_id]
-    content = []
-    for nid in nodes_id:
-        node = nodes[nid]
-        if node.node_type in ["R", "N", "V"]:
+communities_summaries_path = os.path.join(DIR_PATH, "data", "communities_summaries.jsonl")
+if not os.path.exists(communities_summaries_path):
+    for community_id in tqdm(communities):
+        if community_id in community_summaries:
             continue
-        content.append(node.content)
-    if len(content) < 3:
-        continue
-    else:
-        content = format_list(content)
-        prompt = high_level_elements_prompt(content)
-        MAX_ATTEMPTS = 30
-        for attempt in range(1, MAX_ATTEMPTS + 1):
-            try:
-                response, token = call_api(prompt, model="gemini-2.5-pro", mode="gemini")
-                if not response.strip():
-                    raise ValueError("Empty summary response")
-                community_summaries[community_id] = (response, token)
-                time.sleep(1)
-                break
-            except Exception as e:
-                print(f"Attempt {attempt} failed for community {community_id}: {e}")
-                if attempt == MAX_ATTEMPTS:
-                    print(f"Failed on community {community_id} with context length {len(prompt.split())}: {e}")
-                    raise TimeoutError("A community failed")
-                time.sleep(5 * attempt)
+        nodes_id = communities[community_id]
+        content = []
+        for nid in nodes_id:
+            node = nodes[nid]
+            if node.node_type in ["R", "N", "V"]:
+                continue
+            content.append(node.content)
+        if len(content) < 3:
+            continue
+        else:
+            content = format_list(content)
+            prompt = high_level_elements_prompt(content)
+            MAX_ATTEMPTS = 30
+            for attempt in range(1, MAX_ATTEMPTS + 1):
+                try:
+                    response, token = call_api(prompt, model="gemini-2.5-pro", mode="gemini")
+                    if not response.strip():
+                        raise ValueError("Empty summary response")
+                    community_summaries[community_id] = (response, token)
+                    #time.sleep(1)
+                    break
+                except Exception as e:
+                    print(f"Attempt {attempt} failed for community {community_id}: {e}")
+                    if attempt == MAX_ATTEMPTS:
+                        print(f"Failed on community {community_id} with context length {len(prompt.split())}: {e}")
+                        raise TimeoutError("A community failed")
+                    time.sleep(5 * attempt)
+
+    #save
+    with open(communities_summaries_path, "w", encoding="utf-8") as f:
+        for community_id in community_summaries.keys():
+            members = communities[community_id]
+            summary, token_summary = community_summaries[community_id]
+            data = {
+                "community_id": community_id, 
+                "members": members,
+                "summary": summary,
+                "token_summary": token_summary,  
+            }
+            f.write(json.dumps(data, ensure_ascii=False) + "\n")
+            f.flush()
+else:
+    with open(communities_summaries_path, "r", encoding="utf-8") as f:
+        for line in f:
+            line = json.loads(line)
+            community_id = line["community_id"]
+            summary = line["summary"]
+            token_summary = line["token_summary"]
+            community_summaries[community_id] = (summary, token_summary)
         
 print(f"Number of communities summarized: {len(community_summaries)}")
 
@@ -113,8 +138,8 @@ for community_id in tqdm(community_summaries.keys()):
     MAX_ATTEMPTS = 30
     for attempt in range(1, MAX_ATTEMPTS + 1):
         try:
-            overview, token =  call_api(prompt, model="gemini-2.5-pro", mode="gemini")
-            overview = json.loads(overview)
+            overview_text, token =  call_api(prompt, model="gemini-2.5-pro", mode="gemini")
+            overview = ast.literal_eval(overview_text)
             if not validate_overview(overview):
                 raise ValueError("Invalid overview format")
             overview = [o.strip().upper() for o in overview]
@@ -123,6 +148,7 @@ for community_id in tqdm(community_summaries.keys()):
             break
         except Exception as e:
             print(f"Attempt {attempt} failed for community {community_id}: {e}")
+            print(overview_text)
             if attempt == MAX_ATTEMPTS:
                 print(f"Failed on community {community_id} with context length {len(prompt.split())}: {e}")
                 raise TimeoutError("A community failed")
