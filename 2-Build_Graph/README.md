@@ -4,5 +4,4 @@ g1
 -> community aggregation
 -> embeddings
 -> g3
--> HNSW
--> g4
+-> g4 (semantic edges)

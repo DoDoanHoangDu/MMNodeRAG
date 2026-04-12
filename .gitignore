@@ -6,3 +6,4 @@ API_KEY.txt
 nhap.ipynb
 __pycache__/
 2-Build_Graph/data/embeddings.faiss
+2-Build_Graph/data/embeddings_hnsw.faiss
