@@ -1,7 +1,6 @@
 import time
 start = time.time()
 import os
-from sentence_transformers import SentenceTransformer
 import torch
 import pickle
 import json
@@ -10,6 +9,7 @@ import numpy as np
 from Answering.get_context import get_context
 from LLM.prompts.answer_prompt import answer_prompt
 from LLM.call_api import call_api
+from LLM.qwen3_vl_embedding import Qwen3VLEmbedder
 
 def format_list(l):
     ans = []
@@ -17,12 +17,20 @@ def format_list(l):
         ans.append(f"[{i+1}] {l[i]}")
     return "\n".join(ans)
 
+def is_image_file(path):
+    if not os.path.isfile(path):
+        return False
+    valid_extensions = ('.jpg', '.jpeg', '.png', '.gif', '.bmp', '.webp', '.tiff')
+    return path.lower().endswith(valid_extensions)
+
 #set file paths
 dir_path = os.path.dirname(os.path.abspath(__file__))
 root_path = os.path.dirname(dir_path)
 
 # Load embedding model
-
+device = "cuda" if torch.cuda.is_available() else "cpu"
+print(f"Using device: {device}")
+model = Qwen3VLEmbedder(model_name_or_path="Qwen/Qwen3-VL-Embedding-2B")
 
 #Load Data
 #Graph - Node dict
@@ -30,7 +38,7 @@ with open(f"{root_path}/2-Build_Graph/data/g4.pkl", "rb") as f:
     graph = pickle.load(f)
 
 #Embeddings
-hnsw = faiss.read_index(f"{root_path}/2-Build_Graph/data/embedding.faiss")
+hnsw = faiss.read_index(f"{root_path}/2-Build_Graph/data/embeddings_hnsw.faiss")
 with open(f"{root_path}/2-Build_Graph/data/embedding_ids.json", "r") as f:
     embedding_ids = json.load(f)
 num_vectors = hnsw.ntotal
@@ -62,18 +70,26 @@ while True:
     try:
         reasoning = False
         question = input("Enter your question (or 'quit' to quit): ")
-        if question.lower() == 'quit':
+        if question.lower().strip() == 'quit':
             print(loop_sep)
             break
+        image_input = input("Enter your image path: ")
+        if not image_input.strip():
+            image_input = None
+        elif not os.path.exists(image_input):
+            raise ValueError("Image path does not exist")
+        elif not is_image_file(image_input):
+            raise ValueError("Invalid file path")
         
-        reason_input = input("Enable reasoning mode? (y/n): ").strip().upper()
-        if reason_input == 'Y':
+        reasoning_input = input("Enable reasoning mode? (y/n): ").strip().upper()
+        if reasoning_input == 'Y':
             reasoning = True
-        elif reason_input == 'N':
+        elif reasoning_input == 'N':
             reasoning = False
         else:
             print("Invalid input for reasoning mode. Defaulting to 'n'.")
             reasoning = False
+        full_question = [{"text": question, "image": image_input, "instruction": "Retrieve images or text relevant to the user's query."}]
         print("-"*100)
         start = time.time()
 
@@ -83,7 +99,7 @@ while True:
             't':3
         }
         query_context = {
-            'question': question,
+            'question': full_question,
             'k_embedding': 8,
             'ppr': ppr_context
         }
@@ -105,7 +121,7 @@ while True:
         generate_answer = False
         if generate_answer:
             full_context = format_list(context)
-            prompt = answer_prompt(full_context, question)
+            prompt = answer_prompt(full_context, full_question)
             response, token = call_api(prompt, model="gemini--flash", mode="gemini")
             print("Answer Generated")
             #print(answer)

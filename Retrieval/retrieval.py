@@ -37,7 +37,12 @@ def retrieve_relevant_nodes(graph_context, embedding_context, query_context, deb
     embedding_node_ids = [embedding_ids[i] for i in idx]
 
     #find relevant entities
-    entity_node_ids = find_relevant_entities(graph_context,query_entities)
+    entity_node_ids = find_relevant_entities(graph_context,query_entities) #from query
+    for nid in embedding_node_ids: #from V nodes
+        if graph[nid].node_type == "V":
+            for edge in graph[nid].edges:
+                if graph[edge].node_type == "N":
+                    entity_node_ids.add(edge)
 
     #combine entry node ids
     entry_node_ids = set(embedding_node_ids).union(entity_node_ids)

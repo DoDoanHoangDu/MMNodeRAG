@@ -4,19 +4,17 @@ from Retrieval.retrieval import retrieve_relevant_nodes
 import json
 import numpy as np
 import time
+import torch
 
 def get_context(query_context, graph_context, embedding_context, debug = True, reasoning = False):
     #Get values
     question = query_context['question']
     embedding_model = embedding_context['model']
 
-    graph = graph_context['graph']
-    graph_entities = graph_context['entities']
-
     #Decompose question to extract entities
     start = time.time()
-    prompt = question_decompose_prompt(question)
-    response_text, _ = call_api(prompt, model="gemini--flash", mode="gemini")
+    prompt = question_decompose_prompt(question["text"])
+    response_text, _ = call_api(prompt, model="", mode="self-host")
     finish_decomposition_time = time.time()
     if debug:
         print(f"Decomposition time: {finish_decomposition_time - start:.2f} seconds.")
@@ -39,7 +37,7 @@ def get_context(query_context, graph_context, embedding_context, debug = True, r
     #query_context['ppr']['k_ppr'] = len(query_context['entities'])
     
     #Get query embedding
-    query_context['embedding'] = embedding_model.encode([question], convert_to_numpy=True).astype(np.float32)
+    query_context['embedding'] = embedding_model.process(question).to(torch.float32).cpu().numpy()
 
     #Retrieve relevant nodes
     context = retrieve_relevant_nodes(graph_context, embedding_context, query_context, debug = debug, reasoning = reasoning)

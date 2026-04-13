@@ -59,7 +59,7 @@ for i in range(len(embedding_processed_ids_list)):
         if neighbor_id == node_id:
             continue
         neighbor = nodes[neighbor_id]
-        similarity = similarities[i][j]
+        similarity = float(similarities[i][j])
         if similarity <= 0.5:
             continue
 
