@@ -11,6 +11,11 @@ openai_client = OpenAI(
 
 gemini_client = genai.Client(api_key = os.getenv("GEMINI_KEY"))
 
+vastai_client = OpenAI(
+            base_url="http://93.91.156.98:46484/v1",
+            api_key="EMPTY"  # vLLM doesn't require real key
+        )
+
 def call_api(content, model="qwen/qwen3.6-plus:free", mode = "openai", thinking = False):
     if mode == "openai":
         response = openai_client.chat.completions.create(
@@ -35,6 +40,16 @@ def call_api(content, model="qwen/qwen3.6-plus:free", mode = "openai", thinking 
         )
         return response.text, response.usage_metadata.total_token_count
     elif mode == "self-host":
-        return "",0
+        response = vastai_client.chat.completions.create(
+            model="Qwen/Qwen3-VL-8B-Instruct",
+            messages=[
+                {
+                    "role": "user",
+                    "content": content
+                }
+            ]
+        )
+
+        return response.choices[0].message.content, response.usage.total_tokens
     else:
         raise ValueError("Unsupported API type.")
