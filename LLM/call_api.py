@@ -34,5 +34,7 @@ def call_api(content, model="qwen/qwen3.6-plus:free", mode = "openai", thinking 
             )
         )
         return response.text, response.usage_metadata.total_token_count
+    elif mode == "self-host":
+        return "",0
     else:
         raise ValueError("Unsupported API type.")

@@ -2,7 +2,6 @@ from LLM.prompts.question_decompose_prompt import question_decompose_prompt
 from LLM.call_api import call_api
 from Retrieval.retrieval import retrieve_relevant_nodes
 import json
-import numpy as np
 import time
 import torch
 
