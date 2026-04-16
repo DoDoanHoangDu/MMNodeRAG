@@ -190,18 +190,19 @@ class Qwen3VLReranker():
             videos, video_metadatas = list(videos), list(video_metadatas)
         else:
             video_metadatas = None
-            
+
         inputs = self.processor(
             text=text,
             images=images,
             videos=videos,
             video_metadata=video_metadatas,
-            truncation=False,
-            padding=False,
-            do_resize=False,
+            max_length=self.max_length,
+            truncation=True,
+            padding=True,   # ✅ CRITICAL
+            return_tensors="pt",
             **video_kwargs
         )
-        
+        """
         # Truncate input IDs while preserving special tokens
         for i, ele in enumerate(inputs['input_ids']):
             inputs['input_ids'][i] = self.truncate_tokens_optimized(
@@ -209,7 +210,6 @@ class Qwen3VLReranker():
                 max_length,
                 self.processor.tokenizer.all_special_ids
             ) + inputs['input_ids'][i][-5:]
-            
         # Apply padding
         temp_inputs = self.processor.tokenizer.pad(
             {'input_ids': inputs['input_ids']},
@@ -219,7 +219,7 @@ class Qwen3VLReranker():
         )
         for key in temp_inputs:
             inputs[key] = temp_inputs[key]
-            
+        """
         return inputs
 
     def format_mm_content(
