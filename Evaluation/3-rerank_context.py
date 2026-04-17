@@ -37,7 +37,7 @@ with open(context_path, "r", encoding="utf-8") as f:
         contexts[line["qid"]] = line["context_nodes"]
 
 #load images
-IMAGE_EXTENSIONS = {".jpg", ".jpeg", ".png", ".bmp", ".gif", ".webp"}
+IMAGE_EXTENSIONS = {"jpg", "jpeg", "png", "bmp", "gif", "webp"}
 
 images = {}
 for img in os.listdir(oven_path):
