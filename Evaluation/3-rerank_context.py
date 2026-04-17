@@ -2,9 +2,10 @@ import os
 import pickle
 import json
 from LLM.qwen3_vl_reranker import Qwen3VLReranker
+from tqdm import tqdm
 
 #parameters
-KNN = 8
+KNN = 16
 REASONING = False
 
 #paths
@@ -68,7 +69,7 @@ def sort_by_floats(strings, floats):
     return list(sorted_strings), list(sorted_floats)
 
 with open(reranked_path, "a", encoding="utf-8") as f:
-    for qid in questions.keys():
+    for qid in tqdm(questions.keys()):
         if qid in processed_questions:
             continue
         question = questions[qid][0]
