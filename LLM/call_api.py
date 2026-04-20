@@ -12,8 +12,8 @@ openai_client = OpenAI(
 gemini_client = genai.Client(api_key = os.getenv("GEMINI_KEY"))
 
 vastai_client = OpenAI(
-        base_url="http://198.53.64.194:35020/v1",
-        api_key="EMPTY"  # vLLM doesn't require real key
+        base_url="http://198.53.64.194:35041/v1",
+        api_key="EMPTY"
     )
 
 def call_api(content, model="qwen/qwen3.6-plus:free", mode = "openai", thinking = False):
