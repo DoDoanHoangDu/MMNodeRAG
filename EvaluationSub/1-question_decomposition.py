@@ -8,13 +8,13 @@ from LLM.prompts.question_decompose_prompt import question_decompose_prompt
 import base64
 
 #hyper parameters
-QUESTION_LEVEL = input("Question Level: ")
-KNN = input("KNN: ")
+QUESTION_LEVEL = int(input("Question Level: "))
+KNN = int(input("KNN: "))
 
 #paths and load data
 DIR_PATH = os.path.dirname(os.path.abspath(__file__))
 BASE_PATH = os.path.dirname(DIR_PATH)
-question_path = os.path.normpath(os.path.join(DIR_PATH, "data", "sub_questions.jsonl"))
+question_path = os.path.normpath(os.path.join(DIR_PATH, "data", "subquestions.jsonl"))
 decompoistion_path = os.path.normpath(os.path.join(DIR_PATH, "data", f"decomposed_questions_{KNN}nn_{QUESTION_LEVEL}.jsonl"))
 oven_path = os.path.normpath(os.path.join(BASE_PATH, "InfoSeek", "oven_images_sampled"))
 

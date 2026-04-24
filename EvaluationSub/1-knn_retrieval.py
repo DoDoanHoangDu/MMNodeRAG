@@ -8,13 +8,13 @@ import torch
 from LLM.qwen3_vl_embedding import Qwen3VLEmbedder
 
 #hyper parameters
-QUESTION_LEVEL = input("Question Level: ")
-KNN = input("KNN: ")
+QUESTION_LEVEL = int(input("Question Level: "))
+KNN = int(input("KNN: "))
 
 #paths
 DIR_PATH = os.path.dirname(os.path.abspath(__file__))
 BASE_PATH = os.path.dirname(DIR_PATH)
-question_path = os.path.normpath(os.path.join(DIR_PATH, "data", "sub_questions.jsonl"))
+question_path = os.path.normpath(os.path.join(DIR_PATH, "data", "subquestions.jsonl"))
 oven_path = os.path.normpath(os.path.join(BASE_PATH, "InfoSeek", "oven_images_sampled"))
 output_path = f"{DIR_PATH}/data/{KNN}nn_{QUESTION_LEVEL}.jsonl"
 print(question_path)

@@ -11,7 +11,14 @@ You are a thorough assistant answering questions using provided context (text an
 5. If multiple contexts conflict, prioritize the most relevant ones (higher relevance scores indicate stronger evidence).
 
 [OUTPUT FORMAT]
-Respond with a single short phrase or sentence containing only the direct answer.
+Respond with a single short sentence containing only the direct answer.
+The answer should be specific and structured.
+
+Example:
+If the question is asking about an attribute of an entity, respond in the form:
+"This <entity> is <attribute>."
+
+Do not include explanations or additional details.
 
 [INPUT FORMAT]
 You will be given:

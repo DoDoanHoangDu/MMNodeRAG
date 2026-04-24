@@ -8,8 +8,8 @@ import base64
 import time
 
 #parameters
-QUESTION_LEVEL = input("Question Level: ")
-KNN = input("KNN: ")
+QUESTION_LEVEL = int(input("Question Level: "))
+KNN = int(input("KNN: "))
 REASONING = False
 
 #paths
@@ -17,7 +17,7 @@ DIR_PATH = os.path.dirname(os.path.abspath(__file__))
 BASE_PATH = os.path.dirname(DIR_PATH)
 g4_path = os.path.join(BASE_PATH, "2-Build_Graph/data/g4.pkl")
 original_question_path = os.path.normpath(os.path.join(BASE_PATH, "InfoSeek", "sampled_questions.jsonl"))
-question_path = os.path.normpath(os.path.join(DIR_PATH, "data", "sub_questions.jsonl"))
+question_path = os.path.normpath(os.path.join(DIR_PATH, "data", "subquestions.jsonl"))
 oven_path = os.path.normpath(os.path.join(BASE_PATH, "InfoSeek", "oven_images_sampled"))
 reranked_path = os.path.join(DIR_PATH, "data", f"context_{KNN}nn{"_reasoning" if REASONING else ""}_reranked_{QUESTION_LEVEL}.jsonl")
 output_path = os.path.normpath(os.path.join(DIR_PATH, "data", f"answers_{KNN}nn_{QUESTION_LEVEL}.jsonl"))

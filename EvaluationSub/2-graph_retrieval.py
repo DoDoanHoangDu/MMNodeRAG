@@ -7,8 +7,8 @@ from Retrieval.ppr_local import shallow_ppr_local
 from Retrieval.shortest_path import all_pairs_shortest_paths
 
 #parameters
-QUESTION_LEVEL = input("Question Level: ")
-KNN = input("KNN: ")
+QUESTION_LEVEL = int(input("Question Level: "))
+KNN = int(input("KNN: "))
 REASONING = False
 
 #paths
