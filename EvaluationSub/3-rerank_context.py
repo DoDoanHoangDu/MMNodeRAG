@@ -32,9 +32,9 @@ with open(question_path, "r", encoding="utf-8") as f:
     for line in f:
         line = json.loads(line)
         subquestions = line["subquestions"]
-        if len(subquestions) < QUESTION_LEVEL+2:
+        if len(subquestions) < QUESTION_LEVEL:
             continue
-        elif len(subquestions) == QUESTION_LEVEL+2:
+        elif len(subquestions) == QUESTION_LEVEL:
             questions[line["qid"]] = (line["question"], line["image_id"])
         else:
             questions[line["qid"]] = (subquestions[QUESTION_LEVEL],line["image_id"])
