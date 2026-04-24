@@ -16,7 +16,7 @@ vastai_client = OpenAI(
         api_key="EMPTY"
     )
 
-def call_api(content, model="qwen/qwen3.6-plus:free", mode = "openai", thinking = False):
+def call_api(content, system_prompt = None, model="qwen/qwen3.6-plus:free", mode = "openai", thinking = False):
     if mode == "openai":
         response = openai_client.chat.completions.create(
             model= model,
@@ -40,14 +40,11 @@ def call_api(content, model="qwen/qwen3.6-plus:free", mode = "openai", thinking 
         )
         return response.text, response.usage_metadata.total_token_count
     elif mode == "self-host":
+        messages = [{"role": "system", "content": system_prompt}] if system_prompt else []
+        messages.append({"role": "user", "content": content})
         response = vastai_client.chat.completions.create(
             model="Qwen/Qwen3-VL-8B-Instruct",
-            messages=[
-                {
-                    "role": "user",
-                    "content": content
-                }
-            ]
+            messages= messages
         )
 
         return response.choices[0].message.content, response.usage.total_tokens

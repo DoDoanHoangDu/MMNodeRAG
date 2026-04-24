@@ -8,6 +8,7 @@ import base64
 import time
 
 #parameters
+QUESTION_LEVEL = input("Question Level: ")
 KNN = input("KNN: ")
 REASONING = False
 
@@ -15,10 +16,11 @@ REASONING = False
 DIR_PATH = os.path.dirname(os.path.abspath(__file__))
 BASE_PATH = os.path.dirname(DIR_PATH)
 g4_path = os.path.join(BASE_PATH, "2-Build_Graph/data/g4.pkl")
-question_path = os.path.normpath(os.path.join(BASE_PATH, "InfoSeek", "sampled_questions.jsonl"))
+original_question_path = os.path.normpath(os.path.join(BASE_PATH, "InfoSeek", "sampled_questions.jsonl"))
+question_path = os.path.normpath(os.path.join(DIR_PATH, "data", "sub_questions.jsonl"))
 oven_path = os.path.normpath(os.path.join(BASE_PATH, "InfoSeek", "oven_images_sampled"))
-reranked_path = os.path.join(DIR_PATH, "data", f"context_{KNN}nn{"_reasoning" if REASONING else ""}_reranked.jsonl")
-output_path = os.path.normpath(os.path.join(DIR_PATH, "data", f"answers_{KNN}nn.jsonl"))
+reranked_path = os.path.join(DIR_PATH, "data", f"context_{KNN}nn{"_reasoning" if REASONING else ""}_reranked_{QUESTION_LEVEL}.jsonl")
+output_path = os.path.normpath(os.path.join(DIR_PATH, "data", f"answers_{KNN}nn_{QUESTION_LEVEL}.jsonl"))
 print(question_path)
 print(reranked_path)
 print(output_path)
@@ -28,12 +30,10 @@ input("Confirm?")
 with open(g4_path, "rb") as f:
     nodes = pickle.load(f)
 
-questions = {}
 answer_eval = {}
-with open(question_path, "r", encoding="utf-8") as f:
+with open(original_question_path, "r", encoding="utf-8") as f:
     for line in f:
         line = json.loads(line)
-        questions[line["data_id"]] = (line["question"],line["image_id"])
         answer_eval[line["data_id"]] = line["answer_eval"]
 
 contexts = {}
@@ -44,6 +44,39 @@ with open(reranked_path, "r", encoding="utf-8") as f:
         for i in range(len(line["sorted_context_nodes"])):
             current_context.append((line["sorted_context_nodes"][i], line["sorted_relevance_scores"][i]))
         contexts[line["qid"]] = current_context
+
+#load subquestions at a level, merge with answers of previous levels
+questions = {}
+with open(question_path, "r", encoding="utf-8") as f:
+    for line in f:
+        line = json.loads(line)
+        subquestions = line["subquestions"]
+        if len(subquestions) < QUESTION_LEVEL+2:
+            continue
+        elif len(subquestions) == QUESTION_LEVEL+2:
+            questions[line["qid"]] = (line["question"], line["image_id"])
+        else:
+            questions[line["qid"]] = (subquestions[QUESTION_LEVEL],line["image_id"])
+    if len(questions) == 0:
+        raise RuntimeError("No questions left to decompose")
+    print(f"Number of questions: {len(questions)}")
+
+#load previous answers
+for level in range(QUESTION_LEVEL-1,-1, -1):
+    previous_answer_path = os.path.normpath(os.path.join(DIR_PATH, "data", f"answers_{KNN}nn_{level}.jsonl"))
+    if os.path.exists(previous_answer_path):
+        prev_answer_count = 0
+        with open(previous_answer_path, "r", encoding="utf-8") as f:
+            for line in f:
+                line = json.loads(line)
+                qid = line["qid"]
+                answer = line["answer"]
+                questions[qid] = (answer + "\n" + questions[qid][0], questions[qid][1])
+                prev_answer_count += 1
+        if len(questions) != prev_answer_count:
+            raise RuntimeError(f"Previous answers and questions at level {level} mismatch: {prev_answer_count}/{len(questions)}")
+    else:
+        raise RuntimeError(f"Previous answers not exist for question level: {level}")
 
 #load images
 IMAGE_EXTENSIONS = {".jpg", ".jpeg", ".png", ".bmp", ".gif", ".webp"}
