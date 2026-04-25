@@ -70,6 +70,8 @@ for level in range(QUESTION_LEVEL-1,-1, -1):
             for line in f:
                 line = json.loads(line)
                 qid = line["qid"]
+                if qid not in questions:
+                    continue
                 answer = line["answer"]
                 questions[qid] = (answer + "\n" + questions[qid][0], questions[qid][1])
                 prev_answer_count += 1
