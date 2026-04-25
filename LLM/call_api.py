@@ -12,7 +12,7 @@ openai_client = OpenAI(
 gemini_client = genai.Client(api_key = os.getenv("GEMINI_KEY"))
 
 vastai_client = OpenAI(
-        base_url="http://198.53.64.194:35107/v1",
+        base_url=os.getenv("VASTAI_BASE_URL"),
         api_key="EMPTY"
     )
 

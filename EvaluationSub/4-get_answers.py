@@ -144,7 +144,7 @@ with open(output_path, "a", encoding="utf-8") as f:
         for attempt in range(1,MAX_ATTEMPTS+1):
             try:
                 response_text, token = call_api(content=content, system_prompt=answer_prompt(), model="", mode="self-host")
-                response = json.loads(response_text)
+                response = response_text.strip()
                 if not isinstance(response, str) or not response:
                     raise ValueError("Invalid response")
                 else:
