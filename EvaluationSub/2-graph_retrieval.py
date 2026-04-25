@@ -19,6 +19,7 @@ knn_path = f"{DIR_PATH}/data/{KNN}nn_{QUESTION_LEVEL}.jsonl"
 decompoistion_path = os.path.normpath(os.path.join(DIR_PATH, "data", f"decomposed_questions_{KNN}nn_{QUESTION_LEVEL}.jsonl"))
 entities_path = os.path.join(BASE_PATH, "2-Build_Graph/data", "entities.jsonl")
 relevant_nodes_path = os.path.join(DIR_PATH, "data", f"context_{KNN}nn{"_reasoning" if REASONING else ""}_{QUESTION_LEVEL}.jsonl")
+print(knn_path)
 print(decompoistion_path)
 print(relevant_nodes_path)
 input("Confirm?")
