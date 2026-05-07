@@ -17,7 +17,7 @@ Respond ONLY with a JSON object containing a "classifications" list. Each item s
 [CRITICAL RULES]
 - Split the Answer into sentences.
 - If the Answer has only one sentence OR cannot be clearly split, treat the entire Answer as ONE statement.
-- You MUST return at least ONE classification if the Answer is non-empty.
+- You MUST return at least ONE classification.
 
 [EXAMPLE]
 Input:
@@ -43,12 +43,13 @@ Output:
 
 USER_PROMPT = """
 [USER INPUT]
+Question: "{question}" (for reference only)
+
+Answer: 
+"{answer}"
+
 Context: 
 "{context}"
-
-Answer: "{answer}"
-
-Question: "{question}" (for reference only)
 """
 
 def compute_context_recall(

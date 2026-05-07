@@ -4,21 +4,23 @@ import json
 from Metrics.context_recall import compute_context_recall
 from tqdm import tqdm
 import numpy as np
+import re
 
 #parameters
 KNN = int(input("KNN: "))
 REASONING = False
 
 #paths
-DIR_PATH = os.path.dirname(os.path.abspath(__file__))
-BASE_PATH = os.path.dirname(DIR_PATH)
-g4_path = os.path.join(BASE_PATH, "2-Build_Graph/data/g4.pkl")
-context_path = os.path.join(DIR_PATH, "data", f"context_{KNN}nn{"_reasoning" if REASONING else ""}.jsonl")
-question_path = os.path.normpath(os.path.join(BASE_PATH, "InfoSeek", "sampled_questions.jsonl"))
-evaluated_path = os.path.join(DIR_PATH, "data", f"evaluation_{KNN}nn{"_reasoning" if REASONING else ""}.jsonl")
-eval_path = os.path.join(DIR_PATH, "data", f"evaluation_context_recall_{KNN}nn{"_reasoning" if REASONING else ""}.jsonl")
+g4_path = os.path.join("2-Build_Graph/data/g4.pkl")
+knn_path = os.path.join("Evaluation", "data", "knn.jsonl")
+context_path = os.path.join("Evaluation", "data", f"context_{KNN}nn{"_reasoning" if REASONING else ""}_reranked.jsonl")
+question_path = os.path.normpath(os.path.join( "InfoSeek", "sampled_questions.jsonl"))
+evaluated_path = os.path.join("Evaluation", "data", f"evaluation_{KNN}nn{"_reasoning" if REASONING else ""}.jsonl")
+eval_base_path = os.path.join("Evaluation", "data", f"evaluation_context_recall_{KNN}nn{"_reasoning" if REASONING else ""}_base.jsonl")
+eval_path = os.path.join("Evaluation", "data", f"evaluation_context_recall_{KNN}nn{"_reasoning" if REASONING else ""}.jsonl")
 print(question_path)
 print(context_path)
+print(evaluated_path)
 print(eval_path)
 input("Confirm?")
 
@@ -47,7 +49,7 @@ contexts = {}
 with open(context_path, "r", encoding="utf-8") as f:
     for line in f:
         line = json.loads(line)
-        contexts[line["qid"]] = line["context_nodes"]
+        contexts[line["qid"]] = line["sorted_context_nodes"]
 
 #load evaluated
 evaluated = {}
@@ -60,21 +62,37 @@ if os.path.exists(evaluated_path):
                 evaluated[line["qid"]] = score
 
 #load_progress:
-processed_questions = set()
+processed_questions_base = {}
+if os.path.exists(eval_base_path):
+    with open(eval_base_path, "r", encoding="utf-8") as f:
+        for line in f:
+            line = json.loads(line)
+            value = line["context_recall"]
+            if np.isnan(value):
+                continue
+            processed_questions_base[line["qid"]] = 1
+
+processed_questions = {}
 if os.path.exists(eval_path):
     with open(eval_path, "r", encoding="utf-8") as f:
         for line in f:
             line = json.loads(line)
-            if np.isnan(line["context_recall"]):
+            value = line["context_recall"]
+            if np.isnan(value) or value == 0:
                 continue
-            processed_questions.add(line["qid"])
+            processed_questions[line["qid"]] = 1
 
 
 with open(eval_path, "a", encoding="utf-8") as f:
     for qid in tqdm(questions.keys()):
+        context_recall, tokens = 0, 0
+
         if qid in processed_questions:
             continue
         if qid in evaluated and evaluated[qid] == 1:
+            context_recall = 1
+            tokens = 0
+        elif qid in processed_questions_base and processed_questions_base[qid] == 1:
             context_recall = 1
             tokens = 0
         else:
@@ -83,27 +101,31 @@ with open(eval_path, "a", encoding="utf-8") as f:
             answer_str = []
             for item in answer_eval:
                 if isinstance(item, str):
-                    answer_str.append(item)
+                    answer_str.append(f"An acceptable answer is: {item}.")
                 elif isinstance(item, dict):
-                    answer_str.append(f"{item['value']} ({item['range'][0]} to {item['range'][1]})")
-            answer_str = "; ".join(answer_str)
-            answer_str = "Acceptable answers are: " + answer_str
+                    answer_str.append(f"The exact answer is {item["value"]}. The answer lies in the range from {item["range"][0]} to {item["range"][1]}.")
+            answer_str = " ".join(answer_str)
 
             context_nodes = contexts[qid]
             context_nodes_content = []
             for c in context_nodes:
                 if nodes[c].node_type == "V":
                     continue
+                content = nodes[c].content
+                if any(isinstance(ans,str) and re.search(rf"\b{re.escape(ans)}\b", content, re.IGNORECASE) for ans in answer_eval):
+                    context_recall = 1
+                    tokens = 0
                 context_nodes_content.append(nodes[c].content)
 
-            context_recall, tokens = compute_context_recall(
-                question=question,
-                contexts=context_nodes_content,
-                reference_answer=answer_str
-            )
+            if context_recall == 0:
+                context_recall, tokens = compute_context_recall(
+                    question=question,
+                    contexts=context_nodes_content,
+                    reference_answer=answer_str
+                )
         data = {
             "qid": qid,
-            "context_recall": context_recall,
+            "context_recall": 1 if context_recall > 0 else 0,
             "tokens": tokens
         }
         f.write(json.dumps(data, ensure_ascii=False) + "\n")
