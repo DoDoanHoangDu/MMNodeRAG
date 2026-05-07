@@ -10,7 +10,7 @@ from LLM.call_api import call_api
 from tqdm import tqdm
 import base64
 import ast
-import time
+import numpy as np
 
 #hyper params
 EMB_DIM = 2048
@@ -22,6 +22,7 @@ DIR_PATH = os.path.dirname(os.path.abspath(__file__))
 BASE_PATH = os.path.dirname(DIR_PATH)
 g4_path = os.path.join(BASE_PATH, "2-Build_Graph/data/g4.pkl")
 faiss_path = os.path.join(DIR_PATH, "data", "hype.faiss")
+embedding_processed_ids_path = f"{DIR_PATH}/data/hype_embedding_processed_ids.txt"
 hypothetical_prompts_path = os.path.join(DIR_PATH, "data", "hypothetical_prompts.jsonl")
 
 #progress
@@ -129,9 +130,31 @@ with open(hypothetical_prompts_path, "a", encoding="utf-8") as f:
                 if attempt == MAX_ATTEMPTS:
                     print(f"Failed on {nid}: {content}")
                     raise TimeoutError("Failed")
-                time.sleep(5)
 
 #embedding model
 device = "cuda" if torch.cuda.is_available() else "cpu"
 print(f"Using device: {device}")
 model = Qwen3VLEmbedder(model_name_or_path="Qwen/Qwen3-VL-Embedding-2B")
+index = faiss.IndexFlatIP(EMB_DIM)
+
+#run loop
+def save_progress(vectors, ids):
+    if vectors.shape[0] != len(ids):
+        raise KeyError("Mismatched progress to save")
+    with open(embedding_processed_ids_path, "a", encoding="utf-8") as f:
+        f.write("\n".join(ids) + "\n")
+        f.flush()
+        os.fsync(f.fileno())
+    index.add(vectors)
+    faiss.write_index(index, faiss_path)
+
+for nid in tqdm(hypothetical_prompts):
+    prompts = hypothetical_prompts[nid]
+    batch_embeddings = model.process(prompts).to(torch.float32).cpu().numpy()
+    save_progress(np.vstack(batch_embeddings), [nid for _ in prompts])
+
+with open(embedding_processed_ids_path, "r", encoding="utf-8") as f:
+    embedding_processed_ids = list(line.strip() for line in f if line.strip())
+
+if len(embedding_processed_ids) != index.ntotal:
+    raise KeyError("Mismatched processed ids and index entries")
