@@ -80,6 +80,8 @@ def encode_image(path):
 with open(g4_path, "rb") as f:
     nodes = pickle.load(f)
 
+print("Total nodes to generate:", len([nid for nid in nodes if nodes[nid].node_type in {"S", "A", "H", "T", "V"}]))
+
 MAX_ATTEMPTS = 20
 with open(hypothetical_prompts_path, "a", encoding="utf-8") as f:
     for nid in tqdm(nodes):
