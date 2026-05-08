@@ -1,0 +1,1000 @@
+{"data_id": "infoseek_train_00000544", "question": "how many day is the egg incubation period of this bird?", "image_id": "oven_00989393", "entities": ["bird", "egg", "incubation period", "day"], "token": 845}
+{"data_id": "infoseek_train_00000691", "question": "what is the date this vehicle took the first flight?", "image_id": "oven_00004996", "entities": ["vehicle", "first flight", "date"], "token": 1117}
+{"data_id": "infoseek_train_00001551", "question": "What is the conservation status of this bird? (The status is assigned by the international union for conservation of nature. Choose one among Endangered,Least Concern,Critically Endangered,extinct species,extinct in the wild,Vulnerable,Near Threatened,Data Deficient)", "image_id": "oven_01439763", "entities": ["bird", "conservation status", "international union for conservation of nature", "Endangered", "Least Concern", "Critically Endangered", "extinct species", "extinct in the wild", "Vulnerable", "Near Threatened", "Data Deficient"], "token": 569}
+{"data_id": "infoseek_train_00003410", "question": "What is the closest parent taxonomy of this insect?", "image_id": "oven_00671747", "entities": ["insect", "taxonomy", "parent", "insect"], "token": 941}
+{"data_id": "infoseek_train_00003566", "question": "What is the closest parent taxonomy of this plant?", "image_id": "oven_04560341", "entities": ["plant", "flower", "taxonomy"], "token": 483}
+{"data_id": "infoseek_train_00003978", "question": "What is the closest upper taxonomy of this insect?", "image_id": "oven_00674575", "entities": ["insect", "earwig"], "token": 480}
+{"data_id": "infoseek_train_00006016", "question": "What is the conservation status of this plant? (The status is assigned by the international union for conservation of nature. Choose one among Endangered,Least Concern,Critically Endangered,extinct species,extinct in the wild,Vulnerable,Near Threatened,Data Deficient)", "image_id": "oven_00630271", "entities": ["plant", "conservation status", "international union for conservation of nature", "Endangered", "Least Concern", "Critically Endangered", "extinct species", "extinct in the wild", "Vulnerable", "Near Threatened", "Data Deficient"], "token": 980}
+{"data_id": "infoseek_train_00016338", "question": "What is the location of this building?", "image_id": "oven_00056059", "entities": ["building", "cliff", "carving"], "token": 886}
+{"data_id": "infoseek_train_00018938", "question": "What is the conservation status of this plant? (The status is assigned by the international union for conservation of nature. Choose one among Endangered,Least Concern,Critically Endangered,extinct species,extinct in the wild,Vulnerable,Near Threatened,Data Deficient)", "image_id": "oven_00630300", "entities": ["plant", "conservation status", "international union for conservation of nature", "Endangered", "Least Concern", "Critically Endangered", "extinct species", "extinct in the wild", "Vulnerable", "Near Threatened", "Data Deficient"], "token": 980}
+{"data_id": "infoseek_train_00019095", "question": "What is the minimum number of players of a game in this sport?", "image_id": "oven_00269965", "entities": ["badminton", "player", "game"], "token": 481}
+{"data_id": "infoseek_train_00019215", "question": "Which city or region does this place locate in?", "image_id": "oven_00096609", "entities": ["city", "region"], "token": 883}
+{"data_id": "infoseek_train_00019719", "question": "What is the closest upper taxonomy of this insect?", "image_id": "oven_00575563", "entities": ["insect", "caterpillar"], "token": 1036}
+{"data_id": "infoseek_train_00020251", "question": "What is the closest upper taxonomy of this plant?", "image_id": "oven_00725090", "entities": ["plant", "flower", "orange", "grass"], "token": 839}
+{"data_id": "infoseek_train_00020974", "question": "What country does this place belong to?", "image_id": "oven_00026275", "entities": ["place"], "token": 853}
+{"data_id": "infoseek_train_00021891", "question": "Which city or region does this building locate in?", "image_id": "oven_00069209", "entities": ["building", "city", "region"], "token": 911}
+{"data_id": "infoseek_train_00022554", "question": "What is the location of this building?", "image_id": "oven_00098550", "entities": ["building"], "token": 828}
+{"data_id": "infoseek_train_00023525", "question": "What is the oldest age of this animal?", "image_id": "oven_01884013", "entities": ["goat", "animal", "age"], "token": 475}
+{"data_id": "infoseek_train_00026841", "question": "What country does this park belong to?", "image_id": "oven_00064989", "entities": ["park", "country"], "token": 881}
+{"data_id": "infoseek_train_00029287", "question": "What country does this place belong to?", "image_id": "oven_00054921", "entities": ["place"], "token": 878}
+{"data_id": "infoseek_train_00029999", "question": "which notable activity has been held at the building presented in the image?", "image_id": "oven_00062151", "entities": ["ski jumping"], "token": 835}
+{"data_id": "infoseek_train_00031042", "question": "Which historic county does this park belong to?", "image_id": "oven_00056038", "entities": [], "token": 877}
+{"data_id": "infoseek_train_00033792", "question": "What country does this building belong to?", "image_id": "oven_00064026", "entities": ["India"], "token": 878}
+{"data_id": "infoseek_train_00035746", "question": "Which city or region does this building locate in?", "image_id": "oven_00040519", "entities": ["Korea"], "token": 606}
+{"data_id": "infoseek_train_00035972", "question": "What is the area in square kilometre occupied by this lake?", "image_id": "oven_00052952", "entities": ["lake", "square kilometre"], "token": 673}
+{"data_id": "infoseek_train_00036007", "question": "What is the closest upper taxonomy of this plant?", "image_id": "oven_00672457", "entities": ["plant", "white flower", "green foliage"], "token": 838}
+{"data_id": "infoseek_train_00036252", "question": "What is the closest parent taxonomy of this animal?", "image_id": "oven_01898493", "entities": ["animal", "oryx", "taxonomy"], "token": 476}
+{"data_id": "infoseek_train_00036516", "question": "What is the closest upper taxonomy of this insect?", "image_id": "oven_00480790", "entities": ["insect", "moth"], "token": 884}
+{"data_id": "infoseek_train_00036921", "question": "What is the closest parent taxonomy of this plant?", "image_id": "oven_04135117", "entities": ["plant"], "token": 469}
+{"data_id": "infoseek_train_00039046", "question": "What is the minimum number of players of a game in this sport?", "image_id": "oven_00269970", "entities": ["players", "game", "sport", "badminton", "racket"], "token": 488}
+{"data_id": "infoseek_train_00040090", "question": "What is the closest parent taxonomy of this plant?", "image_id": "oven_00714634", "entities": ["plant", "taxonomy"], "token": 478}
+{"data_id": "infoseek_train_00041938", "question": "What is the closest upper taxonomy of this plant?", "image_id": "oven_00512534", "entities": ["plant", "flower", "grass", "soil", "footwear"], "token": 894}
+{"data_id": "infoseek_train_00042499", "question": "What is the closest parent taxonomy of this plant?", "image_id": "oven_00850038", "entities": ["plant", "taxonomy"], "token": 883}
+{"data_id": "infoseek_train_00042976", "question": "What is the closest upper taxonomy of this insect?", "image_id": "oven_00624168", "entities": ["insect", "caterpillar"], "token": 836}
+{"data_id": "infoseek_train_00043070", "question": "What is the closest parent taxonomy of this plant?", "image_id": "oven_04449323", "entities": ["plant", "moss"], "token": 473}
+{"data_id": "infoseek_train_00043193", "question": "Who is the discoverer or inventor of this object?", "image_id": "oven_03836409", "entities": ["object"], "token": 470}
+{"data_id": "infoseek_train_00044668", "question": "What is the closest upper taxonomy of this plant?", "image_id": "oven_00447435", "entities": ["plant", "flower", "poppies", "California poppy"], "token": 488}
+{"data_id": "infoseek_train_00045061", "question": "What country does this building belong to?", "image_id": "oven_00103339", "entities": ["building", "country"], "token": 881}
+{"data_id": "infoseek_train_00045745", "question": "What country does this building belong to?", "image_id": "oven_00015313", "entities": ["building", "country"], "token": 831}
+{"data_id": "infoseek_train_00046586", "question": "how many day is the egg incubation period of this bird?", "image_id": "oven_01359762", "entities": ["bird", "egg", "incubation period"], "token": 481}
+{"data_id": "infoseek_train_00047674", "question": "Which historic county does this building belong to?", "image_id": "oven_00022241", "entities": ["building", "historic county"], "token": 883}
+{"data_id": "infoseek_train_00048709", "question": "What country does this mountain belong to?", "image_id": "oven_00013919", "entities": ["mountain", "country"], "token": 832}
+{"data_id": "infoseek_train_00050073", "question": "What is the architectural style of this person?", "image_id": "oven_00062000", "entities": ["architectural style", "person"], "token": 885}
+{"data_id": "infoseek_train_00053743", "question": "Which city or region does this place locate in?", "image_id": "oven_00010437", "entities": ["city", "region"], "token": 708}
+{"data_id": "infoseek_train_00056020", "question": "What is the closest parent taxonomy of this animal?", "image_id": "oven_00714123", "entities": ["animal", "squirrel"], "token": 834}
+{"data_id": "infoseek_train_00057811", "question": "What is the closest parent taxonomy of this plant?", "image_id": "oven_00605678", "entities": ["plant", "taxonomy"], "token": 883}
+{"data_id": "infoseek_train_00058242", "question": "What is the closest parent taxonomy of this animal?", "image_id": "oven_00982606", "entities": ["animal", "alligator", "taxonomy"], "token": 476}
+{"data_id": "infoseek_train_00058963", "question": "What is the architectural style of this building?", "image_id": "oven_00094130", "entities": ["building", "architectural style", "dome", "fresco", "rose window", "facade", "tower", "stone", "marble"], "token": 788}
+{"data_id": "infoseek_train_00063887", "question": "What is the closest parent taxonomy of this plant?", "image_id": "oven_00672667", "entities": ["plant", "flower", "hand", "leaf", "ground"], "token": 892}
+{"data_id": "infoseek_train_00064538", "question": "What is the closest upper taxonomy of this plant?", "image_id": "oven_00545370", "entities": ["plant", "flower", "orange flower", "leaf", "tree"], "token": 893}
+{"data_id": "infoseek_train_00066068", "question": "What is the closest upper taxonomy of this bird?", "image_id": "oven_01343404", "entities": ["bird"], "token": 475}
+{"data_id": "infoseek_train_00066337", "question": "Which city or region does this place locate in?", "image_id": "oven_00104255", "entities": ["Bangkok"], "token": 881}
+{"data_id": "infoseek_train_00067044", "question": "Which diocese does this building belong to?", "image_id": "oven_00039479", "entities": ["diocese", "building"], "token": 883}
+{"data_id": "infoseek_train_00068934", "question": "What is the closest parent taxonomy of this insect?", "image_id": "oven_00770755", "entities": ["insect", "moth", "taxonomy"], "token": 912}
+{"data_id": "infoseek_train_00068980", "question": "What is this building named after?", "image_id": "oven_00073988", "entities": ["building", "name", "person"], "token": 555}
+{"data_id": "infoseek_train_00073128", "question": "What is the closest parent taxonomy of this plant?", "image_id": "oven_00482173", "entities": ["plant", "fern"], "token": 783}
+{"data_id": "infoseek_train_00074358", "question": "Which city or region does this place locate in?", "image_id": "oven_00065775", "entities": ["city", "region"], "token": 833}
+{"data_id": "infoseek_train_00076156", "question": "What is the highest observed lifespan of this animal?", "image_id": "oven_00712000", "entities": ["animal", "monkey"], "token": 472}
+{"data_id": "infoseek_train_00077412", "question": "Which city or region does this building locate in?", "image_id": "oven_00015007", "entities": ["building", "city", "region"], "token": 811}
+{"data_id": "infoseek_train_00080854", "question": "What is the wingspan of a female of this insect in millimetre?", "image_id": "oven_00699498", "entities": ["female", "insect", "wingspan", "millimetre"], "token": 850}
+{"data_id": "infoseek_train_00081134", "question": "What is the location of this object?", "image_id": "oven_03753555", "entities": ["theatre"], "token": 468}
+{"data_id": "infoseek_train_00083412", "question": "What is the closest upper taxonomy of this insect?", "image_id": "oven_00937261", "entities": ["insect", "stick insect", "phasmid", "arthropod", "invertebrate"], "token": 900}
+{"data_id": "infoseek_train_00083771", "question": "What is the closest upper taxonomy of this plant?", "image_id": "oven_00985228", "entities": ["plant", "hand", "flower", "leaf"], "token": 889}
+{"data_id": "infoseek_train_00084345", "question": "who/what operates this object?", "image_id": "oven_03980887", "entities": ["Starbucks"], "token": 467}
+{"data_id": "infoseek_train_00084633", "question": "On what date did this building officially open?", "image_id": "oven_00046593", "entities": [], "token": 827}
+{"data_id": "infoseek_train_00086881", "question": "What is the minimum weight of a female of this animal in kilogram?", "image_id": "oven_01603231", "entities": ["female", "animal", "kilogram"], "token": 489}
+{"data_id": "infoseek_train_00088434", "question": "What is the closest upper taxonomy of this animal?", "image_id": "oven_01138342", "entities": ["animal", "manta ray", "marine animal", "fish", "vertebrate", "chordate", "animal kingdom", "marine life"], "token": 504}
+{"data_id": "infoseek_train_00088900", "question": "What is the closest parent taxonomy of this insect?", "image_id": "oven_00807732", "entities": ["insect", "taxonomy"], "token": 884}
+{"data_id": "infoseek_train_00090608", "question": "Which city or region does this food locate in?", "image_id": "oven_04321984", "entities": [], "token": 467}
+{"data_id": "infoseek_train_00093747", "question": "What is the closest parent taxonomy of this animal?", "image_id": "oven_01946890", "entities": ["animal", "tamarin", "primate", "mammal"], "token": 482}
+{"data_id": "infoseek_train_00094788", "question": "What is the closest parent taxonomy of this bird?", "image_id": "oven_00968078", "entities": ["bird"], "token": 855}
+{"data_id": "infoseek_train_00098783", "question": "In which year was this building first mentioned in writing?", "image_id": "oven_00038409", "entities": [], "token": 754}
+{"data_id": "infoseek_train_00100130", "question": "What is the basionym of this plant?", "image_id": "oven_00457293", "entities": ["plant", "basionym"], "token": 960}
+{"data_id": "infoseek_train_00102447", "question": "What is the closest parent taxonomy of this plant?", "image_id": "oven_00703008", "entities": ["plant", "taxonomy"], "token": 833}
+{"data_id": "infoseek_train_00106594", "question": "What is the closest upper taxonomy of this plant?", "image_id": "oven_00804544", "entities": ["plant", "leaf", "grass", "vegetation"], "token": 890}
+{"data_id": "infoseek_train_00106766", "question": "where do you usually find this animal?", "image_id": "oven_00901882", "entities": ["sheep", "bird", "field"], "token": 474}
+{"data_id": "infoseek_train_00107597", "question": "What is the basionym of this plant?", "image_id": "oven_04849929", "entities": ["plant", "basionym"], "token": 474}
+{"data_id": "infoseek_train_00108800", "question": "What is the basin country to the lake?", "image_id": "oven_00110865", "entities": ["lake", "basin", "country"], "token": 886}
+{"data_id": "infoseek_train_00109061", "question": "Which city or region does this building locate in?", "image_id": "oven_00016183", "entities": ["building", "city", "region"], "token": 836}
+{"data_id": "infoseek_train_00112594", "question": "What is the closest upper taxonomy of this plant?", "image_id": "oven_00606924", "entities": ["plant"], "token": 880}
+{"data_id": "infoseek_train_00113169", "question": "What is the closest upper taxonomy of this plant?", "image_id": "oven_04671449", "entities": ["plant", "tree", "forest", "river", "water"], "token": 481}
+{"data_id": "infoseek_train_00115569", "question": "Who is the manufacturer of this vehicle?", "image_id": "oven_00008782", "entities": ["Infiniti"], "token": 881}
+{"data_id": "infoseek_train_00117418", "question": "What is the closest upper taxonomy of this animal?", "image_id": "oven_00791380", "entities": ["animal", "monkey", "capuchin", "primate"], "token": 842}
+{"data_id": "infoseek_train_00117667", "question": "What is the closest upper taxonomy of this plant?", "image_id": "oven_00595476", "entities": ["plant", "yellow flower", "green leaves", "fern", "leaf litter"], "token": 895}
+{"data_id": "infoseek_train_00117962", "question": "What is the closest upper taxonomy of this bird?", "image_id": "oven_00439562", "entities": ["bird", "hawk"], "token": 472}
+{"data_id": "infoseek_train_00118629", "question": "What fields are the person in the image specialized in?", "image_id": "oven_02463070", "entities": ["fields", "person", "image"], "token": 476}
+{"data_id": "infoseek_train_00121781", "question": "What is the closest parent taxonomy of this plant?", "image_id": "oven_00530103", "entities": ["plant", "taxonomy"], "token": 833}
+{"data_id": "infoseek_train_00122065", "question": "Which street is this building located at?", "image_id": "oven_00102424", "entities": ["building", "street"], "token": 831}
+{"data_id": "infoseek_train_00123934", "question": "What country does this building belong to?", "image_id": "oven_00043074", "entities": [], "token": 876}
+{"data_id": "infoseek_train_00124372", "question": "What is the closest upper taxonomy of this plant?", "image_id": "oven_00670184", "entities": ["plant", "flower", "leaf", "pink", "white", "green"], "token": 895}
+{"data_id": "infoseek_train_00125859", "question": "What is the closest parent taxonomy of this insect?", "image_id": "oven_00672759", "entities": ["insect", "moth"], "token": 884}
+{"data_id": "infoseek_train_00126011", "question": "What is the closest parent taxonomy of this plant?", "image_id": "oven_00495822", "entities": ["plant", "flower", "bud", "leaf", "stem"], "token": 1042}
+{"data_id": "infoseek_train_00126405", "question": "Which historic county does this building belong to?", "image_id": "oven_00022232", "entities": ["building", "historic county"], "token": 883}
+{"data_id": "infoseek_train_00127466", "question": "What is the closest parent taxonomy of this insect?", "image_id": "oven_00695437", "entities": ["insect", "spider"], "token": 835}
+{"data_id": "infoseek_train_00129162", "question": "Which company manufactures this vehicle?", "image_id": "oven_00007059", "entities": ["vehicle", "company"], "token": 474}
+{"data_id": "infoseek_train_00130491", "question": "What is the closest parent taxonomy of this plant?", "image_id": "oven_00606979", "entities": ["plant", "grass", "flower"], "token": 475}
+{"data_id": "infoseek_train_00132174", "question": "What is the closest parent taxonomy of this plant?", "image_id": "oven_04523212", "entities": ["Schlumbergera truncata", "flor-de-maio", "plant", "taxonomy"], "token": 489}
+{"data_id": "infoseek_train_00134043", "question": "What is this building named after?", "image_id": "oven_00029557", "entities": ["building"], "token": 827}
+{"data_id": "infoseek_train_00134048", "question": "What is this animal named after?", "image_id": "oven_00555140", "entities": ["animal", "baboon"], "token": 931}
+{"data_id": "infoseek_train_00134411", "question": "What is the closest upper taxonomy of this plant?", "image_id": "oven_04139883", "entities": ["plant", "pepper", "chili", "vegetable"], "token": 481}
+{"data_id": "infoseek_train_00134627", "question": "What is the closest upper taxonomy of this insect?", "image_id": "oven_00675076", "entities": ["insect", "earwig"], "token": 474}
+{"data_id": "infoseek_train_00135121", "question": "What is the closest upper taxonomy of this plant?", "image_id": "oven_00695041", "entities": ["plant", "flower", "white flower"], "token": 482}
+{"data_id": "infoseek_train_00137335", "question": "What is the closest upper taxonomy of this plant?", "image_id": "oven_00980667", "entities": ["plant"], "token": 880}
+{"data_id": "infoseek_train_00138343", "question": "What is this place named after?", "image_id": "oven_00104730", "entities": ["place", "bridge", "river", "crane", "boats", "cars"], "token": 893}
+{"data_id": "infoseek_train_00138781", "question": "What is this animal named after?", "image_id": "oven_00555138", "entities": ["animal", "baboon"], "token": 881}
+{"data_id": "infoseek_train_00139470", "question": "What is the closest parent taxonomy of this plant?", "image_id": "oven_04780078", "entities": ["plant", "flower", "leaf", "botanical taxonomy"], "token": 480}
+{"data_id": "infoseek_train_00139828", "question": "What is the closest parent taxonomy of this plant?", "image_id": "oven_00667780", "entities": ["plant", "seaweed"], "token": 885}
+{"data_id": "infoseek_train_00141416", "question": "What is the closest parent taxonomy of this plant?", "image_id": "oven_04779860", "entities": ["plant", "bird"], "token": 472}
+{"data_id": "infoseek_train_00142846", "question": "What is the length of the wingspan in metre of this bird?", "image_id": "oven_00898484", "entities": ["bird", "wingspan", "metre"], "token": 482}
+{"data_id": "infoseek_train_00143020", "question": "What is the closest parent taxonomy of this animal?", "image_id": "oven_00959393", "entities": ["animal", "fox"], "token": 472}
+{"data_id": "infoseek_train_00144027", "question": "What is the closest parent taxonomy of this insect?", "image_id": "oven_00671745", "entities": ["insect"], "token": 831}
+{"data_id": "infoseek_train_00144598", "question": "Which government has executive power of this sport?", "image_id": "oven_00407644", "entities": ["sport", "curling", "government", "executive power"], "token": 480}
+{"data_id": "infoseek_train_00146049", "question": "what has this bridge crossed over?", "image_id": "oven_00092536", "entities": ["bridge", "ocean", "cliff", "mountain"], "token": 839}
+{"data_id": "infoseek_train_00146414", "question": "What is the closest parent taxonomy of this plant?", "image_id": "oven_04523354", "entities": ["plant", "flower", "leaf", "Cactus"], "token": 485}
+{"data_id": "infoseek_train_00147687", "question": "What is the architectural style of this building?", "image_id": "oven_00108720", "entities": ["building", "architectural style"], "token": 835}
+{"data_id": "infoseek_train_00147960", "question": "What is the closest upper taxonomy of this plant?", "image_id": "oven_00694666", "entities": ["plant", "flower", "daisy"], "token": 476}
+{"data_id": "infoseek_train_00148023", "question": "What is the closest upper taxonomy of this plant?", "image_id": "oven_00577540", "entities": ["plant", "flower", "leaf", "hand"], "token": 889}
+{"data_id": "infoseek_train_00148848", "question": "What is the closest upper taxonomy of this plant?", "image_id": "oven_00127825", "entities": ["plant", "flower", "passionflower"], "token": 749}
+{"data_id": "infoseek_train_00149080", "question": "What is the country of origin of this food?", "image_id": "oven_04279024", "entities": ["food", "grill", "skewer", "person", "country"], "token": 484}
+{"data_id": "infoseek_train_00149710", "question": "Which city or region does this place locate in?", "image_id": "oven_00015128", "entities": ["city", "region"], "token": 758}
+{"data_id": "infoseek_train_00149800", "question": "How many offspring can this bird produce at the same time?", "image_id": "oven_00665863", "entities": ["bird", "offspring", "nest"], "token": 478}
+{"data_id": "infoseek_train_00149988", "question": "What country does this building belong to?", "image_id": "oven_00012713", "entities": ["building"], "token": 753}
+{"data_id": "infoseek_train_00150004", "question": "Which protected area is this mountain usually located in?", "image_id": "oven_00020752", "entities": ["mountain", "protected area"], "token": 835}
+{"data_id": "infoseek_train_00152682", "question": "Which protected area is this park usually located in?", "image_id": "oven_00010858", "entities": ["park", "protected area", "arch", "rock formation", "nature reserve", "wilderness area", "national park", "Utah"], "token": 858}
+{"data_id": "infoseek_train_00153522", "question": "What is the closest parent taxonomy of this plant?", "image_id": "oven_00528465", "entities": ["plant", "thistle", "flower", "stem", "leaf", "bloom", "wildlife", "nature"], "token": 854}
+{"data_id": "infoseek_train_00153686", "question": "What is the closest upper taxonomy of this insect?", "image_id": "oven_00879835", "entities": ["insect", "dragonfly"], "token": 835}
+{"data_id": "infoseek_train_00156555", "question": "What is the country of origin of this food?", "image_id": "oven_00173570", "entities": ["Italy", "sbarro", "spaghetti", "parmesan cheese", "bread"], "token": 679}
+{"data_id": "infoseek_train_00156687", "question": "What country does this building belong to?", "image_id": "oven_00102324", "entities": ["Morocco"], "token": 829}
+{"data_id": "infoseek_train_00156949", "question": "What is the closest upper taxonomy of this plant?", "image_id": "oven_00127867", "entities": ["plant", "flower", "passionflower"], "token": 781}
+{"data_id": "infoseek_train_00157474", "question": "What is the conservation status of this animal? (The status is assigned by the international union for conservation of nature. Choose one among Endangered,Least Concern,Critically Endangered,extinct species,extinct in the wild,Vulnerable,Near Threatened,Data Deficient)", "image_id": "oven_00926692", "entities": ["animal", "conservation status", "international union for conservation of nature", "Endangered", "Least Concern", "Critically Endangered", "extinct species", "extinct in the wild", "Vulnerable", "Near Threatened", "Data Deficient"], "token": 569}
+{"data_id": "infoseek_train_00157840", "question": "What is the closest upper taxonomy of this plant?", "image_id": "oven_00672466", "entities": ["plant", "flower", "stem", "leaf", "blossom"], "token": 844}
+{"data_id": "infoseek_train_00158723", "question": "What country does this building belong to?", "image_id": "oven_00103336", "entities": ["building", "country"], "token": 756}
+{"data_id": "infoseek_train_00160202", "question": "Which historic county does this building belong to?", "image_id": "oven_00107299", "entities": [], "token": 877}
+{"data_id": "infoseek_train_00160817", "question": "What is the closest parent taxonomy of this plant?", "image_id": "oven_00495823", "entities": ["plant", "flower", "leaf", "stem"], "token": 889}
+{"data_id": "infoseek_train_00161828", "question": "Which place is this plant endemic to?", "image_id": "oven_00489168", "entities": ["plant", "place"], "token": 831}
+{"data_id": "infoseek_train_00162364", "question": "What is the closest upper taxonomy of this plant?", "image_id": "oven_04764115", "entities": ["plant", "tree", "leaf", "fruit"], "token": 478}
+{"data_id": "infoseek_train_00165856", "question": "How many elevators does this have?", "image_id": "oven_00119716", "entities": ["elevator", "building"], "token": 882}
+{"data_id": "infoseek_train_00166096", "question": "Which body of water is this building located in or next to?", "image_id": "oven_00103585", "entities": ["body of water", "building"], "token": 888}
+{"data_id": "infoseek_train_00166120", "question": "What is the closest upper taxonomy of this insect?", "image_id": "oven_00624167", "entities": ["insect"], "token": 881}
+{"data_id": "infoseek_train_00166680", "question": "Which city or region does this place locate in?", "image_id": "oven_00115544", "entities": ["city", "region"], "token": 883}
+{"data_id": "infoseek_train_00167509", "question": "What is the closest upper taxonomy of this plant?", "image_id": "oven_00609066", "entities": ["plant", "flower", "botanical taxonomy"], "token": 477}
+{"data_id": "infoseek_train_00167626", "question": "What country does this building belong to?", "image_id": "oven_00015649", "entities": ["building", "country"], "token": 831}
+{"data_id": "infoseek_train_00169468", "question": "What is the closest upper taxonomy of this plant?", "image_id": "oven_04547049", "entities": ["plant", "flower", "chrysanthemum"], "token": 487}
+{"data_id": "infoseek_train_00169552", "question": "What is the closest upper taxonomy of this plant?", "image_id": "oven_00700229", "entities": ["plant", "flower", "yellow flower", "green leaf", "wildflower"], "token": 484}
+{"data_id": "infoseek_train_00170218", "question": "What is the closest upper taxonomy of this plant?", "image_id": "oven_04671279", "entities": ["plant", "tree", "leaf", "flower", "fruit", "seed"], "token": 490}
+{"data_id": "infoseek_train_00171465", "question": "What is this bird named after?", "image_id": "oven_00817904", "entities": ["bird", "ruler", "wood"], "token": 759}
+{"data_id": "infoseek_train_00171686", "question": "What country does this building belong to?", "image_id": "oven_00060613", "entities": ["building", "country"], "token": 881}
+{"data_id": "infoseek_train_00172006", "question": "What country does this place belong to?", "image_id": "oven_00100207", "entities": ["place", "country"], "token": 806}
+{"data_id": "infoseek_train_00173992", "question": "What is this bird named after?", "image_id": "oven_00882365", "entities": ["bird", "Red Phalarope"], "token": 472}
+{"data_id": "infoseek_train_00175372", "question": "Which city or region does this building locate in?", "image_id": "oven_00090919", "entities": ["building", "city", "region"], "token": 836}
+{"data_id": "infoseek_train_00176084", "question": "What is the closest parent taxonomy of this plant?", "image_id": "oven_00975214", "entities": ["plant", "leaf", "flower", "botanical taxonomy"], "token": 1016}
+{"data_id": "infoseek_train_00176395", "question": "What is the closest parent taxonomy of this animal?", "image_id": "oven_00649546", "entities": ["animal", "snake", "taxonomy"], "token": 475}
+{"data_id": "infoseek_train_00179879", "question": "What is the closest upper taxonomy of this insect?", "image_id": "oven_00881561", "entities": ["insect", "ladybug", "arthropod", "invertebrate"], "token": 971}
+{"data_id": "infoseek_train_00180007", "question": "What is the closest parent taxonomy of this insect?", "image_id": "oven_00849764", "entities": ["insect", "moth"], "token": 834}
+{"data_id": "infoseek_train_00182383", "question": "What is the length in millimetre is the animal in the image?", "image_id": "oven_01250260", "entities": ["animal", "length", "millimetre"], "token": 495}
+{"data_id": "infoseek_train_00183450", "question": "Who designed this building?", "image_id": "oven_00062153", "entities": ["building"], "token": 875}
+{"data_id": "infoseek_train_00184080", "question": "how many centimetre is the wingspan of this bird?", "image_id": "oven_01359450", "entities": ["bird", "wingspan", "centimetre"], "token": 482}
+{"data_id": "infoseek_train_00184442", "question": "What is the conservation status of this bird? (The status is assigned by the international union for conservation of nature. Choose one among Endangered,Least Concern,Critically Endangered,extinct species,extinct in the wild,Vulnerable,Near Threatened,Data Deficient)", "image_id": "oven_00639612", "entities": [], "token": 925}
+{"data_id": "infoseek_train_00185573", "question": "Which city or region does this building locate in?", "image_id": "oven_00042252", "entities": ["building", "city", "region"], "token": 836}
+{"data_id": "infoseek_train_00187908", "question": "Where is this animal native to?", "image_id": "oven_01292049", "entities": ["animal", "snake"], "token": 469}
+{"data_id": "infoseek_train_00188878", "question": "What is this building dedicated to?", "image_id": "oven_00014498", "entities": ["building"], "token": 877}
+{"data_id": "infoseek_train_00189092", "question": "What is the closest parent taxonomy of this plant?", "image_id": "oven_04696698", "entities": ["plant", "daffodil", "flower", "taxonomy"], "token": 481}
+{"data_id": "infoseek_train_00189819", "question": "Where is this animal native to?", "image_id": "oven_01292690", "entities": ["animal", "snake", "desert", "rock"], "token": 476}
+{"data_id": "infoseek_train_00192194", "question": "What is the closest parent taxonomy of this plant?", "image_id": "oven_04587921", "entities": ["plant", "Terrestrial Orchids", "Australia"], "token": 478}
+{"data_id": "infoseek_train_00192277", "question": "how many day is the egg incubation period of this bird?", "image_id": "oven_00560190", "entities": ["bird", "egg", "incubation period", "day"], "token": 484}
+{"data_id": "infoseek_train_00193659", "question": "What is the closest parent taxonomy of this insect?", "image_id": "oven_00994226", "entities": ["insect", "dragonfly"], "token": 835}
+{"data_id": "infoseek_train_00194098", "question": "What is the closest upper taxonomy of this plant?", "image_id": "oven_00612114", "entities": ["plant", "tree", "leaf", "branch"], "token": 889}
+{"data_id": "infoseek_train_00194101", "question": "What is the closest parent taxonomy of this plant?", "image_id": "oven_04534176", "entities": ["plant", "daisy"], "token": 473}
+{"data_id": "infoseek_train_00194135", "question": "What is the closest upper taxonomy of this insect?", "image_id": "oven_00879831", "entities": ["insect", "dragonfly"], "token": 835}
+{"data_id": "infoseek_train_00194194", "question": "Which city or region does this building locate in?", "image_id": "oven_00019295", "entities": ["building", "city", "region"], "token": 886}
+{"data_id": "infoseek_train_00197269", "question": "What is the closest upper taxonomy of this fish?", "image_id": "oven_00892924", "entities": ["fish", "coral", "ocean"], "token": 863}
+{"data_id": "infoseek_train_00198864", "question": "Which city or region does this building locate in?", "image_id": "oven_00035494", "entities": ["building", "city", "region"], "token": 886}
+{"data_id": "infoseek_train_00201213", "question": "What is the closest parent taxonomy of this plant?", "image_id": "oven_00466762", "entities": ["plant"], "token": 880}
+{"data_id": "infoseek_train_00204362", "question": "How many days does the gestation of this animal take?", "image_id": "oven_01686788", "entities": ["fox"], "token": 471}
+{"data_id": "infoseek_train_00204512", "question": "What type of cuisine is this food?", "image_id": "oven_00158706", "entities": ["cuisine", "food", "scone", "blueberry"], "token": 479}
+{"data_id": "infoseek_train_00205530", "question": "What is the closest parent taxonomy of this insect?", "image_id": "oven_00895231", "entities": ["insect", "butterfly", "taxonomic classification"], "token": 841}
+{"data_id": "infoseek_train_00207526", "question": "Who is the owner of this building?", "image_id": "oven_00112182", "entities": [], "token": 876}
+{"data_id": "infoseek_train_00209118", "question": "Who is the owner of this building?", "image_id": "oven_00062895", "entities": [], "token": 876}
+{"data_id": "infoseek_train_00210865", "question": "What is the closest parent taxonomy of this plant?", "image_id": "oven_00756363", "entities": ["plant", "taxonomy"], "token": 883}
+{"data_id": "infoseek_train_00211075", "question": "What is this bird named after?", "image_id": "oven_00881961", "entities": ["bird", "Ernesto Cabrera"], "token": 473}
+{"data_id": "infoseek_train_00211742", "question": "What is the closest upper taxonomy of this bird?", "image_id": "oven_00852801", "entities": ["bird", "Spoonbill"], "token": 474}
+{"data_id": "infoseek_train_00212276", "question": "What is the closest upper taxonomy of this animal?", "image_id": "oven_00475701", "entities": ["animal", "sea slug"], "token": 859}
+{"data_id": "infoseek_train_00215499", "question": "What is the closest upper taxonomy of this plant?", "image_id": "oven_00608404", "entities": ["plant", "flower", "white flower", "grass", "wildflower"], "token": 894}
+{"data_id": "infoseek_train_00215644", "question": "What is the length in millimetre is the animal in the image?", "image_id": "oven_01249957", "entities": ["animal", "length", "millimetre"], "token": 482}
+{"data_id": "infoseek_train_00216256", "question": "Who is the discoverer or inventor of this object?", "image_id": "oven_03057920", "entities": [], "token": 468}
+{"data_id": "infoseek_train_00216395", "question": "where was this food located when discovered?", "image_id": "oven_04342718", "entities": ["food", "location", "discovered"], "token": 474}
+{"data_id": "infoseek_train_00216493", "question": "What is the closest parent taxonomy of this insect?", "image_id": "oven_00695980", "entities": ["insect", "moth"], "token": 884}
+{"data_id": "infoseek_train_00218273", "question": "What is the country of origin of this food?", "image_id": "oven_04115291", "entities": ["food", "potato", "herb", "bowl"], "token": 481}
+{"data_id": "infoseek_train_00219926", "question": "What is the source that produces this food?", "image_id": "oven_04265100", "entities": ["honey", "bee", "honeycomb"], "token": 477}
+{"data_id": "infoseek_train_00220001", "question": "Which city or region does this building locate in?", "image_id": "oven_00090948", "entities": ["building", "city", "region"], "token": 836}
+{"data_id": "infoseek_train_00220473", "question": "What is the closest upper taxonomy of this bird?", "image_id": "oven_00874159", "entities": ["bird", "tree"], "token": 908}
+{"data_id": "infoseek_train_00221093", "question": "Which city or region does this building locate in?", "image_id": "oven_00032212", "entities": ["building", "city", "region"], "token": 836}
+{"data_id": "infoseek_train_00221776", "question": "Who is the owner of this building?", "image_id": "oven_00021844", "entities": [], "token": 826}
+{"data_id": "infoseek_train_00222200", "question": "What is the closest parent taxonomy of this plant?", "image_id": "oven_00756372", "entities": ["plant"], "token": 880}
+{"data_id": "infoseek_train_00224753", "question": "Who is the architect of this building?", "image_id": "oven_00011788", "entities": ["architect", "building"], "token": 882}
+{"data_id": "infoseek_train_00225536", "question": "What is this building dedicated to?", "image_id": "oven_00027803", "entities": ["building", "dedication", "church"], "token": 793}
+{"data_id": "infoseek_train_00228756", "question": "What is the closest upper taxonomy of this insect?", "image_id": "oven_00881552", "entities": ["insect", "ladybug", "beetle", "invertebrate", "arthropod"], "token": 976}
+{"data_id": "infoseek_train_00228795", "question": "What is the closest upper taxonomy of this plant?", "image_id": "oven_04454340", "entities": ["plant", "palm", "Cycad", "fern", "potted plant"], "token": 486}
+{"data_id": "infoseek_train_00229788", "question": "Who is the discoverer or inventor of this item?", "image_id": "oven_02139066", "entities": ["Lilo", "Stitch", "pen"], "token": 478}
+{"data_id": "infoseek_train_00229813", "question": "What is the highest observed lifespan of this animal?", "image_id": "oven_00711907", "entities": ["animal", "capuchin monkey", "lifespan"], "token": 480}
+{"data_id": "infoseek_train_00232330", "question": "What is the closest parent taxonomy of this bird?", "image_id": "oven_00968089", "entities": ["bird"], "token": 880}
+{"data_id": "infoseek_train_00232433", "question": "What is the closest parent taxonomy of this plant?", "image_id": "oven_00564817", "entities": ["plant", "taxon", "taxonomy"], "token": 887}
+{"data_id": "infoseek_train_00232773", "question": "What is the source that produces this food?", "image_id": "oven_02848156", "entities": ["food", "pumpkin", "gourd", "squash", "basket", "market"], "token": 487}
+{"data_id": "infoseek_train_00233755", "question": "What is the closest parent taxonomy of this animal?", "image_id": "oven_01901348", "entities": ["camel", "animal", "taxonomy"], "token": 481}
+{"data_id": "infoseek_train_00235252", "question": "What is the closest upper taxonomy of this bird?", "image_id": "oven_00442578", "entities": ["bird", "tree", "branch"], "token": 836}
+{"data_id": "infoseek_train_00235920", "question": "What is the closest upper taxonomy of this plant?", "image_id": "oven_00606929", "entities": ["plant", "flower", "leaf", "stem"], "token": 889}
+{"data_id": "infoseek_train_00238631", "question": "What is the closest upper taxonomy of this plant?", "image_id": "oven_00638988", "entities": ["plant", "seed pod", "tree", "branch"], "token": 1040}
+{"data_id": "infoseek_train_00238852", "question": "What is the closest parent taxonomy of this animal?", "image_id": "oven_01899115", "entities": ["animal", "oryx", "taxon", "taxonomy"], "token": 480}
+{"data_id": "infoseek_train_00243943", "question": "Who commissioned this building?", "image_id": "oven_00102282", "entities": ["building"], "token": 750}
+{"data_id": "infoseek_train_00244168", "question": "What is the closest upper taxonomy of this plant?", "image_id": "oven_04766498", "entities": ["plant", "Field Scabious", "Knautia arvensis"], "token": 483}
+{"data_id": "infoseek_train_00245520", "question": "What is this object named after?", "image_id": "oven_04855399", "entities": ["object", "named after"], "token": 470}
+{"data_id": "infoseek_train_00245977", "question": "Which body of water is this building located in or next to?", "image_id": "oven_00103583", "entities": ["San Juan National Historic Site", "Castillo San Felipe del Morro", "ocean"], "token": 700}
+{"data_id": "infoseek_train_00247699", "question": "What is the closest parent taxonomy of this insect?", "image_id": "oven_00770751", "entities": ["insect", "moth"], "token": 884}
+{"data_id": "infoseek_train_00247774", "question": "Who is the manufacturer of this vehicle?", "image_id": "oven_00009114", "entities": ["vehicle", "manufacturer"], "token": 476}
+{"data_id": "infoseek_train_00249285", "question": "What is the country of origin of this food?", "image_id": "oven_04079501", "entities": ["food", "country", "origin"], "token": 475}
+{"data_id": "infoseek_train_00250469", "question": "What is the closest upper taxonomy of this insect?", "image_id": "oven_00630212", "entities": ["insect", "moth"], "token": 834}
+{"data_id": "infoseek_train_00250989", "question": "What is the length of this bridge in metre?", "image_id": "oven_00077461", "entities": ["bridge", "metre"], "token": 817}
+{"data_id": "infoseek_train_00252380", "question": "Which diocese does this building belong to?", "image_id": "oven_00044180", "entities": [], "token": 877}
+{"data_id": "infoseek_train_00252425", "question": "What is the litter size of this bird?", "image_id": "oven_00499731", "entities": ["bird", "litter size"], "token": 481}
+{"data_id": "infoseek_train_00252837", "question": "What is the closest upper taxonomy of this animal?", "image_id": "oven_01317165", "entities": ["animal", "bird", "ptarmigan"], "token": 477}
+{"data_id": "infoseek_train_00255953", "question": "What is the immediately prior item that this vehicle follows in a series?", "image_id": "oven_02985210", "entities": ["vehicle", "series"], "token": 476}
+{"data_id": "infoseek_train_00257500", "question": "what has this bridge crossed over?", "image_id": "oven_00067155", "entities": ["bridge", "water", "city", "buildings", "people"], "token": 681}
+{"data_id": "infoseek_train_00259028", "question": "What country does this place belong to?", "image_id": "oven_00100194", "entities": ["Russia"], "token": 878}
+{"data_id": "infoseek_train_00259389", "question": "Which city or region does this building locate in?", "image_id": "oven_00042254", "entities": ["building", "city", "region"], "token": 886}
+{"data_id": "infoseek_train_00260617", "question": "What country does this building belong to?", "image_id": "oven_00082049", "entities": ["building", "country"], "token": 706}
+{"data_id": "infoseek_train_00262100", "question": "What is the closest upper taxonomy of this animal?", "image_id": "oven_00494149", "entities": ["animal", "salamander"], "token": 474}
+{"data_id": "infoseek_train_00264049", "question": "How heavy does this sport typically grow up to in terms of gram?", "image_id": "oven_03746060", "entities": ["tennis ball"], "token": 475}
+{"data_id": "infoseek_train_00264717", "question": "In which year did this building officially open?", "image_id": "oven_00027798", "entities": [], "token": 852}
+{"data_id": "infoseek_train_00267577", "question": "What is the closest upper taxonomy of this animal?", "image_id": "oven_01750718", "entities": ["animal", "insect"], "token": 473}
+{"data_id": "infoseek_train_00269715", "question": "What product does this drink produce?", "image_id": "oven_02486834", "entities": ["coffee", "coffee maker", "coffee beans"], "token": 474}
+{"data_id": "infoseek_train_00270293", "question": "where do you usually find this animal?", "image_id": "oven_01855657", "entities": ["rhino", "grassland", "wildlife"], "token": 476}
+{"data_id": "infoseek_train_00270336", "question": "What country does this place belong to?", "image_id": "oven_00054912", "entities": ["country"], "token": 878}
+{"data_id": "infoseek_train_00272307", "question": "What is the closest parent taxonomy of this plant?", "image_id": "oven_00607753", "entities": ["plant", "taxonomy"], "token": 478}
+{"data_id": "infoseek_train_00273167", "question": "What is the closest upper taxonomy of this plant?", "image_id": "oven_04487020", "entities": ["plant", "leaf", "tree"], "token": 475}
+{"data_id": "infoseek_train_00275056", "question": "Which city or region does this garden locate in?", "image_id": "oven_00020052", "entities": ["garden", "city", "region"], "token": 887}
+{"data_id": "infoseek_train_00278199", "question": "What is the closest upper taxonomy of this insect?", "image_id": "oven_00565365", "entities": ["insect", "moth"], "token": 834}
+{"data_id": "infoseek_train_00279313", "question": "What is the closest upper taxonomy of this animal?", "image_id": "oven_00821715", "entities": ["animal", "taxon", "taxonomy"], "token": 887}
+{"data_id": "infoseek_train_00281060", "question": "What country does this building belong to?", "image_id": "oven_00112202", "entities": ["building"], "token": 878}
+{"data_id": "infoseek_train_00281925", "question": "What is the closest upper taxonomy of this plant?", "image_id": "oven_04644505", "entities": ["plant", "tree", "forest"], "token": 475}
+{"data_id": "infoseek_train_00282017", "question": "who/what operates this object?", "image_id": "oven_03980601", "entities": ["Graduate School of Journalism", "North Gate Hall Gallery", "The American President"], "token": 481}
+{"data_id": "infoseek_train_00282527", "question": "where was this food located when discovered?", "image_id": "oven_04342686", "entities": ["food", "bottle", "location", "discovered"], "token": 478}
+{"data_id": "infoseek_train_00283300", "question": "Who is the architect of this building?", "image_id": "oven_00011759", "entities": ["architect", "building"], "token": 832}
+{"data_id": "infoseek_train_00285003", "question": "what is the temporal range start of this animal?", "image_id": "oven_01294311", "entities": ["trilobite", "temporal range", "start"], "token": 480}
+{"data_id": "infoseek_train_00287760", "question": "What is the country of origin of this animal?", "image_id": "oven_01658337", "entities": ["animal", "country"], "token": 472}
+{"data_id": "infoseek_train_00288594", "question": "What is the closest parent taxonomy of this plant?", "image_id": "oven_00656115", "entities": ["plant", "fungus", "taxonomy"], "token": 887}
+{"data_id": "infoseek_train_00288932", "question": "What is the closest upper taxonomy of this plant?", "image_id": "oven_00585755", "entities": ["plant", "flower", "grass"], "token": 886}
+{"data_id": "infoseek_train_00290039", "question": "What is the closest upper taxonomy of this insect?", "image_id": "oven_00480788", "entities": ["insect", "moth"], "token": 934}
+{"data_id": "infoseek_train_00290145", "question": "Which geographic area is this plant found?", "image_id": "oven_00587332", "entities": ["plant", "geographic area"], "token": 472}
+{"data_id": "infoseek_train_00290311", "question": "What is the location of this object?", "image_id": "oven_03753895", "entities": ["theater", "stage", "curtain"], "token": 481}
+{"data_id": "infoseek_train_00290853", "question": "What is the location of this place?", "image_id": "oven_00072032", "entities": ["lighthouse", "ocean", "island"], "token": 837}
+{"data_id": "infoseek_train_00293001", "question": "What is the closest upper taxonomy of this plant?", "image_id": "oven_00577526", "entities": ["plant", "flower", "grass"], "token": 886}
+{"data_id": "infoseek_train_00293180", "question": "What is the conservation status of this bird? (The status is assigned by the international union for conservation of nature. Choose one among Endangered,Least Concern,Critically Endangered,extinct species,extinct in the wild,Vulnerable,Near Threatened,Data Deficient)", "image_id": "oven_01165515", "entities": ["bird", "conservation status", "international union for conservation of nature", "Endangered", "Least Concern", "Critically Endangered", "extinct species", "extinct in the wild", "Vulnerable", "Near Threatened", "Data Deficient"], "token": 575}
+{"data_id": "infoseek_train_00293341", "question": "What is the closest parent taxonomy of this animal?", "image_id": "oven_01379391", "entities": ["animal"], "token": 469}
+{"data_id": "infoseek_train_00293432", "question": "What is the basionym of this plant?", "image_id": "oven_00606914", "entities": ["plant", "basionym"], "token": 885}
+{"data_id": "infoseek_train_00295511", "question": "What kind of effect does this item have?", "image_id": "oven_03912867", "entities": ["wind turbine", "energy", "renewable energy"], "token": 478}
+{"data_id": "infoseek_train_00295805", "question": "What is the closest upper taxonomy of this plant?", "image_id": "oven_00595482", "entities": ["plant", "upper taxonomy"], "token": 909}
+{"data_id": "infoseek_train_00296111", "question": "What is the closest parent taxonomy of this animal?", "image_id": "oven_00628838", "entities": ["snake", "animal", "reptile", "taxonomy"], "token": 891}
+{"data_id": "infoseek_train_00296735", "question": "What country does this building belong to?", "image_id": "oven_00015935", "entities": ["building", "country"], "token": 756}
+{"data_id": "infoseek_train_00296955", "question": "What is the closest parent taxonomy of this insect?", "image_id": "oven_00672751", "entities": ["insect", "moth"], "token": 884}
+{"data_id": "infoseek_train_00297192", "question": "What is the brand of this vehicle?", "image_id": "oven_00007734", "entities": ["Chevrolet", "Silverado", "vehicle", "2012", "1500", "LT", "Regular Cab", "4x4", "Victory Red", "Ebony"], "token": 744}
+{"data_id": "infoseek_train_00298314", "question": "Who designed this bridge?", "image_id": "oven_00059429", "entities": ["bridge"], "token": 875}
+{"data_id": "infoseek_train_00299561", "question": "What is the country of origin of this plant?", "image_id": "oven_04310901", "entities": ["Canada", "British Columbia"], "token": 473}
+{"data_id": "infoseek_train_00299967", "question": "What is this building dedicated to?", "image_id": "oven_00014508", "entities": ["building", "dedication", "flag"], "token": 834}
+{"data_id": "infoseek_train_00300935", "question": "How many days does the gestation of this animal take?", "image_id": "oven_01927172", "entities": ["gorilla"], "token": 472}
+{"data_id": "infoseek_train_00302156", "question": "What is the closest parent taxonomy of this bird?", "image_id": "oven_00923438", "entities": ["bird"], "token": 880}
+{"data_id": "infoseek_train_00302661", "question": "Which city or region does this town locate in?", "image_id": "oven_00012757", "entities": [], "token": 828}
+{"data_id": "infoseek_train_00304447", "question": "Who is the discoverer or inventor of this item?", "image_id": "oven_03583607", "entities": [], "token": 468}
+{"data_id": "infoseek_train_00304541", "question": "Which city or region does this place locate in?", "image_id": "oven_00015113", "entities": [], "token": 878}
+{"data_id": "infoseek_train_00306002", "question": "What is the closest upper taxonomy of this insect?", "image_id": "oven_00909323", "entities": ["insect", "moth"], "token": 959}
+{"data_id": "infoseek_train_00307114", "question": "Which city or region does this building locate in?", "image_id": "oven_00121545", "entities": ["building", "city", "region"], "token": 836}
+{"data_id": "infoseek_train_00307195", "question": "What is this bird named after?", "image_id": "oven_00817923", "entities": ["bird", "hand", "person", "name"], "token": 836}
+{"data_id": "infoseek_train_00308136", "question": "What is the closest upper taxonomy of this insect?", "image_id": "oven_00997337", "entities": ["insect", "moth"], "token": 884}
+{"data_id": "infoseek_train_00308250", "question": "What country does this mountain belong to?", "image_id": "oven_00042792", "entities": ["mountain", "country"], "token": 832}
+{"data_id": "infoseek_train_00310549", "question": "What is the closest upper taxonomy of this bird?", "image_id": "oven_00439759", "entities": ["bird", "hawk"], "token": 472}
+{"data_id": "infoseek_train_00312840", "question": "What is the closest parent taxonomy of this bird?", "image_id": "oven_00631395", "entities": ["bird", "taxonomy"], "token": 472}
+{"data_id": "infoseek_train_00312973", "question": "What type of cuisine is this food?", "image_id": "oven_00158668", "entities": ["cuisine", "food", "dish", "meat", "mashed potatoes", "herbs", "dishware", "plate"], "token": 494}
+{"data_id": "infoseek_train_00313131", "question": "What is the architectural style of this building?", "image_id": "oven_00020522", "entities": ["building", "architectural style", "tower", "cross", "arch", "people", "trees", "grass", "sky", "clouds"], "token": 860}
+{"data_id": "infoseek_train_00314347", "question": "How many offspring can this bird produce at the same time?", "image_id": "oven_00665180", "entities": ["bird", "offspring"], "token": 475}
+{"data_id": "infoseek_train_00314685", "question": "What is the closest upper taxonomy of this plant?", "image_id": "oven_00535342", "entities": ["plant", "flower", "leaf", "water"], "token": 478}
+{"data_id": "infoseek_train_00315316", "question": "Which city or region does this mountain locate in?", "image_id": "oven_00069426", "entities": ["mountain", "city", "region"], "token": 837}
+{"data_id": "infoseek_train_00316515", "question": "What is the closest parent taxonomy of this plant?", "image_id": "oven_00854773", "entities": ["plant", "flower", "leaf", "taxonomy"], "token": 889}
+{"data_id": "infoseek_train_00318659", "question": "What is the closest upper taxonomy of this insect?", "image_id": "oven_00453608", "entities": ["insect", "beetle", "insect taxonomy"], "token": 480}
+{"data_id": "infoseek_train_00323191", "question": "How heavy does this bird typically grow up to in terms of gram?", "image_id": "oven_00652608", "entities": ["bird", "gram"], "token": 887}
+{"data_id": "infoseek_train_00323406", "question": "What is the conservation status of this animal? (The status is assigned by the international union for conservation of nature. Choose one among Endangered,Least Concern,Critically Endangered,extinct species,extinct in the wild,Vulnerable,Near Threatened,Data Deficient)", "image_id": "oven_00927182", "entities": ["animal", "conservation status", "international union for conservation of nature", "Endangered", "Least Concern", "Critically Endangered", "extinct species", "extinct in the wild", "Vulnerable", "Near Threatened", "Data Deficient"], "token": 575}
+{"data_id": "infoseek_train_00326537", "question": "Which geographic area is this plant found?", "image_id": "oven_00587726", "entities": [], "token": 478}
+{"data_id": "infoseek_train_00327080", "question": "Which country does this food come from?", "image_id": "oven_04261241", "entities": [], "token": 465}
+{"data_id": "infoseek_train_00327345", "question": "What is the height of this vehicle in millimetre?", "image_id": "oven_00005594", "entities": ["vehicle", "height", "millimetre"], "token": 2315}
+{"data_id": "infoseek_train_00327831", "question": "Who is the owner of this building?", "image_id": "oven_00054976", "entities": [], "token": 876}
+{"data_id": "infoseek_train_00327932", "question": "Which city or region does this building locate in?", "image_id": "oven_00043060", "entities": [], "token": 878}
+{"data_id": "infoseek_train_00331874", "question": "What country does this building belong to?", "image_id": "oven_00060753", "entities": ["building", "country"], "token": 881}
+{"data_id": "infoseek_train_00334131", "question": "What is the country of origin of this food?", "image_id": "oven_04079618", "entities": ["food", "country", "origin"], "token": 475}
+{"data_id": "infoseek_train_00335481", "question": "What is the closest upper taxonomy of this plant?", "image_id": "oven_00919033", "entities": ["plant", "flower", "leaf", "bloom"], "token": 890}
+{"data_id": "infoseek_train_00336571", "question": "What country does this building belong to?", "image_id": "oven_00078134", "entities": ["building", "country"], "token": 881}
+{"data_id": "infoseek_train_00336945", "question": "who/what operates this building?", "image_id": "oven_00063907", "entities": ["Estação da Luz", "building", "railway station"], "token": 838}
+{"data_id": "infoseek_train_00337063", "question": "Who is the owner of this building?", "image_id": "oven_00015150", "entities": [], "token": 801}
+{"data_id": "infoseek_train_00340655", "question": "What is the conservation status of this insect? (The status is assigned by the international union for conservation of nature. Choose one among Endangered,Least Concern,Critically Endangered,extinct species,extinct in the wild,Vulnerable,Near Threatened,Data Deficient)", "image_id": "oven_00491899", "entities": ["insect", "dragonfly", "conservation status", "international union for conservation of nature", "Endangered", "Least Concern", "Critically Endangered", "extinct species", "extinct in the wild", "Vulnerable", "Near Threatened", "Data Deficient"], "token": 935}
+{"data_id": "infoseek_train_00340717", "question": "Which place is this plant endemic to?", "image_id": "oven_00482069", "entities": ["plant", "place"], "token": 881}
+{"data_id": "infoseek_train_00340863", "question": "What is the country of origin of this place?", "image_id": "oven_03810550", "entities": ["place"], "token": 469}
+{"data_id": "infoseek_train_00342064", "question": "What is the closest upper taxonomy of this plant?", "image_id": "oven_00585749", "entities": ["plant", "flower", "hand", "grass"], "token": 889}
+{"data_id": "infoseek_train_00342645", "question": "What is the closest parent taxonomy of this plant?", "image_id": "oven_00917791", "entities": ["plant", "flower", "leaf", "forest floor", "bark", "grass"], "token": 897}
+{"data_id": "infoseek_train_00342713", "question": "Who designed this building?", "image_id": "oven_00030515", "entities": [], "token": 698}
+{"data_id": "infoseek_train_00343424", "question": "What type of cuisine is this food?", "image_id": "oven_04281618", "entities": ["cuisine", "food", "omelet", "salad", "tomato", "avocado", "blueberry", "glass", "drink"], "token": 497}
+{"data_id": "infoseek_train_00343917", "question": "What is the location of this building?", "image_id": "oven_00098556", "entities": ["building", "fountain", "garden", "trees"], "token": 764}
+{"data_id": "infoseek_train_00344169", "question": "What country does this river belong to?", "image_id": "oven_00078683", "entities": ["river", "country"], "token": 881}
+{"data_id": "infoseek_train_00345014", "question": "Who is the discoverer or inventor of this item?", "image_id": "oven_03658475", "entities": ["stethoscope"], "token": 472}
+{"data_id": "infoseek_train_00348710", "question": "What is the closest upper taxonomy of this bird?", "image_id": "oven_00975093", "entities": ["bird"], "token": 855}
+{"data_id": "infoseek_train_00351404", "question": "What is the closest upper taxonomy of this fish?", "image_id": "oven_00892927", "entities": ["fish"], "token": 855}
+{"data_id": "infoseek_train_00353348", "question": "What kind of effect does this object have?", "image_id": "oven_01756396", "entities": ["object", "effect"], "token": 471}
+{"data_id": "infoseek_train_00354328", "question": "What is the closest upper taxonomy of this animal?", "image_id": "oven_01317224", "entities": ["animal", "bird", "forest", "tree"], "token": 478}
+{"data_id": "infoseek_train_00355696", "question": "What is the closest upper taxonomy of this animal?", "image_id": "oven_01138518", "entities": ["animal", "manta ray"], "token": 474}
+{"data_id": "infoseek_train_00357905", "question": "What is this plant named after?", "image_id": "oven_00132209", "entities": ["plant", "flower", "yellow", "spotted", "leaf", "bloom"], "token": 755}
+{"data_id": "infoseek_train_00359894", "question": "What is the closest parent taxonomy of this animal?", "image_id": "oven_00629023", "entities": ["snake", "animal", "reptile", "taxonomy"], "token": 841}
+{"data_id": "infoseek_train_00360833", "question": "What is the closest upper taxonomy of this bird?", "image_id": "oven_00752328", "entities": ["bird"], "token": 1030}
+{"data_id": "infoseek_train_00360875", "question": "What is the closest parent taxonomy of this plant?", "image_id": "oven_00528397", "entities": ["plant", "thistle"], "token": 884}
+{"data_id": "infoseek_train_00361139", "question": "In which year did this building officially open?", "image_id": "oven_00106847", "entities": [], "token": 752}
+{"data_id": "infoseek_train_00368252", "question": "Which city or region does this building locate in?", "image_id": "oven_00073799", "entities": ["building", "city", "region"], "token": 836}
+{"data_id": "infoseek_train_00369001", "question": "What is the basionym of this plant?", "image_id": "oven_00133763", "entities": ["plant", "basionym"], "token": 482}
+{"data_id": "infoseek_train_00369784", "question": "What is the closest parent taxonomy of this plant?", "image_id": "oven_04695019", "entities": ["plant", "Iris", "Iris atica"], "token": 479}
+{"data_id": "infoseek_train_00370498", "question": "What is the closest upper taxonomy of this plant?", "image_id": "oven_00612093", "entities": ["plant", "upper taxonomy"], "token": 884}
+{"data_id": "infoseek_train_00371644", "question": "What is the closest upper taxonomy of this plant?", "image_id": "oven_04644834", "entities": ["plant", "tree", "flower", "blossom", "leaf", "grass", "garden"], "token": 490}
+{"data_id": "infoseek_train_00373080", "question": "where do you usually find this animal?", "image_id": "oven_00901565", "entities": ["lamb", "farm", "pasture"], "token": 475}
+{"data_id": "infoseek_train_00373446", "question": "What is the closest parent taxonomy of this plant?", "image_id": "oven_00699439", "entities": ["plant", "flower", "yellow flower", "grass", "wildflower", "botany", "taxonomy"], "token": 901}
+{"data_id": "infoseek_train_00374900", "question": "Which city or region does this building locate in?", "image_id": "oven_00040571", "entities": ["building", "city", "region"], "token": 761}
+{"data_id": "infoseek_train_00374956", "question": "What is the closest parent taxonomy of this insect?", "image_id": "oven_00501522", "entities": ["insect", "butterfly", "taxonomy"], "token": 839}
+{"data_id": "infoseek_train_00374976", "question": "Which city or region does this building locate in?", "image_id": "oven_00035484", "entities": ["building", "city", "region"], "token": 1036}
+{"data_id": "infoseek_train_00375222", "question": "What is the closest parent taxonomy of this animal?", "image_id": "oven_01922558", "entities": ["animal", "gorilla"], "token": 473}
+{"data_id": "infoseek_train_00377485", "question": "What is the lowest note that this item can play or sing?", "image_id": "oven_02124665", "entities": ["grand piano", "note"], "token": 476}
+{"data_id": "infoseek_train_00377702", "question": "What is the closest upper taxonomy of this plant?", "image_id": "oven_00599945", "entities": ["plant", "flower", "orchid"], "token": 1037}
+{"data_id": "infoseek_train_00379405", "question": "What is the closest upper taxonomy of this plant?", "image_id": "oven_00561095", "entities": ["plant", "flower", "yellow flower"], "token": 482}
+{"data_id": "infoseek_train_00383409", "question": "What is the country of origin of this animal?", "image_id": "oven_01557000", "entities": ["animal", "country", "origin"], "token": 491}
+{"data_id": "infoseek_train_00383554", "question": "What is the closest parent taxonomy of this animal?", "image_id": "oven_01019513", "entities": ["animal", "lizard"], "token": 884}
+{"data_id": "infoseek_train_00385067", "question": "What country does this street belong to?", "image_id": "oven_00045322", "entities": ["street", "country"], "token": 706}
+{"data_id": "infoseek_train_00385776", "question": "Which city or region does this building locate in?", "image_id": "oven_00019277", "entities": ["building", "city", "region"], "token": 836}
+{"data_id": "infoseek_train_00385899", "question": "What is the country of origin of this animal?", "image_id": "oven_01557250", "entities": ["animal", "country"], "token": 472}
+{"data_id": "infoseek_train_00388008", "question": "What is the closest parent taxonomy of this insect?", "image_id": "oven_00772374", "entities": ["insect", "ladybug", "taxonomic classification"], "token": 480}
+{"data_id": "infoseek_train_00388570", "question": "What is the closest parent taxonomy of this plant?", "image_id": "oven_00702998", "entities": ["plant", "taxonomy"], "token": 733}
+{"data_id": "infoseek_train_00389696", "question": "where is this bird originally discovered?", "image_id": "oven_00797708", "entities": ["bird"], "token": 472}
+{"data_id": "infoseek_train_00390689", "question": "how many day is the egg incubation period of this bird?", "image_id": "oven_00989389", "entities": ["bird", "egg", "incubation period", "day"], "token": 1045}
+{"data_id": "infoseek_train_00393214", "question": "in which country is this food originally from?", "image_id": "oven_04346026", "entities": ["food", "country"], "token": 471}
+{"data_id": "infoseek_train_00393830", "question": "What is the closest upper taxonomy of this insect?", "image_id": "oven_00452769", "entities": ["insect", "beetle"], "token": 475}
+{"data_id": "infoseek_train_00396216", "question": "How many days does the gestation of this animal take?", "image_id": "oven_00670629", "entities": ["animal", "gestation", "days"], "token": 478}
+{"data_id": "infoseek_train_00398300", "question": "What is the closest upper taxonomy of this bird?", "image_id": "oven_00756215", "entities": ["bird", "kingfisher"], "token": 885}
+{"data_id": "infoseek_train_00399064", "question": "What is the closest upper taxonomy of this plant?", "image_id": "oven_00830365", "entities": ["plant", "flower", "white flower", "yellow flower"], "token": 480}
+{"data_id": "infoseek_train_00401006", "question": "What is the closest upper taxonomy of this plant?", "image_id": "oven_00512540", "entities": ["plant", "flower", "white flower", "botanical taxonomy"], "token": 892}
+{"data_id": "infoseek_train_00401174", "question": "Which city or region does this building locate in?", "image_id": "oven_00032236", "entities": ["building", "city", "region"], "token": 836}
+{"data_id": "infoseek_train_00406199", "question": "What is the basionym of this plant?", "image_id": "oven_00895159", "entities": ["plant"], "token": 930}
+{"data_id": "infoseek_train_00406324", "question": "What is the closest parent taxonomy of this plant?", "image_id": "oven_00876388", "entities": ["plant", "taxonomy"], "token": 472}
+{"data_id": "infoseek_train_00407254", "question": "What is the closest parent taxonomy of this plant?", "image_id": "oven_00917787", "entities": ["plant", "flower", "leaf", "fern", "grass", "moss"], "token": 946}
+{"data_id": "infoseek_train_00413154", "question": "What is the closest upper taxonomy of this animal?", "image_id": "oven_01255672", "entities": ["animal", "lizard", "frilled lizard"], "token": 478}
+{"data_id": "infoseek_train_00414080", "question": "What is the closest parent taxonomy of this plant?", "image_id": "oven_00466768", "entities": ["plant"], "token": 755}
+{"data_id": "infoseek_train_00415023", "question": "What is this building dedicated to?", "image_id": "oven_00114775", "entities": ["building", "statue", "Mary", "religious", "dedication"], "token": 891}
+{"data_id": "infoseek_train_00415721", "question": "What country does this park belong to?", "image_id": "oven_00064911", "entities": ["park", "United States"], "token": 832}
+{"data_id": "infoseek_train_00416905", "question": "Which city or region does this building locate in?", "image_id": "oven_00069220", "entities": ["building", "city", "region"], "token": 861}
+{"data_id": "infoseek_train_00417016", "question": "How long in metre is the longest span of this bridge?", "image_id": "oven_00059485", "entities": ["bridge", "metre"], "token": 886}
+{"data_id": "infoseek_train_00418691", "question": "What is the country of origin of this food?", "image_id": "oven_04278861", "entities": ["food", "country", "origin"], "token": 475}
+{"data_id": "infoseek_train_00418885", "question": "Which body of water is this place located in or next to?", "image_id": "oven_00072014", "entities": ["body of water", "place", "ships", "dock", "forest"], "token": 897}
+{"data_id": "infoseek_train_00420436", "question": "What country does this building belong to?", "image_id": "oven_02465886", "entities": ["building", "country"], "token": 470}
+{"data_id": "infoseek_train_00424028", "question": "What country does this lake belong to?", "image_id": "oven_00115938", "entities": [], "token": 501}
+{"data_id": "infoseek_train_00424703", "question": "What is the closest upper taxonomy of this insect?", "image_id": "oven_00779509", "entities": ["insect", "insect colony", "nest", "branch", "tree"], "token": 895}
+{"data_id": "infoseek_train_00425386", "question": "What is the closest parent taxonomy of this animal?", "image_id": "oven_00714122", "entities": ["animal", "grass"], "token": 883}
+{"data_id": "infoseek_train_00427665", "question": "What is the closest parent taxonomy of this plant?", "image_id": "oven_00757471", "entities": ["plant", "fungus"], "token": 884}
+{"data_id": "infoseek_train_00430575", "question": "Which city or region does this building locate in?", "image_id": "oven_00067898", "entities": ["building", "city", "region"], "token": 836}
+{"data_id": "infoseek_train_00430729", "question": "What is the closest upper taxonomy of this animal?", "image_id": "oven_00627533", "entities": ["animal", "ferret", "mammal", "mustelidae"], "token": 895}
+{"data_id": "infoseek_train_00431285", "question": "Which city or region does this food locate in?", "image_id": "oven_04322180", "entities": ["Christiania", "Norway"], "token": 480}
+{"data_id": "infoseek_train_00435984", "question": "What is the closest upper taxonomy of this animal?", "image_id": "oven_00791370", "entities": ["animal", "monkey"], "token": 933}
+{"data_id": "infoseek_train_00436429", "question": "What is the closest parent taxonomy of this insect?", "image_id": "oven_00648257", "entities": ["insect", "taxonomic classification"], "token": 886}
+{"data_id": "infoseek_train_00437132", "question": "What is the closest upper taxonomy of this insect?", "image_id": "oven_00630203", "entities": ["insect", "moth"], "token": 984}
+{"data_id": "infoseek_train_00439606", "question": "What is the height of the None of this park in metre?", "image_id": "oven_00110732", "entities": ["None of this park", "height", "metre"], "token": 843}
+{"data_id": "infoseek_train_00439852", "question": "What is the closest parent taxonomy of this animal?", "image_id": "oven_01717922", "entities": ["animal", "insect", "beetle"], "token": 478}
+{"data_id": "infoseek_train_00440209", "question": "What is the immediately prior item that this animal follows in a series?", "image_id": "oven_01603988", "entities": ["animal", "series"], "token": 476}
+{"data_id": "infoseek_train_00441654", "question": "What is the closest upper taxonomy of this plant?", "image_id": "oven_04489918", "entities": ["plant", "flower", "leaf", "forest"], "token": 478}
+{"data_id": "infoseek_train_00444319", "question": "What is the closest parent taxonomy of this animal?", "image_id": "oven_01019499", "entities": ["animal"], "token": 755}
+{"data_id": "infoseek_train_00445457", "question": "What is the closest parent taxonomy of this insect?", "image_id": "oven_00695443", "entities": ["insect", "spider"], "token": 835}
+{"data_id": "infoseek_train_00446325", "question": "What is the closest parent taxonomy of this plant?", "image_id": "oven_04695342", "entities": ["plant", "iris"], "token": 472}
+{"data_id": "infoseek_train_00448491", "question": "What is the closest parent taxonomy of this plant?", "image_id": "oven_00491002", "entities": ["plant", "flower", "leaf", "cactus"], "token": 890}
+{"data_id": "infoseek_train_00449747", "question": "What is the closest upper taxonomy of this plant?", "image_id": "oven_04853258", "entities": ["plant", "mushroom"], "token": 482}
+{"data_id": "infoseek_train_00451646", "question": "What type of cuisine is this food?", "image_id": "oven_04281468", "entities": ["cuisine", "food", "shrimp", "rice", "bread", "plate"], "token": 484}
+{"data_id": "infoseek_train_00452625", "question": "What is the closest parent taxonomy of this plant?", "image_id": "oven_00876917", "entities": ["plant", "flower", "seed"], "token": 481}
+{"data_id": "infoseek_train_00453633", "question": "What is the closest upper taxonomy of this insect?", "image_id": "oven_00725024", "entities": ["insect", "cockroach"], "token": 860}
+{"data_id": "infoseek_train_00454476", "question": "What is the closest upper taxonomy of this insect?", "image_id": "oven_00672323", "entities": ["insect", "caterpillar", "larva", "branch", "leaf"], "token": 896}
+{"data_id": "infoseek_train_00455218", "question": "What is the conservation status of this bird? (The status is assigned by the international union for conservation of nature. Choose one among Endangered,Least Concern,Critically Endangered,extinct species,extinct in the wild,Vulnerable,Near Threatened,Data Deficient)", "image_id": "oven_01165363", "entities": ["bird", "conservation status", "international union for conservation of nature", "Endangered", "Least Concern", "Critically Endangered", "extinct species", "extinct in the wild", "Vulnerable", "Near Threatened", "Data Deficient"], "token": 569}
+{"data_id": "infoseek_train_00456058", "question": "What is this material named after?", "image_id": "oven_03718300", "entities": ["Old Spice", "BODY TALC", "ship", "Shulton"], "token": 480}
+{"data_id": "infoseek_train_00456443", "question": "Which country does this sport come from?", "image_id": "oven_01052397", "entities": ["sport", "country"], "token": 470}
+{"data_id": "infoseek_train_00457191", "question": "What is the closest parent taxonomy of this plant?", "image_id": "oven_00608435", "entities": ["plant", "taxonomy"], "token": 883}
+{"data_id": "infoseek_train_00459350", "question": "What country does this building belong to?", "image_id": "oven_00060105", "entities": ["building", "country"], "token": 881}
+{"data_id": "infoseek_train_00461405", "question": "What is the closest upper taxonomy of this insect?", "image_id": "oven_00908322", "entities": ["insect", "beetle", "flower"], "token": 478}
+{"data_id": "infoseek_train_00462332", "question": "What is the closest upper taxonomy of this animal?", "image_id": "oven_00604247", "entities": ["animal", "ray", "spotted ray", "fish", "marine animal", "ocean", "underwater"], "token": 492}
+{"data_id": "infoseek_train_00463753", "question": "Which road, railway or canal does this bridge carry?", "image_id": "oven_00077471", "entities": ["bridge", "road"], "token": 934}
+{"data_id": "infoseek_train_00464086", "question": "What is the closest parent taxonomy of this plant?", "image_id": "oven_00565347", "entities": ["plant", "fern"], "token": 883}
+{"data_id": "infoseek_train_00464354", "question": "What is the closest parent taxonomy of this plant?", "image_id": "oven_04714569", "entities": ["plant", "taxonomy"], "token": 472}
+{"data_id": "infoseek_train_00465125", "question": "Who found this building?", "image_id": "oven_00029517", "entities": [], "token": 823}
+{"data_id": "infoseek_train_00465489", "question": "What is the closest parent taxonomy of this insect?", "image_id": "oven_00895314", "entities": ["insect", "butterfly"], "token": 836}
+{"data_id": "infoseek_train_00469170", "question": "Which city or region does this garden locate in?", "image_id": "oven_00019949", "entities": ["garden", "city", "region"], "token": 887}
+{"data_id": "infoseek_train_00469190", "question": "What is the spore print color of this plant?", "image_id": "oven_04853200", "entities": ["spore print color", "plant", "mushroom"], "token": 481}
+{"data_id": "infoseek_train_00470539", "question": "What country does this facility belong to?", "image_id": "oven_00066852", "entities": ["Germany"], "token": 828}
+{"data_id": "infoseek_train_00472032", "question": "What is the conservation status of this bird? (The status is assigned by the international union for conservation of nature. Choose one among Endangered,Least Concern,Critically Endangered,extinct species,extinct in the wild,Vulnerable,Near Threatened,Data Deficient)", "image_id": "oven_00950100", "entities": ["bird", "conservation status", "international union for conservation of nature", "Endangered", "Least Concern", "Critically Endangered", "extinct species", "extinct in the wild", "Vulnerable", "Near Threatened", "Data Deficient"], "token": 980}
+{"data_id": "infoseek_train_00473061", "question": "What is the carbon footprint of this food in kilogram of carbon dioxide equivalent per kilogram?", "image_id": "oven_03971159", "entities": ["milk", "carbon footprint", "kilogram", "carbon dioxide equivalent"], "token": 498}
+{"data_id": "infoseek_train_00474754", "question": "What is the closest upper taxonomy of this bird?", "image_id": "oven_00847914", "entities": ["bird"], "token": 830}
+{"data_id": "infoseek_train_00475179", "question": "What country does this lake belong to?", "image_id": "oven_00115945", "entities": ["lake"], "token": 878}
+{"data_id": "infoseek_train_00475681", "question": "What is the genre of this building?", "image_id": "oven_00011466", "entities": ["building", "Christ the Redeemer", "statue", "religious", "monument"], "token": 895}
+{"data_id": "infoseek_train_00475863", "question": "What country does this building belong to?", "image_id": "oven_00055258", "entities": ["building"], "token": 828}
+{"data_id": "infoseek_train_00476038", "question": "What is the hymenium type of this plant?", "image_id": "oven_00443430", "entities": ["plant", "hymenium"], "token": 887}
+{"data_id": "infoseek_train_00477086", "question": "What is the closest upper taxonomy of this insect?", "image_id": "oven_00703082", "entities": ["insect", "moth"], "token": 1034}
+{"data_id": "infoseek_train_00483690", "question": "Which city or region does this building locate in?", "image_id": "oven_00073049", "entities": ["building", "city", "region"], "token": 761}
+{"data_id": "infoseek_train_00486383", "question": "What is the closest upper taxonomy of this plant?", "image_id": "oven_00807037", "entities": ["plant", "tree", "graveyard", "gravestone"], "token": 480}
+{"data_id": "infoseek_train_00489260", "question": "What is the closest upper taxonomy of this plant?", "image_id": "oven_04180353", "entities": ["plant", "orange", "fruit", "leaf"], "token": 484}
+{"data_id": "infoseek_train_00489344", "question": "Who designed this place?", "image_id": "oven_00025537", "entities": ["place"], "token": 875}
+{"data_id": "infoseek_train_00489654", "question": "What is the closest upper taxonomy of this plant?", "image_id": "oven_04140163", "entities": ["plant", "chili pepper", "capsicum"], "token": 478}
+{"data_id": "infoseek_train_00490498", "question": "What is the closest upper taxonomy of this plant?", "image_id": "oven_00830156", "entities": ["plant", "flower", "leaf", "botanical taxonomy"], "token": 480}
+{"data_id": "infoseek_train_00490717", "question": "What is the closest upper taxonomy of this animal?", "image_id": "oven_01750479", "entities": ["animal", "insect", "wasps", "invertebrate"], "token": 490}
+{"data_id": "infoseek_train_00493148", "question": "Which city or region does this place locate in?", "image_id": "oven_00043159", "entities": ["city", "region"], "token": 758}
+{"data_id": "infoseek_train_00494335", "question": "who/what operates this building?", "image_id": "oven_00059765", "entities": ["National Aeronautic Association", "U.S."], "token": 886}
+{"data_id": "infoseek_train_00495259", "question": "What is the closest upper taxonomy of this bird?", "image_id": "oven_00874162", "entities": ["bird"], "token": 955}
+{"data_id": "infoseek_train_00495461", "question": "Which city or region does this building locate in?", "image_id": "oven_00073733", "entities": [], "token": 828}
+{"data_id": "infoseek_train_00496627", "question": "Who is the owner of this building?", "image_id": "oven_00054986", "entities": [], "token": 876}
+{"data_id": "infoseek_train_00498801", "question": "What is the conservation status of this animal? (The status is assigned by the international union for conservation of nature. Choose one among Endangered,Least Concern,Critically Endangered,extinct species,extinct in the wild,Vulnerable,Near Threatened,Data Deficient)", "image_id": "oven_00728848", "entities": ["animal", "orca", "conservation status", "international union for conservation of nature", "Endangered", "Least Concern", "Critically Endangered", "extinct species", "extinct in the wild", "Vulnerable", "Near Threatened", "Data Deficient"], "token": 572}
+{"data_id": "infoseek_train_00499472", "question": "What country does this building belong to?", "image_id": "oven_00020501", "entities": ["building", "country"], "token": 831}
+{"data_id": "infoseek_train_00499677", "question": "What is the nerve that innervates this object?", "image_id": "oven_04903349", "entities": ["cactus"], "token": 471}
+{"data_id": "infoseek_train_00500242", "question": "What is the closest upper taxonomy of this bird?", "image_id": "oven_00852298", "entities": ["bird", "white bird", "egret"], "token": 483}
+{"data_id": "infoseek_train_00501312", "question": "What is the architectural style of this building?", "image_id": "oven_00079980", "entities": ["building", "architectural style", "cross", "carving", "stone", "ornamentation", "Armenian"], "token": 905}
+{"data_id": "infoseek_train_00501389", "question": "Which country does this food come from?", "image_id": "oven_00195224", "entities": ["Japan"], "token": 659}
+{"data_id": "infoseek_train_00506049", "question": "Which city or region does this building locate in?", "image_id": "oven_00102440", "entities": ["building", "city", "region"], "token": 1036}
+{"data_id": "infoseek_train_00508595", "question": "Who is the creator of this building?", "image_id": "oven_00035045", "entities": ["building", "creator"], "token": 881}
+{"data_id": "infoseek_train_00510011", "question": "What is the closest upper taxonomy of this plant?", "image_id": "oven_04824087", "entities": ["plant", "flower", "leaf", "botany", "taxonomy"], "token": 482}
+{"data_id": "infoseek_train_00511295", "question": "What is the basionym of this plant?", "image_id": "oven_00923412", "entities": ["plant", "basionym"], "token": 835}
+{"data_id": "infoseek_train_00511518", "question": "What is the closest parent taxonomy of this plant?", "image_id": "oven_00558021", "entities": ["plant", "taxonomy"], "token": 883}
+{"data_id": "infoseek_train_00511764", "question": "What is the litter size of this bird?", "image_id": "oven_00500031", "entities": ["bird", "litter size"], "token": 479}
+{"data_id": "infoseek_train_00511997", "question": "What country does this place belong to?", "image_id": "oven_00062128", "entities": ["place"], "token": 878}
+{"data_id": "infoseek_train_00513414", "question": "What is the closest upper taxonomy of this plant?", "image_id": "oven_00725092", "entities": ["plant", "flower", "species", "taxonomy"], "token": 889}
+{"data_id": "infoseek_train_00514082", "question": "What is the closest parent taxonomy of this plant?", "image_id": "oven_00641023", "entities": ["plant", "leaf", "hand", "person"], "token": 889}
+{"data_id": "infoseek_train_00514364", "question": "who/what operates this building?", "image_id": "oven_00063980", "entities": ["building"], "token": 877}
+{"data_id": "infoseek_train_00514976", "question": "What country does this building belong to?", "image_id": "oven_00056256", "entities": ["building", "country"], "token": 881}
+{"data_id": "infoseek_train_00515051", "question": "What country does this mountain belong to?", "image_id": "oven_00042872", "entities": ["mountain", "country"], "token": 757}
+{"data_id": "infoseek_train_00517088", "question": "What is the closest upper taxonomy of this plant?", "image_id": "oven_04766897", "entities": ["plant", "flower", "botanical taxonomy"], "token": 477}
+{"data_id": "infoseek_train_00518380", "question": "What is the closest upper taxonomy of this plant?", "image_id": "oven_00560884", "entities": ["plant", "yellow flower", "green leaves"], "token": 490}
+{"data_id": "infoseek_train_00520281", "question": "What is the closest parent taxonomy of this insect?", "image_id": "oven_00501525", "entities": ["insect", "butterfly", "taxonomy"], "token": 889}
+{"data_id": "infoseek_train_00521712", "question": "What is the closest parent taxonomy of this insect?", "image_id": "oven_00849992", "entities": ["insect", "caterpillar"], "token": 886}
+{"data_id": "infoseek_train_00523409", "question": "How heavy does this sport typically grow up to in terms of gram?", "image_id": "oven_03746442", "entities": ["dog", "tennis ball", "gram"], "token": 481}
+{"data_id": "infoseek_train_00525693", "question": "Who is the discoverer or inventor of this item?", "image_id": "oven_03739586", "entities": [], "token": 468}
+{"data_id": "infoseek_train_00525840", "question": "Which company manufactures this vehicle?", "image_id": "oven_00004996", "entities": ["vehicle", "company"], "token": 1108}
+{"data_id": "infoseek_train_00526755", "question": "What country does this place belong to?", "image_id": "oven_00084914", "entities": ["place", "country"], "token": 706}
+{"data_id": "infoseek_train_00530213", "question": "What is the closest parent taxonomy of this plant?", "image_id": "oven_00967628", "entities": ["plant", "taxonomy"], "token": 472}
+{"data_id": "infoseek_train_00530727", "question": "Which city or region does this building locate in?", "image_id": "oven_00078124", "entities": ["Florence"], "token": 881}
+{"data_id": "infoseek_train_00531061", "question": "What is the closest parent taxonomy of this plant?", "image_id": "oven_00641018", "entities": ["plant", "leaf", "taxonomy"], "token": 886}
+{"data_id": "infoseek_train_00532370", "question": "What country does this building belong to?", "image_id": "oven_02465470", "entities": ["building", "country"], "token": 470}
+{"data_id": "infoseek_train_00533356", "question": "What country does this building belong to?", "image_id": "oven_00106892", "entities": ["building", "Mir Junaka", "country"], "token": 836}
+{"data_id": "infoseek_train_00534079", "question": "What is the serving temperature of this food? (Choose among frozen,Media Temple,hot,cold,lukewarm,room temperature)", "image_id": "oven_00162955", "entities": ["hot"], "token": 493}
+{"data_id": "infoseek_train_00534750", "question": "What is the closest parent taxonomy of this bird?", "image_id": "oven_00630620", "entities": ["bird", "taxonomy"], "token": 472}
+{"data_id": "infoseek_train_00534942", "question": "What is the area in square kilometre occupied by this city?", "image_id": "oven_04374882", "entities": ["city", "square kilometre", "Kaaba"], "token": 481}
+{"data_id": "infoseek_train_00537555", "question": "where is this bird originally discovered?", "image_id": "oven_00797544", "entities": ["bird"], "token": 466}
+{"data_id": "infoseek_train_00540041", "question": "What is the closest parent taxonomy of this plant?", "image_id": "oven_04163769", "entities": ["plant", "peanut"], "token": 473}
+{"data_id": "infoseek_train_00540718", "question": "What kind of effect does this item have?", "image_id": "oven_03913581", "entities": ["wind turbine", "energy", "renewable energy", "power generation"], "token": 482}
+{"data_id": "infoseek_train_00542250", "question": "What country does this place belong to?", "image_id": "oven_00026255", "entities": ["Wally Thuro", "Mr. Pumpkin", "Lions Club", "1917"], "token": 897}
+{"data_id": "infoseek_train_00542480", "question": "what is the temporal range start of this animal?", "image_id": "oven_01294277", "entities": ["animal", "temporal range", "start"], "token": 477}
+{"data_id": "infoseek_train_00543756", "question": "What is the conservation status of this bird? (The status is assigned by the international union for conservation of nature. Choose one among Endangered,Least Concern,Critically Endangered,extinct species,extinct in the wild,Vulnerable,Near Threatened,Data Deficient)", "image_id": "oven_00639626", "entities": ["bird", "Endangered", "Least Concern", "Critically Endangered", "extinct species", "extinct in the wild", "Vulnerable", "Near Threatened", "Data Deficient"], "token": 917}
+{"data_id": "infoseek_train_00543965", "question": "What is the country of origin of this animal?", "image_id": "oven_01659258", "entities": ["pug", "animal", "country", "origin"], "token": 479}
+{"data_id": "infoseek_train_00544664", "question": "Which city or region does this building locate in?", "image_id": "oven_00020183", "entities": ["building", "city", "region", "mountains"], "token": 890}
+{"data_id": "infoseek_train_00545848", "question": "in which country is this food originally from?", "image_id": "oven_04345628", "entities": ["chocolate"], "token": 469}
+{"data_id": "infoseek_train_00546956", "question": "Who is the owner of this building?", "image_id": "oven_03768455", "entities": [], "token": 465}
+{"data_id": "infoseek_train_00547911", "question": "What is the closest parent taxonomy of this animal?", "image_id": "oven_00982283", "entities": ["animal", "crocodile", "alligator", "taxonomy"], "token": 480}
+{"data_id": "infoseek_train_00548115", "question": "What is the conservation status of this animal? (The status is assigned by the international union for conservation of nature. Choose one among Endangered,Least Concern,Critically Endangered,extinct species,extinct in the wild,Vulnerable,Near Threatened,Data Deficient)", "image_id": "oven_00440295", "entities": ["animal", "lizard", "conservation status", "international union for conservation of nature", "Endangered", "Least Concern", "Critically Endangered", "extinct species", "extinct in the wild", "Vulnerable", "Near Threatened", "Data Deficient"], "token": 984}
+{"data_id": "infoseek_train_00548830", "question": "Which (geo)physical feature is the building located in or on?", "image_id": "oven_00111480", "entities": ["building", "trees", "tower", "sky"], "token": 843}
+{"data_id": "infoseek_train_00550603", "question": "Which city or region does this place locate in?", "image_id": "oven_00096619", "entities": ["city", "region"], "token": 833}
+{"data_id": "infoseek_train_00550706", "question": "Which country does this food come from?", "image_id": "oven_00207077", "entities": ["food", "country"], "token": 470}
+{"data_id": "infoseek_train_00551903", "question": "What is the closest parent taxonomy of this plant?", "image_id": "oven_04134224", "entities": ["plant", "cucumber"], "token": 473}
+{"data_id": "infoseek_train_00552357", "question": "What is the closest parent taxonomy of this plant?", "image_id": "oven_00574081", "entities": ["plant", "flower", "yellow flower"], "token": 887}
+{"data_id": "infoseek_train_00552675", "question": "What is the closest upper taxonomy of this bird?", "image_id": "oven_00756214", "entities": ["bird", "fish", "tree", "branch"], "token": 1039}
+{"data_id": "infoseek_train_00552871", "question": "What is the closest upper taxonomy of this animal?", "image_id": "oven_01427842", "entities": ["animal", "hermit crab", "marine", "coral reef"], "token": 482}
+{"data_id": "infoseek_train_00554122", "question": "What is the closest upper taxonomy of this plant?", "image_id": "oven_00609548", "entities": ["plant", "flower", "lily"], "token": 476}
+{"data_id": "infoseek_train_00554146", "question": "What is the closest upper taxonomy of this plant?", "image_id": "oven_04454915", "entities": ["plant", "fern"], "token": 478}
+{"data_id": "infoseek_train_00554627", "question": "What is the country of origin of this place?", "image_id": "oven_03809686", "entities": ["France"], "token": 469}
+{"data_id": "infoseek_train_00554653", "question": "What country does this building belong to?", "image_id": "oven_00056242", "entities": ["building", "country"], "token": 806}
+{"data_id": "infoseek_train_00555252", "question": "What is the highest note this item can play?", "image_id": "oven_02125635", "entities": ["Windsor", "keyboard", "musical instrument"], "token": 479}
+{"data_id": "infoseek_train_00555762", "question": "Which city or region does this place locate in?", "image_id": "oven_00115533", "entities": ["city", "region"], "token": 708}
+{"data_id": "infoseek_train_00555868", "question": "What is the closest upper taxonomy of this plant?", "image_id": "oven_04180366", "entities": ["plant", "fruit", "citrus", "Ugli"], "token": 480}
+{"data_id": "infoseek_train_00556822", "question": "What is this object named after?", "image_id": "oven_04855470", "entities": ["mushroom"], "token": 468}
+{"data_id": "infoseek_train_00557259", "question": "What is the closest upper taxonomy of this insect?", "image_id": "oven_00908488", "entities": ["insect", "insects", "taxonomy"], "token": 477}
+{"data_id": "infoseek_train_00558409", "question": "What is the closest parent taxonomy of this plant?", "image_id": "oven_00565255", "entities": ["plant", "flower", "yellow flower", "leaf", "green leaf", "botanical taxonomy"], "token": 899}
+{"data_id": "infoseek_train_00562530", "question": "What is the closest upper taxonomy of this plant?", "image_id": "oven_00446767", "entities": ["plant", "flower", "poppy", "orange", "field"], "token": 482}
+{"data_id": "infoseek_train_00562703", "question": "What is the closest parent taxonomy of this plant?", "image_id": "oven_04659438", "entities": ["plant", "tree", "forest"], "token": 481}
+{"data_id": "infoseek_train_00563364", "question": "What is the closest parent taxonomy of this animal?", "image_id": "oven_01923115", "entities": ["animal", "orangutan"], "token": 473}
+{"data_id": "infoseek_train_00563707", "question": "What is the closest parent taxonomy of this plant?", "image_id": "oven_04788229", "entities": ["plant", "taxonomy"], "token": 478}
+{"data_id": "infoseek_train_00565170", "question": "What is the closest upper taxonomy of this animal?", "image_id": "oven_00697217", "entities": ["animal", "insect", "woodlouse"], "token": 889}
+{"data_id": "infoseek_train_00565835", "question": "where do you usually find this animal?", "image_id": "oven_01855244", "entities": ["rhino"], "token": 468}
+{"data_id": "infoseek_train_00567192", "question": "What is the closest parent taxonomy of this insect?", "image_id": "oven_00772500", "entities": ["insect", "insect taxonomy", "parent taxonomy"], "token": 479}
+{"data_id": "infoseek_train_00568260", "question": "What is the closest upper taxonomy of this plant?", "image_id": "oven_00599942", "entities": ["plant", "leaf", "moss", "grass"], "token": 890}
+{"data_id": "infoseek_train_00569424", "question": "What is the closest upper taxonomy of this bird?", "image_id": "oven_01199712", "entities": ["bird", "bird species", "avian", "taxonomic classification", "bird family", "avian taxonomy"], "token": 489}
+{"data_id": "infoseek_train_00576231", "question": "What is the closest parent taxonomy of this plant?", "image_id": "oven_00850043", "entities": ["plant", "leaf", "taxonomy"], "token": 886}
+{"data_id": "infoseek_train_00576420", "question": "What is the closest upper taxonomy of this insect?", "image_id": "oven_00725029", "entities": ["insect", "insect taxonomy", "upper taxonomy"], "token": 840}
+{"data_id": "infoseek_train_00581257", "question": "Which city or region does this place locate in?", "image_id": "oven_00065736", "entities": ["city", "region"], "token": 833}
+{"data_id": "infoseek_train_00581720", "question": "On what date did this building officially open?", "image_id": "oven_00073230", "entities": ["Aviva Stadium"], "token": 831}
+{"data_id": "infoseek_train_00582126", "question": "What is the closest parent taxonomy of this plant?", "image_id": "oven_04226608", "entities": ["plant", "taxonomy"], "token": 472}
+{"data_id": "infoseek_train_00582258", "question": "What is the closest parent taxonomy of this plant?", "image_id": "oven_00667781", "entities": ["plant", "taxonomy"], "token": 883}
+{"data_id": "infoseek_train_00584677", "question": "Who is the owner of this building?", "image_id": "oven_00062867", "entities": [], "token": 826}
+{"data_id": "infoseek_train_00585225", "question": "What is the closest upper taxonomy of this animal?", "image_id": "oven_00475696", "entities": ["animal", "sea slug"], "token": 884}
+{"data_id": "infoseek_train_00585664", "question": "What is the closest parent taxonomy of this insect?", "image_id": "oven_00994224", "entities": ["insect", "dragonfly"], "token": 860}
+{"data_id": "infoseek_train_00585952", "question": "What is the closest parent taxonomy of this plant?", "image_id": "oven_00439914", "entities": ["plant", "mushroom", "fungus"], "token": 889}
+{"data_id": "infoseek_train_00586737", "question": "Which country does this food come from?", "image_id": "oven_04284051", "entities": ["Mexico"], "token": 467}
+{"data_id": "infoseek_train_00587140", "question": "What is the closest upper taxonomy of this animal?", "image_id": "oven_00627534", "entities": ["animal"], "token": 830}
+{"data_id": "infoseek_train_00587202", "question": "What is the basionym of this plant?", "image_id": "oven_00923410", "entities": ["plant", "basionym"], "token": 885}
+{"data_id": "infoseek_train_00587619", "question": "What is the conservation status of this animal? (The status is assigned by the international union for conservation of nature. Choose one among Endangered,Least Concern,Critically Endangered,extinct species,extinct in the wild,Vulnerable,Near Threatened,Data Deficient)", "image_id": "oven_00440447", "entities": ["animal", "lizard", "conservation status", "international union for conservation of nature", "Endangered", "Least Concern", "Critically Endangered", "extinct species", "extinct in the wild", "Vulnerable", "Near Threatened", "Data Deficient"], "token": 959}
+{"data_id": "infoseek_train_00588976", "question": "What is the carbon footprint of this food in kilogram of carbon dioxide equivalent per kilogram?", "image_id": "oven_03970075", "entities": ["food", "carbon footprint", "kilogram", "carbon dioxide", "equivalent"], "token": 494}
+{"data_id": "infoseek_train_00592301", "question": "What is the basionym of this plant?", "image_id": "oven_00133866", "entities": ["plant", "basionym"], "token": 480}
+{"data_id": "infoseek_train_00592572", "question": "Who is the manufacturer of this vehicle?", "image_id": "oven_00009117", "entities": ["vehicle", "manufacturer"], "token": 598}
+{"data_id": "infoseek_train_00593396", "question": "Who commissioned this building?", "image_id": "oven_00102304", "entities": ["building"], "token": 875}
+{"data_id": "infoseek_train_00595277", "question": "What is the brand of this vehicle?", "image_id": "oven_00007695", "entities": ["vehicle", "Silverado", "Chevrolet"], "token": 1179}
+{"data_id": "infoseek_train_00596083", "question": "What product does this drink produce?", "image_id": "oven_02488272", "entities": ["drink", "product"], "token": 469}
+{"data_id": "infoseek_train_00596273", "question": "What is the closest upper taxonomy of this insect?", "image_id": "oven_01012005", "entities": ["insect", "butterfly", "flower"], "token": 839}
+{"data_id": "infoseek_train_00597029", "question": "What country does this building belong to?", "image_id": "oven_00106888", "entities": ["building"], "token": 878}
+{"data_id": "infoseek_train_00597168", "question": "Which historic county does this building belong to?", "image_id": "oven_00073241", "entities": ["Guinness", "stadium", "building", "historic county"], "token": 841}
+{"data_id": "infoseek_train_00602570", "question": "Which historic county does this building belong to?", "image_id": "oven_00107318", "entities": [], "token": 877}
+{"data_id": "infoseek_train_00602786", "question": "In which year was this place invented or discovered?", "image_id": "oven_02085657", "entities": [], "token": 467}
+{"data_id": "infoseek_train_00603552", "question": "What is the closest upper taxonomy of this plant?", "image_id": "oven_00670177", "entities": ["plant", "upper taxonomy"], "token": 834}
+{"data_id": "infoseek_train_00604166", "question": "What is the closest parent taxonomy of this insect?", "image_id": "oven_00648261", "entities": ["insect", "insect taxonomy", "parent taxonomy"], "token": 815}
+{"data_id": "infoseek_train_00604928", "question": "What country does this building belong to?", "image_id": "oven_00015939", "entities": ["building", "country"], "token": 881}
+{"data_id": "infoseek_train_00607509", "question": "What is the closest parent taxonomy of this plant?", "image_id": "oven_00613725", "entities": ["plant", "flower", "leaf", "botany", "taxonomy"], "token": 893}
+{"data_id": "infoseek_train_00608569", "question": "What is the closest parent taxonomy of this plant?", "image_id": "oven_00605655", "entities": ["plant", "taxonomy"], "token": 883}
+{"data_id": "infoseek_train_00608768", "question": "What is the closest upper taxonomy of this bird?", "image_id": "oven_00442513", "entities": ["bird"], "token": 980}
+{"data_id": "infoseek_train_00609150", "question": "What is the closest parent taxonomy of this plant?", "image_id": "oven_00608436", "entities": ["plant", "flower", "yellow", "leaf", "stem"], "token": 892}
+{"data_id": "infoseek_train_00609874", "question": "What is the closest upper taxonomy of this plant?", "image_id": "oven_00804521", "entities": ["plant"], "token": 755}
+{"data_id": "infoseek_train_00610040", "question": "Which (geo)physical feature is the park located in or on?", "image_id": "oven_00110757", "entities": ["park", "mountain", "valley", "rock formation", "forest"], "token": 899}
+{"data_id": "infoseek_train_00612772", "question": "What is the conservation status of this bird? (The status is assigned by the international union for conservation of nature. Choose one among Endangered,Least Concern,Critically Endangered,extinct species,extinct in the wild,Vulnerable,Near Threatened,Data Deficient)", "image_id": "oven_01439995", "entities": ["bird", "conservation status", "international union for conservation of nature", "Endangered", "Least Concern", "Critically Endangered", "extinct species", "extinct in the wild", "Vulnerable", "Near Threatened", "Data Deficient"], "token": 569}
+{"data_id": "infoseek_train_00614091", "question": "What country does this river belong to?", "image_id": "oven_00078689", "entities": ["river", "country"], "token": 881}
+{"data_id": "infoseek_train_00614123", "question": "Which city or region does this building locate in?", "image_id": "oven_00019535", "entities": ["building", "city", "region"], "token": 836}
+{"data_id": "infoseek_train_00614572", "question": "Which place is this bird endemic to?", "image_id": "oven_01336308", "entities": ["bird", "place"], "token": 470}
+{"data_id": "infoseek_train_00615405", "question": "What is the closest upper taxonomy of this plant?", "image_id": "oven_00821781", "entities": ["plant", "mushroom"], "token": 885}
+{"data_id": "infoseek_train_00616487", "question": "What is the closest parent taxonomy of this plant?", "image_id": "oven_00757478", "entities": ["plant", "fungus"], "token": 884}
+{"data_id": "infoseek_train_00617970", "question": "What is the closest parent taxonomy of this insect?", "image_id": "oven_00695965", "entities": ["insect", "moth"], "token": 884}
+{"data_id": "infoseek_train_00619851", "question": "Which place is this plant endemic to?", "image_id": "oven_00482070", "entities": ["plant", "place"], "token": 881}
+{"data_id": "infoseek_train_00619942", "question": "What is the closest upper taxonomy of this bird?", "image_id": "oven_00975098", "entities": ["bird"], "token": 905}
+{"data_id": "infoseek_train_00622380", "question": "What is the closest upper taxonomy of this plant?", "image_id": "oven_00545381", "entities": ["plant", "flower", "yellow", "grass"], "token": 839}
+{"data_id": "infoseek_train_00624367", "question": "Who is the discoverer or inventor of this item?", "image_id": "oven_02138434", "entities": [], "token": 474}
+{"data_id": "infoseek_train_00625808", "question": "Who is the discoverer or inventor of this item?", "image_id": "oven_03739698", "entities": ["motorcycle"], "token": 471}
+{"data_id": "infoseek_train_00625827", "question": "Which transport network is this building part of?", "image_id": "oven_00016786", "entities": ["JR Hakata City", "transport network"], "token": 886}
+{"data_id": "infoseek_train_00625858", "question": "Which city or region does this place locate in?", "image_id": "oven_00112252", "entities": ["city", "region"], "token": 883}
+{"data_id": "infoseek_train_00625912", "question": "What is the closest upper taxonomy of this bird?", "image_id": "oven_00847916", "entities": ["bird", "tree", "mangrove", "water"], "token": 891}
+{"data_id": "infoseek_train_00626379", "question": "where is the highest point of this building?", "image_id": "oven_00059756", "entities": ["Wilbur", "The Air", "building"], "token": 887}
+{"data_id": "infoseek_train_00626972", "question": "What country does this place belong to?", "image_id": "oven_00104223", "entities": ["Thailand"], "token": 879}
+{"data_id": "infoseek_train_00627345", "question": "What is the closest upper taxonomy of this plant?", "image_id": "oven_04824181", "entities": ["plant", "flower", "leaf", "purple", "yellow"], "token": 481}
+{"data_id": "infoseek_train_00627612", "question": "How long in metre is the longest span of this bridge?", "image_id": "oven_00077697", "entities": ["bridge", "metre", "span"], "token": 839}
+{"data_id": "infoseek_train_00628011", "question": "How heavy does this bird typically grow up to in terms of gram?", "image_id": "oven_00560379", "entities": ["bird", "gram"], "token": 476}
+{"data_id": "infoseek_train_00628597", "question": "In which year was this item invented or discovered?", "image_id": "oven_03844525", "entities": [], "token": 467}
+{"data_id": "infoseek_train_00628613", "question": "who/what operates this park?", "image_id": "oven_00089772", "entities": ["General Sherman", "park"], "token": 831}
+{"data_id": "infoseek_train_00629007", "question": "Which country does this sport come from?", "image_id": "oven_01052148", "entities": ["Ukraine"], "token": 468}
+{"data_id": "infoseek_train_00631498", "question": "What is the closest upper taxonomy of this animal?", "image_id": "oven_01962388", "entities": ["panda", "animal", "bear"], "token": 476}
+{"data_id": "infoseek_train_00631782", "question": "Which city or region does this mountain locate in?", "image_id": "oven_00106188", "entities": ["mountain", "city", "region"], "token": 887}
+{"data_id": "infoseek_train_00632084", "question": "What is the closest parent taxonomy of this plant?", "image_id": "oven_00482158", "entities": ["plant", "fern", "tree", "moss"], "token": 890}
+{"data_id": "infoseek_train_00633707", "question": "What is the location of this building?", "image_id": "oven_00075131", "entities": ["building", "location"], "token": 831}
+{"data_id": "infoseek_train_00633773", "question": "What is the country of origin of this food?", "image_id": "oven_00173754", "entities": ["spaghetti", "sauce", "Italy"], "token": 573}
+{"data_id": "infoseek_train_00634442", "question": "What is the closest parent taxonomy of this plant?", "image_id": "oven_04587990", "entities": ["plant", "flower", "orchid"], "token": 476}
+{"data_id": "infoseek_train_00634915", "question": "Which place is this animal endemic to?", "image_id": "oven_00968179", "entities": ["animal", "place"], "token": 1006}
+{"data_id": "infoseek_train_00635903", "question": "Which city or region does this building locate in?", "image_id": "oven_00020197", "entities": ["building", "mountain", "hill"], "token": 837}
+{"data_id": "infoseek_train_00636889", "question": "What is the closest upper taxonomy of this plant?", "image_id": "oven_00535262", "entities": ["plant", "flower", "botanical taxonomy"], "token": 477}
+{"data_id": "infoseek_train_00638195", "question": "What is the closest parent taxonomy of this insect?", "image_id": "oven_00807753", "entities": ["insect", "taxon", "parent taxonomy"], "token": 1039}
+{"data_id": "infoseek_train_00638389", "question": "What is the closest upper taxonomy of this insect?", "image_id": "oven_00672313", "entities": ["insect", "moth"], "token": 984}
+{"data_id": "infoseek_train_00642460", "question": "What is the closest parent taxonomy of this plant?", "image_id": "oven_00975204", "entities": ["plant", "flower", "leaf", "stem"], "token": 889}
+{"data_id": "infoseek_train_00642492", "question": "Which city or region does this park locate in?", "image_id": "oven_00011204", "entities": [], "token": 878}
+{"data_id": "infoseek_train_00643247", "question": "What is the closest upper taxonomy of this plant?", "image_id": "oven_00989336", "entities": ["plant", "flower", "leaf", "stem", "purple flower", "green leaf", "wild plant"], "token": 776}
+{"data_id": "infoseek_train_00645492", "question": "What is the closest upper taxonomy of this insect?", "image_id": "oven_00703067", "entities": ["insect", "moth"], "token": 834}
+{"data_id": "infoseek_train_00646917", "question": "Who is the founder of the building in the image?", "image_id": "oven_00015280", "entities": [], "token": 754}
+{"data_id": "infoseek_train_00648729", "question": "What is the closest parent taxonomy of this plant?", "image_id": "oven_00565253", "entities": ["plant", "flower", "leaf", "green", "yellow"], "token": 892}
+{"data_id": "infoseek_train_00649138", "question": "What country does this city belong to?", "image_id": "oven_04375096", "entities": ["Saudi Arabia", "Mecca"], "token": 472}
+{"data_id": "infoseek_train_00650454", "question": "Who is the founder of the building in the image?", "image_id": "oven_00079376", "entities": [], "token": 754}
+{"data_id": "infoseek_train_00652981", "question": "What is the closest parent taxonomy of this plant?", "image_id": "oven_00715337", "entities": ["plant", "taxonomy"], "token": 478}
+{"data_id": "infoseek_train_00655362", "question": "What is the closest upper taxonomy of this plant?", "image_id": "oven_00478719", "entities": ["plant", "flower", "yellow flower", "leaf", "stem", "water", "lake"], "token": 899}
+{"data_id": "infoseek_train_00655776", "question": "What is the hymenium type of this plant?", "image_id": "oven_00443431", "entities": ["hymenium", "plant"], "token": 1012}
+{"data_id": "infoseek_train_00656787", "question": "What is the closest upper taxonomy of this insect?", "image_id": "oven_00909347", "entities": ["insect", "moth"], "token": 809}
+{"data_id": "infoseek_train_00657154", "question": "What equipment or engine is used by this vehicle to provide power?", "image_id": "oven_00006830", "entities": ["vehicle", "engine", "power"], "token": 601}
+{"data_id": "infoseek_train_00659568", "question": "What is the closest parent taxonomy of this plant?", "image_id": "oven_00491007", "entities": ["plant", "taxonomy"], "token": 883}
+{"data_id": "infoseek_train_00660099", "question": "What is the closest upper taxonomy of this insect?", "image_id": "oven_00997323", "entities": ["insect", "moth"], "token": 884}
+{"data_id": "infoseek_train_00660184", "question": "Which city or region does this town locate in?", "image_id": "oven_00012785", "entities": ["town", "city", "region"], "token": 836}
+{"data_id": "infoseek_train_00661186", "question": "What is the country of origin of this plant?", "image_id": "oven_04310979", "entities": ["Cascapara Creek", "plant", "country"], "token": 479}
+{"data_id": "infoseek_train_00662620", "question": "What country does this place belong to?", "image_id": "oven_00062119", "entities": ["place", "country"], "token": 881}
+{"data_id": "infoseek_train_00662763", "question": "What country does this building belong to?", "image_id": "oven_00108745", "entities": ["building", "country"], "token": 831}
+{"data_id": "infoseek_train_00666187", "question": "What is the basionym of this plant?", "image_id": "oven_00457305", "entities": ["plant"], "token": 980}
+{"data_id": "infoseek_train_00667196", "question": "What country does this place belong to?", "image_id": "oven_00084917", "entities": [], "token": 526}
+{"data_id": "infoseek_train_00667433", "question": "What is the closest parent taxonomy of this plant?", "image_id": "oven_00699383", "entities": ["plant", "flower", "yellow flower", "leaf", "stem"], "token": 893}
+{"data_id": "infoseek_train_00668129", "question": "what has this bridge crossed over?", "image_id": "oven_00064880", "entities": ["bridge", "river"], "token": 880}
+{"data_id": "infoseek_train_00669051", "question": "What country does this mountain belong to?", "image_id": "oven_00020759", "entities": ["mountain", "country"], "token": 832}
+{"data_id": "infoseek_train_00669342", "question": "what has this bridge crossed over?", "image_id": "oven_00064862", "entities": ["bridge", "river"], "token": 830}
+{"data_id": "infoseek_train_00669925", "question": "Which country does this food come from?", "image_id": "oven_04284525", "entities": ["food", "country"], "token": 470}
+{"data_id": "infoseek_train_00671029", "question": "What is the closest parent taxonomy of this plant?", "image_id": "oven_04163843", "entities": [], "token": 467}
+{"data_id": "infoseek_train_00671310", "question": "who/what operates this building?", "image_id": "oven_00015341", "entities": [], "token": 750}
+{"data_id": "infoseek_train_00672425", "question": "What is the closest upper taxonomy of this animal?", "image_id": "oven_00444634", "entities": ["animal", "frog"], "token": 1033}
+{"data_id": "infoseek_train_00672625", "question": "What country does this building belong to?", "image_id": "oven_00012732", "entities": ["building", "country"], "token": 881}
+{"data_id": "infoseek_train_00672701", "question": "What is the closest upper taxonomy of this plant?", "image_id": "oven_04851585", "entities": ["plant", "mushroom", "Amanita muscaria"], "token": 488}
+{"data_id": "infoseek_train_00673920", "question": "What is the closest parent taxonomy of this plant?", "image_id": "oven_00564807", "entities": ["plant"], "token": 880}
+{"data_id": "infoseek_train_00674264", "question": "What is the basionym of this plant?", "image_id": "oven_04849501", "entities": ["plant", "shaggy mushroom", "basionym"], "token": 480}
+{"data_id": "infoseek_train_00674829", "question": "Which historic county does this park belong to?", "image_id": "oven_00056017", "entities": [], "token": 877}
+{"data_id": "infoseek_train_00675621", "question": "Which city or region does this place locate in?", "image_id": "oven_00043125", "entities": ["city", "region"], "token": 758}
+{"data_id": "infoseek_train_00676131", "question": "What is the closest parent taxonomy of this plant?", "image_id": "oven_00854768", "entities": ["plant", "taxonomic classification"], "token": 885}
+{"data_id": "infoseek_train_00676154", "question": "How heavy does this bird typically grow up to in terms of gram?", "image_id": "oven_00884524", "entities": ["bird", "gram"], "token": 887}
+{"data_id": "infoseek_train_00676554", "question": "What is the closest upper taxonomy of this plant?", "image_id": "oven_04851777", "entities": ["plant", "mushroom", "Amanita", "fungus"], "token": 489}
+{"data_id": "infoseek_train_00679692", "question": "What is the closest parent taxonomy of this plant?", "image_id": "oven_04697518", "entities": ["plant", "daffodil"], "token": 475}
+{"data_id": "infoseek_train_00680134", "question": "What is the closest upper taxonomy of this animal?", "image_id": "oven_01255745", "entities": ["animal", "lizard", "frilled lizard"], "token": 478}
+{"data_id": "infoseek_train_00680183", "question": "What product does this vehicle produce?", "image_id": "oven_02984202", "entities": ["vehicle"], "token": 466}
+{"data_id": "infoseek_train_00680187", "question": "Who is the discoverer or inventor of this item?", "image_id": "oven_03657579", "entities": ["stethoscope"], "token": 472}
+{"data_id": "infoseek_train_00680968", "question": "Which country does this food come from?", "image_id": "oven_04261035", "entities": [], "token": 465}
+{"data_id": "infoseek_train_00681699", "question": "What is the closest parent taxonomy of this plant?", "image_id": "oven_00565344", "entities": ["plant", "fern"], "token": 833}
+{"data_id": "infoseek_train_00682954", "question": "What is the closest upper taxonomy of this animal?", "image_id": "oven_01427423", "entities": ["hermit crab"], "token": 471}
+{"data_id": "infoseek_train_00683725", "question": "Which city or region does this building locate in?", "image_id": "oven_00019526", "entities": ["building", "city", "region"], "token": 886}
+{"data_id": "infoseek_train_00684287", "question": "What is the closest parent taxonomy of this plant?", "image_id": "oven_04715312", "entities": ["plant", "Venezuela"], "token": 474}
+{"data_id": "infoseek_train_00684636", "question": "What is the area in hectare occupied by this building?", "image_id": "oven_00087740", "entities": ["building", "hectare"], "token": 837}
+{"data_id": "infoseek_train_00685584", "question": "Which city or region does this building locate in?", "image_id": "oven_00121537", "entities": ["Plaza"], "token": 906}
+{"data_id": "infoseek_train_00685786", "question": "What is the source that produces this food?", "image_id": "oven_02848631", "entities": ["food", "gourd"], "token": 472}
+{"data_id": "infoseek_train_00688544", "question": "What is the location of this building?", "image_id": "oven_00035066", "entities": ["building", "clock tower", "astronomical clock", "Prague"], "token": 892}
+{"data_id": "infoseek_train_00690234", "question": "What is the closest parent taxonomy of this plant?", "image_id": "oven_00530107", "entities": ["plant", "taxonomy"], "token": 833}
+{"data_id": "infoseek_train_00690774", "question": "What is the closest parent taxonomy of this plant?", "image_id": "oven_00439913", "entities": ["plant", "fungus"], "token": 884}
+{"data_id": "infoseek_train_00691613", "question": "What is this material named after?", "image_id": "oven_04507730", "entities": ["material", "named after"], "token": 470}
+{"data_id": "infoseek_train_00691688", "question": "What kind of effect does this object have?", "image_id": "oven_02754159", "entities": ["object", "effect"], "token": 471}
+{"data_id": "infoseek_train_00691817", "question": "Who designed this building?", "image_id": "oven_00038402", "entities": [], "token": 873}
+{"data_id": "infoseek_train_00692758", "question": "What is the area in square kilometre occupied by this lake?", "image_id": "oven_00052928", "entities": ["lake", "square kilometre"], "token": 888}
+{"data_id": "infoseek_train_00696500", "question": "What is the closest upper taxonomy of this insect?", "image_id": "oven_00565366", "entities": ["insect"], "token": 981}
+{"data_id": "infoseek_train_00697159", "question": "What is the closest parent taxonomy of this animal?", "image_id": "oven_01718232", "entities": ["animal", "insect", "beetle"], "token": 478}
+{"data_id": "infoseek_train_00700366", "question": "Which city or region does this building locate in?", "image_id": "oven_00030482", "entities": ["building", "city", "region"], "token": 836}
+{"data_id": "infoseek_train_00701278", "question": "What country does this building belong to?", "image_id": "oven_00070275", "entities": ["building", "country"], "token": 881}
+{"data_id": "infoseek_train_00701446", "question": "Which city or region does this garden locate in?", "image_id": "oven_00059681", "entities": ["garden", "city", "region"], "token": 887}
+{"data_id": "infoseek_train_00701741", "question": "What country does this place belong to?", "image_id": "oven_00074285", "entities": ["place"], "token": 803}
+{"data_id": "infoseek_train_00705172", "question": "Who is the owner of this person?", "image_id": "oven_00062069", "entities": ["Arturo Alessandri Palma"], "token": 884}
+{"data_id": "infoseek_train_00705490", "question": "What is the conservation status of this bird? (The status is assigned by the international union for conservation of nature. Choose one among Endangered,Least Concern,Critically Endangered,extinct species,extinct in the wild,Vulnerable,Near Threatened,Data Deficient)", "image_id": "oven_00804368", "entities": ["bird", "conservation status", "international union for conservation of nature", "Endangered", "Least Concern", "Critically Endangered", "extinct species", "extinct in the wild", "Vulnerable", "Near Threatened", "Data Deficient"], "token": 930}
+{"data_id": "infoseek_train_00706168", "question": "Which street is this building located at?", "image_id": "oven_00079269", "entities": ["building", "street"], "token": 831}
+{"data_id": "infoseek_train_00707513", "question": "Which place is this animal endemic to?", "image_id": "oven_00968180", "entities": ["animal", "place"], "token": 881}
+{"data_id": "infoseek_train_00711407", "question": "What is the closest parent taxonomy of this plant?", "image_id": "oven_04668406", "entities": ["plant", "taxonomy"], "token": 478}
+{"data_id": "infoseek_train_00714404", "question": "Which (geo)physical feature is the building located in or on?", "image_id": "oven_00111454", "entities": ["building", "tower", "trees", "hill", "sun"], "token": 846}
+{"data_id": "infoseek_train_00714760", "question": "What is the closest parent taxonomy of this animal?", "image_id": "oven_00649507", "entities": ["animal", "snake"], "token": 472}
+{"data_id": "infoseek_train_00715730", "question": "What is this building named after?", "image_id": "oven_00015757", "entities": ["building"], "token": 752}
+{"data_id": "infoseek_train_00716808", "question": "What country does this building belong to?", "image_id": "oven_00064038", "entities": ["building", "country"], "token": 981}
+{"data_id": "infoseek_train_00717118", "question": "Which city or region does this place locate in?", "image_id": "oven_00010415", "entities": ["city", "region"], "token": 783}
+{"data_id": "infoseek_train_00718815", "question": "What is the length of the incubation period (in day) of this bird's egg?", "image_id": "oven_00804371", "entities": ["bird", "incubation period", "day"], "token": 998}
+{"data_id": "infoseek_train_00719125", "question": "What is the closest parent taxonomy of this plant?", "image_id": "oven_04449252", "entities": ["plant", "taxonomy"], "token": 472}
+{"data_id": "infoseek_train_00720127", "question": "What is the closest parent taxonomy of this insect?", "image_id": "oven_00849772", "entities": ["insect", "moth", "taxon", "taxonomy"], "token": 891}
+{"data_id": "infoseek_train_00720177", "question": "What is this building named after?", "image_id": "oven_00074001", "entities": ["building", "name", "person"], "token": 808}
+{"data_id": "infoseek_train_00724814", "question": "What country does this place belong to?", "image_id": "oven_00074308", "entities": ["place", "country"], "token": 906}
+{"data_id": "infoseek_train_00724937", "question": "What is the closest parent taxonomy of this plant?", "image_id": "oven_00672547", "entities": ["plant", "clover", "yellow flower", "leaf"], "token": 891}
+{"data_id": "infoseek_train_00725605", "question": "What is the closest upper taxonomy of this bird?", "image_id": "oven_00752329", "entities": ["bird", "sparrow", "taxonomy"], "token": 887}
+{"data_id": "infoseek_train_00728444", "question": "What is the closest upper taxonomy of this plant?", "image_id": "oven_00821786", "entities": ["plant", "mushroom"], "token": 885}
+{"data_id": "infoseek_train_00731695", "question": "Which city or region does this building locate in?", "image_id": "oven_00016232", "entities": ["building", "city", "region"], "token": 836}
+{"data_id": "infoseek_train_00735174", "question": "What is the sea level in metre of this facility?", "image_id": "oven_00066861", "entities": ["sea level", "metre", "facility"], "token": 889}
+{"data_id": "infoseek_train_00737534", "question": "In which year did this building officially open?", "image_id": "oven_00112310", "entities": ["year", "building"], "token": 857}
+{"data_id": "infoseek_train_00738436", "question": "What is the closest upper taxonomy of this plant?", "image_id": "oven_00638982", "entities": ["plant", "leaf"], "token": 1033}
+{"data_id": "infoseek_train_00738911", "question": "What country does this building belong to?", "image_id": "oven_00060107", "entities": ["building", "country"], "token": 831}
+{"data_id": "infoseek_train_00739902", "question": "Which diocese does this building belong to?", "image_id": "oven_00044150", "entities": ["diocese", "building"], "token": 883}
+{"data_id": "infoseek_train_00741700", "question": "What is the closest upper taxonomy of this animal?", "image_id": "oven_00494047", "entities": ["animal", "fire salamander", "salamander", "amphibian", "vertebrate"], "token": 490}
+{"data_id": "infoseek_train_00743543", "question": "What is the closest upper taxonomy of this insect?", "image_id": "oven_01011979", "entities": ["insect", "butterfly"], "token": 836}
+{"data_id": "infoseek_train_00746475", "question": "What is the closest parent taxonomy of this animal?", "image_id": "oven_01379220", "entities": ["animal", "giraffe", "jackal"], "token": 478}
+{"data_id": "infoseek_train_00746607", "question": "Who is the founder of the building in the image?", "image_id": "oven_00079422", "entities": [], "token": 829}
+{"data_id": "infoseek_train_00748132", "question": "What is this building named after?", "image_id": "oven_00015736", "entities": ["building", "name", "person"], "token": 883}
+{"data_id": "infoseek_train_00748716", "question": "What is the conservation status of this bird? (The status is assigned by the international union for conservation of nature. Choose one among Endangered,Least Concern,Critically Endangered,extinct species,extinct in the wild,Vulnerable,Near Threatened,Data Deficient)", "image_id": "oven_00950027", "entities": ["bird", "conservation status", "international union for conservation of nature", "Endangered", "Least Concern", "Critically Endangered", "extinct species", "extinct in the wild", "Vulnerable", "Near Threatened", "Data Deficient"], "token": 980}
+{"data_id": "infoseek_train_00749029", "question": "In which year was this item invented or discovered?", "image_id": "oven_03845094", "entities": ["item"], "token": 469}
+{"data_id": "infoseek_train_00754783", "question": "What is the length in kilometre is the mountain in the image?", "image_id": "oven_00106184", "entities": ["mountain", "kilometre"], "token": 890}
+{"data_id": "infoseek_train_00757955", "question": "What fields are the person in the image specialized in?", "image_id": "oven_02463425", "entities": ["cleaning", "laundry", "dry cleaning"], "token": 479}
+{"data_id": "infoseek_train_00759458", "question": "What is the conservation status of this insect? (The status is assigned by the international union for conservation of nature. Choose one among Endangered,Least Concern,Critically Endangered,extinct species,extinct in the wild,Vulnerable,Near Threatened,Data Deficient)", "image_id": "oven_00491924", "entities": ["insect", "dragonfly", "conservation status", "International Union for Conservation of Nature", "Endangered", "Least Concern", "Critically Endangered", "extinct species", "extinct in the wild", "Vulnerable", "Near Threatened", "Data Deficient"], "token": 985}
+{"data_id": "infoseek_train_00760135", "question": "Which city or region does this building locate in?", "image_id": "oven_00073066", "entities": ["building", "city", "region"], "token": 785}
+{"data_id": "infoseek_train_00760947", "question": "What is the wingspan of a female of this insect in millimetre?", "image_id": "oven_00699512", "entities": ["female", "insect", "wingspan", "millimetre"], "token": 975}
+{"data_id": "infoseek_train_00761473", "question": "What is this building named after?", "image_id": "oven_03082954", "entities": ["Toyota", "AUTO ACCESSORY SUPERSTORE"], "token": 479}
+{"data_id": "infoseek_train_00763101", "question": "What is this building named after?", "image_id": "oven_00082081", "entities": ["building", "name"], "token": 880}
+{"data_id": "infoseek_train_00764885", "question": "What is the closest upper taxonomy of this animal?", "image_id": "oven_00603827", "entities": ["animal", "ray", "spotted eagle ray", "eagle ray", "fish", "marine animal"], "token": 490}
+{"data_id": "infoseek_train_00766381", "question": "How many days does the gestation of this animal take?", "image_id": "oven_00670659", "entities": ["gestation", "days", "animal", "marmot"], "token": 483}
+{"data_id": "infoseek_train_00767026", "question": "What is the closest parent taxonomy of this plant?", "image_id": "oven_00967403", "entities": ["plant", "orchid"], "token": 473}
+{"data_id": "infoseek_train_00767994", "question": "What is the closest upper taxonomy of this plant?", "image_id": "oven_00699564", "entities": ["plant", "flower", "yellow flower", "leaf", "insect"], "token": 483}
+{"data_id": "infoseek_train_00770288", "question": "What country does this lake belong to?", "image_id": "oven_00079811", "entities": ["lake", "country"], "token": 881}
+{"data_id": "infoseek_train_00770382", "question": "What is the length of the wingspan in metre of this bird?", "image_id": "oven_00898306", "entities": ["bird", "wingspan", "metre"], "token": 482}
+{"data_id": "infoseek_train_00773206", "question": "What country does this building belong to?", "image_id": "oven_00102356", "entities": ["building", "country"], "token": 831}
+{"data_id": "infoseek_train_00773420", "question": "What is the closest parent taxonomy of this plant?", "image_id": "oven_04788552", "entities": ["plant", "flower", "leaf", "tree"], "token": 478}
+{"data_id": "infoseek_train_00773701", "question": "In which year did this building officially open?", "image_id": "oven_00112328", "entities": ["building", "year"], "token": 882}
+{"data_id": "infoseek_train_00774001", "question": "What is the architectural style of this building?", "image_id": "oven_00080017", "entities": ["building", "architectural style", "arch", "carved ornament", "stone"], "token": 896}
+{"data_id": "infoseek_train_00774164", "question": "What is this facility named after?", "image_id": "oven_00048800", "entities": ["facility", "name", "person"], "token": 883}
+{"data_id": "infoseek_train_00775379", "question": "What is the closest upper taxonomy of this plant?", "image_id": "oven_04769956", "entities": ["plant", "flower", "red flower", "leaf", "botanical taxonomy"], "token": 484}
+{"data_id": "infoseek_train_00775411", "question": "What is the architectural style of this building?", "image_id": "oven_00094146", "entities": ["building", "architectural style"], "token": 810}
+{"data_id": "infoseek_train_00775422", "question": "What is the architectural style of this building?", "image_id": "oven_00109245", "entities": ["building", "architectural style"], "token": 710}
+{"data_id": "infoseek_train_00775467", "question": "In which year was this place invented or discovered?", "image_id": "oven_02085428", "entities": ["place", "year", "invented", "discovered"], "token": 480}
+{"data_id": "infoseek_train_00775509", "question": "What is the closest upper taxonomy of this animal?", "image_id": "oven_00444680", "entities": ["animal", "frog"], "token": 833}
+{"data_id": "infoseek_train_00776503", "question": "What is the closest upper taxonomy of this animal?", "image_id": "oven_00821741", "entities": ["animal", "taxon", "classification"], "token": 887}
+{"data_id": "infoseek_train_00780214", "question": "What is the closest parent taxonomy of this plant?", "image_id": "oven_04668637", "entities": ["plant", "taxonomy"], "token": 472}
+{"data_id": "infoseek_train_00782239", "question": "What country does this building belong to?", "image_id": "oven_00070290", "entities": ["building"], "token": 878}
+{"data_id": "infoseek_train_00783399", "question": "What kind of effect does this object have?", "image_id": "oven_01755690", "entities": ["object", "effect"], "token": 471}
+{"data_id": "infoseek_train_00784749", "question": "Which city or region does this place locate in?", "image_id": "oven_00112239", "entities": ["city", "region", "place", "tower", "river", "buildings", "boats"], "token": 899}
+{"data_id": "infoseek_train_00785577", "question": "Which country does this food come from?", "image_id": "oven_00195189", "entities": ["ramen", "Japan"], "token": 663}
+{"data_id": "infoseek_train_00786416", "question": "What is the closest parent taxonomy of this animal?", "image_id": "oven_01946146", "entities": ["animal", "monkey", "primate", "marmoset"], "token": 482}
+{"data_id": "infoseek_train_00790472", "question": "What is the location of this building?", "image_id": "oven_00075138", "entities": ["building"], "token": 878}
+{"data_id": "infoseek_train_00792456", "question": "Who is the owner of this building?", "image_id": "oven_00120955", "entities": [], "token": 826}
+{"data_id": "infoseek_train_00792823", "question": "What is the closest upper taxonomy of this plant?", "image_id": "oven_04489586", "entities": ["plant", "flower", "Anemone"], "token": 477}
+{"data_id": "infoseek_train_00793659", "question": "What is the closest upper taxonomy of this plant?", "image_id": "oven_00602321", "entities": ["plant", "hand", "leaf", "stem"], "token": 1039}
+{"data_id": "infoseek_train_00794078", "question": "What is this plant named after?", "image_id": "oven_00132213", "entities": ["plant"], "token": 754}
+{"data_id": "infoseek_train_00796544", "question": "What is the closest upper taxonomy of this plant?", "image_id": "oven_04764318", "entities": ["plant"], "token": 475}
+{"data_id": "infoseek_train_00797068", "question": "What is this plant named after?", "image_id": "oven_04528272", "entities": ["plant", "Yarrow"], "token": 470}
+{"data_id": "infoseek_train_00797657", "question": "Who designed this place?", "image_id": "oven_00025574", "entities": ["place"], "token": 875}
+{"data_id": "infoseek_train_00799361", "question": "What is the closest parent taxonomy of this insect?", "image_id": "oven_01788136", "entities": [], "token": 467}
+{"data_id": "infoseek_train_00800239", "question": "Which city or region does this building locate in?", "image_id": "oven_00015661", "entities": ["Museum of Independence", "Dhaka"], "token": 838}
+{"data_id": "infoseek_train_00800546", "question": "What country does this lake belong to?", "image_id": "oven_00079677", "entities": ["lake", "country"], "token": 781}
+{"data_id": "infoseek_train_00800840", "question": "Who is the architect of this garden?", "image_id": "oven_00059681", "entities": ["architect", "garden"], "token": 883}
+{"data_id": "infoseek_train_00800870", "question": "Which city or region does this bridge locate in?", "image_id": "oven_00067177", "entities": ["bridge", "city", "region"], "token": 836}
+{"data_id": "infoseek_train_00802249", "question": "What is the main food source of this animal?", "image_id": "oven_01718506", "entities": ["ladybug", "insect", "plant", "aphid", "pest", "predator", "leaf", "grass"], "token": 495}
+{"data_id": "infoseek_train_00802896", "question": "What is the closest upper taxonomy of this plant?", "image_id": "oven_00989258", "entities": ["plant", "flower", "leaf", "stem", "purple", "green"], "token": 895}
+{"data_id": "infoseek_train_00803955", "question": "who/what operates this building?", "image_id": "oven_00015329", "entities": ["building", "ruins"], "token": 806}
+{"data_id": "infoseek_train_00805700", "question": "Which city or region does this building locate in?", "image_id": "oven_00014999", "entities": ["building", "city", "region"], "token": 1036}
+{"data_id": "infoseek_train_00806297", "question": "Which place is this bird endemic to?", "image_id": "oven_01335409", "entities": ["bird", "place", "endemic"], "token": 474}
+{"data_id": "infoseek_train_00810210", "question": "Who is the owner of this building?", "image_id": "oven_00021846", "entities": [], "token": 876}
+{"data_id": "infoseek_train_00811171", "question": "What is the closest upper taxonomy of this plant?", "image_id": "oven_04126533", "entities": ["plant", "cabbage"], "token": 479}
+{"data_id": "infoseek_train_00813933", "question": "What is the closest parent taxonomy of this plant?", "image_id": "oven_00557963", "entities": ["plant"], "token": 880}
+{"data_id": "infoseek_train_00819451", "question": "Who is the manufacturer of this vehicle?", "image_id": "oven_00008770", "entities": ["Infiniti"], "token": 585}
+{"data_id": "infoseek_train_00819809", "question": "What is the closest upper taxonomy of this insect?", "image_id": "oven_00575552", "entities": ["insect", "butterfly"], "token": 886}
+{"data_id": "infoseek_train_00820642", "question": "In which year did this building officially open?", "image_id": "oven_00015154", "entities": ["building", "year"], "token": 757}
+{"data_id": "infoseek_train_00821739", "question": "Who is the manufacturer of this vehicle?", "image_id": "oven_00008640", "entities": ["Volvo"], "token": 2304}
+{"data_id": "infoseek_train_00822080", "question": "What is the closest upper taxonomy of this plant?", "image_id": "oven_00527979", "entities": ["plant", "flower", "leaf", "grass"], "token": 889}
+{"data_id": "infoseek_train_00822645", "question": "Who designed this building?", "image_id": "oven_00030503", "entities": ["building"], "token": 875}
+{"data_id": "infoseek_train_00825857", "question": "What product does this facility produce?", "image_id": "oven_00048794", "entities": ["product", "facility"], "token": 880}
+{"data_id": "infoseek_train_00826307", "question": "Which city or region does this bridge locate in?", "image_id": "oven_00092540", "entities": ["bridge", "city", "region"], "token": 886}
+{"data_id": "infoseek_train_00827645", "question": "Which place is this animal endemic to?", "image_id": "oven_01963387", "entities": ["panda", "China"], "token": 471}
+{"data_id": "infoseek_train_00830116", "question": "What is this building dedicated to?", "image_id": "oven_00114794", "entities": ["building", "statue", "people", "sculpture", "dedication"], "token": 893}
+{"data_id": "infoseek_train_00833363", "question": "How many days does the gestation of this animal take?", "image_id": "oven_01687096", "entities": ["animal"], "token": 471}
+{"data_id": "infoseek_train_00833663", "question": "Who is the owner of this building?", "image_id": "oven_00120954", "entities": ["building", "owner"], "token": 831}
+{"data_id": "infoseek_train_00833965", "question": "What is the closest parent taxonomy of this plant?", "image_id": "oven_00717797", "entities": ["plant", "tree", "leaf", "forest"], "token": 889}
+{"data_id": "infoseek_train_00835474", "question": "What is the closest upper taxonomy of this animal?", "image_id": "oven_00697256", "entities": ["animal", "arthropod", "crustacean", "isopod"], "token": 846}
+{"data_id": "infoseek_train_00839081", "question": "What is the closest upper taxonomy of this plant?", "image_id": "oven_00602333", "entities": ["plant", "flower", "forest", "dog"], "token": 889}
+{"data_id": "infoseek_train_00840020", "question": "What is the closest parent taxonomy of this plant?", "image_id": "oven_00613716", "entities": ["plant", "taxonomy"], "token": 833}
+{"data_id": "infoseek_train_00840997", "question": "What is the closest parent taxonomy of this insect?", "image_id": "oven_00849983", "entities": ["insect", "caterpillar"], "token": 886}
+{"data_id": "infoseek_train_00841007", "question": "What equipment or engine is used by this vehicle to provide power?", "image_id": "oven_00006853", "entities": ["vehicle", "engine", "equipment", "power"], "token": 494}
+{"data_id": "infoseek_train_00842330", "question": "What is the height of this vehicle in millimetre?", "image_id": "oven_00007821", "entities": ["vehicle", "millimetre"], "token": 888}
+{"data_id": "infoseek_train_00842867", "question": "Who is the discoverer or inventor of this item?", "image_id": "oven_03583113", "entities": ["zipper"], "token": 471}
+{"data_id": "infoseek_train_00844567", "question": "What is the closest upper taxonomy of this bird?", "image_id": "oven_01342686", "entities": ["bird"], "token": 469}
+{"data_id": "infoseek_train_00846946", "question": "What is the closest parent taxonomy of this plant?", "image_id": "oven_04532891", "entities": ["plant", "daisy", "insect"], "token": 477}
+{"data_id": "infoseek_train_00847525", "question": "What is this object named after?", "image_id": "oven_02794418", "entities": ["object", "named after"], "token": 470}
+{"data_id": "infoseek_train_00852697", "question": "What is the closest upper taxonomy of this plant?", "image_id": "oven_00807127", "entities": ["plant", "tree", "flower", "purple flower"], "token": 479}
+{"data_id": "infoseek_train_00853111", "question": "What is the closest parent taxonomy of this bird?", "image_id": "oven_00923437", "entities": ["bird"], "token": 830}
+{"data_id": "infoseek_train_00854047", "question": "What is the main food source of this animal?", "image_id": "oven_01720009", "entities": ["ladybug", "leaf", "insect", "plant"], "token": 481}
+{"data_id": "infoseek_train_00854132", "question": "Which protected area is this park usually located in?", "image_id": "oven_00010843", "entities": ["park", "protected area", "arch", "desert", "rock formation", "trail"], "token": 898}
+{"data_id": "infoseek_train_00854421", "question": "What is the basionym of this plant?", "image_id": "oven_00895147", "entities": ["plant"], "token": 880}
+{"data_id": "infoseek_train_00854716", "question": "What is the oldest age of this animal?", "image_id": "oven_01883476", "entities": ["animal", "buffalo", "San Diego Zoo"], "token": 483}
+{"data_id": "infoseek_train_00860064", "question": "Who designed this building?", "image_id": "oven_00046642", "entities": ["building", "architect"], "token": 829}
+{"data_id": "infoseek_train_00860291", "question": "What is this material named after?", "image_id": "oven_03718482", "entities": ["Johnson's baby powder", "material", "named after"], "token": 476}
+{"data_id": "infoseek_train_00863781", "question": "What is the closest upper taxonomy of this plant?", "image_id": "oven_00980674", "entities": ["plant", "mistletoe", "tree"], "token": 839}
+{"data_id": "infoseek_train_00864253", "question": "What country does this street belong to?", "image_id": "oven_00045331", "entities": ["street", "Mühlberger", "restaurant", "Claire's", "Sushi", "Jacadi", "France"], "token": 877}
+{"data_id": "infoseek_train_00864287", "question": "What is the closest parent taxonomy of this plant?", "image_id": "oven_04659290", "entities": ["plant", "tree", "forest", "leaf", "bark", "wood", "greenery"], "token": 489}
+{"data_id": "infoseek_train_00864998", "question": "Which city or region does this park locate in?", "image_id": "oven_00011241", "entities": ["park", "city", "region"], "token": 936}
+{"data_id": "infoseek_train_00865133", "question": "What is the closest upper taxonomy of this plant?", "image_id": "oven_04769881", "entities": ["plant", "cactus", "cholla"], "token": 477}
+{"data_id": "infoseek_train_00865642", "question": "What is the closest parent taxonomy of this plant?", "image_id": "oven_00717678", "entities": ["plant"], "token": 1030}
+{"data_id": "infoseek_train_00865998", "question": "Where is the habitat of this animal?", "image_id": "oven_00729088", "entities": ["animal", "habitat", "orca"], "token": 474}
+{"data_id": "infoseek_train_00867681", "question": "Who designed this vehicle?", "image_id": "oven_00005593", "entities": ["vehicle", "Volkswagen"], "token": 757}
+{"data_id": "infoseek_train_00868856", "question": "What is the closest upper taxonomy of this plant?", "image_id": "oven_00478721", "entities": ["plant", "hand", "yellow flower", "green leaf", "goldenrod"], "token": 895}
+{"data_id": "infoseek_train_00869243", "question": "What kind of effect does this object have?", "image_id": "oven_02753243", "entities": ["Duracell", "pen", "object"], "token": 476}
+{"data_id": "infoseek_train_00869659", "question": "Which country does this food come from?", "image_id": "oven_00208131", "entities": ["food", "country"], "token": 662}
+{"data_id": "infoseek_train_00871431", "question": "who/what operates this park?", "image_id": "oven_00089797", "entities": [], "token": 750}
+{"data_id": "infoseek_train_00871983", "question": "What is the closest upper taxonomy of this plant?", "image_id": "oven_04487164", "entities": ["plant", "tree", "leaf", "forest"], "token": 478}
+{"data_id": "infoseek_train_00875615", "question": "What is the location of this building?", "image_id": "oven_00056082", "entities": ["building", "rock", "carving"], "token": 885}
+{"data_id": "infoseek_train_00877763", "question": "What is the source that produces this food?", "image_id": "oven_04265139", "entities": ["oil", "food"], "token": 471}
+{"data_id": "infoseek_train_00881214", "question": "Who is the discoverer or inventor of this object?", "image_id": "oven_03057930", "entities": [], "token": 468}
+{"data_id": "infoseek_train_00881322", "question": "Which transport network is this building part of?", "image_id": "oven_00016792", "entities": ["Hakata Terminal", "Hakata City"], "token": 838}
+{"data_id": "infoseek_train_00882847", "question": "In which year did this building officially open?", "image_id": "oven_00106848", "entities": ["building", "year"], "token": 832}
+{"data_id": "infoseek_train_00886277", "question": "Which company manufactures this vehicle?", "image_id": "oven_00007071", "entities": ["vehicle", "company", "Ford"], "token": 477}
+{"data_id": "infoseek_train_00887122", "question": "What country does this mountain belong to?", "image_id": "oven_00042509", "entities": ["mountain", "country"], "token": 832}
+{"data_id": "infoseek_train_00888319", "question": "How many offspring can this animal produce at the same time?", "image_id": "oven_01378808", "entities": ["wombat", "offspring", "animal"], "token": 479}
+{"data_id": "infoseek_train_00889381", "question": "What is the closest parent taxonomy of this plant?", "image_id": "oven_04226054", "entities": ["plant", "taxonomy"], "token": 480}
+{"data_id": "infoseek_train_00889499", "question": "What is the nerve that innervates this object?", "image_id": "oven_04903035", "entities": [], "token": 468}
+{"data_id": "infoseek_train_00889750", "question": "which notable activity has been held at the plant presented in the image?", "image_id": "oven_00919050", "entities": [], "token": 882}
+{"data_id": "infoseek_train_00890315", "question": "Which government has executive power of this sport?", "image_id": "oven_00407631", "entities": ["sport", "curling", "Sochi 2014"], "token": 481}
+{"data_id": "infoseek_train_00892060", "question": "What is the closest parent taxonomy of this plant?", "image_id": "oven_00574065", "entities": ["plant", "flower", "yellow flower", "succulent"], "token": 891}
+{"data_id": "infoseek_train_00892275", "question": "What is this material named after?", "image_id": "oven_04507656", "entities": ["material", "named after"], "token": 470}
+{"data_id": "infoseek_train_00895175", "question": "Who is the owner of this building?", "image_id": "oven_03768562", "entities": [], "token": 473}
+{"data_id": "infoseek_train_00898502", "question": "Where is this plant native to?", "image_id": "oven_00487923", "entities": ["plant", "mountains"], "token": 831}
+{"data_id": "infoseek_train_00898609", "question": "Which street is this building located at?", "image_id": "oven_00079291", "entities": [], "token": 826}
+{"data_id": "infoseek_train_00899799", "question": "What is the closest upper taxonomy of this plant?", "image_id": "oven_04546757", "entities": ["plant", "flower", "yellow flower"], "token": 476}
+{"data_id": "infoseek_train_00900264", "question": "What is the country of origin of this food?", "image_id": "oven_04115481", "entities": ["food", "can", "drink"], "token": 475}
+{"data_id": "infoseek_train_00900428", "question": "What is the closest upper taxonomy of this bird?", "image_id": "oven_01200482", "entities": ["bird", "bird species", "avian taxonomy", "taxonomic classification", "bird family", "bird order"], "token": 490}
+{"data_id": "infoseek_train_00901515", "question": "What is the closest parent taxonomy of this plant?", "image_id": "oven_00518424", "entities": ["plant", "thorn", "branch"], "token": 837}
+{"data_id": "infoseek_train_00903088", "question": "What is the closest upper taxonomy of this insect?", "image_id": "oven_00937271", "entities": ["insect", "stick insect", "tree"], "token": 838}
+{"data_id": "infoseek_train_00906143", "question": "What is the genre of this building?", "image_id": "oven_00011382", "entities": ["building", "statue", "Jesus Christ"], "token": 886}
+{"data_id": "infoseek_train_00906425", "question": "What is the location of this bridge?", "image_id": "oven_00077740", "entities": ["bridge", "location"], "token": 831}
+{"data_id": "infoseek_train_00907236", "question": "Which place is this animal endemic to?", "image_id": "oven_01378489", "entities": ["animal", "place"], "token": 470}
+{"data_id": "infoseek_train_00908153", "question": "What is this place named after?", "image_id": "oven_00104735", "entities": ["place", "bridge", "Paris"], "token": 833}
+{"data_id": "infoseek_train_00908423", "question": "Which diocese does this building belong to?", "image_id": "oven_00039481", "entities": ["diocese", "building"], "token": 883}
+{"data_id": "infoseek_train_00908538", "question": "Which company manufactures this vehicle?", "image_id": "oven_00007809", "entities": ["vehicle", "company"], "token": 704}
+{"data_id": "infoseek_train_00909895", "question": "What is the closest parent taxonomy of this plant?", "image_id": "oven_00656108", "entities": ["plant", "fungus"], "token": 884}
+{"data_id": "infoseek_train_00910731", "question": "What is the closest upper taxonomy of this plant?", "image_id": "oven_00608401", "entities": ["plant", "flower", "white flower", "green grass", "bud"], "token": 944}
+{"data_id": "infoseek_train_00913059", "question": "What is the basin country to the lake?", "image_id": "oven_00110873", "entities": ["lake", "basin", "country"], "token": 836}
+{"data_id": "infoseek_train_00913838", "question": "Which city or region does this building locate in?", "image_id": "oven_00030449", "entities": ["building", "city", "region"], "token": 836}
+{"data_id": "infoseek_train_00915175", "question": "How many elevators does this have?", "image_id": "oven_00119717", "entities": ["elevator", "building"], "token": 882}
+{"data_id": "infoseek_train_00915515", "question": "What is the closest parent taxonomy of this plant?", "image_id": "oven_00518436", "entities": ["plant", "thorn", "bush", "leaf", "branch"], "token": 894}
+{"data_id": "infoseek_train_00915766", "question": "Which city or region does this place locate in?", "image_id": "oven_00085389", "entities": ["city", "region", "place", "Brazil", "Rio de Janeiro"], "token": 894}
+{"data_id": "infoseek_train_00916904", "question": "What country does this building belong to?", "image_id": "oven_00087726", "entities": ["India"], "token": 828}
+{"data_id": "infoseek_train_00917860", "question": "What is the closest upper taxonomy of this plant?", "image_id": "oven_00527985", "entities": ["plant", "flower", "hand", "person"], "token": 889}
+{"data_id": "infoseek_train_00919011", "question": "What is the closest upper taxonomy of this plant?", "image_id": "oven_00985211", "entities": ["plant", "flower", "leaf", "rock", "moss"], "token": 893}
+{"data_id": "infoseek_train_00919315", "question": "What is the closest upper taxonomy of this plant?", "image_id": "oven_04125935", "entities": ["plant", "cauliflower"], "token": 474}
+{"data_id": "infoseek_train_00919320", "question": "What country does this mountain belong to?", "image_id": "oven_00042431", "entities": ["mountain", "country", "church", "flags"], "token": 838}
+{"data_id": "infoseek_train_00919573", "question": "What is the closest parent taxonomy of this animal?", "image_id": "oven_01902411", "entities": ["camel", "animal", "taxonomy"], "token": 475}
+{"data_id": "infoseek_train_00921242", "question": "What country does this building belong to?", "image_id": "oven_00055272", "entities": ["building", "country"], "token": 831}
+{"data_id": "infoseek_train_00921561", "question": "What is the closest parent taxonomy of this insect?", "image_id": "oven_01788114", "entities": ["insect", "abdomen", "main blood vessel", "simple heart"], "token": 484}
+{"data_id": "infoseek_train_00923524", "question": "What is the closest upper taxonomy of this insect?", "image_id": "oven_00779511", "entities": ["insect", "ant"], "token": 859}
+{"data_id": "infoseek_train_00923618", "question": "What is this plant named after?", "image_id": "oven_04529005", "entities": ["plant", "white flowers", "rock"], "token": 473}
+{"data_id": "infoseek_train_00925615", "question": "What is the closest parent taxonomy of this plant?", "image_id": "oven_04560099", "entities": ["plant", "flower", "alpine", "plant taxonomy"], "token": 480}
+{"data_id": "infoseek_train_00927665", "question": "What is the closest upper taxonomy of this bird?", "image_id": "oven_00884510", "entities": ["bird", "woodpecker"], "token": 885}
+{"data_id": "infoseek_train_00931663", "question": "How many days does the gestation of this animal take?", "image_id": "oven_01927634", "entities": ["gorilla"], "token": 472}
+{"data_id": "infoseek_train_00932592", "question": "What is this building named after?", "image_id": "oven_03082655", "entities": ["building", "name", "hydraulic servo-assisted trunk lid configuration", "production code 4E7"], "token": 487}
+{"data_id": "infoseek_train_00933378", "question": "Which city or region does this building locate in?", "image_id": "oven_00067907", "entities": ["building", "city", "region"], "token": 886}
+{"data_id": "infoseek_val_00000699", "question": "What is the maximum weight of this animal in kilogram?", "image_id": "oven_04978688", "entities": ["animal", "kilogram"], "token": 475}
+{"data_id": "infoseek_val_00001888", "question": "What is the closest upper taxonomy of this plant?", "image_id": "oven_04965128", "entities": ["plant", "hand", "grass"], "token": 886}
+{"data_id": "infoseek_val_00002557", "question": "What is the country of origin of this food?", "image_id": "oven_04959297", "entities": ["pizza", "Italy"], "token": 472}
+{"data_id": "infoseek_val_00002687", "question": "What country does this mountain belong to?", "image_id": "oven_04955114", "entities": ["mountain", "country"], "token": 807}
+{"data_id": "infoseek_val_00002708", "question": "What is the basionym of this plant?", "image_id": "oven_04961981", "entities": ["plant", "cactus"], "token": 884}
+{"data_id": "infoseek_val_00002883", "question": "What is this building named after?", "image_id": "oven_04958174", "entities": ["Sir Anthony Hope Hawkins", "Anthony Hope", "Novelist", "1863-1933", "1903-1917"], "token": 910}
+{"data_id": "infoseek_val_00004543", "question": "Who is the discoverer or inventor of this object?", "image_id": "oven_04988798", "entities": ["object"], "token": 470}
+{"data_id": "infoseek_val_00004885", "question": "Which city or region does this city locate in?", "image_id": "oven_04955456", "entities": ["city", "region"], "token": 833}
+{"data_id": "infoseek_val_00005188", "question": "What is the closest upper taxonomy of this bird?", "image_id": "oven_04966074", "entities": ["bird"], "token": 955}
+{"data_id": "infoseek_val_00007033", "question": "where is the highest point of this mountain?", "image_id": "oven_04951305", "entities": ["mountain", "highest point"], "token": 834}
+{"data_id": "infoseek_val_00007180", "question": "What is the length in millimetre is the vehicle in the image?", "image_id": "oven_04950832", "entities": ["vehicle", "millimetre"], "token": 492}
+{"data_id": "infoseek_val_00007199", "question": "How many offspring can this animal produce at the same time?", "image_id": "oven_04972355", "entities": ["animal", "offspring", "fox"], "token": 478}
+{"data_id": "infoseek_val_00009278", "question": "What is the basionym of this plant?", "image_id": "oven_04962657", "entities": ["plant", "basionym"], "token": 985}
+{"data_id": "infoseek_val_00011470", "question": "What is the basionym of this plant?", "image_id": "oven_04964833", "entities": ["plant", "basionym"], "token": 760}
+{"data_id": "infoseek_val_00012012", "question": "What is the hymenium type of this plant?", "image_id": "oven_04962644", "entities": ["hymenium", "plant"], "token": 887}
+{"data_id": "infoseek_val_00012208", "question": "who/what operates this aircraft?", "image_id": "oven_00000295", "entities": ["aircraft", "EL-AKF", "VIP Vienna International Planespotters"], "token": 1068}
+{"data_id": "infoseek_val_00012440", "question": "What is the basionym of this plant?", "image_id": "oven_04964843", "entities": ["plant", "basionym"], "token": 885}
+{"data_id": "infoseek_val_00012514", "question": "What is the closest parent taxonomy of this plant?", "image_id": "oven_04966239", "entities": ["plant", "flower", "leaf", "stem"], "token": 478}
+{"data_id": "infoseek_val_00013417", "question": "What is the hymenium type of this plant?", "image_id": "oven_04962651", "entities": ["hymenium", "plant"], "token": 837}
+{"data_id": "infoseek_val_00014584", "question": "what was the date this aircraft enter into service?", "image_id": "oven_00000231", "entities": ["aircraft", "South African Air Force", "date"], "token": 1365}
+{"data_id": "infoseek_val_00014679", "question": "What is the closest parent taxonomy of this plant?", "image_id": "oven_04962628", "entities": ["plant"], "token": 880}
+{"data_id": "infoseek_val_00015521", "question": "Which city or region does this city locate in?", "image_id": "oven_04955473", "entities": ["city", "region"], "token": 833}
+{"data_id": "infoseek_val_00015739", "question": "What is the basionym of this plant?", "image_id": "oven_04961983", "entities": ["plant"], "token": 880}
+{"data_id": "infoseek_val_00016201", "question": "what has this building crossed over?", "image_id": "oven_04955036", "entities": ["bridge", "river"], "token": 830}
+{"data_id": "infoseek_val_00016741", "question": "What is the closest parent taxonomy of this plant?", "image_id": "oven_04966222", "entities": ["plant", "flower", "leaf", "blossom", "herb"], "token": 484}
+{"data_id": "infoseek_val_00017847", "question": "In which year was this object invented or discovered?", "image_id": "oven_04998492", "entities": ["object", "invented", "discovered"], "token": 477}
+{"data_id": "infoseek_val_00018236", "question": "What is the maximum weight of this animal in kilogram?", "image_id": "oven_04978664", "entities": ["animal", "Boston Terrier", "kilogram"], "token": 480}
+{"data_id": "infoseek_val_00018457", "question": "what has this building crossed over?", "image_id": "oven_04955045", "entities": ["building", "bridge", "river"], "token": 720}
+{"data_id": "infoseek_val_00018501", "question": "What is the location of this place?", "image_id": "oven_04956499", "entities": ["Rio de Janeiro", "Corcovado", "Christ the Redeemer"], "token": 891}
+{"data_id": "infoseek_val_00018909", "question": "Which geographic area is this bird found?", "image_id": "oven_05033150", "entities": ["bird", "geographic area"], "token": 908}
+{"data_id": "infoseek_val_00019678", "question": "What is the closest upper taxonomy of this insect?", "image_id": "oven_05039079", "entities": ["insect", "moth"], "token": 884}
+{"data_id": "infoseek_val_00019735", "question": "What is the closest upper taxonomy of this animal?", "image_id": "oven_05051059", "entities": ["animal", "marine", "fish", "ocean", "underwater"], "token": 483}
+{"data_id": "infoseek_val_00020027", "question": "What is the closest parent taxonomy of this insect?", "image_id": "oven_05035102", "entities": ["insect", "dragonfly"], "token": 885}
+{"data_id": "infoseek_val_00020228", "question": "What is the country of origin of this food?", "image_id": "oven_04949557", "entities": ["food", "country", "origin"], "token": 475}
+{"data_id": "infoseek_val_00020283", "question": "What is the closest upper taxonomy of this plant?", "image_id": "oven_05067957", "entities": ["plant", "flower", "yellow", "daylily"], "token": 480}
+{"data_id": "infoseek_val_00020395", "question": "What is the closest parent taxonomy of this plant?", "image_id": "oven_05033820", "entities": ["plant", "tree", "forest"], "token": 475}
+{"data_id": "infoseek_val_00020743", "question": "What is the closest parent taxonomy of this plant?", "image_id": "oven_05029837", "entities": ["plant"], "token": 880}
+{"data_id": "infoseek_val_00020772", "question": "What is the brand of this vehicle?", "image_id": "oven_05010680", "entities": ["Lamborghini", "vehicle", "brand"], "token": 786}
+{"data_id": "infoseek_val_00020777", "question": "What is the closest parent taxonomy of this bird?", "image_id": "oven_05048282", "entities": ["bird", "hoopoe"], "token": 474}
+{"data_id": "infoseek_val_00020796", "question": "What is the closest upper taxonomy of this bird?", "image_id": "oven_05033151", "entities": ["bird", "waterbird", "wading bird", "shorebird", "waterfowl", "avian", "water", "wetland", "reed", "plant"], "token": 915}
+{"data_id": "infoseek_val_00020977", "question": "What is the country of origin of this food?", "image_id": "oven_05064748", "entities": ["food", "country", "origin"], "token": 475}
+{"data_id": "infoseek_val_00021481", "question": "What is the closest parent taxonomy of this insect?", "image_id": "oven_05030458", "entities": ["insect", "taxonomy"], "token": 834}
+{"data_id": "infoseek_val_00021692", "question": "What country does this drink belong to?", "image_id": "oven_05064514", "entities": ["Luxardo", "Chartreuse", "Harry Johnson's"], "token": 477}
+{"data_id": "infoseek_val_00021707", "question": "What country does this game belong to?", "image_id": "oven_05019208", "entities": [], "token": 826}
+{"data_id": "infoseek_val_00021813", "question": "What is the closest parent taxonomy of this plant?", "image_id": "oven_05063709", "entities": ["plant", "taxonomy"], "token": 472}
+{"data_id": "infoseek_val_00022159", "question": "What is the closest upper taxonomy of this object?", "image_id": "oven_05046854", "entities": ["object"], "token": 469}
+{"data_id": "infoseek_val_00022734", "question": "What is the closest upper taxonomy of this bird?", "image_id": "oven_05043983", "entities": ["bird"], "token": 880}
+{"data_id": "infoseek_val_00023467", "question": "Which city or region does this facility locate in?", "image_id": "oven_05026183", "entities": [], "token": 828}
+{"data_id": "infoseek_val_00024040", "question": "Which city or region does this facility locate in?", "image_id": "oven_05026146", "entities": [], "token": 853}
+{"data_id": "infoseek_val_00024143", "question": "What is the closest upper taxonomy of this animal?", "image_id": "oven_05029432", "entities": ["animal", "snake"], "token": 883}
+{"data_id": "infoseek_val_00024268", "question": "What is the closest parent taxonomy of this plant?", "image_id": "oven_05035482", "entities": ["plant", "tree", "leaf"], "token": 475}
+{"data_id": "infoseek_val_00024282", "question": "What is the closest upper taxonomy of this plant?", "image_id": "oven_05036710", "entities": ["Rhodiola integrifolia", "Rosy Sedum", "plant", "flower", "leaf", "botanical taxonomy"], "token": 830}
+{"data_id": "infoseek_val_00024321", "question": "What is the weight of a male of this bird in kilogram?", "image_id": "oven_05043096", "entities": ["bird", "male", "kilogram"], "token": 866}
+{"data_id": "infoseek_val_00024546", "question": "What is the closest parent taxonomy of this plant?", "image_id": "oven_05036707", "entities": ["plant", "flower", "succulent", "yellow"], "token": 765}
+{"data_id": "infoseek_val_00024906", "question": "Which (geo)physical feature is the place located in or on?", "image_id": "oven_05020546", "entities": ["beach", "ocean", "hill", "coastline"], "token": 672}
+{"data_id": "infoseek_val_00024930", "question": "What is the closest upper taxonomy of this animal?", "image_id": "oven_04945828", "entities": ["animal", "insect", "invertebrate", "arthropod", "insecta", "hemiptera", "cicadomorpha", "delphacidae"], "token": 508}
+{"data_id": "infoseek_val_00025189", "question": "What is the conservation status of this animal? (The status is assigned by the international union for conservation of nature. Choose one among Endangered,Least Concern,Critically Endangered,extinct species,extinct in the wild,Vulnerable,Near Threatened,Data Deficient)", "image_id": "oven_05050740", "entities": ["animal", "gorilla", "conservation status", "international union for conservation of nature", "Endangered", "Least Concern", "Critically Endangered", "extinct species", "extinct in the wild", "Vulnerable", "Near Threatened", "Data Deficient"], "token": 573}
+{"data_id": "infoseek_val_00025691", "question": "What country does this building belong to?", "image_id": "oven_05022304", "entities": ["building", "country"], "token": 831}
+{"data_id": "infoseek_val_00026068", "question": "What country does this building belong to?", "image_id": "oven_05017179", "entities": ["building", "country"], "token": 881}
+{"data_id": "infoseek_val_00026286", "question": "What is the closest parent taxonomy of this insect?", "image_id": "oven_05037390", "entities": ["insect", "moth"], "token": 884}
+{"data_id": "infoseek_val_00026378", "question": "What country does this facility belong to?", "image_id": "oven_05016911", "entities": ["facility", "country"], "token": 831}
+{"data_id": "infoseek_val_00026657", "question": "Which historic county does this island belong to?", "image_id": "oven_05024259", "entities": ["island", "historic county", "lighthouse", "horses", "coastline", "hill"], "token": 775}
+{"data_id": "infoseek_val_00027305", "question": "What is the closest upper taxonomy of this plant?", "image_id": "oven_05044375", "entities": ["plant", "fungus"], "token": 473}
+{"data_id": "infoseek_val_00027468", "question": "Which city or region does this building locate in?", "image_id": "oven_05023013", "entities": ["building", "city", "region"], "token": 886}
+{"data_id": "infoseek_val_00027748", "question": "What is the closest upper taxonomy of this animal?", "image_id": "oven_05029456", "entities": ["snake", "animal", "reptile"], "token": 888}
+{"data_id": "infoseek_val_00029069", "question": "What is the height of this place in terms of metre above sea level?", "image_id": "oven_05012112", "entities": ["place", "height", "metre", "sea level"], "token": 846}
+{"data_id": "infoseek_val_00029942", "question": "Which historic county does this place belong to?", "image_id": "oven_05016843", "entities": [], "token": 827}
+{"data_id": "infoseek_val_00030174", "question": "What is the closest parent taxonomy of this bird?", "image_id": "oven_05048421", "entities": ["bird", "goose", "parent taxonomy"], "token": 477}
+{"data_id": "infoseek_val_00030211", "question": "Which city or region does this facility locate in?", "image_id": "oven_05020093", "entities": ["city", "region", "facility", "St. Petersburg"], "token": 841}
+{"data_id": "infoseek_val_00030789", "question": "What country does this game belong to?", "image_id": "oven_05019217", "entities": [], "token": 826}
+{"data_id": "infoseek_val_00030924", "question": "What is the closest upper taxonomy of this plant?", "image_id": "oven_05069120", "entities": ["plant", "flower", "purple"], "token": 475}
+{"data_id": "infoseek_val_00031216", "question": "What is the closest parent taxonomy of this plant?", "image_id": "oven_05042742", "entities": ["plant", "flower", "rock", "lichen"], "token": 790}
+{"data_id": "infoseek_val_00031218", "question": "How wide is the building in the image? answer in metre", "image_id": "oven_05026254", "entities": [], "token": 831}
+{"data_id": "infoseek_val_00031249", "question": "where is this plant originally discovered?", "image_id": "oven_05038525", "entities": ["plant", "maple", "tree"], "token": 473}
+{"data_id": "infoseek_val_00031253", "question": "What is the country of origin of this food?", "image_id": "oven_04949545", "entities": ["food", "country", "origin"], "token": 475}
+{"data_id": "infoseek_val_00031979", "question": "What is the closest upper taxonomy of this bird?", "image_id": "oven_05043846", "entities": ["bird"], "token": 469}
+{"data_id": "infoseek_val_00032734", "question": "Which city or region does this facility locate in?", "image_id": "oven_05017339", "entities": [], "token": 828}
+{"data_id": "infoseek_val_00033409", "question": "What is the location of this building?", "image_id": "oven_05022289", "entities": ["building", "location", "water", "trees", "grass", "mountains", "village"], "token": 823}
+{"data_id": "infoseek_val_00033566", "question": "Who is the manufacturer of this equipment?", "image_id": "oven_05054699", "entities": ["equipment", "manufacturer"], "token": 470}
+{"data_id": "infoseek_val_00033633", "question": "What is the closest parent taxonomy of this animal?", "image_id": "oven_05035273", "entities": ["animal", "fox"], "token": 833}
+{"data_id": "infoseek_val_00034818", "question": "What country does this drink belong to?", "image_id": "oven_05064547", "entities": ["American Honey", "United States"], "token": 472}
+{"data_id": "infoseek_val_00035303", "question": "What is the closest parent taxonomy of this insect?", "image_id": "oven_05037386", "entities": ["insect", "moth", "taxonomic classification"], "token": 764}
+{"data_id": "infoseek_val_00036191", "question": "What is the closest parent taxonomy of this plant?", "image_id": "oven_05042741", "entities": ["plant", "taxonomy"], "token": 833}
+{"data_id": "infoseek_val_00036475", "question": "What is the closest upper taxonomy of this plant?", "image_id": "oven_05043348", "entities": ["plant", "upper taxonomy"], "token": 884}
+{"data_id": "infoseek_val_00036512", "question": "Where is this bird native to?", "image_id": "oven_05035018", "entities": ["bird"], "token": 827}
+{"data_id": "infoseek_val_00036582", "question": "What is the closest parent taxonomy of this plant?", "image_id": "oven_05066207", "entities": ["plant", "leaf", "butterfly"], "token": 483}
+{"data_id": "infoseek_val_00036824", "question": "What is the closest upper taxonomy of this plant?", "image_id": "oven_05069143", "entities": ["plant", "flower", "pink", "white", "green", "leaf", "blossom"], "token": 489}
+{"data_id": "infoseek_val_00036825", "question": "What is the closest parent taxonomy of this animal?", "image_id": "oven_05030143", "entities": ["animal", "toad"], "token": 909}
+{"data_id": "infoseek_val_00037258", "question": "What is the closest parent taxonomy of this plant?", "image_id": "oven_05036708", "entities": ["plant", "yellow flowers", "green leaves"], "token": 888}
+{"data_id": "infoseek_val_00037320", "question": "What country does this building belong to?", "image_id": "oven_05012526", "entities": ["building", "country"], "token": 1031}
+{"data_id": "infoseek_val_00038615", "question": "What is the spore print color of this plant?", "image_id": "oven_05038115", "entities": ["spore print", "color", "plant", "mushroom"], "token": 489}
+{"data_id": "infoseek_val_00038859", "question": "What country does this building belong to?", "image_id": "oven_05023733", "entities": ["building", "country"], "token": 831}
+{"data_id": "infoseek_val_00039451", "question": "What is the closest parent taxonomy of this insect?", "image_id": "oven_05038610", "entities": ["insect", "taxonomy"], "token": 809}
+{"data_id": "infoseek_val_00040360", "question": "What is the closest parent taxonomy of this plant?", "image_id": "oven_05035476", "entities": ["plant", "leaf", "flower"], "token": 475}
+{"data_id": "infoseek_val_00040515", "question": "Who is the manufacturer of this equipment?", "image_id": "oven_05054671", "entities": ["equipment"], "token": 467}
+{"data_id": "infoseek_val_00041043", "question": "Who designed this building?", "image_id": "oven_05021638", "entities": ["building"], "token": 875}
+{"data_id": "infoseek_val_00041319", "question": "In which year did this building officially open?", "image_id": "oven_05020411", "entities": ["building", "year"], "token": 882}
+{"data_id": "infoseek_val_00041438", "question": "What is the area in square kilometre occupied by this mountain?", "image_id": "oven_05016591", "entities": ["mountain", "square kilometre"], "token": 839}
+{"data_id": "infoseek_val_00042013", "question": "What is the closest upper taxonomy of this animal?", "image_id": "oven_04945791", "entities": ["animal", "fish", "school of fish"], "token": 477}
+{"data_id": "infoseek_val_00042106", "question": "What is the closest upper taxonomy of this plant?", "image_id": "oven_05036711", "entities": ["plant", "flower", "leaf", "grass"], "token": 889}
+{"data_id": "infoseek_val_00042324", "question": "What is the closest upper taxonomy of this bird?", "image_id": "oven_05036591", "entities": ["bird"], "token": 705}
+{"data_id": "infoseek_val_00043164", "question": "What is the closest parent taxonomy of this plant?", "image_id": "oven_05029830", "entities": ["plant", "taxonomy"], "token": 883}
+{"data_id": "infoseek_val_00043226", "question": "Which city or region does this building locate in?", "image_id": "oven_05016249", "entities": ["Bückeburg"], "token": 883}
+{"data_id": "infoseek_val_00043449", "question": "What is the closest upper taxonomy of this plant?", "image_id": "oven_05066712", "entities": ["plant"], "token": 483}
+{"data_id": "infoseek_val_00043771", "question": "What is the closest parent taxonomy of this plant?", "image_id": "oven_05043653", "entities": ["plant", "fungus", "tree"], "token": 1037}
+{"data_id": "infoseek_val_00044059", "question": "What country does this facility belong to?", "image_id": "oven_05016888", "entities": ["facility", "country"], "token": 881}
+{"data_id": "infoseek_val_00044932", "question": "Who designed this bridge?", "image_id": "oven_05015073", "entities": ["bridge"], "token": 875}
+{"data_id": "infoseek_val_00045100", "question": "Which (geo)physical feature is the place located in or on?", "image_id": "oven_05020547", "entities": ["beach", "ocean", "coast", "hill", "cliff", "coral reef"], "token": 855}
+{"data_id": "infoseek_val_00045299", "question": "What is the length of the wingspan in centimetre of this bird?", "image_id": "oven_05039488", "entities": ["bird", "wingspan", "centimetre"], "token": 846}
+{"data_id": "infoseek_val_00045607", "question": "What is the closest upper taxonomy of this plant?", "image_id": "oven_05066717", "entities": ["plant", "flower", "yellow flower", "green grass", "field"], "token": 483}
+{"data_id": "infoseek_val_00045812", "question": "Who designed this building?", "image_id": "oven_05022993", "entities": ["building"], "token": 875}
+{"data_id": "infoseek_val_00046512", "question": "What kind of effect does this item have?", "image_id": "oven_05051616", "entities": ["alarm clock", "time", "wake up", "notification"], "token": 479}
+{"data_id": "infoseek_val_00046526", "question": "Which city or region does this building locate in?", "image_id": "oven_05023769", "entities": ["building", "city", "region", "river", "valley", "trees", "mountains"], "token": 850}
+{"data_id": "infoseek_val_00047100", "question": "What is the closest parent taxonomy of this plant?", "image_id": "oven_05036264", "entities": ["plant", "flower", "yellow flower", "botanical taxonomy"], "token": 481}
+{"data_id": "infoseek_val_00047428", "question": "Who designed this building?", "image_id": "oven_05021607", "entities": ["Château de Selle-sur-Cher", "architect"], "token": 837}
+{"data_id": "infoseek_val_00047434", "question": "What is the conservation status of this bird? (The status is assigned by the international union for conservation of nature. Choose one among Endangered,Least Concern,Critically Endangered,extinct species,extinct in the wild,Vulnerable,Near Threatened,Data Deficient)", "image_id": "oven_05045992", "entities": ["bird", "Endangered", "Least Concern", "Critically Endangered", "extinct species", "extinct in the wild", "Vulnerable", "Near Threatened", "Data Deficient"], "token": 967}
+{"data_id": "infoseek_val_00047438", "question": "What is the conservation status of this plant? (The status is assigned by the international union for conservation of nature. Choose one among Endangered,Least Concern,Critically Endangered,extinct species,extinct in the wild,Vulnerable,Near Threatened,Data Deficient)", "image_id": "oven_05044532", "entities": ["plant", "conservation status", "international union for conservation of nature", "Endangered", "Least Concern", "Critically Endangered", "extinct species", "extinct in the wild", "Vulnerable", "Near Threatened", "Data Deficient"], "token": 569}
+{"data_id": "infoseek_val_00047707", "question": "What is the closest parent taxonomy of this bird?", "image_id": "oven_05048260", "entities": ["bird", "hoopoe"], "token": 474}
+{"data_id": "infoseek_val_00048169", "question": "Which protected area is this building usually located in?", "image_id": "oven_05026258", "entities": ["protected area", "building"], "token": 834}
+{"data_id": "infoseek_val_00048219", "question": "What is the closest upper taxonomy of this insect?", "image_id": "oven_05036341", "entities": ["insect", "moth"], "token": 834}
+{"data_id": "infoseek_val_00048939", "question": "Who designed this building?", "image_id": "oven_05020617", "entities": ["building"], "token": 875}
+{"data_id": "infoseek_val_00048978", "question": "What is the closest parent taxonomy of this plant?", "image_id": "oven_05033843", "entities": ["plant"], "token": 469}
+{"data_id": "infoseek_val_00049890", "question": "Which historic county does this village belong to?", "image_id": "oven_05012008", "entities": [], "token": 877}
+{"data_id": "infoseek_val_00050020", "question": "What is the closest parent taxonomy of this plant?", "image_id": "oven_05067443", "entities": ["plant", "taxon", "taxonomy"], "token": 476}
+{"data_id": "infoseek_val_00050138", "question": "What is the closest upper taxonomy of this insect?", "image_id": "oven_05039082", "entities": ["insect", "moth"], "token": 1034}
+{"data_id": "infoseek_val_00050149", "question": "Which historic county does this village belong to?", "image_id": "oven_05012013", "entities": ["village", "historic county"], "token": 834}
+{"data_id": "infoseek_val_00050371", "question": "What is the closest parent taxonomy of this plant?", "image_id": "oven_05032953", "entities": ["plant", "taxonomy"], "token": 883}
+{"data_id": "infoseek_val_00050741", "question": "Who designed this building?", "image_id": "oven_05012165", "entities": ["building"], "token": 825}
+{"data_id": "infoseek_val_00050903", "question": "how many centimetre is the wingspan of this bird?", "image_id": "oven_05037452", "entities": ["bird", "wingspan", "centimetre"], "token": 482}
+{"data_id": "infoseek_val_00051203", "question": "What is the closest upper taxonomy of this insect?", "image_id": "oven_05036343", "entities": ["insect", "moth"], "token": 984}
+{"data_id": "infoseek_val_00051488", "question": "Which government has executive power of this facility?", "image_id": "oven_05017348", "entities": [], "token": 827}
+{"data_id": "infoseek_val_00051497", "question": "What is the closest upper taxonomy of this bird?", "image_id": "oven_05036592", "entities": ["bird"], "token": 1030}
+{"data_id": "infoseek_val_00051774", "question": "What is the conservation status of this bird? (The status is assigned by the international union for conservation of nature. Choose one among Endangered,Least Concern,Critically Endangered,extinct species,extinct in the wild,Vulnerable,Near Threatened,Data Deficient)", "image_id": "oven_05046027", "entities": ["bird", "Endangered", "Least Concern", "Critically Endangered", "extinct species", "extinct in the wild", "Vulnerable", "Near Threatened", "Data Deficient"], "token": 967}
+{"data_id": "infoseek_val_00051781", "question": "What is the weight of a female of this bird in kilogram?", "image_id": "oven_05043068", "entities": ["female", "bird", "kilogram"], "token": 1041}
+{"data_id": "infoseek_val_00051817", "question": "What is the closest parent taxonomy of this insect?", "image_id": "oven_05035135", "entities": ["insect", "dragonfly"], "token": 835}
+{"data_id": "infoseek_val_00052156", "question": "what has this bridge crossed over?", "image_id": "oven_05015071", "entities": ["bridge", "river", "boats", "date", "06/09/2010"], "token": 898}
+{"data_id": "infoseek_val_00052264", "question": "What is the conservation status of this plant? (The status is assigned by the international union for conservation of nature. Choose one among Endangered,Least Concern,Critically Endangered,extinct species,extinct in the wild,Vulnerable,Near Threatened,Data Deficient)", "image_id": "oven_05044553", "entities": ["plant", "conservation status", "international union for conservation of nature", "Endangered", "Least Concern", "Critically Endangered", "extinct species", "extinct in the wild", "Vulnerable", "Near Threatened", "Data Deficient"], "token": 569}
+{"data_id": "infoseek_val_00053190", "question": "What is the spore print color of this plant?", "image_id": "oven_05038122", "entities": ["spore print", "color", "plant", "mushroom", "tree"], "token": 486}
+{"data_id": "infoseek_val_00053794", "question": "What is the closest upper taxonomy of this plant?", "image_id": "oven_05066851", "entities": ["plant", "bee"], "token": 472}
+{"data_id": "infoseek_val_00053810", "question": "Which city or region does this building locate in?", "image_id": "oven_05017183", "entities": ["building", "city", "region"], "token": 811}
+{"data_id": "infoseek_val_00054337", "question": "Which historic county does this building belong to?", "image_id": "oven_05012396", "entities": ["building", "historic county"], "token": 883}
+{"data_id": "infoseek_val_00054388", "question": "What is the closest upper taxonomy of this animal?", "image_id": "oven_05035424", "entities": ["animal", "snake"], "token": 833}
+{"data_id": "infoseek_val_00054427", "question": "What is the closest upper taxonomy of this bird?", "image_id": "oven_05045662", "entities": ["bird", "bird", "nest", "reeds", "tree"], "token": 843}
+{"data_id": "infoseek_val_00055487", "question": "How many days does the gestation of this animal take?", "image_id": "oven_05041151", "entities": ["gestation", "days", "animal"], "token": 478}
+{"data_id": "infoseek_val_00055517", "question": "What is the closest parent taxonomy of this plant?", "image_id": "oven_05067442", "entities": ["plant", "flower", "leaf", "gourd"], "token": 479}
+{"data_id": "infoseek_val_00056144", "question": "What country does this facility belong to?", "image_id": "oven_05020093", "entities": ["Russia"], "token": 828}
+{"data_id": "infoseek_val_00056194", "question": "What is the conservation status of this bird? (The status is assigned by the international union for conservation of nature. Choose one among Endangered,Least Concern,Critically Endangered,extinct species,extinct in the wild,Vulnerable,Near Threatened,Data Deficient)", "image_id": "oven_05037414", "entities": ["bird", "conservation status", "international union for conservation of nature", "Endangered", "Least Concern", "Critically Endangered", "extinct species", "extinct in the wild", "Vulnerable", "Near Threatened", "Data Deficient"], "token": 575}
+{"data_id": "infoseek_val_00056379", "question": "What is the closest upper taxonomy of this animal?", "image_id": "oven_05050712", "entities": ["gorilla", "animal", "primate"], "token": 483}
+{"data_id": "infoseek_val_00056646", "question": "What is this object named after?", "image_id": "oven_05052952", "entities": ["Girl Scout"], "token": 467}
+{"data_id": "infoseek_val_00057118", "question": "What is the highest observed lifespan of this animal?", "image_id": "oven_05041162", "entities": ["animal"], "token": 469}
+{"data_id": "infoseek_val_00057128", "question": "Which (geo)physical feature is the island located in or on?", "image_id": "oven_05024252", "entities": ["island", "lighthouse", "sea", "sky", "sunset", "cloud"], "token": 777}
+{"data_id": "infoseek_val_00057540", "question": "What is the closest parent taxonomy of this plant?", "image_id": "oven_05069082", "entities": ["plant", "taxonomy"], "token": 472}
+{"data_id": "infoseek_val_00057580", "question": "What is the closest upper taxonomy of this insect?", "image_id": "oven_05045846", "entities": ["insect"], "token": 881}
+{"data_id": "infoseek_val_00057602", "question": "What is the closest parent taxonomy of this plant?", "image_id": "oven_05066414", "entities": ["plant", "tree", "evergreen", "ornament", "artichoke"], "token": 485}
+{"data_id": "infoseek_val_00058628", "question": "What is the closest parent taxonomy of this animal?", "image_id": "oven_05035266", "entities": ["animal", "fox"], "token": 858}
+{"data_id": "infoseek_val_00058640", "question": "What is the closest parent taxonomy of this plant?", "image_id": "oven_05043642", "entities": ["plant", "fungus"], "token": 909}
+{"data_id": "infoseek_val_00059397", "question": "What is this object named after?", "image_id": "oven_05052981", "entities": ["Crocodile"], "token": 467}
+{"data_id": "infoseek_val_00059778", "question": "What is the closest parent taxonomy of this plant?", "image_id": "oven_05032951", "entities": ["plant", "flower", "taxon", "taxonomy"], "token": 840}
+{"data_id": "infoseek_val_00059891", "question": "What is the immediately prior item that this vehicle follows in a series?", "image_id": "oven_05010651", "entities": ["Lamborghini", "Gallardo", "Superga"], "token": 2701}
+{"data_id": "infoseek_val_00060117", "question": "What country does this building belong to?", "image_id": "oven_05012533", "entities": ["Thailand"], "token": 879}
+{"data_id": "infoseek_val_00060365", "question": "What is the closest upper taxonomy of this insect?", "image_id": "oven_05045841", "entities": ["insect", "insect taxonomy"], "token": 886}
+{"data_id": "infoseek_val_00061038", "question": "Which diocese does this building belong to?", "image_id": "oven_05011855", "entities": ["diocese", "building"], "token": 883}
+{"data_id": "infoseek_val_00061052", "question": "What is the closest upper taxonomy of this animal?", "image_id": "oven_05035429", "entities": ["animal", "snake"], "token": 883}
+{"data_id": "infoseek_val_00061362", "question": "What is the height of this place in terms of metre above sea level?", "image_id": "oven_05012129", "entities": ["place", "metre", "sea level"], "token": 598}
+{"data_id": "infoseek_val_00062047", "question": "What is the closest parent taxonomy of this plant?", "image_id": "oven_05063728", "entities": ["plant", "taxonomy"], "token": 472}
+{"data_id": "infoseek_val_00062186", "question": "where is this plant originally discovered?", "image_id": "oven_05038540", "entities": ["plant", "leaf", "maple"], "token": 473}
+{"data_id": "infoseek_val_00062500", "question": "What is the closest upper taxonomy of this bird?", "image_id": "oven_05043986", "entities": ["bird"], "token": 830}
+{"data_id": "infoseek_val_00062823", "question": "What is the closest upper taxonomy of this animal?", "image_id": "oven_05050424", "entities": ["animal", "bull", "cattle", "bovine"], "token": 480}
+{"data_id": "infoseek_val_00063026", "question": "What is the closest upper taxonomy of this object?", "image_id": "oven_05046852", "entities": ["human", "body", "medical image", "scan", "anatomical structure"], "token": 493}
+{"data_id": "infoseek_val_00063116", "question": "What is the closest upper taxonomy of this bird?", "image_id": "oven_05043869", "entities": ["bird"], "token": 469}
+{"data_id": "infoseek_val_00063241", "question": "In which year did this building officially open?", "image_id": "oven_05020428", "entities": ["year", "building"], "token": 882}
+{"data_id": "infoseek_val_00063428", "question": "What is the oldest age of this animal?", "image_id": "oven_05050447", "entities": ["animal", "yak"], "token": 472}
+{"data_id": "infoseek_val_00063716", "question": "What country does this place belong to?", "image_id": "oven_05016762", "entities": ["place", "country"], "token": 881}
+{"data_id": "infoseek_val_00063945", "question": "What is the closest parent taxonomy of this animal?", "image_id": "oven_05030150", "entities": ["animal", "toad"], "token": 884}
+{"data_id": "infoseek_val_00064158", "question": "What is the closest upper taxonomy of this plant?", "image_id": "oven_05043359", "entities": ["plant"], "token": 880}
+{"data_id": "infoseek_val_00064796", "question": "Which diocese does this building belong to?", "image_id": "oven_05011860", "entities": ["diocese", "building"], "token": 883}
+{"data_id": "infoseek_val_00065089", "question": "What is the closest parent taxonomy of this plant?", "image_id": "oven_05066413", "entities": ["plant", "flower", "red rose", "white daisy", "baby's breath"], "token": 486}
+{"data_id": "infoseek_val_00065163", "question": "What is the litter size of this bird?", "image_id": "oven_05031475", "entities": ["bird", "litter size"], "token": 909}
+{"data_id": "infoseek_val_00065378", "question": "What is the closest parent taxonomy of this plant?", "image_id": "oven_05069059", "entities": ["plant", "taxonomy"], "token": 480}
+{"data_id": "infoseek_val_00065823", "question": "What is the length of the wingspan in metre of this bird?", "image_id": "oven_05031655", "entities": ["bird", "wingspan", "metre"], "token": 482}
+{"data_id": "infoseek_val_00065921", "question": "Where is this bird native to?", "image_id": "oven_05035027", "entities": ["bird"], "token": 1027}
+{"data_id": "infoseek_val_00066236", "question": "Which diocese does this building belong to?", "image_id": "oven_05012387", "entities": ["diocese", "building"], "token": 783}
+{"data_id": "infoseek_val_00066406", "question": "What is the closest parent taxonomy of this insect?", "image_id": "oven_05030460", "entities": ["insect", "taxonomic classification"], "token": 886}
+{"data_id": "infoseek_val_00066446", "question": "What is the closest upper taxonomy of this bird?", "image_id": "oven_05039502", "entities": ["bird", "bird", "avian", "seabird", "shorebird", "waterbird", "tropicbird", "tern", "bird taxonomy", "upper taxonomy"], "token": 865}
+{"data_id": "infoseek_val_00066888", "question": "Which historic county does this place belong to?", "image_id": "oven_05016852", "entities": ["historic county", "place"], "token": 668}
+{"data_id": "infoseek_val_00067303", "question": "What is the closest upper taxonomy of this plant?", "image_id": "oven_05066888", "entities": ["plant", "flower", "thistle"], "token": 476}
+{"data_id": "infoseek_val_00067455", "question": "What is the closest upper taxonomy of this bird?", "image_id": "oven_05045692", "entities": ["bird", "heron"], "token": 834}
+{"data_id": "infoseek_val_00067638", "question": "What country does this building belong to?", "image_id": "oven_05020622", "entities": ["building"], "token": 828}
+{"data_id": "infoseek_val_00067639", "question": "What is the length of the wingspan in metre of this bird?", "image_id": "oven_05031683", "entities": ["bird", "wingspan", "metre"], "token": 482}
+{"data_id": "infoseek_val_00067658", "question": "What is the location of this place?", "image_id": "oven_05016775", "entities": ["place"], "token": 828}
+{"data_id": "infoseek_val_00067702", "question": "What kind of effect does this item have?", "image_id": "oven_05051611", "entities": ["fire alarm", "alert", "safety", "emergency"], "token": 479}
+{"data_id": "infoseek_val_00068049", "question": "What is the closest parent taxonomy of this plant?", "image_id": "oven_05065575", "entities": ["plant"], "token": 469}
+{"data_id": "infoseek_val_00068675", "question": "What is the closest upper taxonomy of this animal?", "image_id": "oven_05051060", "entities": ["animal", "sponge"], "token": 473}
+{"data_id": "infoseek_val_00069149", "question": "What is the closest parent taxonomy of this plant?", "image_id": "oven_05066246", "entities": ["plant", "butterfly"], "token": 474}
+{"data_id": "infoseek_val_00069289", "question": "What is the closest parent taxonomy of this plant?", "image_id": "oven_05065566", "entities": ["plant"], "token": 477}
+{"data_id": "infoseek_val_00069507", "question": "What is the architectural style of this building?", "image_id": "oven_05016231", "entities": ["building", "architectural style"], "token": 835}
+{"data_id": "infoseek_val_00069969", "question": "What is the closest parent taxonomy of this plant?", "image_id": "oven_05036290", "entities": ["plant", "sunflower"], "token": 473}
+{"data_id": "infoseek_val_00070339", "question": "What is the country of origin of this food?", "image_id": "oven_05064700", "entities": ["food", "country", "origin"], "token": 475}
+{"data_id": "infoseek_val_00070776", "question": "What is the closest upper taxonomy of this plant?", "image_id": "oven_05067992", "entities": ["plant", "flower", "yellow", "daylily"], "token": 486}
+{"data_id": "infoseek_val_00070880", "question": "What is the closest parent taxonomy of this bird?", "image_id": "oven_05031483", "entities": ["bird", "taxonomy"], "token": 833}
+{"data_id": "infoseek_val_00070991", "question": "What is the closest parent taxonomy of this bird?", "image_id": "oven_05048437", "entities": ["bird", "duck", "mallard"], "token": 476}
+{"data_id": "infoseek_val_00071059", "question": "What is the closest parent taxonomy of this insect?", "image_id": "oven_05038611", "entities": ["insect", "taxonomy", "Periferia", "Presa Constitución", "San Juan del Río", "Querétaro"], "token": 908}
+{"data_id": "infoseek_val_00072086", "question": "What is the architectural style of this building?", "image_id": "oven_05012596", "entities": ["building", "architectural style", "church", "stained glass windows", "altar", "cross", "arch", "stone walls", "wooden ceiling"], "token": 912}
+{"data_id": "infoseek_val_00072323", "question": "which mountain range is this mountain belong to?", "image_id": "oven_05016594", "entities": ["mountain", "mountain range"], "token": 560}
+{"data_id": "infoseek_val_00072812", "question": "In which year did this building officially open?", "image_id": "oven_05012144", "entities": ["building", "year"], "token": 832}
+{"data_id": "infoseek_val_00073080", "question": "Which city or region does this building locate in?", "image_id": "oven_05012603", "entities": [], "token": 878}
+{"data_id": "infoseek_val_00073102", "question": "What is the spore print color of this plant?", "image_id": "oven_05044369", "entities": ["plant", "spore print", "color"], "token": 486}
