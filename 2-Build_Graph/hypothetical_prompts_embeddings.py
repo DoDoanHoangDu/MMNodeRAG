@@ -141,16 +141,13 @@ index = faiss.IndexFlatIP(EMB_DIM)
 embedding_ids_list = []
 
 #run loop
+print(f"Max prompt count: {max([len(p) for p in hypothetical_prompts.values()])}")
+
 def save_progress(vectors, ids):
     if vectors.shape[0] != len(ids):
         raise KeyError("Mismatched progress to save")
     embedding_ids_list.extend(ids)
-    with open(embedding_processed_ids_path, "w", encoding="utf-8") as f:
-        f.write("\n".join(embedding_ids_list) + "\n")
-        f.flush()
-        os.fsync(f.fileno())
     index.add(vectors)
-    faiss.write_index(index, faiss_path)
 
 for nid in tqdm(hypothetical_prompts):
     prompts = hypothetical_prompts[nid]
@@ -158,6 +155,12 @@ for nid in tqdm(hypothetical_prompts):
     batch_embeddings = model.process(prompts).to(torch.float32).cpu().numpy()
     save_progress(np.vstack(batch_embeddings), [nid for _ in prompts])
 
+#write
+with open(embedding_processed_ids_path, "w", encoding="utf-8") as f:
+    f.write("\n".join(embedding_ids_list) + "\n")
+    f.flush()
+    os.fsync(f.fileno())
+faiss.write_index(index, faiss_path)
 
 #final check
 with open(embedding_processed_ids_path, "r", encoding="utf-8") as f:
