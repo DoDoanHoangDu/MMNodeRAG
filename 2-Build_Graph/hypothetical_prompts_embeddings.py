@@ -138,13 +138,15 @@ device = "cuda" if torch.cuda.is_available() else "cpu"
 print(f"Using device: {device}")
 model = Qwen3VLEmbedder(model_name_or_path="Qwen/Qwen3-VL-Embedding-2B")
 index = faiss.IndexFlatIP(EMB_DIM)
+embedding_ids_list = []
 
 #run loop
 def save_progress(vectors, ids):
     if vectors.shape[0] != len(ids):
         raise KeyError("Mismatched progress to save")
-    with open(embedding_processed_ids_path, "a", encoding="utf-8") as f:
-        f.write("\n".join(ids) + "\n")
+    embedding_ids_list.extend(ids)
+    with open(embedding_processed_ids_path, "w", encoding="utf-8") as f:
+        f.write("\n".join(embedding_ids_list) + "\n")
         f.flush()
         os.fsync(f.fileno())
     index.add(vectors)
@@ -152,11 +154,14 @@ def save_progress(vectors, ids):
 
 for nid in tqdm(hypothetical_prompts):
     prompts = hypothetical_prompts[nid]
+    prompts = [{"text": p, "instruction": "Represent the question for retrieval."} for p in prompts]
     batch_embeddings = model.process(prompts).to(torch.float32).cpu().numpy()
     save_progress(np.vstack(batch_embeddings), [nid for _ in prompts])
 
+
+#final check
 with open(embedding_processed_ids_path, "r", encoding="utf-8") as f:
     embedding_processed_ids = list(line.strip() for line in f if line.strip())
-
-if len(embedding_processed_ids) != index.ntotal:
+read_index = faiss.read_index(faiss_path)
+if len(embedding_processed_ids) != read_index.ntotal:
     raise KeyError("Mismatched processed ids and index entries")
