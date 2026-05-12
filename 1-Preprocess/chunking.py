@@ -1,6 +1,7 @@
 import json
 import spacy
 import os
+from tqdm import tqdm
 #Chunking logic
 print("Starting chunking process...")
 nlp = spacy.load("en_core_web_sm", disable=["ner", "tagger", "lemmatizer"])
@@ -10,7 +11,7 @@ def split_sentences(text):
     doc = nlp(text)
     return [sent.text for sent in doc.sents]
  
-def chunking(text, min_chunk_size = 150, max_chunk_size = 300, overlap = 50):
+def chunking(text, min_chunk_size = 150, max_chunk_size = 300, overlap = 40):
     chunks = []
     #Extract paragraphs list p from text
     paragraphs = text.split("\n")
@@ -81,7 +82,7 @@ except FileNotFoundError:
 #Read data and run all logic line by line
 print("Reading corpus and processing...")
 chunks_path = os.path.join(DIR_PATH, "data/chunks.jsonl")
-corpus_path = os.path.normpath(os.path.join(BASE_DIR, "InfoSeek", "KnowledgeBase.jsonl"))
+corpus_path = os.path.normpath(os.path.join(BASE_DIR, "Dataset", "Wiki6M_ver_1_0.jsonl"))
 with open(corpus_path, "r", encoding = "utf-8") as fin, \
     open(chunks_path, "a", encoding="utf-8") as fout, \
     open(ids_path, "a") as idfile:
@@ -94,9 +95,7 @@ with open(corpus_path, "r", encoding = "utf-8") as fin, \
         fout.write(json.dumps(record, ensure_ascii=False) + "\n")
         fout.flush()
 
-    progress = 0
-    for line in fin:
-        progress += 1
+    for line in tqdm(fin, desc="Processing documents"):
         record = json.loads(line)
         rid = str(record["wikidata_id"])
 
@@ -114,6 +113,4 @@ with open(corpus_path, "r", encoding = "utf-8") as fin, \
         idfile.write(rid + "\n")
         idfile.flush()
         processed_ids.add(rid)
-        if progress % 10000 == 0:
-            print(f"Processed {progress} documents.")
  
