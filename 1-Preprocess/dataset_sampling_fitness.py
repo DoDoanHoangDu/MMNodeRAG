@@ -11,7 +11,7 @@ import io
 from tqdm import tqdm
 
 EMB_DIM = 2048
-BATCH_SIZE = 8
+BATCH_SIZE = 1
 print(f"Embedding dimension: {EMB_DIM}")
 print(f"Batch size: {BATCH_SIZE}")
 
@@ -98,11 +98,12 @@ except Exception as e:
 
 #load wiki
 processed_wikis = set()
-with open(processed_wikis_path, "r", encoding="utf-8") as f:
-    for line in tqdm(f):
-        record = json.loads(line)
-        wiki_id = record["id"]
-        processed_wikis.add(wiki_id)
+if os.path.exists(processed_wikis_path):
+    with open(processed_wikis_path, "r", encoding="utf-8") as f:
+        for line in tqdm(f):
+            record = json.loads(line)
+            wiki_id = record["id"]
+            processed_wikis.add(wiki_id)
 
 #batch embeddings
 batch_contents = []
