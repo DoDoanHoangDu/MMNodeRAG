@@ -9,3 +9,4 @@ __pycache__/
 2-Build_Graph/data/embeddings_hnsw.faiss
 2-Build_Graph/data/hype.faiss
 /Dataset
+1-Preprocess/data/processed_wikis.jsonl
