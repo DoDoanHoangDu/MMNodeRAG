@@ -1,9 +1,41 @@
-def high_level_elements_prompt(text):
-    prompt = f"""
-You will receive a set of text data from the same cluster. Your task is to extract distinct categories of high-level information, such as concepts, themes, relevant theories, potential impacts, and key insights. Each piece of information should include a concise title and a corresponding description, reflecting the unique perspectives within the text cluster.
-Please do not attempt to include all possible information; instead, select the elements that have the most significance and diversity in this cluster. Avoid redundant information—if there are highly similar elements, combine them into a single, comprehensive entry. Ensure that the high-level information reflects the varied dimensions within the text, providing a well-rounded overview.
-Return the result as multiple well-structured paragraphs, where each paragraph represents one high-level element (with an implicit title and its description integrated naturally). Return only the only the final paragraphs, do not include any commentary or meta-text.
---Clustered text data--
+def high_level_elements_prompt(text: str):
+    SYSTEM_PROMPT = """
+[ROLE]
+You are a high-level summarization system.
+
+[TASK]
+You will receive a set of text data from the same cluster.
+Your task is to extract distinct categories of high-level information from the cluster.
+Examples of high-level information include:
+- concepts
+- themes
+- relevant theories
+- potential impacts
+- key insights
+
+[INSTRUCTIONS]
+- Select the elements that have the greatest significance and diversity within the cluster.
+- Do not attempt to include every possible piece of information.
+- Avoid redundancy.
+- If multiple elements are highly similar, combine them into a single comprehensive element.
+- Ensure the extracted information reflects varied dimensions and perspectives within the cluster.
+- Provide a balanced and well-rounded overview of the clustered text.
+- Use only information supported by the provided text.
+- Do not introduce unsupported assumptions or external knowledge.
+
+[OUTPUT REQUIREMENTS]
+- Return the result as multiple well-structured paragraphs.
+- Each paragraph should represent one high-level element.
+- Each paragraph should naturally integrate:
+  - an implicit title/topic
+  - its corresponding description
+- Do not use bullet points, numbering, or section headers.
+- Return only the final paragraphs.
+- Do not include commentary or meta-text.
+"""
+    USER_PROMPT = f"""
+[CLUSTERED TEXT DATA]
 {text}
 """
-    return prompt
+
+    return SYSTEM_PROMPT, USER_PROMPT

@@ -1,12 +1,14 @@
 def text_decomposition_prompt(text):
-    base = f"""--Goal--
+    SYSTEM_PROMPT = rf"""[GOAL]
 Given a text, segment it into multiple semantic units, each containing detailed descriptions of specific events or activities.
 Perform the following tasks:
---Steps--
+
+[STEPS]
 1. Provide a summary for each semantic unit while retaining all crucial details relevant to the original context.
 2. Extract all entities directly from the original text of each semantic unit, not from the paraphrased. Format each entity name in UPPERCASE. You should extract all entities including times, locations, people, organizations, diseases, animals, objects, natural phenomena and all kinds of entities.
 3. From the entities extracted in Step 2, list all relationships within the semantic unit and the corresponding original context in the form of string separated by comma: "ENTITY_A, RELATION_TYPE, ENTITY_B". The RELATION_TYPE could be a descriptive sentence, while the entities involved in the relationship must come from the entity names extracted in Step 2. Please make sure the string contains three elements representing two entities and the relationship type.
---Requirement--
+
+[REQUIREMENTS]
 1. Temporal Entities: Represent time entities based on the available details without filling in missing parts. Use specific formats based on what parts of the date or time are mentioned in the text.
 2. Each semantic unit should be represented as a dictionary containing three keys: semantic_unit (a paraphrased summary of each semantic unit), entities (a list of entities extracted directly from the original text of each semantic unit, formatted in UPPERCASE), and relationships (a list of extracted relationship strings that contain three elements, where the relationship type is a descriptive sentence). All these dictionaries should be stored in a list to facilitate management and access.
 3. Coreference Resolution:
@@ -16,7 +18,7 @@ Perform the following tasks:
 - If a sentence refers to an entity mentioned earlier in the text or in a previous semantic unit, use the canonical entity name.
 - All entities used in relationships must be explicit, fully resolved, and appear in the entities list.
 
---Example--
+[EXAMPLE]
 Text:
 In September 2024, Dr. Emily Roberts traveled to Paris to attend the International Conference on Renewable Energy. During her visit, she explored partnerships with several European companies and presented her latest research on solar panel efficiency improvements. Meanwhile, on the other side of the world, her colleague, Dr. John Miller, was conducting fieldwork in the Amazon Rainforest. He documented several new species and observed the effects of deforestation on the local wildlife. Both scholars' work is essential in their respective fields and contributes significantly to environmental conservation efforts.
 
@@ -52,8 +54,7 @@ Output:
 ]
 }}
 ]
---Real Input--
-Text:{text}
 """
-    return base
+    USER_PROMPT = f"[USER INPUT]\n{text}"
+    return SYSTEM_PROMPT, USER_PROMPT
 

@@ -106,11 +106,11 @@ with open(output_path, "a", encoding="utf-8") as f:
         entities = nodes[node_id].content #content = a list of synonyms
         semantic_units = context[0]
         relationships = context[1]
-        prompt = attribute_generation_prompt(entities, semantic_units, relationships)
+        system_prompt, user_prompt = attribute_generation_prompt(entities, semantic_units, relationships)
         MAX_ATTEMPTS = 30
         for attempt in range(1, MAX_ATTEMPTS+1):
             try:
-                response, token = call_api(prompt, model="gemini-2.5-flash", mode="gemini")
+                response, token = call_api(user_prompt, system_prompt=system_prompt, mode="self-host")
                 line = {
                     "entity_id": node_id,
                     "semantic_units": semantic_units,
@@ -124,9 +124,9 @@ with open(output_path, "a", encoding="utf-8") as f:
             except Exception as e:
                 print(f"Attempt {attempt} failed for entity {node_id}: {e}")
                 if attempt == MAX_ATTEMPTS:
-                    print(f"Failed on entity {node_id} with context length {len(prompt.split())}: {e}")
+                    print(f"Failed on entity {node_id} with context length {len(user_prompt.split())}: {e}")
                     continue
-                time.sleep(5 * attempt)
+                time.sleep(5)
 
 print("Finished")
             

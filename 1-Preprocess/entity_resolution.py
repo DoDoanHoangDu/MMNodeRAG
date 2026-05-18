@@ -38,6 +38,7 @@ def embed_entities(entities):
     inputs = [f"Entity: {e}" for e in entities]
     embeddings = model.encode(inputs, normalize_embeddings=True, show_progress_bar=True)
     return embeddings
+print("Embedding entities:")
 embeddings = embed_entities(entities)
 
 #faiss
@@ -174,11 +175,11 @@ problematic_clusters_merged = merge_lists(problematic_clusters)
 
 for cluster in tqdm(problematic_clusters_merged, desc="Processing clusters"):
     if len(cluster) > 1:
-        prompt = entity_matching_prompt(cluster)
+        system_prompt, user_prompt = entity_matching_prompt(cluster)
         MAX_ATTEMPTS = 30
         for attempt in range(MAX_ATTEMPTS):
             try:
-                response,token = call_api(prompt)
+                response, token = call_api(user_prompt, system_prompt=system_prompt, mode="self-host")
                 response = ast.literal_eval(response.strip())
                 if validate_response(response, cluster):
                     total_tokens += token

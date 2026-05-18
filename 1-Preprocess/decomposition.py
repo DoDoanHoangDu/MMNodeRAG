@@ -18,11 +18,9 @@ def extract_json(text):
 def is_valid_schema(data):
     if not isinstance(data, list):
         return False
- 
     for item in data:
         if not isinstance(item, dict):
             return False
- 
         # Required keys
         required_keys = {"semantic_unit", "entities", "relationships"}
         if not required_keys.issubset(item.keys()):
@@ -31,10 +29,8 @@ def is_valid_schema(data):
         #check empty
         if not item["semantic_unit"].strip():
             return False
-
         if not item["entities"]:
             return False
-
         if not item["relationships"]:
             return False
  
@@ -53,23 +49,23 @@ def is_valid_schema(data):
             return False
     return True
  
-#Check for processed chunk ids
-ids_path = os.path.join(DIR_PATH, "data/processed_chunk_ids.txt")
-processed_ids = set()
-try:
-    with open(ids_path, "r") as f:
-        for line in f:
-            processed_ids.add(line.strip())
-except FileNotFoundError:
-	pass
- 
 #Decompose each chunk
 failed_count = 0
 chunks_path = os.path.join(DIR_PATH, "data/chunks.jsonl")
 output_path = os.path.join(DIR_PATH, "data/decomposition.jsonl")
+
+#Check for processed chunk ids
+processed_ids = set()
+try:
+    with open(output_path, "r", encoding="utf-8") as f:
+        for line in f:
+            record = json.loads(line)
+            processed_ids.add(record["chunk_id"])
+except FileNotFoundError:
+	pass
+
 with open(output_path, "a", encoding="utf-8") as outfile, \
-    open(chunks_path, "r", encoding="utf-8") as chunks, \
-    open(ids_path, "a") as idfile:
+    open(chunks_path, "r", encoding="utf-8") as chunks:
  
     def write(data):
         outfile.write(json.dumps(data, ensure_ascii=False) + "\n")
@@ -80,18 +76,16 @@ with open(output_path, "a", encoding="utf-8") as outfile, \
         rid = str(record["chunk_id"])
         if rid in processed_ids:
             continue
-
         content = record.get("chunk_content", "")
         if not content:
             print(f"Empty content for chunk {rid}, skipping.")
             continue
-
-        prompt = text_decomposition_prompt(content)
+        system_prompt, user_prompt = text_decomposition_prompt(content)
         max_retries = 10
         success = False
         for attempt in range(max_retries):
             try:
-                response, token = call_api(prompt)
+                response, token = call_api(user_prompt, system_prompt=system_prompt, mode="self-host")
                 response = extract_json(response)
                 if not is_valid_schema(response):
                     raise ValueError("Invalid schema")
@@ -110,13 +104,8 @@ with open(output_path, "a", encoding="utf-8") as outfile, \
                     print(f"Failed on chunk {rid}: {e}")
                     failed_count += 1
                 else:
-                    time.sleep(10 * (attempt + 1))  # wait before next attempt
-                
-                continue
- 
+                    time.sleep(5)  # wait before next attempt
         if success:
-            idfile.write(rid + "\n")
-            idfile.flush()
             processed_ids.add(rid)
 print("Failed count: ",failed_count)
  

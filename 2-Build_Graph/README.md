@@ -5,3 +5,4 @@ g1
 -> embeddings
 -> g3
 -> g4 (semantic edges)
+-> entity_indexing

@@ -82,7 +82,7 @@ except FileNotFoundError:
 #Read data and run all logic line by line
 print("Reading corpus and processing...")
 chunks_path = os.path.join(DIR_PATH, "data/chunks.jsonl")
-corpus_path = os.path.normpath(os.path.join(BASE_DIR, "Dataset", "Wiki6M_ver_1_0.jsonl"))
+corpus_path = os.path.normpath(os.path.join(BASE_DIR, "Dataset", "knowledge_base.jsonl"))
 with open(corpus_path, "r", encoding = "utf-8") as fin, \
     open(chunks_path, "a", encoding="utf-8") as fout, \
     open(ids_path, "a") as idfile:

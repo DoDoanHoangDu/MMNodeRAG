@@ -1,11 +1,13 @@
 import json
 import os
 from tqdm import tqdm
-import urllib.request
+import requests
 from PIL import Image
 import time
+from io import BytesIO
 
-KEEP = 10**4
+KEEP = 2*10**4
+#LIMIT = 0.5
 
 DIR_PATH = os.path.dirname(os.path.abspath(__file__))
 BASE_DIR = os.path.dirname(DIR_PATH)
@@ -25,6 +27,7 @@ print(f"Total processed wikis: {len(processed_wikis)}")
 print("Sorting wikis by score...")
 processed_wikis.sort(key=lambda x: x[1], reverse=True)
 processed_wikis = processed_wikis[:KEEP]
+#processed_wikis = [w for w in processed_wikis if w[1] >= LIMIT]
 processed_wikis = set(w[0] for w in processed_wikis)
 
 records = []
@@ -35,6 +38,20 @@ with open(wikidata_path, "r", encoding="utf-8") as f:
         if wiki_id in processed_wikis:
             records.append(record)
 
+def wikimedia_svg_to_png(url, size=960):
+    filename = url.split("/")[-1]
+    return (
+        url.replace(
+            "/wikipedia/commons/",
+            "/wikipedia/commons/thumb/"
+        )
+        + f"/{size}px-{filename}.png"
+    )
+
+headers = {
+    "User-Agent": "UniProject/0.1 (dodoanhoangdu@gmail.com)"
+}
+
 with open(knowledge_base_path, "w", encoding="utf-8") as f:
     for record in tqdm(records):
         wiki_id = record["wikidata_id"]
@@ -42,7 +59,14 @@ with open(knowledge_base_path, "w", encoding="utf-8") as f:
         if wiki_image_url:
             try:
                 image_path = os.path.join(wiki_images_path, f"{wiki_id}.jpg")
-                urllib.request.urlretrieve(wiki_image_url, image_path)
+                if not os.path.exists(image_path): 
+                    if wiki_image_url.lower().endswith(".svg"):
+                        wiki_image_url = wikimedia_svg_to_png(wiki_image_url)
+                    response = requests.get(wiki_image_url, headers=headers, timeout=10)
+                    response.raise_for_status()
+                    image = Image.open(BytesIO(response.content))
+                    image = image.convert("RGBA").convert("RGB")
+                    image.save(image_path, format="JPEG", quality=95)
                 record["image_path"] = image_path
                 time.sleep(1)
             except Exception as e:

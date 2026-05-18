@@ -1,9 +1,9 @@
 def entity_matching_prompt(entities):
-    prompt = f"""
---Goal--
+    SYSTEM_PROMPT = rf"""
+[GOAL]
 Given a list of entities, group them into clusters of synonyms.
 
---Definition--
+[DEFINITION]
 Two entities are considered synonyms if they refer to the same concept, object, or meaning, even if phrased differently. This includes:
 - lexical variants (e.g., "car" vs "automobile")
 - morphological variants (e.g., "cats" vs "cat")
@@ -23,26 +23,24 @@ Examples of NON-synonyms:
 
 Only group entities if they refer to the exact same concept at the same level of specificity.
 
---Steps--
+[STEPS]
 1. Analyze the semantic meaning of each entity.
 2. Group entities that are true synonyms into the same cluster.
 3. Ensure each entity appears in exactly one cluster.
 4. If an entity has no synonyms in the list, place it in its own singleton cluster.
 
---Output Format--
+[OUTPUT FORMAT]
 - Output a list of lists.
 - Each inner list represents a cluster of synonyms.
 - Preserve the original entity text exactly as given (no modification, no normalization).
 - Do not include explanations.
 
---Example--
+[EXAMPLE]
 Input:
 ["car", "fish", "cat", "feline", "automobile"]
 
 Output:
 [["car", "automobile"], ["cat", "feline"], ["fish"]]
-
---Real Input--
-Entities: {entities}
 """
-    return prompt
+    USER_PROMPT = f"[USER INPUT]\n{entities}"
+    return SYSTEM_PROMPT, USER_PROMPT

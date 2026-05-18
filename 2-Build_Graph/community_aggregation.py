@@ -75,22 +75,21 @@ if not os.path.exists(communities_summaries_path):
             continue
         else:
             content = format_list(content)
-            prompt = high_level_elements_prompt(content)
+            system_prompt, user_prompt = high_level_elements_prompt(content)
             MAX_ATTEMPTS = 30
             for attempt in range(1, MAX_ATTEMPTS + 1):
                 try:
-                    response, token = call_api(prompt, model="gemini-2.5-pro", mode="gemini")
+                    response, token = call_api(user_prompt, system_prompt=system_prompt, mode="self-host")
                     if not response.strip():
                         raise ValueError("Empty summary response")
                     community_summaries[community_id] = (response, token)
-                    #time.sleep(1)
                     break
                 except Exception as e:
                     print(f"Attempt {attempt} failed for community {community_id}: {e}")
                     if attempt == MAX_ATTEMPTS:
-                        print(f"Failed on community {community_id} with context length {len(prompt.split())}: {e}")
+                        print(f"Failed on community {community_id} with context length {len(user_prompt.split())}: {e}")
                         raise TimeoutError("A community failed")
-                    time.sleep(5 * attempt)
+                    time.sleep(5)
 
     #save
     with open(communities_summaries_path, "w", encoding="utf-8") as f:
@@ -147,25 +146,24 @@ for community_id in tqdm(community_summaries.keys()):
     if community_id in community_overviews:
         continue
     summary = community_summaries[community_id][0]
-    prompt = high_level_overview_prompt(summary)
+    system_prompt, user_prompt = high_level_overview_prompt(summary)
     MAX_ATTEMPTS = 30
     for attempt in range(1, MAX_ATTEMPTS + 1):
         try:
-            overview_text, token =  call_api(prompt, model="gemini-2.5-pro", mode="gemini")
+            overview_text, token =  call_api(user_prompt, system_prompt=system_prompt, mode="self-host")
             overview = ast.literal_eval(simple_strip(overview_text))
             if not validate_overview(overview):
                 raise ValueError("Invalid overview format")
             overview = [o.strip().upper() for o in overview]
             community_overviews[community_id] = (overview, token)
-            time.sleep(1)
             break
         except Exception as e:
             print(f"Attempt {attempt} failed for community {community_id}: {e}")
             print(overview_text)
             if attempt == MAX_ATTEMPTS:
-                print(f"Failed on community {community_id} with context length {len(prompt.split())}: {e}")
+                print(f"Failed on community {community_id} with context length {len(user_prompt.split())}: {e}")
                 raise TimeoutError("A community failed")
-            time.sleep(5 * attempt)
+            time.sleep(5)
 
 print(f"Number of community overviews: {len(community_overviews)}")
 

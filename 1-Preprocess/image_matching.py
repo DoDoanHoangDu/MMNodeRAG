@@ -3,13 +3,14 @@ import os
 from sentence_transformers import SentenceTransformer
 import faiss
 import torch
+from tqdm import tqdm
 
 DIR_PATH = os.path.dirname(os.path.abspath(__file__))
 BASE_DIR = os.path.dirname(DIR_PATH)
 IMAGE_EXTENSIONS = {".jpg", ".jpeg", ".png", ".bmp", ".gif", ".webp"}
-image_dir = os.path.normpath(os.path.join(BASE_DIR, "InfoSeek", "wikipedia_images_sampled"))
+image_dir = os.path.normpath(os.path.join(BASE_DIR, "Dataset", "wiki_images_resized"))
 decomposition_path = os.path.join(DIR_PATH, "data/decomposition.jsonl")
-knowledge_base_path = os.path.join(BASE_DIR, "InfoSeek", "KnowledgeBase.jsonl")
+knowledge_base_path = os.path.join(BASE_DIR, "Dataset", "knowledge_base.jsonl")
 
 #Embeddings
 device = "cuda" if torch.cuda.is_available() else "cpu"
@@ -52,7 +53,7 @@ def get_relevant_entities(document_id):
 
 
 image_entity_mapping = {}
-for file in os.listdir(image_dir):
+for file in tqdm(os.listdir(image_dir)):
     if not is_image_file(file):
         continue
     file_id = extract_id(file)
