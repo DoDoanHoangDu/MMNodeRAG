@@ -1,16 +1,15 @@
 def question_decompose_prompt(query):
-    prompt = f"""
---Role--
+   SYSTEM_PROMPT = f"""
+[ROLE]
 You are an expert multimodal information extraction system.
 
---Goal--
+[GOAL]
 Given:
 1. A user question (text)
 2. An associated image
-
 Extract a single unified list of key entities relevant to answering the question.
 
---Definition of "Entity"--
+[DEFINITION OF "ENTITY"]
 Entities include:
 - Objects (physical items)
 - People, animals, locations
@@ -18,8 +17,7 @@ Entities include:
 - Date or time periods
 - Essential abstract concepts
 
---Core Constraints--
-
+[CONSTRAINTS]
 1. **Text Grounding (Primary)**
    - Extract ALL entities explicitly present in the text query.
    - Include nouns, noun phrases, and key concepts.
@@ -45,8 +43,6 @@ Entities include:
 6. **Output Format (STRICT)**
    - Return ONLY a JSON array of strings
    - No explanation, no markdown, no extra text
-
---Input--
-Question: {query}
 """
-    return prompt
+   USER_PROMPT = f"""[USER INPUT]\n{query}"""
+   return SYSTEM_PROMPT, USER_PROMPT

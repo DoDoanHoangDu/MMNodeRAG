@@ -6,42 +6,23 @@ import faiss
 import pickle
 import torch
 from LLM.qwen3_vl_embedding import Qwen3VLEmbedder
+import pandas as pd
+from PIL import Image
+import io
+import ast
 
 K = 16
 
 #paths
+start = time.time()
 DIR_PATH = os.path.dirname(os.path.abspath(__file__))
 BASE_PATH = os.path.dirname(DIR_PATH)
-question_path = os.path.normpath(os.path.join(BASE_PATH, "InfoSeek", "sampled_questions.jsonl"))
-oven_path = os.path.normpath(os.path.join(BASE_PATH, "InfoSeek", "oven_images_sampled"))
+questions0 = pd.read_parquet("Dataset/MMMU-Pro/test-00000-of-00002.parquet")
+questions1 = pd.read_parquet("Dataset/MMMU-Pro/test-00001-of-00002.parquet")
+questions = pd.concat([questions0, questions1], ignore_index=True)
 output_path = f"{DIR_PATH}/data/knn.jsonl"
-print(question_path)
 print(output_path)
 input("Confirm?")
-
-#load questions
-start = time.time()
-questions = {}
-with open(question_path, "r", encoding="utf-8") as f:
-    for line in f:
-        line = json.loads(line)
-        questions[line["data_id"]] = (line["question"], line["image_id"])
-
-#load images
-IMAGE_EXTENSIONS = {".jpg", ".jpeg", ".png", ".bmp", ".gif", ".webp"}
-
-def extract_id(filename):
-    return os.path.splitext(filename)[0]
-
-def is_image_file(filename):
-    return os.path.splitext(filename)[1].lower() in IMAGE_EXTENSIONS
-
-images = {}
-for file in os.listdir(oven_path):
-    if is_image_file(file):
-        images[extract_id(file)] = os.path.join(oven_path, file)
-    else:
-        print(f"Invalid file: {file}")
 
 #load embeddings
 hnsw = faiss.read_index(f"{BASE_PATH}/2-Build_Graph/data/embeddings_hnsw.faiss")
@@ -71,13 +52,36 @@ if os.path.exists(output_path):
             processed_qids.add(line["qid"])
 
 #run loop
+def resize_image(image, max_size = 1000):
+    width, height = image.size
+    if max(width, height) <= max_size:
+        return image
+    scale = max_size / max(width, height)
+    new_width = int(width * scale)
+    new_height = int(height * scale)
+    return image.resize((new_width, new_height), Image.LANCZOS)
+
 with open(output_path,"a", encoding = "utf-8") as f:
-    for qid in tqdm(questions):
+    for idx, row in tqdm(questions.iterrows()):
+        qid = row["id"]
         if qid in processed_qids:
             continue
-        question = questions[qid][0]
-        image = images[questions[qid][1]]
-        full_question = [{"text": question, "image": image, "instruction": "Retrieve images or text relevant to the user's query."}]
+        question = row["question"]
+        options = ast.literal_eval(row["options"])
+        for i, item in enumerate(options):
+            label = chr(ord('A') + i)
+            question += "\n" + f"{label}) {item}"
+        images = []
+        for i in range(1,8):
+            img_dict = row[f"image_{i}"]
+            if not img_dict or not isinstance(img_dict, dict):
+                continue
+            img_data = img_dict["bytes"]
+            image = Image.open(io.BytesIO(img_data)).convert("RGBA").convert("RGB")
+            image = resize_image(image)
+            images.append(image)
+
+        full_question = [{"text": question, "image": images, "instruction": "Retrieve images or text relevant to the user's query."}]
         query_embedding = model.process(full_question).to(torch.float32).cpu().numpy()
         similarity, idx = hnsw.search(query_embedding, K)
         embedding_node_ids = [embedding_ids[i] for i in idx[0]]
