@@ -110,7 +110,7 @@ with open(output_path, "a", encoding="utf-8") as f:
         MAX_ATTEMPTS = 30
         for attempt in range(1, MAX_ATTEMPTS+1):
             try:
-                response, token = call_api(user_prompt[:30000], system_prompt=system_prompt, mode="self-host")
+                response, token = call_api(user_prompt[:80000], system_prompt=system_prompt, mode="self-host")
                 line = {
                     "entity_id": node_id,
                     "semantic_units": semantic_units,

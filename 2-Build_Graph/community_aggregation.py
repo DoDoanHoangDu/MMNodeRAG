@@ -70,16 +70,18 @@ if not os.path.exists(communities_summaries_path):
             node = nodes[nid]
             if node.node_type in ["R", "N", "V"]:
                 continue
-            content.append(node.content)
+            content.append(node)
         if len(content) < 3:
             continue
         else:
+            content = sorted(content, key=lambda x: x.degree, reverse=True)
+            content = [node.content for node in content]
             content = format_list(content)
             system_prompt, user_prompt = high_level_elements_prompt(content)
             MAX_ATTEMPTS = 30
             for attempt in range(1, MAX_ATTEMPTS + 1):
                 try:
-                    response, token = call_api(user_prompt, system_prompt=system_prompt, mode="self-host")
+                    response, token = call_api(user_prompt[:80000], system_prompt=system_prompt, mode="self-host")
                     if not response.strip():
                         raise ValueError("Empty summary response")
                     community_summaries[community_id] = (response, token)
@@ -89,7 +91,7 @@ if not os.path.exists(communities_summaries_path):
                     if attempt == MAX_ATTEMPTS:
                         print(f"Failed on community {community_id} with context length {len(user_prompt.split())}: {e}")
                         raise TimeoutError("A community failed")
-                    time.sleep(5)
+                    time.sleep(2)
 
     #save
     with open(communities_summaries_path, "w", encoding="utf-8") as f:
@@ -150,8 +152,9 @@ for community_id in tqdm(community_summaries.keys()):
     MAX_ATTEMPTS = 30
     for attempt in range(1, MAX_ATTEMPTS + 1):
         try:
-            overview_text, token =  call_api(user_prompt, system_prompt=system_prompt, mode="self-host")
+            overview_text, token =  call_api(user_prompt[:80000], system_prompt=system_prompt, mode="self-host")
             overview = ast.literal_eval(simple_strip(overview_text))
+            overview = list(set(overview))
             if not validate_overview(overview):
                 raise ValueError("Invalid overview format")
             overview = [o.strip().upper() for o in overview]
@@ -163,7 +166,7 @@ for community_id in tqdm(community_summaries.keys()):
             if attempt == MAX_ATTEMPTS:
                 print(f"Failed on community {community_id} with context length {len(user_prompt.split())}: {e}")
                 raise TimeoutError("A community failed")
-            time.sleep(5)
+            time.sleep(2)
 
 print(f"Number of community overviews: {len(community_overviews)}")
 

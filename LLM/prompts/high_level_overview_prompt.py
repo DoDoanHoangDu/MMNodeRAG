@@ -9,7 +9,7 @@ Extract a set of highly relevant keywords that represent the core concepts of th
 [OUTPUT REQUIREMENTS]
 1. The keywords should be concise noun phrases or entities (1-5 words)
 2. The keywords should capture distinct aspects of the content
-3. The list must stay in the range of 3-50 keywords
+3. The list MUST contain fewer than 30 keywords
 4. Return ONLY a valid JSON array of strings
 5. Do NOT include any explanation, text, or formatting outside the JSON array
 """
