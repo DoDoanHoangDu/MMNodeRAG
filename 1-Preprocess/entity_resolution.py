@@ -105,15 +105,16 @@ print(f"Max cluster size: {max(len(c) for c in clusters)}")
 # -----------------------------
 def validate_response(response, original_entities):
     if not isinstance(response, list):
-        return False
+        raise ValueError("Response should be a list of clusters")
     for item in response:
         if not isinstance(item, list):
-            return False
+            raise ValueError("Each item in the response should be a list of entities")
         for entity in item:
             if not isinstance(entity, str):
-                return False
+                raise ValueError("Each entity in the response should be a string")
     flat_response = [e for cluster in response for e in cluster]
-    return set(flat_response) == set(original_entities)
+    if set(flat_response) != set(original_entities):
+        raise ValueError("Response entities do not match original entities")
 
 #construct base graph
 synonym_graph = nx.Graph()
@@ -141,7 +142,7 @@ synonym_graph.remove_edges_from(problematic_edges)
 
 problematic_clusters = []
 for cluster in clusters:
-    if len(cluster) > 20:
+    if len(cluster) > 10:
         continue
     if any(entities[i] in e_list for i in cluster):
         problematic_clusters.append([entities[i] for i in cluster])
@@ -172,23 +173,21 @@ def merge_lists(lists):
     return [list(s) for s in sets]
 
 problematic_clusters_merged = merge_lists(problematic_clusters)
+problematic_clusters_merged = [cluster for cluster in problematic_clusters_merged if len(cluster) <= 15]
 
 for cluster in tqdm(problematic_clusters_merged, desc="Processing clusters"):
     if len(cluster) > 1:
         system_prompt, user_prompt = entity_matching_prompt(cluster)
-        MAX_ATTEMPTS = 30
+        MAX_ATTEMPTS = 10
         for attempt in range(MAX_ATTEMPTS):
             try:
                 response, token = call_api(user_prompt, system_prompt=system_prompt, mode="self-host")
                 response = ast.literal_eval(response.strip())
-                if validate_response(response, cluster):
-                    total_tokens += token
-                    break
-                else:
-                    raise ValueError("Invalid response format or content")
+                validate_response(response, cluster)
+                total_tokens += token
             except Exception as e:
                 print(f"Attempt {attempt+1} failed for cluster {cluster}: {e}")
-                time.sleep(5)
+                time.sleep(2)
                 if attempt == MAX_ATTEMPTS - 1:
                     print(f"Max attempts reached. Skipping cluster: {cluster}.")
                     response = [cluster]  # fallback to original cluster
@@ -220,11 +219,9 @@ for cluster in tqdm(clusters, desc="Processing clusters"):
             try:
                 response,token = call_api(prompt)
                 response = ast.literal_eval(response.strip())
-                if validate_response(response, [entities[i] for i in cluster]):
-                    total_tokens += token
-                    break
-                else:
-                    raise ValueError("Invalid response format or content")
+                validate_response(response, [entities[i] for i in cluster])
+                total_tokens += token
+                break
             except Exception as e:
                 print(f"Attempt {attempt+1} failed for cluster {cluster}: {e}")
                 time.sleep(15* (attempt+1))

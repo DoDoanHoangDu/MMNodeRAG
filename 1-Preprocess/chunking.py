@@ -11,7 +11,7 @@ def split_sentences(text):
     doc = nlp(text)
     return [sent.text for sent in doc.sents]
  
-def chunking(text, min_chunk_size = 150, max_chunk_size = 300, overlap = 40):
+def chunking(text, min_chunk_size = 150, max_chunk_size = 500, overlap = 100):
     chunks = []
     #Extract paragraphs list p from text
     paragraphs = text.split("\n")

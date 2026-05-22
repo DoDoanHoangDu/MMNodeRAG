@@ -8,12 +8,16 @@ DIR_PATH = os.path.dirname(os.path.abspath(__file__))
 BASE_DIR = os.path.dirname(DIR_PATH)
  
 #Response validation
-def extract_json(text):
+def simple_strip(text):
     text = text.strip()
-    # remove markdown fences
-    if text.startswith("```"):
-        text = text.split("```")[1]
-    return json.loads(text)
+    if text.startswith("```json"):
+        text = text[7:] # Remove ```json
+    elif text.startswith("```"):
+        text = text[3:] # Remove ```
+    
+    if text.endswith("```"):
+        text = text[:-3] # Remove closing ```
+    return json.loads(text.strip())
  
 def is_valid_schema(data):
     if not isinstance(data, list):
@@ -30,8 +34,6 @@ def is_valid_schema(data):
         if not item["semantic_unit"].strip():
             return False
         if not item["entities"]:
-            return False
-        if not item["relationships"]:
             return False
  
         # semantic_unit: string
@@ -83,10 +85,11 @@ with open(output_path, "a", encoding="utf-8") as outfile, \
         system_prompt, user_prompt = text_decomposition_prompt(content)
         max_retries = 10
         success = False
+        response = None
         for attempt in range(max_retries):
             try:
                 response, token = call_api(user_prompt, system_prompt=system_prompt, mode="self-host")
-                response = extract_json(response)
+                response = simple_strip(response)
                 if not is_valid_schema(response):
                     raise ValueError("Invalid schema")
 
@@ -100,11 +103,13 @@ with open(output_path, "a", encoding="utf-8") as outfile, \
                 break
 
             except Exception as e:
+                print(f"Error attempt {attempt + 1} on chunk {rid}: {e}")
                 if attempt == max_retries - 1:
+                    print(response)
                     print(f"Failed on chunk {rid}: {e}")
                     failed_count += 1
                 else:
-                    time.sleep(5)  # wait before next attempt
+                    time.sleep(1)  # wait before next attempt
         if success:
             processed_ids.add(rid)
 print("Failed count: ",failed_count)

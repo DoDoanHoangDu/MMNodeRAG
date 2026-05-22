@@ -6,7 +6,7 @@ from PIL import Image
 import time
 from io import BytesIO
 
-KEEP = 2*10**4
+KEEP = 1000
 #LIMIT = 0.5
 
 DIR_PATH = os.path.dirname(os.path.abspath(__file__))

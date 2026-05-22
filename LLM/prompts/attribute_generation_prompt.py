@@ -22,7 +22,7 @@ The summary must:
 - A single paragraph
 - Neutral, encyclopedic tone (similar to a Wikipedia article)
 - No labels, metadata, or commentary
-- Output length must not exceed 500 words
+- Output length MUST NOT exceed 500 words
 - If the input is limited or sparse, produce a shorter summary without inventing information.
 """
     USER_PROMPT = f"""

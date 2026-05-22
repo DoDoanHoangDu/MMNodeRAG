@@ -20,7 +20,7 @@ print(save_path)
 synonym_graph = nx.read_edgelist(synonym_graph_path, delimiter = "\t", create_using=nx.Graph, nodetype=str)
 node_names = synonym_graph.nodes()
 for node_name in node_names:
-    if not node_name or not isinstance(node_name, str):
+    if not isinstance(node_name, str):
         raise ValueError("Invalid synonym graph data")
  
 synonym_groups = list(nx.connected_components(synonym_graph))
@@ -164,7 +164,7 @@ with open(decomposition_path, "r", encoding = "utf-8") as f:
 
 #create visual node and link to entities
 for image_file, matched_entities in image_entity_mapping.items():
-    image_path = f"InfoSeek/wikipedia_images_sampled/{image_file}"
+    image_path = f"Dataset/wiki_images_resized/{image_file}"
     if not os.path.exists(image_path):
         raise FileNotFoundError(f"Image file not found at {image_path}")
     image_id = f"{image_file.split('.')[0]}:V000"

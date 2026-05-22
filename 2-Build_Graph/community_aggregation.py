@@ -85,7 +85,7 @@ if not os.path.exists(communities_summaries_path):
                     community_summaries[community_id] = (response, token)
                     break
                 except Exception as e:
-                    print(f"Attempt {attempt} failed for community {community_id}: {e}")
+                    print(f"Attempt {attempt} failed for community {community_id} with context length {len(user_prompt.split())}: {e}")
                     if attempt == MAX_ATTEMPTS:
                         print(f"Failed on community {community_id} with context length {len(user_prompt.split())}: {e}")
                         raise TimeoutError("A community failed")
