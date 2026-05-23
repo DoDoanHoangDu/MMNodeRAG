@@ -48,14 +48,14 @@ def validate_list(l):
     return True
 
 #run loop
-def resize_image(image, max_size = 1000):
+def resize_image(image, max_size = 600):
     width, height = image.size
     if max(width, height) <= max_size:
         return image
     scale = max_size / max(width, height)
     new_width = int(width * scale)
     new_height = int(height * scale)
-    return image.resize((new_width, new_height), Image.LANCZOS)
+    return image.resize((new_width, new_height), Image.BILINEAR)
 
 
 MAX_ATTEMPTS = 30
@@ -66,9 +66,7 @@ with open(decompoistion_path, "a", encoding="utf-8") as f:
             continue
         question = row["question"]
         options = ast.literal_eval(row["options"])
-        for i, item in enumerate(options):
-            label = chr(ord('A') + i)
-            question += "\n" + f"{label}) {item}"
+        question += "\n" + f"Answers: {options}"
         images = []
         for i in range(1,8):
             img_dict = row[f"image_{i}"]
@@ -77,32 +75,38 @@ with open(decompoistion_path, "a", encoding="utf-8") as f:
             img_data = img_dict["bytes"]
             image = Image.open(io.BytesIO(img_data)).convert("RGBA").convert("RGB")
             image = resize_image(image)
-            image = base64.b64encode(io.BytesIO(image.tobytes()).getvalue()).decode("utf-8")
+            buffered = io.BytesIO()
+            image.save(buffered, format="PNG")
+            image = base64.b64encode(buffered.getvalue()).decode("utf-8")
             images.append(image)
 
         system_prompt, user_prompt = question_decompose_prompt(question)
         content = [{"type": "text", "text": user_prompt}]
-        for image in images:
+        for index, image in enumerate(images):
             image_content = {"type": "image_url", "image_url": {"url": f"data:image/png;base64,{image}"}}
+            content.append({"type": "text", "text": f"[IMAGE {index + 1}]"})
             content.append(image_content)
         for attempt in range(1,MAX_ATTEMPTS+1):
+            response_text = None
             try:
                 response_text, token = call_api(content=content, system_prompt= system_prompt, model="", mode="self-host")
-                response = ast.literal_eval(simple_strip(response_text))
+                response = [line.strip() for line in response_text.splitlines() if line.strip()]
                 if not validate_list(response):
                     raise ValueError("Invalid response")
                 else:
+                    response.extend(options)
+                    response = list(set(response))
                     decompositions[qid] = response
-                    data = {"data_id": qid, "question": questions[qid][0], "image_id": questions[qid][1], "entities": response, "token": token}
+                    data = {"data_id": qid, "question": question, "entities": response, "token": token}
                     f.write(json.dumps(data, ensure_ascii=False) + "\n")
                     f.flush()
                     break
             except Exception as e:
-                print(f"Attempt {attempt} failed for question {qid}-{questions[qid][1]}: {e}")
+                print(f"Attempt {attempt} failed for question {qid}: {e}")
                 print(response_text)
                 if attempt == MAX_ATTEMPTS:
                     print(f"Failed on question {qid}: {question}: {e}")
                     raise TimeoutError("A question failed")
-                time.sleep(5)
+                time.sleep(2)
 
 print(f"Completed: {len(decompositions)}/{len(questions)}")

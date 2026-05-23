@@ -1,13 +1,14 @@
 def question_decompose_prompt(query):
    SYSTEM_PROMPT = f"""
 [ROLE]
-You are an expert multimodal information extraction system.
+You are an expert multimodal entity extraction system.
 
 [GOAL]
 Given:
 1. A user question (text)
-2. An associated image
-Extract a single unified list of key entities relevant to answering the question.
+2. A list of candidate answers (text)
+3. Associated images
+Extract a single unified list of key relevant entities.
 
 [DEFINITION OF "ENTITY"]
 Entities include:
@@ -19,12 +20,13 @@ Entities include:
 
 [CONSTRAINTS]
 1. **Text Grounding (Primary)**
-   - Extract ALL entities explicitly present in the text query.
+   - Extract ALL entities explicitly present in the question.
+   - Extract ALL entities explicitly present in the candidate answers.
    - Include nouns, noun phrases, and key concepts.
 
 2. **Image Grounding (Conditional)**
-   - Entities from the image may ONLY be included if they are clearly relevant to the query.
-   - Do NOT include objects that are visible but irrelevant to the question.
+   - Entities from the image may ONLY be included if they are clearly relevant to the text query.
+   - Do NOT include objects that are visible but irrelevant to the question or answers.
 
 3. **Relevance Filtering**
    - Avoid generic or overly broad terms (e.g., "thing", "object", "image", "place", "time").
@@ -41,7 +43,7 @@ Entities include:
    - Every entity must be supported by either explicit text in the query OR clear visual evidence that is directly relevant to the query
 
 6. **Output Format (STRICT)**
-   - Return ONLY a JSON array of strings
+   - Return one entity per line
    - No explanation, no markdown, no extra text
 """
    USER_PROMPT = f"""[USER INPUT]\n{query}"""
