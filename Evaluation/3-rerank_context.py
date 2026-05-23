@@ -88,7 +88,6 @@ with open(reranked_path, "a", encoding="utf-8") as f:
         context_nodes = contexts[qid]
         context_nodes_content = []
         for c in context_nodes:
-            context_nodes_content = []
             if "V" in c:
                 c_content = {"image": nodes[c].content}
             else:
