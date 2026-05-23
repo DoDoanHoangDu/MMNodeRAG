@@ -35,6 +35,16 @@ with open(context_path, "r", encoding="utf-8") as f:
         line = json.loads(line)
         contexts[line["qid"]] = line["context_nodes"]
 
+#image entity mapping
+image_entity_mapping_path = os.path.join(BASE_PATH, "1-Preprocess", "data", "image_entity_mapping.jsonl")
+image_entity_mapping = {}
+with open(image_entity_mapping_path, "r", encoding="utf-8") as f:
+    for line in f:
+        line = json.loads(line)
+        image_path = line["image_file"]
+        entities = "\n".join(line["entities"])
+        image_entity_mapping[image_path] = entities
+
 #load_progress:
 processed_questions = set()
 if os.path.exists(reranked_path):
@@ -89,7 +99,7 @@ with open(reranked_path, "a", encoding="utf-8") as f:
         context_nodes_content = []
         for c in context_nodes:
             if "V" in c:
-                c_content = {"image": nodes[c].content}
+                c_content = {"text": image_entity_mapping[os.path.basename(nodes[c].content)], "image": nodes[c].content}
             else:
                 c_content = {"text": nodes[c].content[:20000]}
             context_nodes_content.append(c_content)

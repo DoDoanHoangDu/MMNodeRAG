@@ -68,6 +68,17 @@ print(f"Checkpoint loaded: {index.ntotal} vectors embedded at dimension {index.d
 data = []
 embedding_ids = []
 
+#image entity mapping
+image_entity_mapping_path = os.path.join(BASE_PATH, "1-Preprocess", "data", "image_entity_mapping.jsonl")
+image_entity_mapping = {}
+with open(image_entity_mapping_path, "r", encoding="utf-8") as f:
+    for line in f:
+        line = json.loads(line)
+        image_path = line["image_file"]
+        entities = "\n".join(line["entities"])
+        image_entity_mapping[image_path] = entities
+
+
 #load S,A,T,V nodes
 def is_image_file(path):
     if not os.path.isfile(path):
@@ -87,7 +98,7 @@ for node in nodes.values():
         image_path = f"{BASE_PATH}/{node.content}"
         if not is_image_file(image_path):
             raise ValueError(f"Invalid image path: {image_path}")
-        content = {"image": image_path, "instruction": "Represent the image for retrieval."}
+        content = {"text": image_entity_mapping[os.path.basename(image_path)], "image": image_path, "instruction": "Represent the image for retrieval."}
     else:
         continue
     data.append(content)
