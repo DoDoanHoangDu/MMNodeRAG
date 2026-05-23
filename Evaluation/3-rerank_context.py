@@ -47,21 +47,6 @@ if os.path.exists(reranked_path):
 model = Qwen3VLReranker(model_name_or_path="Qwen/Qwen3-VL-Reranker-2B")
 
 #main loop:
-def split_by_v(strings):
-    result = []
-    current = []
-    has_v = False
-    for item in strings:
-        if "V" in item:
-            if has_v:
-                result.append(current)
-                current = []
-            has_v = True
-        current.append(item)
-    if current:
-        result.append(current)
-    return result
-
 def resize_image(image, max_size = 600):
     width, height = image.size
     if max(width, height) <= max_size:
@@ -98,25 +83,24 @@ with open(reranked_path, "a", encoding="utf-8") as f:
             image = resize_image(image)
             images.append(image)
 
+
         query = {"text": question, "image": images}
         context_nodes = contexts[qid]
-        context_nodes_lists = split_by_v(context_nodes)
-        scores = []
-        for context_nodes_list in context_nodes_lists:
+        context_nodes_content = []
+        for c in context_nodes:
             context_nodes_content = []
-            for c in context_nodes:
-                if "V" in c:
-                    c_content = {"image": nodes[c].content}
-                else:
-                    c_content = {"text": nodes[c].content}
-                context_nodes_content.append(c_content)
-
-            inputs = {
-                "instruction": "Retrieve images or text relevant to the user's query.",
-                "query": query,
-                "documents": context_nodes_content,
-            }
-            scores.extend(model.process(inputs))
+            if "V" in c:
+                c_content = {"image": nodes[c].content}
+            else:
+                c_content = {"text": nodes[c].content[:20000]}
+            context_nodes_content.append(c_content)
+            
+        inputs = {
+            "instruction": "Retrieve images or text relevant to the user's query.",
+            "query": query,
+            "documents": context_nodes_content,
+        }
+        scores = model.process(inputs)
 
         context_nodes, scores = sort_by_floats(context_nodes, scores)
         data = {
