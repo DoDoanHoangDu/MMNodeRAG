@@ -44,7 +44,8 @@ def call_api(content, system_prompt = None, model="qwen/qwen3.6-plus:free", mode
         messages.append({"role": "user", "content": content})
         response = vastai_client.chat.completions.create(
             model="Qwen/Qwen3-VL-8B-Instruct",
-            messages= messages
+            messages= messages,
+            temperature= 0
         )
 
         return response.choices[0].message.content, response.usage.total_tokens

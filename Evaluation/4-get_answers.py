@@ -6,20 +6,27 @@ from LLM.call_api import call_api
 from tqdm import tqdm
 import base64
 import time
+import pandas as pd
+from PIL import Image
+import ast
+import io
+import re
 
 #parameters
 KNN = int(input("KNN: "))
 REASONING = False
+LIMIT = 0.7
+MAX_CONTEXTS = 4
 
 #paths
 DIR_PATH = os.path.dirname(os.path.abspath(__file__))
 BASE_PATH = os.path.dirname(DIR_PATH)
 g4_path = os.path.join(BASE_PATH, "2-Build_Graph/data/g4.pkl")
-question_path = os.path.normpath(os.path.join(BASE_PATH, "InfoSeek", "sampled_questions.jsonl"))
-oven_path = os.path.normpath(os.path.join(BASE_PATH, "InfoSeek", "oven_images_sampled"))
+questions0 = pd.read_parquet("Dataset/MMMU-Pro/test-00000-of-00002.parquet")
+questions1 = pd.read_parquet("Dataset/MMMU-Pro/test-00001-of-00002.parquet")
+questions = pd.concat([questions0, questions1], ignore_index=True)
 reranked_path = os.path.join(DIR_PATH, "data", f"context_{KNN}nn{"_reasoning" if REASONING else ""}_reranked.jsonl")
 output_path = os.path.normpath(os.path.join(DIR_PATH, "data", f"answers_{KNN}nn.jsonl"))
-print(question_path)
 print(reranked_path)
 print(output_path)
 input("Confirm?")
@@ -28,31 +35,44 @@ input("Confirm?")
 with open(g4_path, "rb") as f:
     nodes = pickle.load(f)
 
-questions = {}
-answer_eval = {}
-with open(question_path, "r", encoding="utf-8") as f:
-    for line in f:
-        line = json.loads(line)
-        questions[line["data_id"]] = (line["question"],line["image_id"])
-        answer_eval[line["data_id"]] = line["answer_eval"]
-
 contexts = {}
 with open(reranked_path, "r", encoding="utf-8") as f:
     for line in f:
         line = json.loads(line)
         current_context = []
         for i in range(len(line["sorted_context_nodes"])):
-            current_context.append((line["sorted_context_nodes"][i], line["sorted_relevance_scores"][i]))
-        contexts[line["qid"]] = current_context
+            if line["sorted_relevance_scores"][i] >= LIMIT:
+                current_context.append((line["sorted_context_nodes"][i], line["sorted_relevance_scores"][i]))
+        contexts[line["qid"]] = current_context[:MAX_CONTEXTS]
 
-#load images
-IMAGE_EXTENSIONS = {".jpg", ".jpeg", ".png", ".bmp", ".gif", ".webp"}
+#image entity mapping
+image_entity_mapping_path = os.path.join(BASE_PATH, "1-Preprocess", "data", "image_entity_mapping.jsonl")
+image_entity_mapping = {}
+with open(image_entity_mapping_path, "r", encoding="utf-8") as f:
+    for line in f:
+        line = json.loads(line)
+        image_path = line["image_file"]
+        entities = "\n".join(line["entities"])
+        image_entity_mapping[image_path] = entities
 
-def extract_id(filename):
-    return os.path.splitext(filename)[0]
+#load_progress:
+processed_questions = set()
+if os.path.exists(output_path):
+    with open(output_path, "r", encoding="utf-8") as f:
+        for line in f:
+            line = json.loads(line)
+            processed_questions.add(line["qid"])
 
-def is_image_file(filename):
-    return os.path.splitext(filename)[1].lower() in IMAGE_EXTENSIONS
+
+#run loop:
+def resize_image(image, max_size = 600):
+    width, height = image.size
+    if max(width, height) <= max_size:
+        return image
+    scale = max_size / max(width, height)
+    new_width = int(width * scale)
+    new_height = int(height * scale)
+    return image.resize((new_width, new_height), Image.BILINEAR)
 
 def encode_image(path):
     ext = os.path.splitext(path)[1].lower()
@@ -68,63 +88,78 @@ def encode_image(path):
     with open(path, "rb") as f:
         return base64.b64encode(f.read()).decode("utf-8"), mime
 
-images = {}
-for file in os.listdir(oven_path):
-    if is_image_file(file):
-        images[extract_id(file)] = encode_image(os.path.join(oven_path, file))
-    else:
-        print(f"Invalid file: {file}")
-
-#load_progress:
-processed_questions = set()
-if os.path.exists(output_path):
-    with open(output_path, "r", encoding="utf-8") as f:
-        for line in f:
-            line = json.loads(line)
-            processed_questions.add(line["qid"])
-
-
-#run loop:
-MAX_ATTEMPTS = 30
+MAX_ATTEMPTS = 10
 with open(output_path, "a", encoding="utf-8") as f:
-    for qid in tqdm(questions.keys()):
+    for idx, row in tqdm(questions.iterrows(), total=len(questions)):
+        qid = row["id"]
         if qid in processed_questions:
             continue
-        question = questions[qid][0]
-        image, mime = images[questions[qid][1]]
-        prompt = answer_prompt()
-        content = [
-            {"type": "text", "text": f"[QUESTION]\n{question}"},
-            {"type": "text", "text": "[QUESTION IMAGE]"},
-            {"type": "image_url", "image_url": {"url": f"data:{mime};base64,{image}"}},
-            {"type": "text", "text": "[CONTEXT]"},
-        ]
+        question = row["question"]
+        options = ast.literal_eval(row["options"])
+        options_text = "Pick only one correct answer:"
+        choices = set()
+        for i, item in enumerate(options):
+            label = chr(ord('A') + i)
+            options_text += "\n" + f"{label}) {item}"
+            choices.add(label)
+
+        images = []
+        for i in range(1,8):
+            img_dict = row[f"image_{i}"]
+            if not img_dict or not isinstance(img_dict, dict):
+                continue
+            img_data = img_dict["bytes"]
+            image = Image.open(io.BytesIO(img_data)).convert("RGBA").convert("RGB")
+            image = resize_image(image)
+            buffered = io.BytesIO()
+            image.save(buffered, format="PNG")
+            image = base64.b64encode(buffered.getvalue()).decode("utf-8")
+            images.append(image)
+
+        content = []
+        content.append({"type": "text", "text": "[CONTEXT]"})
         for i in range(len(contexts[qid])):
             context_node_id, score = contexts[qid][i]
-            content.append({"type": "text", "text": f"---Context {i+1} (Relevance score: {score})---"})
+            content.append({"type": "text", "text": f"---CONTEXT {i+1}---"})
             context_node = nodes[context_node_id]
             if context_node.node_type == "V":
+                content.append({"type": "text", "text": f"This is an image of: {image_entity_mapping[os.path.basename(context_node.content)]}"})
                 context_image, context_image_mime = encode_image(context_node.content)
                 content.append({"type": "image_url", "image_url": {"url": f"data:{context_image_mime};base64,{context_image}"}})
             else:
-                content.append({"type": "text", "text": context_node.content})
+                content.append({"type": "text", "text": context_node.content[:20000]})
+
+        question_content = []
+        question_content.append({"type": "text", "text": f"[QUESTION]\n{question}"})
+        for index, image in enumerate(images, start=1):
+            question_content.append({"type": "text", "text": f"[IMAGE {index}]"})
+            question_content.append({"type": "image_url", "image_url": {"url": f"data:image/png;base64,{image}"}})
+        question_content.append({"type": "text", "text": f"[QUESTION]\n{question}"})
+        question_content.append({"type": "text", "text": f"[OPTIONS]\n{options_text}"})
+
+        contents_length = len(content)
         for attempt in range(1,MAX_ATTEMPTS+1):
+            try_content = content[:max(0, contents_length)] + question_content
+            response_text = None
             try:
-                response_text, token = call_api(content=content, system_prompt=answer_prompt(), model="", mode="self-host")
-                response = response_text.strip()
-                if not isinstance(response, str) or not response:
+                response_text, token = call_api(content=try_content, system_prompt=answer_prompt(), model="", mode="self-host")
+                match = re.search(r"The answer is ([A-Z])", response_text, re.IGNORECASE)
+                response = match.group(1).upper()
+                if not isinstance(response, str)  or response not in choices:
                     raise ValueError("Invalid response")
                 else:
                     processed_questions.add(qid)
-                    data = {"qid": qid, "question": questions[qid][0], "image_id": questions[qid][1], "answer": response, "answer_eval":answer_eval[qid] , "token": token}
+                    data = {"qid": qid, "question": question, "answer": response, "token": token}
                     f.write(json.dumps(data, ensure_ascii=False) + "\n")
                     f.flush()
                     break
             except Exception as e:
-                print(f"Attempt {attempt} failed for question {qid}-{questions[qid][1]}: {e}")
+                print(f"Attempt {attempt} failed for question {qid}: {e}")
                 print(response_text)
+                if not (isinstance(e, ValueError) and str(e) == "Invalid response"):
+                    contents_length -= 0
                 if attempt == MAX_ATTEMPTS:
-                    print(f"Failed on question {qid}: {question}: {e}")
+                    print(f"Failed on question {qid}: {question + "\n" + options_text}: {e}")
                     raise TimeoutError("A question failed")
                 time.sleep(5)
 

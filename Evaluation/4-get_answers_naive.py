@@ -15,8 +15,6 @@ import re
 #parameters
 KNN = int(input("KNN: "))
 REASONING = False
-LIMIT = 0.7
-MAX_CONTEXTS = 4
 
 #paths
 DIR_PATH = os.path.dirname(os.path.abspath(__file__))
@@ -25,43 +23,13 @@ g4_path = os.path.join(BASE_PATH, "2-Build_Graph/data/g4.pkl")
 questions0 = pd.read_parquet("Dataset/MMMU-Pro/test-00000-of-00002.parquet")
 questions1 = pd.read_parquet("Dataset/MMMU-Pro/test-00001-of-00002.parquet")
 questions = pd.concat([questions0, questions1], ignore_index=True)
-knn_path = os.path.join(BASE_PATH, "Evaluation/data/knn.jsonl")
-reranked_path = os.path.join(DIR_PATH, "data", f"context_{KNN}nn{"_reasoning" if REASONING else ""}_reranked.jsonl")
-output_path = os.path.normpath(os.path.join(DIR_PATH, "data", f"answers_{KNN}nn_base.jsonl"))
-print(reranked_path)
+output_path = os.path.normpath(os.path.join(DIR_PATH, "data", f"answers_{KNN}nn_naive.jsonl"))
 print(output_path)
 input("Confirm?")
 
 #load data
 with open(g4_path, "rb") as f:
     nodes = pickle.load(f)
-
-knns = {}
-with open(knn_path, "r", encoding="utf-8") as f:
-    for line in f:
-        line = json.loads(line)
-        knns[line["qid"]] = line["knn"]
-
-contexts = {}
-with open(reranked_path, "r", encoding="utf-8") as f:
-    for line in f:
-        line = json.loads(line)
-        current_context = []
-        for i in range(len(line["sorted_context_nodes"])):
-            if line["sorted_context_nodes"][i] in knns[line["qid"]]:
-                if line["sorted_relevance_scores"][i] >= LIMIT:
-                    current_context.append((line["sorted_context_nodes"][i], line["sorted_relevance_scores"][i]))
-        contexts[line["qid"]] = current_context[:MAX_CONTEXTS]
-
-#image entity mapping
-image_entity_mapping_path = os.path.join(BASE_PATH, "1-Preprocess", "data", "image_entity_mapping.jsonl")
-image_entity_mapping = {}
-with open(image_entity_mapping_path, "r", encoding="utf-8") as f:
-    for line in f:
-        line = json.loads(line)
-        image_path = line["image_file"]
-        entities = "\n".join(line["entities"])
-        image_entity_mapping[image_path] = entities
 
 #load_progress:
 processed_questions = set()
@@ -70,7 +38,6 @@ if os.path.exists(output_path):
         for line in f:
             line = json.loads(line)
             processed_questions.add(line["qid"])
-
 
 #run loop:
 def resize_image(image, max_size = 600):
@@ -82,20 +49,6 @@ def resize_image(image, max_size = 600):
     new_height = int(height * scale)
     return image.resize((new_width, new_height), Image.BILINEAR)
 
-def encode_image(path):
-    ext = os.path.splitext(path)[1].lower()
-    mime = {
-        ".jpg": "image/jpeg",
-        ".jpeg": "image/jpeg",
-        ".png": "image/png",
-        ".webp": "image/webp",
-        ".bmp": "image/bmp",
-        ".gif": "image/gif"
-    }.get(ext, "image/jpeg")
-
-    with open(path, "rb") as f:
-        return base64.b64encode(f.read()).decode("utf-8"), mime
-
 MAX_ATTEMPTS = 10
 with open(output_path, "a", encoding="utf-8") as f:
     for idx, row in tqdm(questions.iterrows(), total=len(questions)):
@@ -103,6 +56,7 @@ with open(output_path, "a", encoding="utf-8") as f:
         if qid in processed_questions:
             continue
         question = row["question"]
+
         options = ast.literal_eval(row["options"])
         options_text = "Pick only one correct answer:"
         choices = set()
@@ -124,30 +78,14 @@ with open(output_path, "a", encoding="utf-8") as f:
             image = base64.b64encode(buffered.getvalue()).decode("utf-8")
             images.append(image)
 
-        content = []
-        content.append({"type": "text", "text": "[CONTEXT]"})
-        for i in range(len(contexts[qid])):
-            context_node_id, score = contexts[qid][i]
-            content.append({"type": "text", "text": f"---CONTEXT {i+1}---"})
-            context_node = nodes[context_node_id]
-            if context_node.node_type == "V":
-                content.append({"type": "text", "text": f"This is an image of: {image_entity_mapping[os.path.basename(context_node.content)]}"})
-                context_image, context_image_mime = encode_image(context_node.content)
-                content.append({"type": "image_url", "image_url": {"url": f"data:{context_image_mime};base64,{context_image}"}})
-            else:
-                content.append({"type": "text", "text": context_node.content[:20000]})
-
-        question_content = []
-        question_content.append({"type": "text", "text": f"[QUESTION]\n{question}"})
+        content = [{"type": "text", "text": f"[QUESTION]\n{question}"}]
         for index, image in enumerate(images, start=1):
-            question_content.append({"type": "text", "text": f"[IMAGE {index}]"})
-            question_content.append({"type": "image_url", "image_url": {"url": f"data:image/png;base64,{image}"}})
-        question_content.append({"type": "text", "text": f"[QUESTION]\n{question}"})
-        question_content.append({"type": "text", "text": f"[OPTIONS]\n{options_text}"})
+            content.append({"type": "text", "text": f"[IMAGE {index}]"})
+            content.append({"type": "image_url", "image_url": {"url": f"data:image/png;base64,{image}"}})
+        content.append({"type": "text", "text": f"[OPTIONS]\n{options_text}"})
 
-        contents_length = len(content)
         for attempt in range(1,MAX_ATTEMPTS+1):
-            try_content = content[:max(0, contents_length)] + question_content
+            try_content = content[:max(1 + 2 * len(images), len(content) - attempt + 1)]
             response_text = None
             try:
                 response_text, token = call_api(content=try_content, system_prompt=answer_prompt(), model="", mode="self-host")
@@ -164,8 +102,6 @@ with open(output_path, "a", encoding="utf-8") as f:
             except Exception as e:
                 print(f"Attempt {attempt} failed for question {qid}: {e}")
                 print(response_text)
-                if not (isinstance(e, ValueError) and str(e) == "Invalid response"):
-                    contents_length -= 0
                 if attempt == MAX_ATTEMPTS:
                     print(f"Failed on question {qid}: {question + "\n" + options_text}: {e}")
                     raise TimeoutError("A question failed")
