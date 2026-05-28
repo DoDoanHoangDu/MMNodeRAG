@@ -82,10 +82,11 @@ with open(output_path, "a", encoding="utf-8") as f:
         for index, image in enumerate(images, start=1):
             content.append({"type": "text", "text": f"[IMAGE {index}]"})
             content.append({"type": "image_url", "image_url": {"url": f"data:image/png;base64,{image}"}})
+        content.append({"type": "text", "text": f"[QUESTION]\n{question}"})
         content.append({"type": "text", "text": f"[OPTIONS]\n{options_text}"})
 
         for attempt in range(1,MAX_ATTEMPTS+1):
-            try_content = content[:max(1 + 2 * len(images), len(content) - attempt + 1)]
+            try_content = content
             response_text = None
             try:
                 response_text, token = call_api(content=try_content, system_prompt=answer_prompt(), model="", mode="self-host")
