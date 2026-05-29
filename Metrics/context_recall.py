@@ -43,13 +43,14 @@ Output:
 
 USER_PROMPT = """
 [USER INPUT]
-Question: "{question}" (for reference only)
+Context: 
+"{context}"
+
+Question: 
+"{question}"
 
 Answer: 
 "{answer}"
-
-Context: 
-"{context}"
 """
 
 def compute_context_recall(
@@ -65,7 +66,7 @@ def compute_context_recall(
     if not reference_answer.strip():
         return 1.0, 0
     
-    context_str = "\n------\n".join(contexts)
+    context_str = "\n----------\n".join(contexts)
     if not context_str.strip():
         return 0.0, 0
     

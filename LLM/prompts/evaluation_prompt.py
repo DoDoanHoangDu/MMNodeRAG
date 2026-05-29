@@ -13,7 +13,7 @@ Given a question, a model answer, and a list of acceptable answers:
 1. Return 1 if the model answer matches any acceptable answer; otherwise return 0.
 2. Acceptable answers may be:
    a) Exact values (string or number):
-      - Text: match semantically, case-insensitive, ignore minor formatting differences (whitespace, punctuation).
+      - Text: match semantically, case-insensitive, ignore minor formatting differences (whitespace, punctuation), accept synonyms, paraphrases and abbreviations.
       - Numbers: must be numerically equal.
    b) Numeric ranges in the form:
       { "value": <number>, "range": [min, max] }

@@ -9,6 +9,7 @@ import re
 #parameters
 KNN = int(input("KNN: "))
 REASONING = False
+LIMIT = 0.5
 
 #paths
 g4_path = os.path.join("2-Build_Graph/data/g4.pkl")
@@ -54,9 +55,10 @@ contexts_base = {}
 with open(context_path, "r", encoding="utf-8") as f:
     for line in f:
         line = json.loads(line)
-        current_context = [nid for nid in line["sorted_context_nodes"] if nid in knns[line["qid"]]]
-        if len(current_context) != KNN:
-            print(f"Warning: Question {line['qid']} has {len(current_context)} context nodes instead of {KNN}")
+        current_context = []
+        for i in range(len(line["sorted_context_nodes"])):
+            if line["sorted_context_nodes"][i] in knns[line["qid"]] and line["sorted_relevance_scores"][i] >= LIMIT:
+                current_context.append(line["sorted_context_nodes"][i])
         contexts_base[line["qid"]] = current_context
 
 #load evaluated
@@ -98,8 +100,8 @@ with open(eval_base_path, "a", encoding="utf-8") as f:
                 if isinstance(item, str):
                     answer_str.append(f"An acceptable answer is: {item}.")
                 elif isinstance(item, dict):
-                    answer_str.append(f"The exact answer is {item["value"]}. The answer lies in the range from {item["range"][0]} to {item["range"][1]}.")
-            answer_str = " ".join(answer_str)
+                    answer_str.append(f"The exact answer is {item["value"]}. Any answer lying in the range from {item["range"][0]} to {item["range"][1]} is acceptable.")
+            answer_str = "\n".join(answer_str)
 
             context_nodes = contexts_base[qid]
             context_nodes_content = []
@@ -107,9 +109,6 @@ with open(eval_base_path, "a", encoding="utf-8") as f:
                 if nodes[c].node_type == "V":
                     continue
                 content = nodes[c].content
-                if any(isinstance(ans,str) and re.search(rf"\b{re.escape(ans)}\b", content, re.IGNORECASE) for ans in answer_eval):
-                    context_recall = 1
-                    tokens = 0
                 context_nodes_content.append(nodes[c].content)
 
             if context_recall == 0:

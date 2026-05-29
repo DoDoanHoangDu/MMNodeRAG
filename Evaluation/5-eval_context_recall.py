@@ -9,6 +9,7 @@ import re
 #parameters
 KNN = int(input("KNN: "))
 REASONING = False
+LIMIT = 0.5
 
 #paths
 g4_path = os.path.join("2-Build_Graph/data/g4.pkl")
@@ -49,7 +50,11 @@ contexts = {}
 with open(context_path, "r", encoding="utf-8") as f:
     for line in f:
         line = json.loads(line)
-        contexts[line["qid"]] = line["sorted_context_nodes"]
+        current_context = []
+        for i in range(len(line["sorted_context_nodes"])):
+            if line["sorted_relevance_scores"][i] >= LIMIT:
+                current_context.append(line["sorted_context_nodes"][i])
+        contexts[line["qid"]] = current_context
 
 #load evaluated
 evaluated = {}
@@ -60,6 +65,7 @@ if os.path.exists(evaluated_path):
             score = int(line["score"])
             if score in {0,1}:
                 evaluated[line["qid"]] = score
+print("Loaded evaluated questions:", sum(evaluated.values()))
 
 #load_progress:
 processed_questions_base = {}
@@ -70,7 +76,8 @@ if os.path.exists(eval_base_path):
             value = line["context_recall"]
             if np.isnan(value):
                 continue
-            processed_questions_base[line["qid"]] = 1
+            processed_questions_base[line["qid"]] = value
+print("Loaded base evaluated questions:", sum(processed_questions_base.values()))
 
 processed_questions = {}
 if os.path.exists(eval_path):
@@ -81,7 +88,7 @@ if os.path.exists(eval_path):
             if np.isnan(value) or value == 0:
                 continue
             processed_questions[line["qid"]] = 1
-
+print("Loaded processed questions:", sum(processed_questions.values()))
 
 with open(eval_path, "a", encoding="utf-8") as f:
     for qid in tqdm(questions.keys()):
@@ -103,8 +110,8 @@ with open(eval_path, "a", encoding="utf-8") as f:
                 if isinstance(item, str):
                     answer_str.append(f"An acceptable answer is: {item}.")
                 elif isinstance(item, dict):
-                    answer_str.append(f"The exact answer is {item["value"]}. The answer lies in the range from {item["range"][0]} to {item["range"][1]}.")
-            answer_str = " ".join(answer_str)
+                    answer_str.append(f"The exact answer is {item["value"]}. Any answer lying in the range from {item["range"][0]} to {item["range"][1]} is acceptable.")
+            answer_str = "\n".join(answer_str)
 
             context_nodes = contexts[qid]
             context_nodes_content = []
@@ -112,9 +119,6 @@ with open(eval_path, "a", encoding="utf-8") as f:
                 if nodes[c].node_type == "V":
                     continue
                 content = nodes[c].content
-                if any(isinstance(ans,str) and re.search(rf"\b{re.escape(ans)}\b", content, re.IGNORECASE) for ans in answer_eval):
-                    context_recall = 1
-                    tokens = 0
                 context_nodes_content.append(nodes[c].content)
 
             if context_recall == 0:

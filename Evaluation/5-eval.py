@@ -4,16 +4,18 @@ from LLM.prompts.evaluation_prompt import evaluation_prompt
 from LLM.call_api import call_api
 from tqdm import tqdm
 import time
+from Metrics.fuzzy_accuracy import fuzzy_accuracy
 
 #parameters
 KNN = int(input("KNN: "))
 REASONING = False
+BASE = True if input("BASE (y/n): ").lower() == "y" else False 
 
 #paths
 DIR_PATH = os.path.dirname(os.path.abspath(__file__))
 BASE_PATH = os.path.dirname(DIR_PATH)
-answers_path = os.path.normpath(os.path.join(DIR_PATH, "data", f"answers_{KNN}nn.jsonl"))
-output_path = os.path.normpath(os.path.join(DIR_PATH, "data", f"evaluation_{KNN}nn.jsonl"))
+answers_path = os.path.normpath(os.path.join(DIR_PATH, "data", f"answers_{KNN}nn{'_base' if BASE else ''}.jsonl"))
+output_path = os.path.normpath(os.path.join(DIR_PATH, "data", f"evaluation_{KNN}nn{'_base' if BASE else ''}.jsonl"))
 print(answers_path)
 input("Confirm?")
 
@@ -50,29 +52,38 @@ with open(output_path, "a", encoding="utf-8") as f:
         if qid in processed_questions:
             continue
         question,answer,answer_eval = questions[qid]
+        fuzzy_score = fuzzy_accuracy(answer, answer_eval)
+        if fuzzy_score == 1:
+            processed_questions[qid] = 1
+            data = {"qid": qid, "score": 1, "token": 0}
+            f.write(json.dumps(data, ensure_ascii=False) + "\n")
+            f.flush()
+            continue
+
         evaluation_input = {
             "question": question,
             "model_answer": answer,
             "acceptable_answers": answer_eval
         }
-        content = [
-            {"type": "text", "text": f"[USER INPUT]\n{json.dumps(evaluation_input)}"},
-        ]
+        content = [{"type": "text", "text": f"[USER INPUT]\n{json.dumps(evaluation_input, indent=2, ensure_ascii=False)}"}]
 
         for attempt in range(1,MAX_ATTEMPTS+1):
+            response_text = None
             try:
-                response_text, token = call_api(content=content, system_prompt=evaluation_prompt(), model="", mode="self-host")
-                response = int(response_text.strip())
-                if not isinstance(response, int) or response not in [0, 1]:
-                    raise ValueError("Invalid response")
-                else:
-                    processed_questions[qid] = response
-                    data = {"qid": qid, "score": response, "token": token}
-                    f.write(json.dumps(data, ensure_ascii=False) + "\n")
-                    f.flush()
-
-                    processed_questions[qid] = response
-                    break
+                for _ in range(2):
+                    response_text, token = call_api(content=content, system_prompt=evaluation_prompt(), model="", mode="self-host")
+                    response = int(response_text.strip())
+                    if not isinstance(response, int) or response not in [0, 1]:
+                        raise ValueError("Invalid response")
+                    if response == 1:
+                        break
+            
+                processed_questions[qid] = response
+                data = {"qid": qid, "score": response, "token": token}
+                f.write(json.dumps(data, ensure_ascii=False) + "\n")
+                f.flush()
+                processed_questions[qid] = response
+                break
             except Exception as e:
                 print(f"Attempt {attempt} failed for question {qid}-{questions[qid][1]}: {e}")
                 print(response_text)
