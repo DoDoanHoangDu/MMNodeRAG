@@ -45,7 +45,7 @@ subquestions = {}
 with open(subquestions_path, "r", encoding="utf-8") as f:
     for line in f:
         line = json.loads(line)
-        subquestions[line["data_id"]] = line["subquestions"]
+        subquestions[line["qid"]] = line["subquestions"]
 
 contexts = {}
 with open(reranked_path, "r", encoding="utf-8") as f:
