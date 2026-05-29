@@ -2,27 +2,30 @@ import os
 import pickle
 import json
 from LLM.prompts.answer_prompt import answer_prompt
+from LLM.prompts.cot_answer_prompt import cot_answer_prompt
 from LLM.call_api import call_api
 from tqdm import tqdm
 import base64
 import time
 
 #parameters
-QUESTION_LEVEL = int(input("Question Level: "))
 KNN = int(input("KNN: "))
+COT = True if input("Chain-of-thought instruction (y/n): ").lower() == "y" else False
 REASONING = False
+LIMIT = 0.5
 
 #paths
 DIR_PATH = os.path.dirname(os.path.abspath(__file__))
 BASE_PATH = os.path.dirname(DIR_PATH)
 g4_path = os.path.join(BASE_PATH, "2-Build_Graph/data/g4.pkl")
-original_question_path = os.path.normpath(os.path.join(BASE_PATH, "InfoSeek", "sampled_questions.jsonl"))
-question_path = os.path.normpath(os.path.join(DIR_PATH, "data", "subquestions.jsonl"))
+question_path = os.path.normpath(os.path.join(BASE_PATH, "InfoSeek", "sampled_questions.jsonl"))
+subquestions_path = os.path.normpath(os.path.join(DIR_PATH, "data", "subquestions.jsonl"))
 oven_path = os.path.normpath(os.path.join(BASE_PATH, "InfoSeek", "oven_images_sampled"))
-reranked_path = os.path.join(DIR_PATH, "data", f"context_{KNN}nn{"_reasoning" if REASONING else ""}_reranked_{QUESTION_LEVEL}.jsonl")
-output_path = os.path.normpath(os.path.join(DIR_PATH, "data", f"answers_{KNN}nn_{QUESTION_LEVEL}.jsonl"))
+reranked_path_sub = os.path.join(DIR_PATH, "data", f"context_{KNN}nn{"_reasoning" if REASONING else ""}_reranked.jsonl")
+reranked_path = os.path.join(BASE_PATH, "Evaluation", "data", f"context_{KNN}nn{"_reasoning" if REASONING else ""}_reranked.jsonl")
+output_path = os.path.normpath(os.path.join(DIR_PATH, "data", f"answers_{KNN}nn.jsonl"))
 print(question_path)
-print(reranked_path)
+print(reranked_path_sub)
 print(output_path)
 input("Confirm?")
 
@@ -30,11 +33,19 @@ input("Confirm?")
 with open(g4_path, "rb") as f:
     nodes = pickle.load(f)
 
+questions = {}
 answer_eval = {}
-with open(original_question_path, "r", encoding="utf-8") as f:
+with open(question_path, "r", encoding="utf-8") as f:
     for line in f:
         line = json.loads(line)
+        questions[line["data_id"]] = (line["question"],line["image_id"])
         answer_eval[line["data_id"]] = line["answer_eval"]
+
+subquestions = {}
+with open(subquestions_path, "r", encoding="utf-8") as f:
+    for line in f:
+        line = json.loads(line)
+        subquestions[line["data_id"]] = line["subquestions"]
 
 contexts = {}
 with open(reranked_path, "r", encoding="utf-8") as f:
@@ -42,43 +53,37 @@ with open(reranked_path, "r", encoding="utf-8") as f:
         line = json.loads(line)
         current_context = []
         for i in range(len(line["sorted_context_nodes"])):
-            current_context.append((line["sorted_context_nodes"][i], line["sorted_relevance_scores"][i]))
+            if line["sorted_relevance_scores"][i] >= LIMIT:
+                current_context.append((line["sorted_context_nodes"][i], line["sorted_relevance_scores"][i]))
         contexts[line["qid"]] = current_context
 
-#load subquestions at a level, merge with answers of previous levels
-questions = {}
-with open(question_path, "r", encoding="utf-8") as f:
+with open(reranked_path_sub, "r", encoding="utf-8") as f:
     for line in f:
         line = json.loads(line)
-        subquestions = line["subquestions"]
-        if len(subquestions) < QUESTION_LEVEL:
-            continue
-        elif len(subquestions) == QUESTION_LEVEL:
-            questions[line["qid"]] = (line["question"], line["image_id"])
-        else:
-            questions[line["qid"]] = (subquestions[QUESTION_LEVEL],line["image_id"])
-    if len(questions) == 0:
-        raise RuntimeError("No questions left to decompose")
-    print(f"Number of questions: {len(questions)}")
+        current_context = []
+        for i in range(len(line["sorted_context_nodes"])):
+            if line["sorted_relevance_scores"][i] >= LIMIT:
+                current_context.append((line["sorted_context_nodes"][i], line["sorted_relevance_scores"][i]))
+        contexts[line["qid"]].extend(current_context)
 
-#load previous answers
-for level in range(QUESTION_LEVEL-1,-1, -1):
-    previous_answer_path = os.path.normpath(os.path.join(DIR_PATH, "data", f"answers_{KNN}nn_{level}.jsonl"))
-    if os.path.exists(previous_answer_path):
-        prev_answer_count = 0
-        with open(previous_answer_path, "r", encoding="utf-8") as f:
-            for line in f:
-                line = json.loads(line)
-                qid = line["qid"]
-                if qid not in questions:
-                    continue
-                answer = line["answer"]
-                questions[qid] = (answer + "\n" + questions[qid][0], questions[qid][1])
-                prev_answer_count += 1
-        if len(questions) != prev_answer_count:
-            raise RuntimeError(f"Previous answers and questions at level {level} mismatch: {prev_answer_count}/{len(questions)}")
-    else:
-        raise RuntimeError(f"Previous answers not exist for question level: {level}")
+for qid in contexts.keys():
+    contexts[qid] = sorted(contexts[qid], key=lambda x: x[1], reverse=True)
+    current_context = []
+    collected_context_nodes = set()
+    for node_id, score in contexts[qid]:
+        if node_id not in collected_context_nodes:
+            current_context.append((node_id, score))
+            collected_context_nodes.add(node_id)
+    contexts[qid] = current_context
+
+image_entity_mapping_path = os.path.join(BASE_PATH, "1-Preprocess", "data", "image_entity_mapping.jsonl")
+image_entity_mapping = {}
+with open(image_entity_mapping_path, "r", encoding="utf-8") as f:
+    for line in f:
+        line = json.loads(line)
+        image_path = line["image_file"]
+        entities = "\n".join(line["entities"])
+        image_entity_mapping[image_path] = entities
 
 #load images
 IMAGE_EXTENSIONS = {".jpg", ".jpeg", ".png", ".bmp", ".gif", ".webp"}
@@ -127,25 +132,34 @@ with open(output_path, "a", encoding="utf-8") as f:
             continue
         question = questions[qid][0]
         image, mime = images[questions[qid][1]]
-        prompt = answer_prompt()
-        content = [
-            {"type": "text", "text": f"[QUESTION]\n{question}"},
-            {"type": "text", "text": "[QUESTION IMAGE]"},
-            {"type": "image_url", "image_url": {"url": f"data:{mime};base64,{image}"}},
-            {"type": "text", "text": "[CONTEXT]"},
-        ]
+        content = [{"type": "text", "text": "[CONTEXT]"}]
         for i in range(len(contexts[qid])):
             context_node_id, score = contexts[qid][i]
-            content.append({"type": "text", "text": f"---Context {i+1} (Relevance score: {score})---"})
-            context_node = nodes[context_node_id]
-            if context_node.node_type == "V":
-                context_image, context_image_mime = encode_image(context_node.content)
-                content.append({"type": "image_url", "image_url": {"url": f"data:{context_image_mime};base64,{context_image}"}})
-            else:
-                content.append({"type": "text", "text": context_node.content})
+            if score >= LIMIT:
+                content.append({"type": "text", "text": f"---Context {i+1}---"})
+                context_node = nodes[context_node_id]
+                if context_node.node_type == "V":
+                    content.append({"type": "text", "text": f"This is an image of: {image_entity_mapping[os.path.basename(context_node.content)]}"})
+                    context_image, context_image_mime = encode_image(context_node.content)
+                    content.append({"type": "image_url", "image_url": {"url": f"data:{context_image_mime};base64,{context_image}"}})
+                else:
+                    content.append({"type": "text", "text": context_node.content})
+        content.extend([
+            {"type": "text", "text": f"[QUESTION]\n{question}"},
+            {"type": "text", "text": "[QUESTION IMAGE]"},
+            {"type": "image_url", "image_url": {"url": f"data:{mime};base64,{image}"}}
+        ])
+        if COT:
+            content.append({"type": "text", "text": "[PREREQUISITE QUESTIONS]."})
+            content.append({"type": "text", "text": "\n".join(subquestions[qid])})
+            system_prompt = cot_answer_prompt()
+        else:
+            system_prompt = answer_prompt()
+        content.append({"type": "text", "text": f"[QUESTION]\n{question}"})
         for attempt in range(1,MAX_ATTEMPTS+1):
+            response_text = None
             try:
-                response_text, token = call_api(content=content, system_prompt=answer_prompt(), model="", mode="self-host")
+                response_text, token = call_api(content=content, system_prompt=system_prompt, model="", mode="self-host")
                 response = response_text.strip()
                 if not isinstance(response, str) or not response:
                     raise ValueError("Invalid response")
@@ -161,6 +175,6 @@ with open(output_path, "a", encoding="utf-8") as f:
                 if attempt == MAX_ATTEMPTS:
                     print(f"Failed on question {qid}: {question}: {e}")
                     raise TimeoutError("A question failed")
-                time.sleep(5)
+                time.sleep(2)
 
 print(f"Completed: {len(processed_questions)}/{len(questions)}")

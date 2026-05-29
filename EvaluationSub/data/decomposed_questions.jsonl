@@ -1,0 +1,1000 @@
+{"data_id": "infoseek_train_00000544", "questions": ["What type of bird is shown in the image?"], "image_id": "oven_00989393", "entities": [["bird", "tree"]], "token": 833}
+{"data_id": "infoseek_train_00000691", "questions": ["What is the registration number of the aircraft in the image?", "What is the aircraft model shown in the image?"], "image_id": "oven_00004996", "entities": [["HB-JRP"], ["aircraft", "HB-JRP", "airplane", "jet", "private jet", "aircraft model"]], "token": 2244}
+{"data_id": "infoseek_train_00001551", "questions": ["What species of bird is shown in the image?"], "image_id": "oven_01439763", "entities": [["bird", "shoebill"]], "token": 475}
+{"data_id": "infoseek_train_00003410", "questions": ["What is the scientific classification of the insect in the image?"], "image_id": "oven_00671747", "entities": [["insect", "hand", "plant"]], "token": 939}
+{"data_id": "infoseek_train_00003566", "questions": ["What type of plant is shown in the image?"], "image_id": "oven_04560341", "entities": [["plant", "flower"]], "token": 480}
+{"data_id": "infoseek_train_00003978", "questions": ["What is the common name of the insect in the image?", "What is the scientific classification of the insect in the image?"], "image_id": "oven_00674575", "entities": [["insect", "earwig"], ["insect", "earwig"]], "token": 964}
+{"data_id": "infoseek_train_00006016", "questions": ["What species of plant is shown in the image?"], "image_id": "oven_00630271", "entities": [["plant", "species"]], "token": 883}
+{"data_id": "infoseek_train_00016338", "questions": ["What is the name of the building shown in the image?"], "image_id": "oven_00056059", "entities": [["building"]], "token": 882}
+{"data_id": "infoseek_train_00018938", "questions": ["What is the species name of the plant shown in the image?"], "image_id": "oven_00630300", "entities": [["plant"]], "token": 883}
+{"data_id": "infoseek_train_00019095", "questions": ["What sport is being represented by the equipment in the image?"], "image_id": "oven_00269965", "entities": [["badminton", "racket"]], "token": 477}
+{"data_id": "infoseek_train_00019215", "questions": ["Which city or region is shown in the image?"], "image_id": "oven_00096609", "entities": [["city", "region"]], "token": 883}
+{"data_id": "infoseek_train_00019719", "questions": ["What type of insect is shown in the image?"], "image_id": "oven_00575563", "entities": [["insect", "caterpillar"]], "token": 1036}
+{"data_id": "infoseek_train_00020251", "questions": ["What type of plant is shown in the image?"], "image_id": "oven_00725090", "entities": [["plant", "flower", "orange", "yellow", "green grass"]], "token": 843}
+{"data_id": "infoseek_train_00020974", "questions": ["What is the name of the place shown in the image?"], "image_id": "oven_00026275", "entities": [[]], "token": 855}
+{"data_id": "infoseek_train_00021891", "questions": ["What is the name of the building shown in the image?"], "image_id": "oven_00069209", "entities": [["building", "coat of arms", "inscription", "date", "1769", "W F M", "AETATIS SUAE XXXVIII", "obit", "December"]], "token": 947}
+{"data_id": "infoseek_train_00022554", "questions": ["What is the name of the building shown in the image?"], "image_id": "oven_00098550", "entities": [[]], "token": 830}
+{"data_id": "infoseek_train_00023525", "questions": ["What kind of animal is shown in the image?"], "image_id": "oven_01884013", "entities": [["goat"]], "token": 470}
+{"data_id": "infoseek_train_00026841", "questions": ["Which park is shown in the image?"], "image_id": "oven_00064989", "entities": [["park"]], "token": 878}
+{"data_id": "infoseek_train_00029287", "questions": ["What is the name of the place shown in the image?"], "image_id": "oven_00054921", "entities": [["place"]], "token": 882}
+{"data_id": "infoseek_train_00029999", "questions": ["What is the building shown in the image used for?", "What notable activity is typically held at this type of building?"], "image_id": "oven_00062151", "entities": [["building", "ski jump", "sports facility", "winter sports", "competition venue"], ["ski jumping"]], "token": 1680}
+{"data_id": "infoseek_train_00031042", "questions": ["Which park is shown in the image?"], "image_id": "oven_00056038", "entities": [[]], "token": 876}
+{"data_id": "infoseek_train_00033792", "questions": ["Which building is shown in the image?"], "image_id": "oven_00064026", "entities": [["building"]], "token": 878}
+{"data_id": "infoseek_train_00035746", "questions": ["What country is the building in the image located in?", "What specific city or region within that country is the building located in?"], "image_id": "oven_00040519", "entities": [["Korea"], ["Korea", "building"]], "token": 1220}
+{"data_id": "infoseek_train_00035972", "questions": ["Which lake is shown in the image?"], "image_id": "oven_00052952", "entities": [["lake", "iceberg", "mountain"]], "token": 671}
+{"data_id": "infoseek_train_00036007", "questions": ["What type of plant is shown in the image?"], "image_id": "oven_00672457", "entities": [["plant", "white flowers", "green foliage"]], "token": 838}
+{"data_id": "infoseek_train_00036252", "questions": ["What is the name of the animal shown in the image?"], "image_id": "oven_01898493", "entities": [["animal", "oryx", "antelope", "water"]], "token": 482}
+{"data_id": "infoseek_train_00036516", "questions": ["What type of insect is shown in the image?"], "image_id": "oven_00480790", "entities": [["insect", "moth"]], "token": 884}
+{"data_id": "infoseek_train_00036921", "questions": ["What type of plant is shown in the image?"], "image_id": "oven_04135117", "entities": [["plant", "watermelon"]], "token": 473}
+{"data_id": "infoseek_train_00039046", "questions": ["What sport is depicted in the image?"], "image_id": "oven_00269970", "entities": [["badminton", "racket"]], "token": 473}
+{"data_id": "infoseek_train_00040090", "questions": ["What type of plant is shown in the image?"], "image_id": "oven_00714634", "entities": [["plant", "flower", "purple flower", "green leaves"]], "token": 486}
+{"data_id": "infoseek_train_00041938", "questions": ["What type of plant is shown in the image?"], "image_id": "oven_00512534", "entities": [["plant", "white flowers", "grass", "soil"]], "token": 891}
+{"data_id": "infoseek_train_00042499", "questions": ["What type of plant is shown in the image?"], "image_id": "oven_00850038", "entities": [["plant", "leaf", "flower"]], "token": 886}
+{"data_id": "infoseek_train_00042976", "questions": ["What type of insect is shown in the image?"], "image_id": "oven_00624168", "entities": [["insect", "caterpillar"]], "token": 836}
+{"data_id": "infoseek_train_00043070", "questions": ["What type of plant is shown in the image?"], "image_id": "oven_04449323", "entities": [["plant", "moss"]], "token": 473}
+{"data_id": "infoseek_train_00043193", "questions": ["What is the object shown in the image?"], "image_id": "oven_03836409", "entities": [["object", "device", "digital display", "buttons", "calculator", "pocket calculator"]], "token": 486}
+{"data_id": "infoseek_train_00044668", "questions": ["What type of plant is shown in the image?"], "image_id": "oven_00447435", "entities": [["plant", "flower", "poppy"]], "token": 482}
+{"data_id": "infoseek_train_00045061", "questions": ["What building is shown in the image?"], "image_id": "oven_00103339", "entities": [["building"]], "token": 878}
+{"data_id": "infoseek_train_00045745", "questions": ["What is the name of the building shown in the image?"], "image_id": "oven_00015313", "entities": [["building", "rock", "windows", "cross"]], "token": 841}
+{"data_id": "infoseek_train_00046586", "questions": ["What type of bird is shown in the image?"], "image_id": "oven_01359762", "entities": [["bird", "duck", "water"]], "token": 475}
+{"data_id": "infoseek_train_00047674", "questions": ["What is the name of the building shown in the image?"], "image_id": "oven_00022241", "entities": [[]], "token": 880}
+{"data_id": "infoseek_train_00048709", "questions": ["Which mountain is shown in the image?"], "image_id": "oven_00013919", "entities": [[]], "token": 826}
+{"data_id": "infoseek_train_00050073", "questions": ["What is the architectural style of the building shown in the image?"], "image_id": "oven_00062000", "entities": [["building", "architectural style"]], "token": 889}
+{"data_id": "infoseek_train_00053743", "questions": ["What is the name of the city or region shown in the image?"], "image_id": "oven_00010437", "entities": [[]], "token": 707}
+{"data_id": "infoseek_train_00056020", "questions": ["What animal is shown in the image?"], "image_id": "oven_00714123", "entities": [["animal", "squirrel"]], "token": 832}
+{"data_id": "infoseek_train_00057811", "questions": ["What is the scientific name of the plant shown in the image?"], "image_id": "oven_00605678", "entities": [["plant", "scientific name"]], "token": 887}
+{"data_id": "infoseek_train_00058242", "questions": ["What type of animal is shown in the image?"], "image_id": "oven_00982606", "entities": [["alligator"]], "token": 470}
+{"data_id": "infoseek_train_00058963", "questions": ["What is the name of the building shown in the image?"], "image_id": "oven_00094130", "entities": [["building"]], "token": 759}
+{"data_id": "infoseek_train_00063887", "questions": ["What is the species of the plant shown in the image?"], "image_id": "oven_00672667", "entities": [["plant", "flower", "hand", "yellow"]], "token": 891}
+{"data_id": "infoseek_train_00064538", "questions": ["What type of plant is shown in the image?"], "image_id": "oven_00545370", "entities": [["plant", "flower", "orange", "green leaves", "tree"]], "token": 893}
+{"data_id": "infoseek_train_00066068", "questions": ["What is the species of the bird shown in the image?"], "image_id": "oven_01343404", "entities": [["bird"]], "token": 477}
+{"data_id": "infoseek_train_00066337", "questions": ["What is the name of the landmark shown in the image?"], "image_id": "oven_00104255", "entities": [["landmark"]], "token": 883}
+{"data_id": "infoseek_train_00067044", "questions": ["What is the name of the building shown in the image?"], "image_id": "oven_00039479", "entities": [[]], "token": 880}
+{"data_id": "infoseek_train_00068934", "questions": ["What type of insect is shown in the image?"], "image_id": "oven_00770755", "entities": [["insect", "moth"]], "token": 909}
+{"data_id": "infoseek_train_00068980", "questions": ["What is the name of the building shown in the image?"], "image_id": "oven_00073988", "entities": [["building"]], "token": 554}
+{"data_id": "infoseek_train_00073128", "questions": ["What type of plant is shown in the image?"], "image_id": "oven_00482173", "entities": [["plant", "fern"]], "token": 783}
+{"data_id": "infoseek_train_00074358", "questions": ["What is the name of the location shown in the image?"], "image_id": "oven_00065775", "entities": [[]], "token": 830}
+{"data_id": "infoseek_train_00076156", "questions": ["What animal is shown in the image?"], "image_id": "oven_00712000", "entities": [["monkey"]], "token": 467}
+{"data_id": "infoseek_train_00077412", "questions": ["What is the name of the building shown in the image?"], "image_id": "oven_00015007", "entities": [["building"]], "token": 807}
+{"data_id": "infoseek_train_00080854", "questions": ["What type of insect is shown in the image?", "Is the insect in the image female or male?"], "image_id": "oven_00699498", "entities": [["insect", "butterfly", "leaf"], ["insect", "butterfly", "female", "male"]], "token": 1681}
+{"data_id": "infoseek_train_00081134", "questions": ["What is the object shown in the image?"], "image_id": "oven_03753555", "entities": [["theatre", "curtain", "stage", "text", "quote"]], "token": 482}
+{"data_id": "infoseek_train_00083412", "questions": ["What type of insect is shown in the image?"], "image_id": "oven_00937261", "entities": [["insect", "stick insect", "leaf", "branch"]], "token": 891}
+{"data_id": "infoseek_train_00083771", "questions": ["What type of plant is shown in the image?"], "image_id": "oven_00985228", "entities": [["plant", "hand", "flower", "leaf"]], "token": 889}
+{"data_id": "infoseek_train_00084345", "questions": ["What is the object shown in the image?", "Who/what is the brand associated with this object?"], "image_id": "oven_03980887", "entities": [["Starbucks", "coffee cup", "cup", "lid", "sleeve", "newspaper", "stone surface"], ["Starbucks"]], "token": 964}
+{"data_id": "infoseek_train_00084633", "questions": ["What is the name of the building shown in the image?"], "image_id": "oven_00046593", "entities": [["building"]], "token": 832}
+{"data_id": "infoseek_train_00086881", "questions": ["What animal is shown in the image?"], "image_id": "oven_01603231", "entities": [["dog"]], "token": 475}
+{"data_id": "infoseek_train_00088434", "questions": ["What type of animal is shown in the image?"], "image_id": "oven_01138342", "entities": [["manta ray"]], "token": 477}
+{"data_id": "infoseek_train_00088900", "questions": ["What type of insect is shown in the image?"], "image_id": "oven_00807732", "entities": [["insect"]], "token": 881}
+{"data_id": "infoseek_train_00090608", "questions": ["What type of food is shown in the image?"], "image_id": "oven_04321984", "entities": [["food", "champagne", "water"]], "token": 477}
+{"data_id": "infoseek_train_00093747", "questions": ["What type of animal is shown in the image?"], "image_id": "oven_01946890", "entities": [["animal", "tamarin"]], "token": 473}
+{"data_id": "infoseek_train_00094788", "questions": ["What species of bird is shown in the image?"], "image_id": "oven_00968078", "entities": [["bird"]], "token": 855}
+{"data_id": "infoseek_train_00098783", "questions": ["What is the name of the building shown in the image?"], "image_id": "oven_00038409", "entities": [["building", "VPALANTIS"]], "token": 763}
+{"data_id": "infoseek_train_00100130", "questions": ["What plant is shown in the image?"], "image_id": "oven_00457293", "entities": [["plant", "branch", "bud"]], "token": 959}
+{"data_id": "infoseek_train_00102447", "questions": ["What is the scientific name of the plant shown in the image?"], "image_id": "oven_00703008", "entities": [["plant"]], "token": 833}
+{"data_id": "infoseek_train_00106594", "questions": ["What type of plant is shown in the image?"], "image_id": "oven_00804544", "entities": [["plant", "leaf", "grass"]], "token": 886}
+{"data_id": "infoseek_train_00106766", "questions": ["What animal is shown in the image?"], "image_id": "oven_00901882", "entities": [["sheep", "bird"]], "token": 471}
+{"data_id": "infoseek_train_00107597", "questions": ["What type of plant is shown in the image?"], "image_id": "oven_04849929", "entities": [["plant", "mushroom", "tree", "grass"]], "token": 480}
+{"data_id": "infoseek_train_00108800", "questions": ["Which lake is shown in the image?"], "image_id": "oven_00110865", "entities": [["lake"]], "token": 878}
+{"data_id": "infoseek_train_00109061", "questions": ["What is the name of the building shown in the image?"], "image_id": "oven_00016183", "entities": [[]], "token": 830}
+{"data_id": "infoseek_train_00112594", "questions": ["What type of plant is shown in the image?"], "image_id": "oven_00606924", "entities": [["plant"]], "token": 880}
+{"data_id": "infoseek_train_00113169", "questions": ["What type of plant is shown in the image?"], "image_id": "oven_04671449", "entities": [["plant", "tree", "river", "forest"]], "token": 478}
+{"data_id": "infoseek_train_00115569", "questions": ["What is the brand name visible on the front grille of the vehicle in the image?"], "image_id": "oven_00008782", "entities": [["Infiniti"]], "token": 890}
+{"data_id": "infoseek_train_00117418", "questions": ["What animal is shown in the image?"], "image_id": "oven_00791380", "entities": [["monkey"]], "token": 828}
+{"data_id": "infoseek_train_00117667", "questions": ["What type of plant is shown in the image?"], "image_id": "oven_00595476", "entities": [["plant", "yellow flower", "green leaves", "fern", "dead leaves"]], "token": 895}
+{"data_id": "infoseek_train_00117962", "questions": ["What is the species of the bird shown in the image?"], "image_id": "oven_00439562", "entities": [["bird", "species"]], "token": 474}
+{"data_id": "infoseek_train_00118629", "questions": [], "image_id": "oven_02463070", "entities": [], "token": 0}
+{"data_id": "infoseek_train_00121781", "questions": ["What type of plant is shown in the image?"], "image_id": "oven_00530103", "entities": [["plant", "agave"]], "token": 834}
+{"data_id": "infoseek_train_00122065", "questions": ["Which building is shown in the image?"], "image_id": "oven_00102424", "entities": [["building"]], "token": 828}
+{"data_id": "infoseek_train_00123934", "questions": ["What building is shown in the image?"], "image_id": "oven_00043074", "entities": [[]], "token": 876}
+{"data_id": "infoseek_train_00124372", "questions": ["What type of plant is shown in the image?"], "image_id": "oven_00670184", "entities": [["plant", "flower", "pink", "white", "green leaves"]], "token": 893}
+{"data_id": "infoseek_train_00125859", "questions": ["What type of insect is shown in the image?"], "image_id": "oven_00672759", "entities": [["insect", "moth"]], "token": 884}
+{"data_id": "infoseek_train_00126011", "questions": ["What is the scientific name of the plant shown in the image?"], "image_id": "oven_00495822", "entities": [["plant", "scientific name"]], "token": 1037}
+{"data_id": "infoseek_train_00126405", "questions": ["What is the name of the building shown in the image?"], "image_id": "oven_00022232", "entities": [[]], "token": 880}
+{"data_id": "infoseek_train_00127466", "questions": ["What type of insect is shown in the image?"], "image_id": "oven_00695437", "entities": [["insect", "spider"]], "token": 835}
+{"data_id": "infoseek_train_00129162", "questions": ["What is the make of the vehicle shown in the image?"], "image_id": "oven_00007059", "entities": [["vehicle", "GMC"]], "token": 481}
+{"data_id": "infoseek_train_00130491", "questions": ["What type of plant is shown in the image?"], "image_id": "oven_00606979", "entities": [["plant", "grass", "flower", "wildlife", "nature"]], "token": 482}
+{"data_id": "infoseek_train_00132174", "questions": ["What is the scientific name of the plant shown in the image?", "What is the common name of the plant shown in the image?"], "image_id": "oven_04523212", "entities": [["Schlumbergera truncata", "flor-de-maio"], ["Schlumbergera truncata", "flor-de-maio", "plant"]], "token": 975}
+{"data_id": "infoseek_train_00134043", "questions": ["What is the name of the building shown in the image?"], "image_id": "oven_00029557", "entities": [["building"]], "token": 832}
+{"data_id": "infoseek_train_00134048", "questions": ["What animal is shown in the image?"], "image_id": "oven_00555140", "entities": [["animal", "monkey"]], "token": 931}
+{"data_id": "infoseek_train_00134411", "questions": ["What type of plant is shown in the image?"], "image_id": "oven_04139883", "entities": [["pepper", "plant", "basket"]], "token": 476}
+{"data_id": "infoseek_train_00134627", "questions": ["What type of insect is shown in the image?"], "image_id": "oven_00675076", "entities": [["insect", "earwig"]], "token": 474}
+{"data_id": "infoseek_train_00135121", "questions": ["What type of plant is shown in the image?"], "image_id": "oven_00695041", "entities": [["plant", "flower", "white flower"]], "token": 482}
+{"data_id": "infoseek_train_00137335", "questions": ["What type of plant is shown in the image?"], "image_id": "oven_00980667", "entities": [["plant", "mistletoe"]], "token": 886}
+{"data_id": "infoseek_train_00138343", "questions": ["What is the name of the bridge shown in the image?"], "image_id": "oven_00104730", "entities": [["bridge"]], "token": 882}
+{"data_id": "infoseek_train_00138781", "questions": ["What type of animal is shown in the image?"], "image_id": "oven_00555138", "entities": [["animal", "baboon"]], "token": 884}
+{"data_id": "infoseek_train_00139470", "questions": ["What type of plant is shown in the image?"], "image_id": "oven_04780078", "entities": [["plant", "flower", "orange", "red", "leaf", "bush"]], "token": 485}
+{"data_id": "infoseek_train_00139828", "questions": ["What type of plant is shown in the image?"], "image_id": "oven_00667780", "entities": [["plant", "seaweed"]], "token": 885}
+{"data_id": "infoseek_train_00141416", "questions": ["What type of plant is shown in the image?"], "image_id": "oven_04779860", "entities": [["plant", "flower", "bird"]], "token": 475}
+{"data_id": "infoseek_train_00142846", "questions": ["What type of bird is shown in the image?"], "image_id": "oven_00898484", "entities": [["bird", "goose"]], "token": 473}
+{"data_id": "infoseek_train_00143020", "questions": ["What animal is shown in the image?"], "image_id": "oven_00959393", "entities": [["fox"]], "token": 467}
+{"data_id": "infoseek_train_00144027", "questions": ["What is the scientific name of the insect in the image?"], "image_id": "oven_00671745", "entities": [["insect", "scientific name"]], "token": 837}
+{"data_id": "infoseek_train_00144598", "questions": ["What sport is being played in the image?"], "image_id": "oven_00407644", "entities": [["curling", "ice", "players", "curling stone", "curling brooms", "Torino 2006", "Olympics"]], "token": 500}
+{"data_id": "infoseek_train_00146049", "questions": ["What is the bridge in the image crossing over?"], "image_id": "oven_00092536", "entities": [["bridge", "ocean", "hill", "coast"]], "token": 841}
+{"data_id": "infoseek_train_00146414", "questions": ["What type of plant is shown in the image?"], "image_id": "oven_04523354", "entities": [["plant", "flower", "leaf", "Cactus"]], "token": 485}
+{"data_id": "infoseek_train_00147687", "questions": ["What are the key architectural features of the building in the image?"], "image_id": "oven_00108720", "entities": [["building", "architectural features", "red roof", "dome", "statues", "gardens", "trees"]], "token": 858}
+{"data_id": "infoseek_train_00147960", "questions": ["What type of plant is shown in the image?"], "image_id": "oven_00694666", "entities": [["plant", "flower", "daisy"]], "token": 476}
+{"data_id": "infoseek_train_00148023", "questions": ["What is the species of the plant shown in the image?"], "image_id": "oven_00577540", "entities": [["plant", "flower", "purple", "leaf", "hand"]], "token": 894}
+{"data_id": "infoseek_train_00148848", "questions": ["What type of plant is shown in the image?"], "image_id": "oven_00127825", "entities": [["plant", "flower", "passionflower"]], "token": 749}
+{"data_id": "infoseek_train_00149080", "questions": ["What type of food is being prepared in the image?"], "image_id": "oven_04279024", "entities": [["food", "grill", "skewers", "meat"]], "token": 483}
+{"data_id": "infoseek_train_00149710", "questions": ["What is the name of the location shown in the image?"], "image_id": "oven_00015128", "entities": [[]], "token": 755}
+{"data_id": "infoseek_train_00149800", "questions": ["What type of bird is shown in the image?"], "image_id": "oven_00665863", "entities": [["bird", "magpie"]], "token": 473}
+{"data_id": "infoseek_train_00149988", "questions": ["What is the name of the building shown in the image?"], "image_id": "oven_00012713", "entities": [[]], "token": 755}
+{"data_id": "infoseek_train_00150004", "questions": ["Which mountain is shown in the image?"], "image_id": "oven_00020752", "entities": [[]], "token": 826}
+{"data_id": "infoseek_train_00152682", "questions": ["What is the name of the park shown in the image?"], "image_id": "oven_00010858", "entities": [["park", "arch", "rock formation", "trail", "fence", "person"]], "token": 849}
+{"data_id": "infoseek_train_00153522", "questions": ["What type of plant is shown in the image?"], "image_id": "oven_00528465", "entities": [["plant", "thistle", "flower", "stem", "spines", "purple"]], "token": 847}
+{"data_id": "infoseek_train_00153686", "questions": ["What type of insect is shown in the image?"], "image_id": "oven_00879835", "entities": [["insect", "dragonfly"]], "token": 835}
+{"data_id": "infoseek_train_00156555", "questions": ["What is the name of the restaurant brand shown on the plate?", "What country is the restaurant brand 'Sbarro' from?"], "image_id": "oven_00173570", "entities": [["sbarro", "restaurant", "plate", "spaghetti", "bread"], ["Sbarro", "restaurant", "country"]], "token": 1351}
+{"data_id": "infoseek_train_00156687", "questions": ["What building is shown in the image?"], "image_id": "oven_00102324", "entities": [["building"]], "token": 828}
+{"data_id": "infoseek_train_00156949", "questions": ["What type of plant is shown in the image?"], "image_id": "oven_00127867", "entities": [["plant", "flower"]], "token": 776}
+{"data_id": "infoseek_train_00157474", "questions": ["What animal is shown in the image?"], "image_id": "oven_00926692", "entities": [["animal", "snake", "rattlesnake"]], "token": 476}
+{"data_id": "infoseek_train_00157840", "questions": ["What type of plant is shown in the image?"], "image_id": "oven_00672466", "entities": [["plant", "flower", "white flower", "stem", "leaf", "blossom"]], "token": 848}
+{"data_id": "infoseek_train_00158723", "questions": ["Which building is shown in the image?"], "image_id": "oven_00103336", "entities": [["building"]], "token": 753}
+{"data_id": "infoseek_train_00160202", "questions": ["What building is shown in the image?"], "image_id": "oven_00107299", "entities": [[]], "token": 876}
+{"data_id": "infoseek_train_00160817", "questions": ["What is the scientific name of the plant shown in the image?"], "image_id": "oven_00495823", "entities": [["plant", "scientific name"]], "token": 887}
+{"data_id": "infoseek_train_00161828", "questions": ["What type of plant is shown in the image?"], "image_id": "oven_00489168", "entities": [["plant", "leaf", "tree"]], "token": 836}
+{"data_id": "infoseek_train_00162364", "questions": ["What type of plant is shown in the image?"], "image_id": "oven_04764115", "entities": [["plant", "fruit", "leaf", "tree"]], "token": 478}
+{"data_id": "infoseek_train_00165856", "questions": ["Which building is shown in the image?"], "image_id": "oven_00119716", "entities": [["building"]], "token": 878}
+{"data_id": "infoseek_train_00166096", "questions": ["What is the name of the body of water visible in the background of the image?"], "image_id": "oven_00103585", "entities": [["body of water", "background", "image"]], "token": 895}
+{"data_id": "infoseek_train_00166120", "questions": ["What type of insect is shown in the image?"], "image_id": "oven_00624167", "entities": [["insect"]], "token": 881}
+{"data_id": "infoseek_train_00166680", "questions": ["Which city or town is shown in the image?"], "image_id": "oven_00115544", "entities": [[]], "token": 878}
+{"data_id": "infoseek_train_00167509", "questions": ["What type of plant is shown in the image?"], "image_id": "oven_00609066", "entities": [["plant", "flower", "orange", "green leaves"]], "token": 479}
+{"data_id": "infoseek_train_00167626", "questions": ["What is the name of the building shown in the image?", "In which country is this building located?"], "image_id": "oven_00015649", "entities": [["building"], ["building", "country"]], "token": 1663}
+{"data_id": "infoseek_train_00169468", "questions": ["What type of plant is shown in the image?"], "image_id": "oven_04547049", "entities": [["plant", "flower", "chrysanthemum"]], "token": 487}
+{"data_id": "infoseek_train_00169552", "questions": ["What type of plant is shown in the image?"], "image_id": "oven_00700229", "entities": [["plant", "yellow flower"]], "token": 473}
+{"data_id": "infoseek_train_00170218", "questions": ["What type of plant is shown in the image?"], "image_id": "oven_04671279", "entities": [["plant", "tree", "flower", "leaf", "branch"]], "token": 487}
+{"data_id": "infoseek_train_00171465", "questions": ["What is the name of the bird shown in the image?"], "image_id": "oven_00817904", "entities": [["bird", "ruler", "wood"]], "token": 764}
+{"data_id": "infoseek_train_00171686", "questions": ["What is the name of the building shown in the image?"], "image_id": "oven_00060613", "entities": [[]], "token": 880}
+{"data_id": "infoseek_train_00172006", "questions": ["Which city is shown in the image?"], "image_id": "oven_00100207", "entities": [["city"]], "token": 803}
+{"data_id": "infoseek_train_00173992", "questions": ["What is the name of the bird shown in the image?"], "image_id": "oven_00882365", "entities": [["bird"]], "token": 471}
+{"data_id": "infoseek_train_00175372", "questions": ["Which building is shown in the image?"], "image_id": "oven_00090919", "entities": [["building"]], "token": 828}
+{"data_id": "infoseek_train_00176084", "questions": ["What is the scientific name of the plant shown in the image?"], "image_id": "oven_00975214", "entities": [["plant", "scientific name"]], "token": 1012}
+{"data_id": "infoseek_train_00176395", "questions": ["What type of animal is shown in the image?"], "image_id": "oven_00649546", "entities": [["snake"]], "token": 469}
+{"data_id": "infoseek_train_00179879", "questions": ["What is the scientific name of the insect shown in the image?"], "image_id": "oven_00881561", "entities": [["insect", "ladybug", "ladybird", "scientific name"]], "token": 973}
+{"data_id": "infoseek_train_00180007", "questions": ["What is the scientific classification of the insect in the image?"], "image_id": "oven_00849764", "entities": [["insect", "moth"]], "token": 836}
+{"data_id": "infoseek_train_00182383", "questions": ["What animal is shown in the image?"], "image_id": "oven_01250260", "entities": [["lizard"]], "token": 481}
+{"data_id": "infoseek_train_00183450", "questions": ["What is the name of the building shown in the image?"], "image_id": "oven_00062153", "entities": [["building", "ski jump", "mountains", "city", "seats", "sky"]], "token": 900}
+{"data_id": "infoseek_train_00184080", "questions": ["What type of bird is shown in the image?"], "image_id": "oven_01359450", "entities": [["bird"]], "token": 469}
+{"data_id": "infoseek_train_00184442", "questions": [], "image_id": "oven_00639612", "entities": [], "token": 0}
+{"data_id": "infoseek_train_00185573", "questions": ["Which building is shown in the image?"], "image_id": "oven_00042252", "entities": [["building"]], "token": 828}
+{"data_id": "infoseek_train_00187908", "questions": ["What type of animal is shown in the image?"], "image_id": "oven_01292049", "entities": [["snake"]], "token": 469}
+{"data_id": "infoseek_train_00188878", "questions": ["What is the name of the building shown in the image?"], "image_id": "oven_00014498", "entities": [["building"]], "token": 882}
+{"data_id": "infoseek_train_00189092", "questions": ["What type of plant is shown in the image?"], "image_id": "oven_04696698", "entities": [["daffodil"]], "token": 472}
+{"data_id": "infoseek_train_00189819", "questions": ["What type of animal is shown in the image?"], "image_id": "oven_01292690", "entities": [["snake"]], "token": 469}
+{"data_id": "infoseek_train_00192194", "questions": ["What is the scientific name of the plant shown in the image?", "What is the taxonomic classification level immediately above the species level for this plant?"], "image_id": "oven_04587921", "entities": [["plant", "scientific name", "Terrestrial Orchids", "Australia"], ["genus"]], "token": 961}
+{"data_id": "infoseek_train_00192277", "questions": ["What type of bird is shown in the image?"], "image_id": "oven_00560190", "entities": [["bird", "robin"]], "token": 473}
+{"data_id": "infoseek_train_00193659", "questions": ["What type of insect is shown in the image?"], "image_id": "oven_00994226", "entities": [["insect", "dragonfly"]], "token": 835}
+{"data_id": "infoseek_train_00194098", "questions": ["What type of plant is shown in the image?"], "image_id": "oven_00612114", "entities": [["plant", "tree", "leaves", "branches"]], "token": 890}
+{"data_id": "infoseek_train_00194101", "questions": ["What type of plant is shown in the image?"], "image_id": "oven_04534176", "entities": [["daisy"]], "token": 470}
+{"data_id": "infoseek_train_00194135", "questions": ["What type of insect is shown in the image?"], "image_id": "oven_00879831", "entities": [["insect", "dragonfly"]], "token": 835}
+{"data_id": "infoseek_train_00194194", "questions": ["What is the name of the building shown in the image?"], "image_id": "oven_00019295", "entities": [["building"]], "token": 882}
+{"data_id": "infoseek_train_00197269", "questions": ["What type of fish is shown in the image?"], "image_id": "oven_00892924", "entities": [["fish", "coral"]], "token": 859}
+{"data_id": "infoseek_train_00198864", "questions": ["What is the name of the building shown in the image?"], "image_id": "oven_00035494", "entities": [["building"]], "token": 882}
+{"data_id": "infoseek_train_00201213", "questions": ["What type of plant is shown in the image?"], "image_id": "oven_00466762", "entities": [["plant", "leaf", "stem", "bush"]], "token": 890}
+{"data_id": "infoseek_train_00204362", "questions": ["What animal is shown in the image?"], "image_id": "oven_01686788", "entities": [["fox"]], "token": 467}
+{"data_id": "infoseek_train_00204512", "questions": ["What is the food item shown in the image?"], "image_id": "oven_00158706", "entities": [["food", "baked goods", "scone", "blueberry", "tray", "paper"]], "token": 489}
+{"data_id": "infoseek_train_00205530", "questions": ["What is the scientific name of the insect in the image?"], "image_id": "oven_00895231", "entities": [["insect", "butterfly", "scientific name"]], "token": 842}
+{"data_id": "infoseek_train_00207526", "questions": ["What is the name of the building shown in the image?"], "image_id": "oven_00112182", "entities": [[]], "token": 880}
+{"data_id": "infoseek_train_00209118", "questions": ["What is the name of the building shown in the image?"], "image_id": "oven_00062895", "entities": [[]], "token": 880}
+{"data_id": "infoseek_train_00210865", "questions": ["What is the scientific name of the plant in the image?"], "image_id": "oven_00756363", "entities": [["plant", "scientific name"]], "token": 886}
+{"data_id": "infoseek_train_00211075", "questions": ["What is the name of the bird shown in the image?"], "image_id": "oven_00881961", "entities": [["bird"]], "token": 471}
+{"data_id": "infoseek_train_00211742", "questions": ["What is the species of the bird shown in the image?"], "image_id": "oven_00852801", "entities": [["bird", "species"]], "token": 474}
+{"data_id": "infoseek_train_00212276", "questions": ["What type of animal is shown in the image?"], "image_id": "oven_00475701", "entities": [["animal", "sea slug"]], "token": 859}
+{"data_id": "infoseek_train_00215499", "questions": ["What type of plant is shown in the image?"], "image_id": "oven_00608404", "entities": [["plant", "flower", "white flower", "grass"]], "token": 890}
+{"data_id": "infoseek_train_00215644", "questions": ["What animal is shown in the image?"], "image_id": "oven_01249957", "entities": [["lizard"]], "token": 468}
+{"data_id": "infoseek_train_00216256", "questions": ["What object is shown in the image?"], "image_id": "oven_03057920", "entities": [["antenna"]], "token": 468}
+{"data_id": "infoseek_train_00216395", "questions": ["What is the context or setting of the image?"], "image_id": "oven_04342718", "entities": [["martini glass", "glass", "ice", "drink", "table"]], "token": 483}
+{"data_id": "infoseek_train_00216493", "questions": ["What is the scientific classification of the insect in the image?"], "image_id": "oven_00695980", "entities": [["insect", "moth"]], "token": 886}
+{"data_id": "infoseek_train_00218273", "questions": ["What type of food is shown in the image?"], "image_id": "oven_04115291", "entities": [["potato", "herb", "bowl"]], "token": 478}
+{"data_id": "infoseek_train_00219926", "questions": ["What type of food is shown in the image?"], "image_id": "oven_04265100", "entities": [["honey"]], "token": 470}
+{"data_id": "infoseek_train_00220001", "questions": ["What is the name of the building shown in the image?"], "image_id": "oven_00090948", "entities": [["building"]], "token": 832}
+{"data_id": "infoseek_train_00220473", "questions": ["What species of bird is shown in the image?"], "image_id": "oven_00874159", "entities": [["bird", "tree"]], "token": 908}
+{"data_id": "infoseek_train_00221093", "questions": ["Which building is prominently featured in the image?"], "image_id": "oven_00032212", "entities": [["building", "castle", "church", "hill", "trees"]], "token": 841}
+{"data_id": "infoseek_train_00221776", "questions": [], "image_id": "oven_00021844", "entities": [], "token": 0}
+{"data_id": "infoseek_train_00222200", "questions": ["What is the species of the plant shown in the image?"], "image_id": "oven_00756372", "entities": [["plant"]], "token": 882}
+{"data_id": "infoseek_train_00224753", "questions": ["Which building is prominently featured in the image?"], "image_id": "oven_00011788", "entities": [["building", "clock tower", "tram"]], "token": 886}
+{"data_id": "infoseek_train_00225536", "questions": ["What type of building is shown in the image?"], "image_id": "oven_00027803", "entities": [["building", "church", "arch", "stone", "roof", "window", "door", "gate", "entrance", "courtyard", "tree", "grass"]], "token": 824}
+{"data_id": "infoseek_train_00228756", "questions": ["What type of insect is shown in the image?"], "image_id": "oven_00881552", "entities": [["insect", "ladybug"]], "token": 961}
+{"data_id": "infoseek_train_00228795", "questions": ["What type of plant is shown in the image?"], "image_id": "oven_04454340", "entities": [["plant", "palm", "potted plant", "pot", "container"]], "token": 484}
+{"data_id": "infoseek_train_00229788", "questions": ["What item is shown in the image?"], "image_id": "oven_02139066", "entities": [["pen", "Lilo and Stitch", "Stitch"]], "token": 477}
+{"data_id": "infoseek_train_00229813", "questions": ["What animal is shown in the image?"], "image_id": "oven_00711907", "entities": [["monkey"]], "token": 467}
+{"data_id": "infoseek_train_00232330", "questions": ["What is the species of the bird shown in the image?"], "image_id": "oven_00968089", "entities": [["bird"]], "token": 882}
+{"data_id": "infoseek_train_00232433", "questions": ["What type of plant is shown in the image?"], "image_id": "oven_00564817", "entities": [["plant", "moss", "rocks", "grass"]], "token": 891}
+{"data_id": "infoseek_train_00232773", "questions": ["What type of food is shown in the image?"], "image_id": "oven_02848156", "entities": [["food", "pumpkin", "squash"]], "token": 478}
+{"data_id": "infoseek_train_00233755", "questions": ["What type of animal is shown in the image?"], "image_id": "oven_01901348", "entities": [["camel"]], "token": 475}
+{"data_id": "infoseek_train_00235252", "questions": ["What species of bird is shown in the image?"], "image_id": "oven_00442578", "entities": [["bird", "tree", "branch"]], "token": 836}
+{"data_id": "infoseek_train_00235920", "questions": ["What is the species of the plant shown in the image?"], "image_id": "oven_00606929", "entities": [["plant", "species"]], "token": 885}
+{"data_id": "infoseek_train_00238631", "questions": ["What type of plant is shown in the image?"], "image_id": "oven_00638988", "entities": [["plant", "tree", "seed pod"]], "token": 1037}
+{"data_id": "infoseek_train_00238852", "questions": ["What type of animal is shown in the image?"], "image_id": "oven_01899115", "entities": [["animal", "oryx"]], "token": 473}
+{"data_id": "infoseek_train_00243943", "questions": ["What is the name of the building shown in the image?"], "image_id": "oven_00102282", "entities": [["building"]], "token": 757}
+{"data_id": "infoseek_train_00244168", "questions": ["What is the scientific name of the plant shown in the image?"], "image_id": "oven_04766498", "entities": [["Field Scabious", "Scabiosa arvvensis"]], "token": 484}
+{"data_id": "infoseek_train_00245520", "questions": ["What is the object shown in the image?"], "image_id": "oven_04855399", "entities": [["object", "image", "circular structure", "green field", "fence", "landscape"]], "token": 487}
+{"data_id": "infoseek_train_00245977", "questions": ["What is the name of the building shown in the image?", "What is the location of the building shown in the image?"], "image_id": "oven_00103583", "entities": [["San Juan National Historic Site", "Castillo San Felipe del Morro"], ["San Juan National Historic Site", "Castillo San Felipe del Morro"]], "token": 1390}
+{"data_id": "infoseek_train_00247699", "questions": ["What is the scientific classification of the insect in the image?"], "image_id": "oven_00770751", "entities": [["insect", "moth"]], "token": 886}
+{"data_id": "infoseek_train_00247774", "questions": ["What is the make and model of the vehicle in the image?"], "image_id": "oven_00009114", "entities": [["vehicle", "make", "model"]], "token": 484}
+{"data_id": "infoseek_train_00249285", "questions": ["What type of food is shown in the image?"], "image_id": "oven_04079501", "entities": [["food", "jars", "canned goods"]], "token": 478}
+{"data_id": "infoseek_train_00250469", "questions": ["What type of insect is shown in the image?"], "image_id": "oven_00630212", "entities": [["insect", "moth"]], "token": 834}
+{"data_id": "infoseek_train_00250989", "questions": ["Which bridge is shown in the image?"], "image_id": "oven_00077461", "entities": [["bridge"]], "token": 811}
+{"data_id": "infoseek_train_00252380", "questions": ["Which church building is shown in the image?"], "image_id": "oven_00044180", "entities": [["church", "building"]], "token": 882}
+{"data_id": "infoseek_train_00252425", "questions": ["What species of bird is shown in the image?"], "image_id": "oven_00499731", "entities": [["bird", "tree", "species"]], "token": 483}
+{"data_id": "infoseek_train_00252837", "questions": ["What type of animal is shown in the image?"], "image_id": "oven_01317165", "entities": [["animal", "bird"]], "token": 472}
+{"data_id": "infoseek_train_00255953", "questions": ["What is the model name of the vehicle shown in the image?"], "image_id": "oven_02985210", "entities": [["vehicle", "model name"]], "token": 476}
+{"data_id": "infoseek_train_00257500", "questions": ["What is the bridge in the image crossing over?"], "image_id": "oven_00067155", "entities": [["bridge", "water", "buildings"]], "token": 678}
+{"data_id": "infoseek_train_00259028", "questions": ["Which city is shown in the image?"], "image_id": "oven_00100194", "entities": [["city"]], "token": 878}
+{"data_id": "infoseek_train_00259389", "questions": ["What is the name of the building shown in the image?"], "image_id": "oven_00042254", "entities": [["building"]], "token": 882}
+{"data_id": "infoseek_train_00260617", "questions": ["Which city is shown in the image?", "Which country is the city located in?"], "image_id": "oven_00082049", "entities": [["Warsaw"], ["Poland"]], "token": 1408}
+{"data_id": "infoseek_train_00262100", "questions": ["What type of animal is shown in the image?"], "image_id": "oven_00494149", "entities": [["animal", "salamander"]], "token": 474}
+{"data_id": "infoseek_train_00264049", "questions": ["What is the object shown in the image?"], "image_id": "oven_03746060", "entities": [["tennis ball"]], "token": 470}
+{"data_id": "infoseek_train_00264717", "questions": ["What is the name of the building shown in the image?"], "image_id": "oven_00027798", "entities": [[]], "token": 855}
+{"data_id": "infoseek_train_00267577", "questions": ["What type of animal is shown in the image?"], "image_id": "oven_01750718", "entities": [["animal", "insect"]], "token": 473}
+{"data_id": "infoseek_train_00269715", "questions": ["What is the brand of the appliance shown in the image?"], "image_id": "oven_02486834", "entities": [["appliance", "coffee grinder", "brand"]], "token": 479}
+{"data_id": "infoseek_train_00270293", "questions": ["What type of animal is shown in the image?"], "image_id": "oven_01855657", "entities": [["rhino"]], "token": 470}
+{"data_id": "infoseek_train_00270336", "questions": ["What is the name of the place shown in the image?"], "image_id": "oven_00054912", "entities": [[]], "token": 880}
+{"data_id": "infoseek_train_00272307", "questions": ["What type of plant is shown in the image?"], "image_id": "oven_00607753", "entities": [["plant", "flower", "blossom", "stem", "leaf", "wildflower"]], "token": 493}
+{"data_id": "infoseek_train_00273167", "questions": ["What type of plant is shown in the image?"], "image_id": "oven_04487020", "entities": [["plant", "leaf", "tree"]], "token": 475}
+{"data_id": "infoseek_train_00275056", "questions": ["What is the name of the garden shown in the image?", "In which city or region is this garden located?"], "image_id": "oven_00020052", "entities": [["garden"], ["garden"]], "token": 1764}
+{"data_id": "infoseek_train_00278199", "questions": ["What type of insect is shown in the image?"], "image_id": "oven_00565365", "entities": [["insect", "moth", "leaf"]], "token": 837}
+{"data_id": "infoseek_train_00279313", "questions": ["What animal is shown in the image?"], "image_id": "oven_00821715", "entities": [["animal", "snail"]], "token": 882}
+{"data_id": "infoseek_train_00281060", "questions": ["What is the name of the building shown in the image?", "In which country is this building located?"], "image_id": "oven_00112202", "entities": [[], ["country"]], "token": 1758}
+{"data_id": "infoseek_train_00281925", "questions": ["What type of plant is shown in the image?"], "image_id": "oven_04644505", "entities": [["plant", "tree", "roots", "forest"]], "token": 478}
+{"data_id": "infoseek_train_00282017", "questions": ["What is the object being held by the person in the image?", "What institution is indicated by the sign above the doorway?"], "image_id": "oven_03980601", "entities": [["newspaper", "person"], ["Graduate School of Journalism", "North Gate Hall Gallery"]], "token": 957}
+{"data_id": "infoseek_train_00282527", "questions": ["What is the food item shown in the image?"], "image_id": "oven_04342686", "entities": [["food item", "alcohol", "liquor", "bottle", "drink", "spirits", "spirit", "alcoholic beverage", "bottle of alcohol", "spirits bottle", "alcohol bottle", "drink bottle"]], "token": 517}
+{"data_id": "infoseek_train_00283300", "questions": ["What is the name of the building shown in the image?"], "image_id": "oven_00011759", "entities": [["building"]], "token": 832}
+{"data_id": "infoseek_train_00285003", "questions": ["What type of animal is shown in the image?"], "image_id": "oven_01294311", "entities": [["trilobite"]], "token": 472}
+{"data_id": "infoseek_train_00287760", "questions": ["What animal is shown in the image?"], "image_id": "oven_01658337", "entities": [["animal", "dog"]], "token": 470}
+{"data_id": "infoseek_train_00288594", "questions": ["What type of organism is shown in the image?"], "image_id": "oven_00656115", "entities": [["organism", "mushroom"]], "token": 886}
+{"data_id": "infoseek_train_00288932", "questions": ["What type of plant is shown in the image?"], "image_id": "oven_00585755", "entities": [["plant", "flower", "grass"]], "token": 886}
+{"data_id": "infoseek_train_00290039", "questions": ["What type of insect is shown in the image?"], "image_id": "oven_00480788", "entities": [["insect", "moth"]], "token": 934}
+{"data_id": "infoseek_train_00290145", "questions": ["What type of plant is shown in the image?"], "image_id": "oven_00587332", "entities": [["plant", "tree", "bark"]], "token": 476}
+{"data_id": "infoseek_train_00290311", "questions": ["What type of object is shown in the image?"], "image_id": "oven_03753895", "entities": [["curtain", "stage curtain", "red curtain"]], "token": 484}
+{"data_id": "infoseek_train_00290853", "questions": ["What is the landmark shown in the image?", "Where is this landmark located?"], "image_id": "oven_00072032", "entities": [["landmark", "lighthouse", "ocean"], ["landmark", "lighthouse", "ocean"]], "token": 1673}
+{"data_id": "infoseek_train_00293001", "questions": ["What type of plant is shown in the image?"], "image_id": "oven_00577526", "entities": [["plant", "flower", "purple", "grass"]], "token": 889}
+{"data_id": "infoseek_train_00293180", "questions": ["What is the name of the bird shown in the image?"], "image_id": "oven_01165515", "entities": [["bird"]], "token": 477}
+{"data_id": "infoseek_train_00293341", "questions": [], "image_id": "oven_01379391", "entities": [], "token": 0}
+{"data_id": "infoseek_train_00293432", "questions": ["What plant is shown in the image?"], "image_id": "oven_00606914", "entities": [["plant", "hand", "grass", "wood"]], "token": 887}
+{"data_id": "infoseek_train_00295511", "questions": ["What is the item shown in the image?"], "image_id": "oven_03912867", "entities": [["wind turbine"]], "token": 469}
+{"data_id": "infoseek_train_00295805", "questions": ["What type of plant is shown in the image?"], "image_id": "oven_00595482", "entities": [["plant", "leaves", "flowers", "grass"]], "token": 915}
+{"data_id": "infoseek_train_00296111", "questions": ["What type of animal is shown in the image?"], "image_id": "oven_00628838", "entities": [["snake"]], "token": 880}
+{"data_id": "infoseek_train_00296735", "questions": ["What is the name of the building shown in the image?"], "image_id": "oven_00015935", "entities": [[]], "token": 755}
+{"data_id": "infoseek_train_00296955", "questions": ["What is the scientific classification of the insect in the image?"], "image_id": "oven_00672751", "entities": [["insect", "moth", "scientific classification"]], "token": 890}
+{"data_id": "infoseek_train_00297192", "questions": ["What is the make of the vehicle shown in the image?"], "image_id": "oven_00007734", "entities": [["Chevrolet", "Silverado", "2012", "1500", "LT", "Regular Cab", "4x4", "Victory Red", "Ebony"]], "token": 745}
+{"data_id": "infoseek_train_00298314", "questions": ["Which bridge is shown in the image?"], "image_id": "oven_00059429", "entities": [["bridge", "Tiber River", "statues", "Rome"]], "token": 891}
+{"data_id": "infoseek_train_00299561", "questions": ["What is written on the label of the bottle in the image?"], "image_id": "oven_04310901", "entities": [["Chol Vineyard", "Pinot Noir", "2005", "September Ranch", "unfiltered", "Naramata Bench", "British Columbia", "Canada"]], "token": 507}
+{"data_id": "infoseek_train_00299967", "questions": ["What is the name of the building shown in the image?"], "image_id": "oven_00014508", "entities": [["building"]], "token": 832}
+{"data_id": "infoseek_train_00300935", "questions": ["What animal is shown in the image?"], "image_id": "oven_01927172", "entities": [["gorilla"]], "token": 468}
+{"data_id": "infoseek_train_00302156", "questions": ["What species of bird is shown in the image?"], "image_id": "oven_00923438", "entities": [["bird", "tree"]], "token": 883}
+{"data_id": "infoseek_train_00302661", "questions": ["What is the name of the town shown in the image?", "In which city or region is this town located?"], "image_id": "oven_00012757", "entities": [[], []], "token": 1658}
+{"data_id": "infoseek_train_00304447", "questions": ["What item is shown in the image?"], "image_id": "oven_03583607", "entities": [["item"]], "token": 467}
+{"data_id": "infoseek_train_00304541", "questions": ["What is the name of the location shown in the image?"], "image_id": "oven_00015113", "entities": [[]], "token": 880}
+{"data_id": "infoseek_train_00306002", "questions": ["What type of insect is shown in the image?"], "image_id": "oven_00909323", "entities": [["insect", "moth"]], "token": 959}
+{"data_id": "infoseek_train_00307114", "questions": ["What is the name of the building shown in the image?"], "image_id": "oven_00121545", "entities": [[]], "token": 830}
+{"data_id": "infoseek_train_00307195", "questions": ["What is the name of the bird shown in the image?"], "image_id": "oven_00817923", "entities": [["bird", "hand", "grass", "trees"]], "token": 841}
+{"data_id": "infoseek_train_00308136", "questions": ["What type of insect is shown in the image?"], "image_id": "oven_00997337", "entities": [["insect", "moth"]], "token": 884}
+{"data_id": "infoseek_train_00308250", "questions": ["Which mountain is shown in the image?"], "image_id": "oven_00042792", "entities": [[]], "token": 826}
+{"data_id": "infoseek_train_00310549", "questions": ["What type of bird is shown in the image?"], "image_id": "oven_00439759", "entities": [["bird"]], "token": 469}
+{"data_id": "infoseek_train_00312840", "questions": ["What is the species of the bird shown in the image?"], "image_id": "oven_00631395", "entities": [["bird", "species"]], "token": 474}
+{"data_id": "infoseek_train_00312973", "questions": ["What are the main ingredients visible in the dish?"], "image_id": "oven_00158668", "entities": [["dish", "meat", "mashed potatoes", "herbs", "vegetables", "sauce"]], "token": 490}
+{"data_id": "infoseek_train_00313131", "questions": ["What are the key architectural features of the building in the image?"], "image_id": "oven_00020522", "entities": [["building", "arch", "tower", "cross", "ivy", "sky", "people", "path", "grass"]], "token": 857}
+{"data_id": "infoseek_train_00314347", "questions": ["What species of bird is shown in the image?"], "image_id": "oven_00665180", "entities": [["bird"]], "token": 469}
+{"data_id": "infoseek_train_00314685", "questions": ["What type of plant is shown in the image?"], "image_id": "oven_00535342", "entities": [["plant", "flower", "water lily", "leaf", "pond"]], "token": 483}
+{"data_id": "infoseek_train_00315316", "questions": ["Which mountain is shown in the image?"], "image_id": "oven_00069426", "entities": [["mountain"]], "token": 829}
+{"data_id": "infoseek_train_00316515", "questions": ["What is the species of the plant shown in the image?"], "image_id": "oven_00854773", "entities": [["plant", "species", "flower", "leaf"]], "token": 891}
+{"data_id": "infoseek_train_00318659", "questions": ["What type of insect is shown in the image?"], "image_id": "oven_00453608", "entities": [["insect", "beetle", "leaf"]], "token": 478}
+{"data_id": "infoseek_train_00323191", "questions": ["What species of bird is shown in the image?"], "image_id": "oven_00652608", "entities": [["bird"]], "token": 880}
+{"data_id": "infoseek_train_00323406", "questions": ["What animal is shown in the image?"], "image_id": "oven_00927182", "entities": [["snake"]], "token": 473}
+{"data_id": "infoseek_train_00326537", "questions": ["What type of plant is shown in the image?"], "image_id": "oven_00587726", "entities": [["plant", "flower", "bloom", "green", "stem"]], "token": 495}
+{"data_id": "infoseek_train_00327080", "questions": ["What type of food is shown in the image?"], "image_id": "oven_04261241", "entities": [["cupcake", "frosting", "pink sprinkles"]], "token": 480}
+{"data_id": "infoseek_train_00327345", "questions": ["What is the model of the vehicle shown in the image?"], "image_id": "oven_00005594", "entities": [["vehicle", "Volkswagen", "VW", "Beetle"]], "token": 2321}
+{"data_id": "infoseek_train_00327831", "questions": ["What is the name of the building shown in the image?"], "image_id": "oven_00054976", "entities": [["building"]], "token": 882}
+{"data_id": "infoseek_train_00327932", "questions": ["What is the name of the building shown in the image?"], "image_id": "oven_00043060", "entities": [[]], "token": 880}
+{"data_id": "infoseek_train_00331874", "questions": ["What is the name of the building shown in the image?"], "image_id": "oven_00060753", "entities": [[]], "token": 880}
+{"data_id": "infoseek_train_00334131", "questions": ["What type of food is shown in the image?"], "image_id": "oven_04079618", "entities": [["food", "stew", "pot", "wooden spoon"]], "token": 481}
+{"data_id": "infoseek_train_00335481", "questions": ["What type of plant is shown in the image?"], "image_id": "oven_00919033", "entities": [["plant", "flower", "leaf"]], "token": 886}
+{"data_id": "infoseek_train_00336571", "questions": ["Which city is shown in the image?", "Which country is the city located in?"], "image_id": "oven_00078134", "entities": [["Florence"], ["city", "country"]], "token": 1760}
+{"data_id": "infoseek_train_00336945", "questions": ["What is the name of the building shown in the image?", "What type of building is this?"], "image_id": "oven_00063907", "entities": [["Estação da Luz"], ["building", "station", "Estação da Luz"]], "token": 1671}
+{"data_id": "infoseek_train_00337063", "questions": ["What is the name of the building shown in the image?"], "image_id": "oven_00015150", "entities": [[]], "token": 805}
+{"data_id": "infoseek_train_00340655", "questions": ["What species of insect is shown in the image?"], "image_id": "oven_00491899", "entities": [["insect", "dragonfly"]], "token": 835}
+{"data_id": "infoseek_train_00340717", "questions": ["What type of plant is shown in the image?"], "image_id": "oven_00482069", "entities": [["plant", "fern"]], "token": 883}
+{"data_id": "infoseek_train_00340863", "questions": ["What is the name of the place shown in the image?"], "image_id": "oven_03810550", "entities": [["place"]], "token": 471}
+{"data_id": "infoseek_train_00342064", "questions": ["What type of plant is shown in the image?"], "image_id": "oven_00585749", "entities": [["plant", "flower", "hand", "grass"]], "token": 889}
+{"data_id": "infoseek_train_00342645", "questions": ["What type of plant is shown in the image?"], "image_id": "oven_00917791", "entities": [["plant", "flower", "leaf", "bark", "ground", "wood"]], "token": 896}
+{"data_id": "infoseek_train_00342713", "questions": ["What is the name of the building shown in the image?"], "image_id": "oven_00030515", "entities": [[]], "token": 705}
+{"data_id": "infoseek_train_00343424", "questions": ["What are the main food items visible on the plate in the image?"], "image_id": "oven_04281618", "entities": [["omelet", "orzo", "tomato", "asparagus", "blueberries", "salmon"]], "token": 494}
+{"data_id": "infoseek_train_00343917", "questions": ["What is the name of the building shown in the image?"], "image_id": "oven_00098556", "entities": [[]], "token": 755}
+{"data_id": "infoseek_train_00344169", "questions": ["Which river is shown in the image?"], "image_id": "oven_00078683", "entities": [["river"]], "token": 878}
+{"data_id": "infoseek_train_00345014", "questions": ["What item is shown in the image?"], "image_id": "oven_03658475", "entities": [["stethoscope"]], "token": 469}
+{"data_id": "infoseek_train_00348710", "questions": ["What is the species of the bird shown in the image?"], "image_id": "oven_00975093", "entities": [["bird"]], "token": 857}
+{"data_id": "infoseek_train_00351404", "questions": ["What is the species of the fish shown in the image?"], "image_id": "oven_00892927", "entities": [["fish", "species"]], "token": 860}
+{"data_id": "infoseek_train_00353348", "questions": ["What is the object shown in the image?"], "image_id": "oven_01756396", "entities": [["tree", "branches", "grass", "forest", "sky"]], "token": 480}
+{"data_id": "infoseek_train_00354328", "questions": ["What type of animal is shown in the image?"], "image_id": "oven_01317224", "entities": [["animal", "bird"]], "token": 472}
+{"data_id": "infoseek_train_00355696", "questions": ["What type of animal is shown in the image?"], "image_id": "oven_01138518", "entities": [["manta ray"]], "token": 471}
+{"data_id": "infoseek_train_00357905", "questions": ["What is the name of the plant shown in the image?"], "image_id": "oven_00132209", "entities": [["plant", "flower", "yellow", "petals", "stamen", "green leaves"]], "token": 761}
+{"data_id": "infoseek_train_00359894", "questions": ["What type of animal is shown in the image?"], "image_id": "oven_00629023", "entities": [["snake"]], "token": 830}
+{"data_id": "infoseek_train_00360833", "questions": ["What is the species of the bird shown in the image?"], "image_id": "oven_00752328", "entities": [["bird", "species"]], "token": 1035}
+{"data_id": "infoseek_train_00360875", "questions": ["What type of plant is shown in the image?"], "image_id": "oven_00528397", "entities": [["plant", "thistle", "flower", "leaf", "stem"]], "token": 893}
+{"data_id": "infoseek_train_00361139", "questions": ["What building is shown in the image?"], "image_id": "oven_00106847", "entities": [["building", "stone sarcophagi", "grass", "path"]], "token": 765}
+{"data_id": "infoseek_train_00368252", "questions": ["What is the name of the building shown in the image?"], "image_id": "oven_00073799", "entities": [[]], "token": 830}
+{"data_id": "infoseek_train_00369001", "questions": ["What is the scientific name of the plant shown in the image?"], "image_id": "oven_00133763", "entities": [["plant", "scientific name"]], "token": 484}
+{"data_id": "infoseek_train_00369784", "questions": ["What is the scientific name of the plant shown in the image?"], "image_id": "oven_04695019", "entities": [["plant", "Iris", "Iris atica"]], "token": 482}
+{"data_id": "infoseek_train_00370498", "questions": ["What type of plant is shown in the image?"], "image_id": "oven_00612093", "entities": [["plant", "mangrove"]], "token": 885}
+{"data_id": "infoseek_train_00371644", "questions": ["What type of plant is shown in the image?"], "image_id": "oven_04644834", "entities": [["plant", "tree", "flowers", "blossom", "green grass", "outdoor"]], "token": 488}
+{"data_id": "infoseek_train_00373080", "questions": ["What type of animal is shown in the image?"], "image_id": "oven_00901565", "entities": [["sheep"]], "token": 470}
+{"data_id": "infoseek_train_00373446", "questions": ["What is the species of the plant shown in the image?"], "image_id": "oven_00699439", "entities": [["plant", "species", "yellow flower"]], "token": 889}
+{"data_id": "infoseek_train_00374900", "questions": ["What is written on the sign above the building in the image?"], "image_id": "oven_00040571", "entities": [["景薰閣"]], "token": 760}
+{"data_id": "infoseek_train_00374956", "questions": ["What type of insect is shown in the image?"], "image_id": "oven_00501522", "entities": [["insect", "butterfly", "flower", "wing", "color", "purple"]], "token": 848}
+{"data_id": "infoseek_train_00374976", "questions": ["What is the name of the building shown in the image?"], "image_id": "oven_00035484", "entities": [["building"]], "token": 1032}
+{"data_id": "infoseek_train_00375222", "questions": ["What animal is shown in the image?"], "image_id": "oven_01922558", "entities": [["gorilla"]], "token": 468}
+{"data_id": "infoseek_train_00377485", "questions": ["What type of musical instrument is shown in the image?"], "image_id": "oven_02124665", "entities": [["grand piano"]], "token": 471}
+{"data_id": "infoseek_train_00377702", "questions": ["What type of plant is shown in the image?"], "image_id": "oven_00599945", "entities": [["plant", "flower", "orchid"]], "token": 1037}
+{"data_id": "infoseek_train_00379405", "questions": ["What type of plant is shown in the image?"], "image_id": "oven_00561095", "entities": [["plant", "flower", "yellow flower"]], "token": 482}
+{"data_id": "infoseek_train_00383409", "questions": ["What breed of animal is shown in the image?"], "image_id": "oven_01557000", "entities": [["dog", "Cairn Terrier"]], "token": 492}
+{"data_id": "infoseek_train_00383554", "questions": ["What type of animal is shown in the image?"], "image_id": "oven_01019513", "entities": [["animal", "lizard"]], "token": 884}
+{"data_id": "infoseek_train_00385067", "questions": ["Which city is shown in the image?", "What country is the city located in?"], "image_id": "oven_00045322", "entities": [["city"], ["city", "country"]], "token": 1409}
+{"data_id": "infoseek_train_00385776", "questions": ["What is the name of the building shown in the image?"], "image_id": "oven_00019277", "entities": [["building"]], "token": 832}
+{"data_id": "infoseek_train_00385899", "questions": ["What animal is shown in the image?"], "image_id": "oven_01557250", "entities": [["animal", "dog"]], "token": 470}
+{"data_id": "infoseek_train_00388008", "questions": ["What is the scientific classification of the insect in the image?"], "image_id": "oven_00772374", "entities": [["insect", "ladybug", "ladybird", "scientific classification"]], "token": 486}
+{"data_id": "infoseek_train_00388570", "questions": ["What type of plant is shown in the image?"], "image_id": "oven_00702998", "entities": [["plant", "seed pod", "green", "leaf"]], "token": 740}
+{"data_id": "infoseek_train_00389696", "questions": ["What type of bird is shown in the image?"], "image_id": "oven_00797708", "entities": [["bird"]], "token": 475}
+{"data_id": "infoseek_train_00390689", "questions": ["What species of bird is shown in the image?"], "image_id": "oven_00989389", "entities": [["bird", "species", "rock"]], "token": 1036}
+{"data_id": "infoseek_train_00393214", "questions": ["What type of food is shown in the image?"], "image_id": "oven_04346026", "entities": [["coffee"]], "token": 469}
+{"data_id": "infoseek_train_00393830", "questions": ["What type of insect is shown in the image?"], "image_id": "oven_00452769", "entities": [["insect", "beetle", "scarab"]], "token": 479}
+{"data_id": "infoseek_train_00396216", "questions": ["What animal is shown in the image?"], "image_id": "oven_00670629", "entities": [["animal", "marmot"]], "token": 472}
+{"data_id": "infoseek_train_00398300", "questions": ["What is the species of the bird shown in the image?"], "image_id": "oven_00756215", "entities": [["bird", "species"]], "token": 885}
+{"data_id": "infoseek_train_00399064", "questions": ["What type of plant is shown in the image?"], "image_id": "oven_00830365", "entities": [["plant", "flower", "white flower", "stamen", "petal"]], "token": 484}
+{"data_id": "infoseek_train_00401006", "questions": ["What type of plant is shown in the image?"], "image_id": "oven_00512540", "entities": [["plant", "flower", "white flower"]], "token": 887}
+{"data_id": "infoseek_train_00401174", "questions": ["Which building is shown in the image?"], "image_id": "oven_00032236", "entities": [["building"]], "token": 828}
+{"data_id": "infoseek_train_00406199", "questions": ["What plant is shown in the image?"], "image_id": "oven_00895159", "entities": [["plant"]], "token": 928}
+{"data_id": "infoseek_train_00406324", "questions": ["What type of plant is shown in the image?"], "image_id": "oven_00876388", "entities": [["plant", "flower", "white flower", "bush"]], "token": 480}
+{"data_id": "infoseek_train_00407254", "questions": ["What is the scientific name of the plant shown in the image?"], "image_id": "oven_00917787", "entities": [["plant", "scientific name"]], "token": 937}
+{"data_id": "infoseek_train_00413154", "questions": ["What type of animal is shown in the image?"], "image_id": "oven_01255672", "entities": [["animal", "frilled lizard"]], "token": 474}
+{"data_id": "infoseek_train_00414080", "questions": ["What is the species of the plant shown in the image?"], "image_id": "oven_00466768", "entities": [["plant"]], "token": 757}
+{"data_id": "infoseek_train_00415023", "questions": ["What is the main subject of the statue on top of the building?"], "image_id": "oven_00114775", "entities": [["statue", "building", "Mary", "Virgin Mary"]], "token": 895}
+{"data_id": "infoseek_train_00415721", "questions": ["Which park is shown in the image?"], "image_id": "oven_00064911", "entities": [["park"]], "token": 828}
+{"data_id": "infoseek_train_00416905", "questions": ["What is the name of the building shown in the image?"], "image_id": "oven_00069220", "entities": [[]], "token": 855}
+{"data_id": "infoseek_train_00417016", "questions": ["Which bridge is shown in the image?"], "image_id": "oven_00059485", "entities": [["bridge", "seagull", "tree", "statue", "building"]], "token": 893}
+{"data_id": "infoseek_train_00418691", "questions": ["What type of food is shown in the image?"], "image_id": "oven_04278861", "entities": [["food", "grilled meat", "rice", "tomato", "onion", "salad"]], "token": 489}
+{"data_id": "infoseek_train_00418885", "questions": ["What is the name of the body of water visible in the image?"], "image_id": "oven_00072014", "entities": [["body of water"]], "token": 886}
+{"data_id": "infoseek_train_00420436", "questions": ["What is the name of the building shown in the image?"], "image_id": "oven_02465886", "entities": [["building"]], "token": 471}
+{"data_id": "infoseek_train_00424028", "questions": ["Which lake is shown in the image?"], "image_id": "oven_00115938", "entities": [[]], "token": 501}
+{"data_id": "infoseek_train_00424703", "questions": ["What type of insect is shown in the image?"], "image_id": "oven_00779509", "entities": [["insect", "insect nest", "tree branch", "leaf"]], "token": 893}
+{"data_id": "infoseek_train_00425386", "questions": ["What animal is shown in the image?"], "image_id": "oven_00714122", "entities": [["animal", "grass"]], "token": 881}
+{"data_id": "infoseek_train_00427665", "questions": ["What type of organism is shown in the image?"], "image_id": "oven_00757471", "entities": [["organism", "fungus", "mushroom"]], "token": 890}
+{"data_id": "infoseek_train_00430575", "questions": ["What is the name of the building shown in the image?"], "image_id": "oven_00067898", "entities": [[]], "token": 830}
+{"data_id": "infoseek_train_00430729", "questions": ["What animal is shown in the image?"], "image_id": "oven_00627533", "entities": [["animal", "ferret"]], "token": 882}
+{"data_id": "infoseek_train_00431285", "questions": ["What is written on the label of the bottle in the image?", "What country is associated with the name 'Christiania' on the bottle?"], "image_id": "oven_04322180", "entities": [["Christiana", "bottle", "label"], ["Christiania", "bottle", "country"]], "token": 974}
+{"data_id": "infoseek_train_00435984", "questions": ["What type of animal is shown in the image?"], "image_id": "oven_00791370", "entities": [["animal", "monkey"]], "token": 933}
+{"data_id": "infoseek_train_00436429", "questions": ["What type of insect is shown in the image?"], "image_id": "oven_00648257", "entities": [["insect", "wasp", "leaf"]], "token": 888}
+{"data_id": "infoseek_train_00437132", "questions": ["What type of insect is shown in the image?"], "image_id": "oven_00630203", "entities": [["insect", "moth"]], "token": 984}
+{"data_id": "infoseek_train_00439606", "questions": ["Which park is shown in the image?"], "image_id": "oven_00110732", "entities": [["Yosemite National Park"]], "token": 831}
+{"data_id": "infoseek_train_00439852", "questions": ["What type of animal is shown in the image?"], "image_id": "oven_01717922", "entities": [["beetle"]], "token": 471}
+{"data_id": "infoseek_train_00440209", "questions": ["What is the name of the animal shown in the image?"], "image_id": "oven_01603988", "entities": [["animal", "dog"]], "token": 474}
+{"data_id": "infoseek_train_00441654", "questions": ["What type of plant is shown in the image?"], "image_id": "oven_04489918", "entities": [["plant", "flower", "leaf", "blossom"]], "token": 480}
+{"data_id": "infoseek_train_00444319", "questions": ["What animal is shown in the image?"], "image_id": "oven_01019499", "entities": [["animal"]], "token": 753}
+{"data_id": "infoseek_train_00445457", "questions": ["What type of animal is shown in the image?"], "image_id": "oven_00695443", "entities": [["spider"]], "token": 831}
+{"data_id": "infoseek_train_00446325", "questions": ["What type of plant is shown in the image?"], "image_id": "oven_04695342", "entities": [["iris"]], "token": 469}
+{"data_id": "infoseek_train_00448491", "questions": ["What is the scientific name of the plant shown in the image?"], "image_id": "oven_00491002", "entities": [["plant", "scientific name"]], "token": 887}
+{"data_id": "infoseek_train_00449747", "questions": ["What type of organism is shown in the image?"], "image_id": "oven_04853258", "entities": [["organism", "mushroom"]], "token": 483}
+{"data_id": "infoseek_train_00451646", "questions": ["What are the main ingredients visible in the dish in the image?", "What is the style of presentation of the dish in the image?"], "image_id": "oven_04281468", "entities": [["shrimp", "rice", "broccoli", "bread"], ["dish", "shrimp", "rice", "bread", "plate", "presentation"]], "token": 971}
+{"data_id": "infoseek_train_00452625", "questions": ["What type of plant is shown in the image?"], "image_id": "oven_00876917", "entities": [["plant", "flower", "green berries"]], "token": 482}
+{"data_id": "infoseek_train_00453633", "questions": ["What is the scientific classification of this insect?"], "image_id": "oven_00725024", "entities": [["insect"]], "token": 855}
+{"data_id": "infoseek_train_00454476", "questions": ["What type of insect is shown in the image?"], "image_id": "oven_00672323", "entities": [["insect", "caterpillar", "leaf", "branch"]], "token": 892}
+{"data_id": "infoseek_train_00455218", "questions": ["What species of bird is shown in the image?"], "image_id": "oven_01165363", "entities": [["bird"]], "token": 469}
+{"data_id": "infoseek_train_00456058", "questions": ["What is written on the packaging in the image?", "What is the name of the brand shown on the packaging?"], "image_id": "oven_03718300", "entities": [["Old Spice", "BODY TALC", "SHULTON", "NET WT. 5 OZ.", "www.CR8ON.com"], ["Old Spice", "BODY TALC", "Shulton"]], "token": 979}
+{"data_id": "infoseek_train_00456443", "questions": ["What sport is being played in the image?"], "image_id": "oven_01052397", "entities": [["wrestling", "athletes", "mat", "gymnasium"]], "token": 483}
+{"data_id": "infoseek_train_00457191", "questions": ["What is the scientific name of the plant shown in the image?"], "image_id": "oven_00608435", "entities": [["plant", "scientific name"]], "token": 887}
+{"data_id": "infoseek_train_00459350", "questions": ["What is the name of the building shown in the image?"], "image_id": "oven_00060105", "entities": [[]], "token": 880}
+{"data_id": "infoseek_train_00461405", "questions": ["What type of insect is shown in the image?"], "image_id": "oven_00908322", "entities": [["insect", "beetle", "flower"]], "token": 478}
+{"data_id": "infoseek_train_00462332", "questions": ["What type of animal is shown in the image?"], "image_id": "oven_00604247", "entities": [["ray", "spotted ray", "fish", "ocean", "coral reef"]], "token": 486}
+{"data_id": "infoseek_train_00463753", "questions": ["What body of water is beneath the bridge in the image?"], "image_id": "oven_00077471", "entities": [["bridge", "body of water"]], "token": 937}
+{"data_id": "infoseek_train_00464086", "questions": ["What type of plant is shown in the image?"], "image_id": "oven_00565347", "entities": [["fern"]], "token": 880}
+{"data_id": "infoseek_train_00464354", "questions": ["What type of plant is shown in the image?"], "image_id": "oven_04714569", "entities": [["plant", "yucca"]], "token": 474}
+{"data_id": "infoseek_train_00465125", "questions": ["What is the name of the building shown in the image?"], "image_id": "oven_00029517", "entities": [["building"]], "token": 832}
+{"data_id": "infoseek_train_00465489", "questions": ["What type of insect is shown in the image?"], "image_id": "oven_00895314", "entities": [["insect", "butterfly", "yellow", "wing", "spot", "ground", "plant"]], "token": 851}
+{"data_id": "infoseek_train_00469170", "questions": ["What is the name of the garden shown in the image?", "In which city or region is this garden located?"], "image_id": "oven_00019949", "entities": [[], ["garden", "city", "region"]], "token": 1767}
+{"data_id": "infoseek_train_00469190", "questions": ["What type of plant is shown in the image?"], "image_id": "oven_04853200", "entities": [["mushroom"]], "token": 471}
+{"data_id": "infoseek_train_00470539", "questions": ["What is the name of the facility shown in the image?"], "image_id": "oven_00066852", "entities": [["facility"]], "token": 832}
+{"data_id": "infoseek_train_00472032", "questions": ["What is the species of the bird shown in the image?"], "image_id": "oven_00950100", "entities": [["bird", "species", "tree", "branch"]], "token": 891}
+{"data_id": "infoseek_train_00473061", "questions": ["What type of food is shown in the image?"], "image_id": "oven_03971159", "entities": [["milk"]], "token": 476}
+{"data_id": "infoseek_train_00474754", "questions": ["What type of bird is shown in the image?"], "image_id": "oven_00847914", "entities": [["bird", "bird type", "water bird", "heron"]], "token": 842}
+{"data_id": "infoseek_train_00475179", "questions": ["Which lake is shown in the image?"], "image_id": "oven_00115945", "entities": [[]], "token": 876}
+{"data_id": "infoseek_train_00475681", "questions": ["What is the name of the building shown in the image?"], "image_id": "oven_00011466", "entities": [["Christ the Redeemer"]], "token": 885}
+{"data_id": "infoseek_train_00475863", "questions": ["What building is shown in the image?"], "image_id": "oven_00055258", "entities": [["building"]], "token": 828}
+{"data_id": "infoseek_train_00476038", "questions": ["What type of organism is shown in the image?"], "image_id": "oven_00443430", "entities": [["organism", "fungus"]], "token": 885}
+{"data_id": "infoseek_train_00477086", "questions": ["What is the scientific classification of this insect?"], "image_id": "oven_00703082", "entities": [["insect", "moth"]], "token": 1033}
+{"data_id": "infoseek_train_00483690", "questions": ["Which building is shown in the image?"], "image_id": "oven_00073049", "entities": [["building"]], "token": 753}
+{"data_id": "infoseek_train_00486383", "questions": ["What type of plant is shown in the image?"], "image_id": "oven_00807037", "entities": [["plant", "tree", "graveyard", "gravestone"]], "token": 480}
+{"data_id": "infoseek_train_00489260", "questions": ["What type of plant is shown in the image?"], "image_id": "oven_04180353", "entities": [["orange"]], "token": 475}
+{"data_id": "infoseek_train_00489344", "questions": ["What is the name of the place shown in the image?"], "image_id": "oven_00025537", "entities": [["place"]], "token": 882}
+{"data_id": "infoseek_train_00489654", "questions": ["What type of plant is shown in the image?"], "image_id": "oven_04140163", "entities": [["plant", "chili pepper", "red pepper", "pepper"]], "token": 482}
+{"data_id": "infoseek_train_00490498", "questions": ["What type of plant is shown in the image?"], "image_id": "oven_00830156", "entities": [["plant", "flower", "leaf"]], "token": 475}
+{"data_id": "infoseek_train_00490717", "questions": ["What type of animal is shown in the image?"], "image_id": "oven_01750479", "entities": [["insect", "wasps", "wasp"]], "token": 486}
+{"data_id": "infoseek_train_00493148", "questions": ["What is the name of the location shown in the image?"], "image_id": "oven_00043159", "entities": [["location"]], "token": 757}
+{"data_id": "infoseek_train_00494335", "questions": ["What organization erected this tablet?"], "image_id": "oven_00059765", "entities": [["National Aeronautic Association", "U.S."]], "token": 885}
+{"data_id": "infoseek_train_00495259", "questions": ["What is the species of the bird shown in the image?"], "image_id": "oven_00874162", "entities": [["bird", "species"]], "token": 960}
+{"data_id": "infoseek_train_00495461", "questions": ["What is the name of the building shown in the image?"], "image_id": "oven_00073733", "entities": [[]], "token": 830}
+{"data_id": "infoseek_train_00496627", "questions": ["What is the name of the building shown in the image?"], "image_id": "oven_00054986", "entities": [[]], "token": 880}
+{"data_id": "infoseek_train_00498801", "questions": ["What animal is shown in the image?"], "image_id": "oven_00728848", "entities": [["orca"]], "token": 468}
+{"data_id": "infoseek_train_00499472", "questions": ["What is the name of the building shown in the image?", "In which country is this building located?"], "image_id": "oven_00020501", "entities": [[], ["building", "country"]], "token": 1661}
+{"data_id": "infoseek_train_00499677", "questions": ["What type of object is shown in the image?"], "image_id": "oven_04903349", "entities": [["cactus"]], "token": 470}
+{"data_id": "infoseek_train_00500242", "questions": ["What is the species of the bird shown in the image?"], "image_id": "oven_00852298", "entities": [["bird"]], "token": 477}
+{"data_id": "infoseek_train_00501312", "questions": ["What is the primary material of the building in the image?", "What are the key decorative elements on the building's facade?", "What cultural or religious symbols are depicted on the building?"], "image_id": "oven_00079980", "entities": [["building", "material", "stone"], ["cross", "arch", "geometric patterns", "carved stone", "ornamentation"], ["cross", "Christian symbol", "Armenian cross", "religious symbol", "cultural symbol", "carved stone", "building"]], "token": 2696}
+{"data_id": "infoseek_train_00501389", "questions": ["What type of food is shown in the image?"], "image_id": "oven_00195224", "entities": [["ramen", "noodles", "broth", "chashu", "green onions", "sesame seeds", "pickled ginger", "menma", "black garlic", "bowl"]], "token": 701}
+{"data_id": "infoseek_train_00506049", "questions": ["What is the name of the building shown in the image?"], "image_id": "oven_00102440", "entities": [[]], "token": 1030}
+{"data_id": "infoseek_train_00508595", "questions": ["What is the name of the building shown in the image?"], "image_id": "oven_00035045", "entities": [["building", "astronomical clock", "Orloj"]], "token": 893}
+{"data_id": "infoseek_train_00510011", "questions": ["What type of plant is shown in the image?"], "image_id": "oven_04824087", "entities": [["plant", "flower", "blue flower", "orange center", "leaf"]], "token": 483}
+{"data_id": "infoseek_train_00511295", "questions": ["What plant is shown in the image?"], "image_id": "oven_00923412", "entities": [["plant", "berries", "leaves", "tree"]], "token": 838}
+{"data_id": "infoseek_train_00511518", "questions": ["What type of plant is shown in the image?"], "image_id": "oven_00558021", "entities": [["plant"]], "token": 880}
+{"data_id": "infoseek_train_00511764", "questions": ["What species of bird is shown in the image?"], "image_id": "oven_00500031", "entities": [["bird", "bird feeder", "tree"]], "token": 482}
+{"data_id": "infoseek_train_00511997", "questions": ["What is the name of the place shown in the image?"], "image_id": "oven_00062128", "entities": [["place"]], "token": 882}
+{"data_id": "infoseek_train_00513414", "questions": ["What type of plant is shown in the image?"], "image_id": "oven_00725092", "entities": [["plant", "flower", "orange petals", "yellow center", "dark center", "grass"]], "token": 898}
+{"data_id": "infoseek_train_00514082", "questions": ["What is the scientific name of the plant in the image?"], "image_id": "oven_00641023", "entities": [["plant", "scientific name"]], "token": 886}
+{"data_id": "infoseek_train_00514364", "questions": ["What is the name of the building shown in the image?"], "image_id": "oven_00063980", "entities": [["building"]], "token": 882}
+{"data_id": "infoseek_train_00514976", "questions": ["What is the name of the building shown in the image?"], "image_id": "oven_00056256", "entities": [["building", "lighthouse"]], "token": 886}
+{"data_id": "infoseek_train_00515051", "questions": ["Which mountain is shown in the image?"], "image_id": "oven_00042872", "entities": [["mountain", "city", "forest"]], "token": 760}
+{"data_id": "infoseek_train_00517088", "questions": ["What type of plant is shown in the image?"], "image_id": "oven_04766897", "entities": [["plant", "flower", "spiky", "green", "stem", "leaves"]], "token": 487}
+{"data_id": "infoseek_train_00518380", "questions": ["What type of plant is shown in the image?"], "image_id": "oven_00560884", "entities": [["plant", "yellow flowers"]], "token": 486}
+{"data_id": "infoseek_train_00520281", "questions": ["What is the scientific classification of the insect in the image?"], "image_id": "oven_00501525", "entities": [["insect", "butterfly", "scientific classification"]], "token": 892}
+{"data_id": "infoseek_train_00521712", "questions": ["What type of insect is shown in the image?"], "image_id": "oven_00849992", "entities": [["insect", "caterpillar", "orange", "yellow spots", "hairs", "pipe"]], "token": 900}
+{"data_id": "infoseek_train_00523409", "questions": ["What type of sport is shown in the image?"], "image_id": "oven_03746442", "entities": [["dog", "tennis ball"]], "token": 474}
+{"data_id": "infoseek_train_00525693", "questions": ["What item is being referenced in the image?"], "image_id": "oven_03739586", "entities": [["sign", "protest", "people", "umbrella", "trees"]], "token": 482}
+{"data_id": "infoseek_train_00525840", "questions": ["What is the make and model of the aircraft shown in the image?"], "image_id": "oven_00004996", "entities": [["aircraft", "make", "model", "HB-JRP", "airplane", "jet", "private jet"]], "token": 1136}
+{"data_id": "infoseek_train_00526755", "questions": ["What is the name of the place shown in the image?"], "image_id": "oven_00084914", "entities": [[]], "token": 705}
+{"data_id": "infoseek_train_00530213", "questions": ["What type of plant is shown in the image?"], "image_id": "oven_00967628", "entities": [["plant", "flower", "purple", "bell-shaped", "stem", "leaf"]], "token": 485}
+{"data_id": "infoseek_train_00530727", "questions": ["Which city or region is the building in the image located in?"], "image_id": "oven_00078124", "entities": [["city", "region"]], "token": 886}
+{"data_id": "infoseek_train_00531061", "questions": ["What is the species of the plant shown in the image?"], "image_id": "oven_00641018", "entities": [["plant", "leaf", "species"]], "token": 888}
+{"data_id": "infoseek_train_00532370", "questions": ["What is the name of the building shown in the image?"], "image_id": "oven_02465470", "entities": [["building"]], "token": 471}
+{"data_id": "infoseek_train_00533356", "questions": ["What is the name of the building shown in the image?"], "image_id": "oven_00106892", "entities": [["Mir Junaka"]], "token": 834}
+{"data_id": "infoseek_train_00534079", "questions": ["What type of food is shown in the image?"], "image_id": "oven_00162955", "entities": [["pizza", "tomato sauce", "cheese", "anchovies", "herbs"]], "token": 492}
+{"data_id": "infoseek_train_00534750", "questions": ["What is the species of the bird shown in the image?"], "image_id": "oven_00630620", "entities": [["bird", "species"]], "token": 474}
+{"data_id": "infoseek_train_00534942", "questions": ["Which city is shown in the image?"], "image_id": "oven_04374882", "entities": [["Mecca"]], "token": 468}
+{"data_id": "infoseek_train_00537555", "questions": ["What is the name of the bird shown in the image?"], "image_id": "oven_00797544", "entities": [["bird"]], "token": 471}
+{"data_id": "infoseek_train_00540041", "questions": ["What type of plant is shown in the image?"], "image_id": "oven_04163769", "entities": [["peanut"]], "token": 470}
+{"data_id": "infoseek_train_00540718", "questions": ["What is the item shown in the image?"], "image_id": "oven_03913581", "entities": [["wind turbine"]], "token": 469}
+{"data_id": "infoseek_train_00542250", "questions": ["What is the name of the place indicated on the plaque in the image?"], "image_id": "oven_00026255", "entities": [["WALLY THUROW", "MR. PUMPKIN", "LIONS", "EST 1917"]], "token": 909}
+{"data_id": "infoseek_train_00542480", "questions": ["What type of animal is shown in the image?"], "image_id": "oven_01294277", "entities": [["trilobite"]], "token": 472}
+{"data_id": "infoseek_train_00543756", "questions": ["What species of bird is shown in the image?"], "image_id": "oven_00639626", "entities": [["bird"]], "token": 830}
+{"data_id": "infoseek_train_00543965", "questions": ["What animal is shown in the image?"], "image_id": "oven_01659258", "entities": [["pug"]], "token": 468}
+{"data_id": "infoseek_train_00544664", "questions": ["What is the name of the building shown in the image?"], "image_id": "oven_00020183", "entities": [[]], "token": 880}
+{"data_id": "infoseek_train_00545848", "questions": ["What type of food is shown in the image?"], "image_id": "oven_04345628", "entities": [["food", "chocolate", "bowl"]], "token": 477}
+{"data_id": "infoseek_train_00546956", "questions": ["What is the name of the building shown in the image?"], "image_id": "oven_03768455", "entities": [["building"]], "token": 471}
+{"data_id": "infoseek_train_00547911", "questions": ["What animal is shown in the image?"], "image_id": "oven_00982283", "entities": [["alligator"]], "token": 468}
+{"data_id": "infoseek_train_00548115", "questions": ["What animal is shown in the image?"], "image_id": "oven_00440295", "entities": [["lizard"]], "token": 879}
+{"data_id": "infoseek_train_00548830", "questions": ["What is the name of the building shown in the image?"], "image_id": "oven_00111480", "entities": [[]], "token": 830}
+{"data_id": "infoseek_train_00550603", "questions": ["Which city is shown in the image?"], "image_id": "oven_00096619", "entities": [[]], "token": 826}
+{"data_id": "infoseek_train_00550706", "questions": ["What type of food is shown in the image?"], "image_id": "oven_00207077", "entities": [["food", "fries", "fish", "pea puree"]], "token": 482}
+{"data_id": "infoseek_train_00551903", "questions": ["What type of plant is shown in the image?"], "image_id": "oven_04134224", "entities": [["cucumber"]], "token": 470}
+{"data_id": "infoseek_train_00552357", "questions": ["What is the scientific name of the plant shown in the image?"], "image_id": "oven_00574081", "entities": [["plant", "yellow flower"]], "token": 887}
+{"data_id": "infoseek_train_00552675", "questions": ["What is the species of the bird shown in the image?"], "image_id": "oven_00756214", "entities": [["bird", "fish", "branch"]], "token": 1038}
+{"data_id": "infoseek_train_00552871", "questions": ["What type of animal is shown in the image?"], "image_id": "oven_01427842", "entities": [["animal", "hermit crab"]], "token": 474}
+{"data_id": "infoseek_train_00554122", "questions": ["What type of plant is shown in the image?"], "image_id": "oven_00609548", "entities": [["plant", "flower", "lily"]], "token": 476}
+{"data_id": "infoseek_train_00554146", "questions": ["What type of plant is shown in the image?"], "image_id": "oven_04454915", "entities": [["plant", "fern"]], "token": 478}
+{"data_id": "infoseek_train_00554627", "questions": ["What is the name of the landmark shown in the image?"], "image_id": "oven_03809686", "entities": [["Arc de Triomphe"]], "token": 475}
+{"data_id": "infoseek_train_00554653", "questions": ["Which building is shown in the image?"], "image_id": "oven_00056242", "entities": [["building", "lighthouse", "tower", "cars", "trees", "sky"]], "token": 819}
+{"data_id": "infoseek_train_00555252", "questions": ["What type of musical instrument is shown in the image?", "What is the name of the brand or model of the instrument shown in the image?"], "image_id": "oven_02125635", "entities": [["Windsor", "keyboard", "musical instrument"], ["Windsor"]], "token": 958}
+{"data_id": "infoseek_train_00555762", "questions": ["What is the name of the place shown in the image?"], "image_id": "oven_00115533", "entities": [[]], "token": 705}
+{"data_id": "infoseek_train_00555868", "questions": ["What type of plant is shown in the image?"], "image_id": "oven_04180366", "entities": [["UGLI", "fruit", "orange", "plant"]], "token": 479}
+{"data_id": "infoseek_train_00556822", "questions": ["What is the object shown in the image?"], "image_id": "oven_04855470", "entities": [["mushroom", "grass"]], "token": 473}
+{"data_id": "infoseek_train_00557259", "questions": ["What type of insect is shown in the image?"], "image_id": "oven_00908488", "entities": [["insect", "flower", "plant"]], "token": 476}
+{"data_id": "infoseek_train_00558409", "questions": ["What is the scientific name of the plant shown in the image?"], "image_id": "oven_00565255", "entities": [["plant", "scientific name"]], "token": 887}
+{"data_id": "infoseek_train_00562530", "questions": ["What type of plant is shown in the image?"], "image_id": "oven_00446767", "entities": [["plant", "flower", "poppy", "orange"]], "token": 479}
+{"data_id": "infoseek_train_00562703", "questions": ["What type of plant is shown in the image?"], "image_id": "oven_04659438", "entities": [["plant", "tree", "forest"]], "token": 481}
+{"data_id": "infoseek_train_00563364", "questions": ["What type of animal is shown in the image?"], "image_id": "oven_01923115", "entities": [["orangutan"]], "token": 470}
+{"data_id": "infoseek_train_00563707", "questions": ["What type of plant is shown in the image?"], "image_id": "oven_04788229", "entities": [["plant", "flower", "tree"]], "token": 481}
+{"data_id": "infoseek_train_00565170", "questions": ["What type of animal is shown in the image?"], "image_id": "oven_00697217", "entities": [["animal", "woodlouse"]], "token": 885}
+{"data_id": "infoseek_train_00565835", "questions": ["What type of animal is shown in the image?"], "image_id": "oven_01855244", "entities": [["rhino"]], "token": 470}
+{"data_id": "infoseek_train_00567192", "questions": ["What type of insect is shown in the image?"], "image_id": "oven_00772500", "entities": [["insect", "beetle", "ladybug", "ladybird"]], "token": 485}
+{"data_id": "infoseek_train_00568260", "questions": ["What type of plant is shown in the image?"], "image_id": "oven_00599942", "entities": [["plant", "leaf", "moss", "grass"]], "token": 890}
+{"data_id": "infoseek_train_00569424", "questions": ["What is the common name of the bird in the image?", "What are the distinguishing physical features of the bird in the image?"], "image_id": "oven_01199712", "entities": [["bird", "bird species", "common name", "bird in image"], ["bird", "feathers", "beak", "wing", "tail", "legs", "branch"]], "token": 976}
+{"data_id": "infoseek_train_00576231", "questions": ["What is the identity of the plant shown in the image?"], "image_id": "oven_00850043", "entities": [["plant", "leaf"]], "token": 885}
+{"data_id": "infoseek_train_00576420", "questions": ["What type of insect is shown in the image?"], "image_id": "oven_00725029", "entities": [["insect", "cockroach", "plant"]], "token": 838}
+{"data_id": "infoseek_train_00581257", "questions": ["What is the name of the location shown in the image?"], "image_id": "oven_00065736", "entities": [[]], "token": 830}
+{"data_id": "infoseek_train_00581720", "questions": ["What is the name of the building shown in the image?"], "image_id": "oven_00073230", "entities": [["AVIVA STADIUM"]], "token": 836}
+{"data_id": "infoseek_train_00582126", "questions": ["What type of plant is shown in the image?"], "image_id": "oven_04226608", "entities": [["plant", "flower", "blue flower", "green leaves"]], "token": 480}
+{"data_id": "infoseek_train_00582258", "questions": ["What type of plant is shown in the image?"], "image_id": "oven_00667781", "entities": [["plant", "seaweed"]], "token": 885}
+{"data_id": "infoseek_train_00584677", "questions": ["What is the name of the building shown in the image?"], "image_id": "oven_00062867", "entities": [[]], "token": 830}
+{"data_id": "infoseek_train_00585225", "questions": ["What type of animal is shown in the image?"], "image_id": "oven_00475696", "entities": [["animal", "sea slug"]], "token": 884}
+{"data_id": "infoseek_train_00585664", "questions": ["What type of insect is shown in the image?"], "image_id": "oven_00994224", "entities": [["insect", "dragonfly"]], "token": 860}
+{"data_id": "infoseek_train_00585952", "questions": ["What type of organism is shown in the image?"], "image_id": "oven_00439914", "entities": [["organism", "mushroom"]], "token": 886}
+{"data_id": "infoseek_train_00586737", "questions": ["What type of food is shown in the image?"], "image_id": "oven_04284051", "entities": [["food", "rice", "avocado", "sour cream", "chiles", "stuffed chiles"]], "token": 491}
+{"data_id": "infoseek_train_00587140", "questions": ["What animal is shown in the image?"], "image_id": "oven_00627534", "entities": [["animal"]], "token": 828}
+{"data_id": "infoseek_train_00587202", "questions": ["What plant is shown in the image?"], "image_id": "oven_00923410", "entities": [["plant"]], "token": 878}
+{"data_id": "infoseek_train_00587619", "questions": ["What animal is shown in the image?"], "image_id": "oven_00440447", "entities": [["lizard"]], "token": 854}
+{"data_id": "infoseek_train_00588976", "questions": ["What type of food is shown in the image?"], "image_id": "oven_03970075", "entities": [["food", "soup", "cinnamon", "cloves", "cardamom", "ginger"]], "token": 489}
+{"data_id": "infoseek_train_00592301", "questions": ["What is the scientific name of the plant shown in the image?"], "image_id": "oven_00133866", "entities": [["plant", "scientific name"]], "token": 482}
+{"data_id": "infoseek_train_00592572", "questions": ["What is the make and model of the vehicle shown in the image?"], "image_id": "oven_00009117", "entities": [["vehicle", "make", "model"]], "token": 607}
+{"data_id": "infoseek_train_00593396", "questions": ["What is the name of the building shown in the image?"], "image_id": "oven_00102304", "entities": [["building"]], "token": 882}
+{"data_id": "infoseek_train_00595277", "questions": ["What is the name of the vehicle model shown on the side of the red truck?"], "image_id": "oven_00007695", "entities": [["Silverado"]], "token": 1181}
+{"data_id": "infoseek_train_00596083", "questions": ["What is the object shown in the image?"], "image_id": "oven_02488272", "entities": [["coffee grinder"]], "token": 469}
+{"data_id": "infoseek_train_00596273", "questions": ["What type of insect is shown in the image?"], "image_id": "oven_01012005", "entities": [["insect", "butterfly", "flower"]], "token": 839}
+{"data_id": "infoseek_train_00597029", "questions": ["What building is shown in the image?"], "image_id": "oven_00106888", "entities": [["building", "ruins", "castle"]], "token": 885}
+{"data_id": "infoseek_train_00597168", "questions": ["What is the name of the building shown in the image?"], "image_id": "oven_00073241", "entities": [["building", "stadium", "Guinness"]], "token": 840}
+{"data_id": "infoseek_train_00602570", "questions": ["What building is shown in the image?"], "image_id": "oven_00107318", "entities": [[]], "token": 876}
+{"data_id": "infoseek_train_00602786", "questions": [], "image_id": "oven_02085657", "entities": [], "token": 0}
+{"data_id": "infoseek_train_00603552", "questions": ["What type of plant is shown in the image?"], "image_id": "oven_00670177", "entities": [["plant", "flower", "leaf", "sand"]], "token": 839}
+{"data_id": "infoseek_train_00604166", "questions": ["What type of insect is shown in the image?"], "image_id": "oven_00648261", "entities": [["insect", "wasp"]], "token": 810}
+{"data_id": "infoseek_train_00604928", "questions": ["What is the name of the building shown in the image?"], "image_id": "oven_00015939", "entities": [[]], "token": 880}
+{"data_id": "infoseek_train_00607509", "questions": ["What is the scientific name of the plant shown in the image?"], "image_id": "oven_00613725", "entities": [["plant", "scientific name"]], "token": 887}
+{"data_id": "infoseek_train_00608569", "questions": ["What type of plant is shown in the image?"], "image_id": "oven_00605655", "entities": [["plant", "flower", "leaf", "stem"]], "token": 889}
+{"data_id": "infoseek_train_00608768", "questions": ["What is the species of the bird shown in the image?"], "image_id": "oven_00442513", "entities": [["bird", "species"]], "token": 985}
+{"data_id": "infoseek_train_00609150", "questions": ["What type of plant is shown in the image?"], "image_id": "oven_00608436", "entities": [["plant", "flower", "yellow", "bloom", "leaf", "stem"]], "token": 896}
+{"data_id": "infoseek_train_00609874", "questions": ["What type of plant is shown in the image?"], "image_id": "oven_00804521", "entities": [["plant", "fern"]], "token": 758}
+{"data_id": "infoseek_train_00610040", "questions": ["What is the name of the park shown in the image?"], "image_id": "oven_00110757", "entities": [["Yosemite National Park"]], "token": 885}
+{"data_id": "infoseek_train_00612772", "questions": ["What species of bird is shown in the image?"], "image_id": "oven_01439995", "entities": [["bird", "species"]], "token": 472}
+{"data_id": "infoseek_train_00614091", "questions": ["Which river is shown in the image?"], "image_id": "oven_00078689", "entities": [["river", "boats", "people", "buildings"]], "token": 888}
+{"data_id": "infoseek_train_00614123", "questions": ["What is the name of the building shown in the image?"], "image_id": "oven_00019535", "entities": [["building"]], "token": 832}
+{"data_id": "infoseek_train_00614572", "questions": ["What type of bird is shown in the image?"], "image_id": "oven_01336308", "entities": [["bird", "cockatiel"]], "token": 474}
+{"data_id": "infoseek_train_00615405", "questions": ["What type of organism is shown in the image?"], "image_id": "oven_00821781", "entities": [["organism", "mushroom"]], "token": 886}
+{"data_id": "infoseek_train_00616487", "questions": ["What type of organism is shown in the image?"], "image_id": "oven_00757478", "entities": [["organism", "mushroom", "fungus"]], "token": 890}
+{"data_id": "infoseek_train_00617970", "questions": ["What type of insect is shown in the image?"], "image_id": "oven_00695965", "entities": [["insect", "moth"]], "token": 884}
+{"data_id": "infoseek_train_00619851", "questions": ["What plant is shown in the image?"], "image_id": "oven_00482070", "entities": [["plant", "fern"]], "token": 881}
+{"data_id": "infoseek_train_00619942", "questions": ["What is the species of the bird shown in the image?"], "image_id": "oven_00975098", "entities": [["bird"]], "token": 907}
+{"data_id": "infoseek_train_00622380", "questions": ["What type of plant is shown in the image?"], "image_id": "oven_00545381", "entities": [["plant", "flower", "yellow", "grass"]], "token": 839}
+{"data_id": "infoseek_train_00624367", "questions": ["What item is shown in the image?"], "image_id": "oven_02138434", "entities": [["pen"]], "token": 473}
+{"data_id": "infoseek_train_00625808", "questions": ["What item is shown in the image?"], "image_id": "oven_03739698", "entities": [["motorcycle"]], "token": 468}
+{"data_id": "infoseek_train_00625827", "questions": ["What is the name of the building shown in the image?"], "image_id": "oven_00016786", "entities": [["JR Hakata City"]], "token": 885}
+{"data_id": "infoseek_train_00625858", "questions": ["What is the name of the building shown in the image?"], "image_id": "oven_00112252", "entities": [["building"]], "token": 882}
+{"data_id": "infoseek_train_00625912", "questions": ["What type of bird is shown in the image?"], "image_id": "oven_00847916", "entities": [["bird", "tree", "water", "sky"]], "token": 889}
+{"data_id": "infoseek_train_00626379", "questions": ["What is the name of the building shown in the image?", "Where is this building located?"], "image_id": "oven_00059756", "entities": [["Wilbur", "The Air", "monument", "statue"], ["Wilbur", "The Air", "building"]], "token": 1779}
+{"data_id": "infoseek_train_00626972", "questions": ["What is the name of the place shown in the image?"], "image_id": "oven_00104223", "entities": [["place"]], "token": 882}
+{"data_id": "infoseek_train_00627345", "questions": ["What type of plant is shown in the image?"], "image_id": "oven_04824181", "entities": [["plant", "flower", "purple", "leaf"]], "token": 478}
+{"data_id": "infoseek_train_00627612", "questions": ["Which bridge is shown in the image?"], "image_id": "oven_00077697", "entities": [["bridge"]], "token": 828}
+{"data_id": "infoseek_train_00628011", "questions": ["What type of bird is shown in the image?"], "image_id": "oven_00560379", "entities": [["bird", "flower"]], "token": 472}
+{"data_id": "infoseek_train_00628597", "questions": ["What item is shown in the image?"], "image_id": "oven_03844525", "entities": [["woman", "paper", "structure"]], "token": 473}
+{"data_id": "infoseek_train_00628613", "questions": ["What is the name of the park where the General Sherman tree is located?", "Who manages Sequoia National Park?"], "image_id": "oven_00089772", "entities": [["General Sherman", "park"], ["Sequoia National Park", "National Park Service"]], "token": 1676}
+{"data_id": "infoseek_train_00629007", "questions": ["What is the name of the sport shown in the image?", "Which country is indicated by the abbreviation on the athlete's uniform?"], "image_id": "oven_01052148", "entities": [["wrestling", "Ukraine", "Ukraine national wrestling team", "Ukraine wrestling team", "Ukraine wrestling", "Ukraine team", "wrestler", "athletes", "competition", "sport"], ["Ukraine", "Ukraine", "athlete", "uniform"]], "token": 998}
+{"data_id": "infoseek_train_00631498", "questions": ["What animal is shown in the image?"], "image_id": "oven_01962388", "entities": [["panda"]], "token": 468}
+{"data_id": "infoseek_train_00631782", "questions": ["Which mountain is visible in the background of the image?"], "image_id": "oven_00106188", "entities": [["mountain"]], "token": 882}
+{"data_id": "infoseek_train_00632084", "questions": ["What type of plant is shown in the image?"], "image_id": "oven_00482158", "entities": [["plant", "fern", "tree", "moss"]], "token": 890}
+{"data_id": "infoseek_train_00633707", "questions": ["What is the name of the building shown in the image?"], "image_id": "oven_00075131", "entities": [["building"]], "token": 832}
+{"data_id": "infoseek_train_00633773", "questions": ["What type of food is shown in the image?"], "image_id": "oven_00173754", "entities": [["spaghetti", "sauce", "fork", "aluminum tray"]], "token": 578}
+{"data_id": "infoseek_train_00634442", "questions": ["What type of plant is shown in the image?"], "image_id": "oven_04587990", "entities": [["plant", "flower", "yellow", "spotted", "orchid"]], "token": 483}
+{"data_id": "infoseek_train_00634915", "questions": ["What animal is shown in the image?"], "image_id": "oven_00968179", "entities": [["lizard"]], "token": 1004}
+{"data_id": "infoseek_train_00635903", "questions": ["What is the name of the building shown in the image?"], "image_id": "oven_00020197", "entities": [[]], "token": 830}
+{"data_id": "infoseek_train_00636889", "questions": ["What type of plant is shown in the image?"], "image_id": "oven_00535262", "entities": [["plant", "flower", "white flower", "pink bud"]], "token": 480}
+{"data_id": "infoseek_train_00638195", "questions": ["What is the scientific name of the insect in the image?"], "image_id": "oven_00807753", "entities": [["insect", "scientific name"]], "token": 1037}
+{"data_id": "infoseek_train_00638389", "questions": ["What is the scientific classification of the insect in the image?"], "image_id": "oven_00672313", "entities": [["insect", "moth"]], "token": 986}
+{"data_id": "infoseek_train_00642460", "questions": ["What is the species of the plant shown in the image?"], "image_id": "oven_00975204", "entities": [["plant", "species"]], "token": 885}
+{"data_id": "infoseek_train_00642492", "questions": ["What is the name of the park shown in the image?"], "image_id": "oven_00011204", "entities": [[]], "token": 880}
+{"data_id": "infoseek_train_00643247", "questions": ["What type of plant is shown in the image?"], "image_id": "oven_00989336", "entities": [["plant", "flower", "purple flower", "green leaves"]], "token": 766}
+{"data_id": "infoseek_train_00645492", "questions": ["What type of insect is shown in the image?"], "image_id": "oven_00703067", "entities": [["insect", "moth", "branch"]], "token": 837}
+{"data_id": "infoseek_train_00646917", "questions": ["What is the name of the building shown in the image?"], "image_id": "oven_00015280", "entities": [[]], "token": 755}
+{"data_id": "infoseek_train_00648729", "questions": ["What is the scientific name of the plant shown in the image?"], "image_id": "oven_00565253", "entities": [["plant", "scientific name"]], "token": 887}
+{"data_id": "infoseek_train_00649138", "questions": ["Which city is shown in the image?"], "image_id": "oven_04375096", "entities": [["Mecca"]], "token": 468}
+{"data_id": "infoseek_train_00650454", "questions": ["What is the name of the building shown in the image?"], "image_id": "oven_00079376", "entities": [[]], "token": 755}
+{"data_id": "infoseek_train_00652981", "questions": ["What type of plant is shown in the image?"], "image_id": "oven_00715337", "entities": [["plant", "flowers", "purple", "green leaves"]], "token": 485}
+{"data_id": "infoseek_train_00655362", "questions": ["What type of plant is shown in the image?"], "image_id": "oven_00478719", "entities": [["plant", "yellow flowers", "water"]], "token": 887}
+{"data_id": "infoseek_train_00655776", "questions": ["What type of organism is shown in the image?"], "image_id": "oven_00443431", "entities": [["organism", "fungus", "mushroom", "white", "forest floor", "leaf litter"]], "token": 1026}
+{"data_id": "infoseek_train_00656787", "questions": ["What type of insect is shown in the image?"], "image_id": "oven_00909347", "entities": [["insect", "moth"]], "token": 809}
+{"data_id": "infoseek_train_00657154", "questions": ["What type of vehicle is shown in the image?"], "image_id": "oven_00006830", "entities": [["vehicle", "car", "BMW"]], "token": 598}
+{"data_id": "infoseek_train_00659568", "questions": ["What type of plant is shown in the image?"], "image_id": "oven_00491007", "entities": [["plant"]], "token": 880}
+{"data_id": "infoseek_train_00660099", "questions": ["What type of insect is shown in the image?"], "image_id": "oven_00997323", "entities": [["insect", "moth"]], "token": 884}
+{"data_id": "infoseek_train_00660184", "questions": ["What is the name of the town shown in the image?"], "image_id": "oven_00012785", "entities": [[]], "token": 830}
+{"data_id": "infoseek_train_00661186", "questions": ["What is the name of the wine brand shown on the bottle in the image?"], "image_id": "oven_04310979", "entities": [["Cascader's Creek"]], "token": 479}
+{"data_id": "infoseek_train_00662620", "questions": ["What is the name of the place shown in the image?"], "image_id": "oven_00062119", "entities": [["place"]], "token": 882}
+{"data_id": "infoseek_train_00662763", "questions": ["What is the name of the building shown in the image?"], "image_id": "oven_00108745", "entities": [[]], "token": 830}
+{"data_id": "infoseek_train_00666187", "questions": ["What plant is shown in the image?"], "image_id": "oven_00457305", "entities": [["plant"]], "token": 978}
+{"data_id": "infoseek_train_00667196", "questions": ["What is the name of the place shown in the image?"], "image_id": "oven_00084917", "entities": [["place"]], "token": 532}
+{"data_id": "infoseek_train_00667433", "questions": ["What type of plant is shown in the image?"], "image_id": "oven_00699383", "entities": [["plant", "flower", "yellow flower"]], "token": 887}
+{"data_id": "infoseek_train_00668129", "questions": ["What body of water is under the bridge in the image?"], "image_id": "oven_00064880", "entities": [["bridge", "body of water"]], "token": 887}
+{"data_id": "infoseek_train_00669051", "questions": ["Which mountain is shown in the image?"], "image_id": "oven_00020759", "entities": [[]], "token": 826}
+{"data_id": "infoseek_train_00669342", "questions": ["What body of water is the bridge crossing in the image?"], "image_id": "oven_00064862", "entities": [["bridge", "body of water"]], "token": 837}
+{"data_id": "infoseek_train_00669925", "questions": ["What type of food is shown in the image?"], "image_id": "oven_04284525", "entities": [["food", "taco", "salsa", "cheese", "rice", "plate", "table"]], "token": 490}
+{"data_id": "infoseek_train_00671029", "questions": [], "image_id": "oven_04163843", "entities": [], "token": 0}
+{"data_id": "infoseek_train_00671310", "questions": ["What type of building is shown in the image?"], "image_id": "oven_00015341", "entities": [["building", "ruins", "arch", "tower"]], "token": 765}
+{"data_id": "infoseek_train_00672425", "questions": ["What is the species of the animal shown in the image?"], "image_id": "oven_00444634", "entities": [["animal", "frog"]], "token": 1035}
+{"data_id": "infoseek_train_00672625", "questions": ["What is the name of the building shown in the image?"], "image_id": "oven_00012732", "entities": [[]], "token": 880}
+{"data_id": "infoseek_train_00672701", "questions": ["What type of organism is shown in the image?"], "image_id": "oven_04851585", "entities": [["organism", "mushroom", "fly agaric", "fungus"]], "token": 490}
+{"data_id": "infoseek_train_00673920", "questions": ["What type of plant is shown in the image?"], "image_id": "oven_00564807", "entities": [["plant"]], "token": 880}
+{"data_id": "infoseek_train_00674264", "questions": [], "image_id": "oven_04849501", "entities": [], "token": 0}
+{"data_id": "infoseek_train_00674829", "questions": ["Which park is shown in the image?"], "image_id": "oven_00056017", "entities": [[]], "token": 876}
+{"data_id": "infoseek_train_00675621", "questions": ["Which specific location is shown in the image?"], "image_id": "oven_00043125", "entities": [["location"]], "token": 754}
+{"data_id": "infoseek_train_00676131", "questions": ["What type of plant is shown in the image?"], "image_id": "oven_00854768", "entities": [["plant", "white berries", "green leaves"]], "token": 888}
+{"data_id": "infoseek_train_00676154", "questions": ["What type of bird is shown in the image?"], "image_id": "oven_00884524", "entities": [["bird", "woodpecker", "tree"]], "token": 888}
+{"data_id": "infoseek_train_00676554", "questions": ["What type of organism is shown in the image?"], "image_id": "oven_04851777", "entities": [["organism", "mushroom", "Amanita muscaria", "fungus"]], "token": 493}
+{"data_id": "infoseek_train_00679692", "questions": ["What type of plant is shown in the image?"], "image_id": "oven_04697518", "entities": [["daffodil"]], "token": 472}
+{"data_id": "infoseek_train_00680134", "questions": ["What animal is shown in the image?"], "image_id": "oven_01255745", "entities": [["animal", "lizard"]], "token": 471}
+{"data_id": "infoseek_train_00680183", "questions": ["What type of vehicle is shown in the image?"], "image_id": "oven_02984202", "entities": [["vehicle", "jeep", "off-road", "road", "tree", "dirt"]], "token": 487}
+{"data_id": "infoseek_train_00680187", "questions": ["What item is shown in the image?"], "image_id": "oven_03657579", "entities": [["stethoscope"]], "token": 469}
+{"data_id": "infoseek_train_00680968", "questions": ["What type of food is shown in the image?"], "image_id": "oven_04261035", "entities": [["cupcake", "whipped cream", "sprinkles", "buttercream", "cake", "sweet", "dessert"]], "token": 495}
+{"data_id": "infoseek_train_00681699", "questions": ["What type of plant is shown in the image?"], "image_id": "oven_00565344", "entities": [["plant", "fern"]], "token": 833}
+{"data_id": "infoseek_train_00682954", "questions": ["What type of animal is shown in the image?"], "image_id": "oven_01427423", "entities": [["hermit crab"]], "token": 471}
+{"data_id": "infoseek_train_00683725", "questions": ["Which building is shown in the image?"], "image_id": "oven_00019526", "entities": [["building"]], "token": 878}
+{"data_id": "infoseek_train_00684287", "questions": ["What type of plant is shown in the image?"], "image_id": "oven_04715312", "entities": [["plant", "Venezuela"]], "token": 474}
+{"data_id": "infoseek_train_00684636", "questions": ["What is the name of the building shown in the image?"], "image_id": "oven_00087740", "entities": [["building"]], "token": 832}
+{"data_id": "infoseek_train_00685584", "questions": ["What is the name of the building shown in the image?", "In which city or region is this building located?"], "image_id": "oven_00121537", "entities": [["Plaza"], ["Plaza"]], "token": 1814}
+{"data_id": "infoseek_train_00685786", "questions": ["What type of food is shown in the image?"], "image_id": "oven_02848631", "entities": [["gourd"]], "token": 470}
+{"data_id": "infoseek_train_00688544", "questions": ["What is the name of the building shown in the image?"], "image_id": "oven_00035066", "entities": [["building", "clock tower", "astronomical clock"]], "token": 892}
+{"data_id": "infoseek_train_00690234", "questions": ["What type of plant is shown in the image?"], "image_id": "oven_00530107", "entities": [["plant", "agave"]], "token": 834}
+{"data_id": "infoseek_train_00690774", "questions": ["What type of organism is shown in the image?"], "image_id": "oven_00439913", "entities": [["organism", "fungus", "mushroom"]], "token": 890}
+{"data_id": "infoseek_train_00691613", "questions": ["What type of flower is shown in the image?"], "image_id": "oven_04507730", "entities": [["flower", "pink", "white", "petal", "dianthus"]], "token": 484}
+{"data_id": "infoseek_train_00691688", "questions": ["What is the object shown in the image?"], "image_id": "oven_02754159", "entities": [["flashlight"]], "token": 469}
+{"data_id": "infoseek_train_00691817", "questions": ["What is the name of the building shown in the image?"], "image_id": "oven_00038402", "entities": [[]], "token": 880}
+{"data_id": "infoseek_train_00692758", "questions": ["Which lake is shown in the image?"], "image_id": "oven_00052928", "entities": [["lake", "iceberg", "glacier", "water", "sky", "cloud"]], "token": 895}
+{"data_id": "infoseek_train_00696500", "questions": ["What type of insect is shown in the image?"], "image_id": "oven_00565366", "entities": [["insect", "moth"]], "token": 984}
+{"data_id": "infoseek_train_00697159", "questions": ["What type of animal is shown in the image?"], "image_id": "oven_01718232", "entities": [["insect", "beetle"]], "token": 475}
+{"data_id": "infoseek_train_00700366", "questions": ["What is the name of the building shown in the image?"], "image_id": "oven_00030482", "entities": [[]], "token": 830}
+{"data_id": "infoseek_train_00701278", "questions": ["What building is shown in the image?"], "image_id": "oven_00070275", "entities": [["building"]], "token": 878}
+{"data_id": "infoseek_train_00701446", "questions": ["Which city or region is depicted in the image?"], "image_id": "oven_00059681", "entities": [["city", "region"]], "token": 883}
+{"data_id": "infoseek_train_00701741", "questions": ["What is the name of the place shown in the image?"], "image_id": "oven_00074285", "entities": [[]], "token": 805}
+{"data_id": "infoseek_train_00705172", "questions": ["Who is the person depicted in the statue in the image?"], "image_id": "oven_00062069", "entities": [["Arturo Alessandri Palma"]], "token": 888}
+{"data_id": "infoseek_train_00705490", "questions": ["What species of bird is shown in the image?"], "image_id": "oven_00804368", "entities": [["bird"]], "token": 830}
+{"data_id": "infoseek_train_00706168", "questions": ["Which building is shown in the image?"], "image_id": "oven_00079269", "entities": [["building", "Let Us Have Peace"]], "token": 834}
+{"data_id": "infoseek_train_00707513", "questions": ["What animal is shown in the image?"], "image_id": "oven_00968180", "entities": [["lizard"]], "token": 879}
+{"data_id": "infoseek_train_00711407", "questions": ["What type of plant is shown in the image?"], "image_id": "oven_04668406", "entities": [["plant", "flower", "blossom"]], "token": 483}
+{"data_id": "infoseek_train_00714404", "questions": ["What is the name of the building shown in the image?", "What is the name of the geographic feature the building is located on or in?"], "image_id": "oven_00111454", "entities": [[], ["building", "geographic feature", "tower", "trees", "sun"]], "token": 1680}
+{"data_id": "infoseek_train_00714760", "questions": ["What type of animal is shown in the image?"], "image_id": "oven_00649507", "entities": [["snake"]], "token": 469}
+{"data_id": "infoseek_train_00715730", "questions": ["What is the name of the building in the image?"], "image_id": "oven_00015757", "entities": [[]], "token": 754}
+{"data_id": "infoseek_train_00716808", "questions": ["What is the name of the building shown in the image?"], "image_id": "oven_00064038", "entities": [["building"]], "token": 982}
+{"data_id": "infoseek_train_00717118", "questions": ["What is the name of the coastal location shown in the image?"], "image_id": "oven_00010415", "entities": [[]], "token": 781}
+{"data_id": "infoseek_train_00718815", "questions": ["What species of bird is shown in the image?"], "image_id": "oven_00804371", "entities": [["bird"]], "token": 980}
+{"data_id": "infoseek_train_00719125", "questions": ["What type of plant is shown in the image?"], "image_id": "oven_04449252", "entities": [["plant", "moss"]], "token": 473}
+{"data_id": "infoseek_train_00720127", "questions": ["What type of insect is shown in the image?"], "image_id": "oven_00849772", "entities": [["insect", "moth"]], "token": 884}
+{"data_id": "infoseek_train_00720177", "questions": ["What is the name of the building shown in the image?"], "image_id": "oven_00074001", "entities": [["building"]], "token": 807}
+{"data_id": "infoseek_train_00724814", "questions": ["What is the name of the place shown in the image?"], "image_id": "oven_00074308", "entities": [[]], "token": 905}
+{"data_id": "infoseek_train_00724937", "questions": ["What is the scientific name of the plant shown in the image?"], "image_id": "oven_00672547", "entities": [["plant", "scientific name", "yellow flower", "three-leaf clover"]], "token": 898}
+{"data_id": "infoseek_train_00725605", "questions": ["What is the species of the bird in the image?"], "image_id": "oven_00752329", "entities": [["bird", "species", "image"]], "token": 887}
+{"data_id": "infoseek_train_00728444", "questions": ["What type of organism is shown in the image?"], "image_id": "oven_00821786", "entities": [["organism", "mushroom"]], "token": 886}
+{"data_id": "infoseek_train_00731695", "questions": ["What is the name of the building shown in the image?"], "image_id": "oven_00016232", "entities": [["building"]], "token": 832}
+{"data_id": "infoseek_train_00735174", "questions": ["What facility is shown in the image?"], "image_id": "oven_00066861", "entities": [["castle"]], "token": 878}
+{"data_id": "infoseek_train_00737534", "questions": ["What is the name of the building shown in the image?"], "image_id": "oven_00112310", "entities": [["building"]], "token": 857}
+{"data_id": "infoseek_train_00738436", "questions": ["What type of plant is shown in the image?"], "image_id": "oven_00638982", "entities": [["plant", "leaf"]], "token": 1033}
+{"data_id": "infoseek_train_00738911", "questions": ["What is the name of the building shown in the image?"], "image_id": "oven_00060107", "entities": [[]], "token": 830}
+{"data_id": "infoseek_train_00739902", "questions": ["What is the name of the building shown in the image?"], "image_id": "oven_00044150", "entities": [[]], "token": 880}
+{"data_id": "infoseek_train_00741700", "questions": ["What type of animal is shown in the image?"], "image_id": "oven_00494047", "entities": [["animal", "fire salamander"]], "token": 475}
+{"data_id": "infoseek_train_00743543", "questions": ["What type of insect is shown in the image?"], "image_id": "oven_01011979", "entities": [["insect", "butterfly", "grass"]], "token": 839}
+{"data_id": "infoseek_train_00746475", "questions": ["What animal is shown in the image?"], "image_id": "oven_01379220", "entities": [["giraffe", "jackal"]], "token": 473}
+{"data_id": "infoseek_train_00746607", "questions": ["What is the name of the building shown in the image?"], "image_id": "oven_00079422", "entities": [["building", "shrine", "people", "kimono", "sign", "Japanese text"]], "token": 850}
+{"data_id": "infoseek_train_00748132", "questions": ["What is the name of the building in the image?"], "image_id": "oven_00015736", "entities": [[]], "token": 879}
+{"data_id": "infoseek_train_00748716", "questions": ["What species of bird is shown in the image?"], "image_id": "oven_00950027", "entities": [["bird", "pine tree"]], "token": 884}
+{"data_id": "infoseek_train_00749029", "questions": ["What item is shown in the image?"], "image_id": "oven_03845094", "entities": [["fan", "television", "people", "bed", "room"]], "token": 480}
+{"data_id": "infoseek_train_00754783", "questions": ["What mountain is shown in the image?"], "image_id": "oven_00106184", "entities": [[]], "token": 876}
+{"data_id": "infoseek_train_00757955", "questions": ["What is written on the signs on the building in the image?"], "image_id": "oven_02463425", "entities": [["CLEANER"]], "token": 474}
+{"data_id": "infoseek_train_00759458", "questions": ["What species of insect is shown in the image?"], "image_id": "oven_00491924", "entities": [["insect", "dragonfly"]], "token": 885}
+{"data_id": "infoseek_train_00760135", "questions": ["Which city is shown in the image?"], "image_id": "oven_00073066", "entities": [["city"]], "token": 777}
+{"data_id": "infoseek_train_00760947", "questions": ["What is the species of the insect shown in the image?", "What is the typical wingspan of a female of this insect species in millimetres?"], "image_id": "oven_00699512", "entities": [["insect", "butterfly"], ["female", "insect", "species", "wingspan", "millimetres"]], "token": 1943}
+{"data_id": "infoseek_train_00761473", "questions": ["What is written on the license plate frame in the image?"], "image_id": "oven_03082954", "entities": [["AUTO ACCESSORY SUPERSTORE"]], "token": 481}
+{"data_id": "infoseek_train_00763101", "questions": ["What is the name of the building shown in the image?"], "image_id": "oven_00082081", "entities": [["building"]], "token": 882}
+{"data_id": "infoseek_train_00764885", "questions": ["What type of animal is shown in the image?"], "image_id": "oven_00603827", "entities": [["ray", "animal"]], "token": 472}
+{"data_id": "infoseek_train_00766381", "questions": ["What animal is shown in the image?"], "image_id": "oven_00670659", "entities": [["animal", "marmot"]], "token": 472}
+{"data_id": "infoseek_train_00767026", "questions": ["What type of plant is shown in the image?"], "image_id": "oven_00967403", "entities": [["plant", "orchid"]], "token": 473}
+{"data_id": "infoseek_train_00767994", "questions": ["What type of plant is shown in the image?"], "image_id": "oven_00699564", "entities": [["plant", "flower", "yellow flower", "green leaves", "insect"]], "token": 484}
+{"data_id": "infoseek_train_00770288", "questions": ["Which lake is shown in the image?"], "image_id": "oven_00079811", "entities": [["lake"]], "token": 878}
+{"data_id": "infoseek_train_00770382", "questions": ["What bird is shown in the image?"], "image_id": "oven_00898306", "entities": [["bird", "Canada goose"]], "token": 471}
+{"data_id": "infoseek_train_00773206", "questions": ["Which country is the building in the image located in?"], "image_id": "oven_00102356", "entities": [["country"]], "token": 831}
+{"data_id": "infoseek_train_00773420", "questions": ["What type of plant is shown in the image?"], "image_id": "oven_04788552", "entities": [["plant", "flower", "tree", "white flower", "green leaves"]], "token": 483}
+{"data_id": "infoseek_train_00773701", "questions": ["What is the name of the building shown in the image?"], "image_id": "oven_00112328", "entities": [["building"]], "token": 882}
+{"data_id": "infoseek_train_00774001", "questions": ["What are the key visual features of the building's arches and ornamentation?"], "image_id": "oven_00080017", "entities": [["arches", "ornamentation", "carved patterns", "fan-shaped motifs", "decorative carvings", "stone", "terracotta"]], "token": 917}
+{"data_id": "infoseek_train_00774164", "questions": ["What is the name of the facility shown in the image?"], "image_id": "oven_00048800", "entities": [["facility"]], "token": 882}
+{"data_id": "infoseek_train_00775379", "questions": ["What type of plant is shown in the image?"], "image_id": "oven_04769956", "entities": [["plant", "red flowers", "green leaves"]], "token": 477}
+{"data_id": "infoseek_train_00775411", "questions": ["What are the key visual features of the building in the image?"], "image_id": "oven_00094146", "entities": [["building", "statues", "reliefs", "arch", "marble", "diamond pattern", "bas-relief", "sculpture", "ornamentation"]], "token": 842}
+{"data_id": "infoseek_train_00775422", "questions": ["What are the key visual features of the building in the image?"], "image_id": "oven_00109245", "entities": [["building", "windows", "doors", "chimneys", "balcony", "brick facade", "white trim", "arched doorway", "tree", "bench", "lamp post"]], "token": 747}
+{"data_id": "infoseek_train_00775467", "questions": ["What is the object shown in the image?"], "image_id": "oven_02085428", "entities": [["lamp", "floor lamp", "light fixture", "arc lamp", "multi-light", "colorful bulbs"]], "token": 489}
+{"data_id": "infoseek_train_00775509", "questions": ["What type of animal is shown in the image?"], "image_id": "oven_00444680", "entities": [["frog"]], "token": 830}
+{"data_id": "infoseek_train_00776503", "questions": ["What animal is shown in the image?"], "image_id": "oven_00821741", "entities": [["animal"]], "token": 878}
+{"data_id": "infoseek_train_00780214", "questions": ["What type of plant is shown in the image?"], "image_id": "oven_04668637", "entities": [["plant"]], "token": 469}
+{"data_id": "infoseek_train_00782239", "questions": ["Which building is shown in the image?"], "image_id": "oven_00070290", "entities": [["building"]], "token": 878}
+{"data_id": "infoseek_train_00783399", "questions": ["What is the object shown in the image?"], "image_id": "oven_01755690", "entities": [["tree"]], "token": 468}
+{"data_id": "infoseek_train_00784749", "questions": ["Which city is shown in the image?"], "image_id": "oven_00112239", "entities": [["city", "tower", "river", "boats", "buildings"]], "token": 891}
+{"data_id": "infoseek_train_00785577", "questions": ["What type of food is shown in the image?"], "image_id": "oven_00195189", "entities": [["ramen", "noodles", "egg", "chicken", "vegetables", "soup", "bowl"]], "token": 684}
+{"data_id": "infoseek_train_00786416", "questions": ["What type of animal is shown in the image?"], "image_id": "oven_01946146", "entities": [["animal", "monkey", "marmoset"]], "token": 478}
+{"data_id": "infoseek_train_00790472", "questions": ["What is the name of the building shown in the image?"], "image_id": "oven_00075138", "entities": [[]], "token": 880}
+{"data_id": "infoseek_train_00792456", "questions": ["What is the name of the building shown in the image?"], "image_id": "oven_00120955", "entities": [[]], "token": 830}
+{"data_id": "infoseek_train_00792823", "questions": ["What type of plant is shown in the image?"], "image_id": "oven_04489586", "entities": [["plant", "flower", "anemone"]], "token": 477}
+{"data_id": "infoseek_train_00793659", "questions": ["What is the species of the plant shown in the image?"], "image_id": "oven_00602321", "entities": [["plant", "hand"]], "token": 1035}
+{"data_id": "infoseek_train_00794078", "questions": ["What is the name of the plant shown in the image?"], "image_id": "oven_00132213", "entities": [["plant"]], "token": 759}
+{"data_id": "infoseek_train_00796544", "questions": ["What type of plant is shown in the image?"], "image_id": "oven_04764318", "entities": [["plant"]], "token": 475}
+{"data_id": "infoseek_train_00797068", "questions": ["What is the name of the plant shown in the image?"], "image_id": "oven_04528272", "entities": [["plant", "flower", "leaf", "stem"]], "token": 480}
+{"data_id": "infoseek_train_00797657", "questions": ["What is the name of the place shown in the image?"], "image_id": "oven_00025574", "entities": [["place"]], "token": 882}
+{"data_id": "infoseek_train_00799361", "questions": [], "image_id": "oven_01788136", "entities": [], "token": 0}
+{"data_id": "infoseek_train_00800239", "questions": ["What is written on the sign attached to the building in the image?"], "image_id": "oven_00015661", "entities": [["MUSEUM OF INDEPENDENCE", "স্বাধীনতা জাদুঘর"]], "token": 861}
+{"data_id": "infoseek_train_00800546", "questions": ["What lake is shown in the image?"], "image_id": "oven_00079677", "entities": [["lake"]], "token": 778}
+{"data_id": "infoseek_train_00800840", "questions": ["What is the name of the garden shown in the image?"], "image_id": "oven_00059681", "entities": [["garden"]], "token": 883}
+{"data_id": "infoseek_train_00800870", "questions": ["Which bridge is shown in the image?"], "image_id": "oven_00067177", "entities": [["bridge", "fountains", "water", "arches", "cityscape", "buildings", "trees", "sky"]], "token": 853}
+{"data_id": "infoseek_train_00802249", "questions": ["What animal is shown in the image?"], "image_id": "oven_01718506", "entities": [["ladybug"]], "token": 469}
+{"data_id": "infoseek_train_00802896", "questions": ["What type of plant is shown in the image?"], "image_id": "oven_00989258", "entities": [["plant", "flower", "purple", "green leaves"]], "token": 890}
+{"data_id": "infoseek_train_00803955", "questions": ["What type of building is shown in the image?"], "image_id": "oven_00015329", "entities": [["building", "ruins", "castle"]], "token": 812}
+{"data_id": "infoseek_train_00805700", "questions": ["What is the name of the building shown in the image?"], "image_id": "oven_00014999", "entities": [["building"]], "token": 1032}
+{"data_id": "infoseek_train_00806297", "questions": ["What species of bird is shown in the image?"], "image_id": "oven_01335409", "entities": [["bird", "cockatiel"]], "token": 474}
+{"data_id": "infoseek_train_00810210", "questions": ["Which building is shown in the image?"], "image_id": "oven_00021846", "entities": [["building"]], "token": 878}
+{"data_id": "infoseek_train_00811171", "questions": ["What type of plant is shown in the image?"], "image_id": "oven_04126533", "entities": [["cabbage"]], "token": 476}
+{"data_id": "infoseek_train_00813933", "questions": ["What is the scientific name of the plant shown in the image?"], "image_id": "oven_00557963", "entities": [[]], "token": 881}
+{"data_id": "infoseek_train_00819451", "questions": ["What is the brand of the vehicle shown in the image?"], "image_id": "oven_00008770", "entities": [["Infiniti"]], "token": 589}
+{"data_id": "infoseek_train_00819809", "questions": ["What type of insect is shown in the image?"], "image_id": "oven_00575552", "entities": [["insect", "butterfly", "flower", "plant"]], "token": 892}
+{"data_id": "infoseek_train_00820642", "questions": ["What is the name of the building shown in the image?"], "image_id": "oven_00015154", "entities": [["building", "bull", "statue", "people", "entrance", "poster", "roof", "wall", "fence", "flowerbed", "cobblestone"]], "token": 793}
+{"data_id": "infoseek_train_00821739", "questions": ["What is the brand of the vehicle shown in the image?"], "image_id": "oven_00008640", "entities": [["Volvo"]], "token": 2308}
+{"data_id": "infoseek_train_00822080", "questions": ["What type of plant is shown in the image?"], "image_id": "oven_00527979", "entities": [["plant", "flower", "grass"]], "token": 886}
+{"data_id": "infoseek_train_00822645", "questions": ["What is the name of the building shown in the image?"], "image_id": "oven_00030503", "entities": [["building"]], "token": 882}
+{"data_id": "infoseek_train_00825857", "questions": ["What type of facility is shown in the image?"], "image_id": "oven_00048794", "entities": [["facility", "open-pit mine", "mining operation", "quarry", "conveyor belt", "earth", "dirt", "terrain", "sky", "clouds"]], "token": 917}
+{"data_id": "infoseek_train_00826307", "questions": ["Which bridge is shown in the image?"], "image_id": "oven_00092540", "entities": [["bridge"]], "token": 878}
+{"data_id": "infoseek_train_00827645", "questions": ["What animal is shown in the image?"], "image_id": "oven_01963387", "entities": [["panda"]], "token": 468}
+{"data_id": "infoseek_train_00830116", "questions": ["What is the subject of the sculpture in the image?", "What is the name of the building or location where this sculpture is located?"], "image_id": "oven_00114794", "entities": [["sculpture", "people", "statue", "disc", "bronze", "outdoor", "monument"], ["sculpture", "building", "location"]], "token": 1798}
+{"data_id": "infoseek_train_00833363", "questions": ["What animal is shown in the image?"], "image_id": "oven_01687096", "entities": [["animal"]], "token": 467}
+{"data_id": "infoseek_train_00833663", "questions": ["What is the name of the building shown in the image?", "What is the coat of arms displayed on the building?"], "image_id": "oven_00120954", "entities": [["building"], ["coat of arms", "building"]], "token": 1668}
+{"data_id": "infoseek_train_00833965", "questions": ["What type of plant is shown in the image?"], "image_id": "oven_00717797", "entities": [["plant", "leaf", "tree", "forest"]], "token": 889}
+{"data_id": "infoseek_train_00835474", "questions": ["What type of animal is shown in the image?"], "image_id": "oven_00697256", "entities": [["animal", "isopod"]], "token": 835}
+{"data_id": "infoseek_train_00839081", "questions": ["What type of plant is shown in the image?"], "image_id": "oven_00602333", "entities": [["plant", "flower", "dog", "forest"]], "token": 889}
+{"data_id": "infoseek_train_00840020", "questions": ["What type of plant is shown in the image?"], "image_id": "oven_00613716", "entities": [["plant", "flowers", "rocks", "water"]], "token": 840}
+{"data_id": "infoseek_train_00840997", "questions": ["What type of insect is shown in the image?"], "image_id": "oven_00849983", "entities": [["insect", "caterpillar"]], "token": 886}
+{"data_id": "infoseek_train_00841007", "questions": ["What is the make and model of the vehicle in the image?"], "image_id": "oven_00006853", "entities": [["vehicle", "make", "model", "BMW", "3 Series"]], "token": 498}
+{"data_id": "infoseek_train_00842330", "questions": ["What type of vehicle is shown in the image?"], "image_id": "oven_00007821", "entities": [["vehicle", "car", "sedan", "Hyundai", "LaCrosse"]], "token": 897}
+{"data_id": "infoseek_train_00842867", "questions": ["What item is shown in the image?"], "image_id": "oven_03583113", "entities": [["zipper", "fabric", "watermelon pattern", "red and white checkered pattern", "green and white checkered pattern"]], "token": 492}
+{"data_id": "infoseek_train_00844567", "questions": ["What is the species of the bird shown in the image?"], "image_id": "oven_01342686", "entities": [["bird"]], "token": 471}
+{"data_id": "infoseek_train_00846946", "questions": ["What type of plant is shown in the image?"], "image_id": "oven_04532891", "entities": [["daisy", "insect"]], "token": 474}
+{"data_id": "infoseek_train_00847525", "questions": ["What is the object shown in the image?"], "image_id": "oven_02794418", "entities": [["lighthouse lens"]], "token": 470}
+{"data_id": "infoseek_train_00852697", "questions": ["What type of plant is shown in the image?"], "image_id": "oven_00807127", "entities": [["plant", "tree", "purple flowers"]], "token": 476}
+{"data_id": "infoseek_train_00853111", "questions": ["What species of bird is shown in the image?"], "image_id": "oven_00923437", "entities": [["bird", "species"]], "token": 833}
+{"data_id": "infoseek_train_00854047", "questions": ["What animal is shown in the image?"], "image_id": "oven_01720009", "entities": [["ladybug"]], "token": 469}
+{"data_id": "infoseek_train_00854132", "questions": ["What is the name of the park shown in the image?"], "image_id": "oven_00010843", "entities": [["park"]], "token": 882}
+{"data_id": "infoseek_train_00854421", "questions": ["What plant is shown in the image?"], "image_id": "oven_00895147", "entities": [["plant", "flower", "purple", "pink"]], "token": 887}
+{"data_id": "infoseek_train_00854716", "questions": ["What animal is shown in the image?"], "image_id": "oven_01883476", "entities": [["buffalo"]], "token": 474}
+{"data_id": "infoseek_train_00860064", "questions": ["What is the name of the building shown in the image?"], "image_id": "oven_00046642", "entities": [["Guggenheim Museum Bilbao"]], "token": 837}
+{"data_id": "infoseek_train_00860291", "questions": ["What is written on the label of the bottle in the image?"], "image_id": "oven_03718482", "entities": [["Johnson's", "Baby", "Powder"]], "token": 480}
+{"data_id": "infoseek_train_00863781", "questions": ["What type of plant is shown in the image?"], "image_id": "oven_00980674", "entities": [["plant", "mistletoe", "tree"]], "token": 839}
+{"data_id": "infoseek_train_00864253", "questions": ["Which city is shown in the image?", "In which country is this city located?"], "image_id": "oven_00045331", "entities": [["city", "Mühlberger", "restaurant", "Claire's", "Sushi", "Jacadi"], ["Mühlberger", "restaurant", "Claire's", "SAS", "Jacadi", "France"]], "token": 1748}
+{"data_id": "infoseek_train_00864287", "questions": ["What type of plant is shown in the image?"], "image_id": "oven_04659290", "entities": [["plant", "tree", "forest"]], "token": 475}
+{"data_id": "infoseek_train_00864998", "questions": ["What is the name of the park shown in the image?"], "image_id": "oven_00011241", "entities": [["park"]], "token": 932}
+{"data_id": "infoseek_train_00865133", "questions": ["What type of plant is shown in the image?"], "image_id": "oven_04769881", "entities": [["cactus", "cholla", "desert"]], "token": 478}
+{"data_id": "infoseek_train_00865642", "questions": ["What is the scientific name of the plant shown in the image?"], "image_id": "oven_00717678", "entities": [["plant"]], "token": 1033}
+{"data_id": "infoseek_train_00865998", "questions": ["What animal is shown in the image?"], "image_id": "oven_00729088", "entities": [["orca"]], "token": 468}
+{"data_id": "infoseek_train_00867681", "questions": ["What is the make and model of the vehicle in the image?"], "image_id": "oven_00005593", "entities": [["Volkswagen", "Volkswagen Beetle"]], "token": 768}
+{"data_id": "infoseek_train_00868856", "questions": ["What type of plant is shown in the image?"], "image_id": "oven_00478721", "entities": [["plant", "hand", "yellow flowers", "green leaves"]], "token": 891}
+{"data_id": "infoseek_train_00869243", "questions": ["What is the object shown in the image?", "What is the function of the object shown in the image?"], "image_id": "oven_02753243", "entities": [["Duracell", "pen"], ["Duracell", "pen"]], "token": 949}
+{"data_id": "infoseek_train_00869659", "questions": ["What type of food is shown in the image?"], "image_id": "oven_00208131", "entities": [["fish", "fries", "coleslaw", "ketchup", "tartar sauce"]], "token": 679}
+{"data_id": "infoseek_train_00871431", "questions": ["What is the name of the park shown in the image?"], "image_id": "oven_00089797", "entities": [[]], "token": 755}
+{"data_id": "infoseek_train_00871983", "questions": ["What type of plant is shown in the image?"], "image_id": "oven_04487164", "entities": [["plant", "tree", "leaves", "forest"]], "token": 479}
+{"data_id": "infoseek_train_00875615", "questions": ["What is the name of the building shown in the image?"], "image_id": "oven_00056082", "entities": [["building"]], "token": 882}
+{"data_id": "infoseek_train_00877763", "questions": ["What type of food is shown in the image?"], "image_id": "oven_04265139", "entities": [["oil", "egg"]], "token": 472}
+{"data_id": "infoseek_train_00881214", "questions": ["What is the object shown in the image?"], "image_id": "oven_03057930", "entities": [["object"]], "token": 468}
+{"data_id": "infoseek_train_00881322", "questions": ["What is the name of the building shown in the image?", "What city is this building located in?"], "image_id": "oven_00016792", "entities": [["HARUKAS CITY"], ["Hakata City", "Hakata Terminal"]], "token": 1673}
+{"data_id": "infoseek_train_00882847", "questions": ["What building is shown in the image?"], "image_id": "oven_00106848", "entities": [["building"]], "token": 828}
+{"data_id": "infoseek_train_00886277", "questions": ["What is the make and model of the vehicle shown in the image?"], "image_id": "oven_00007071", "entities": [["vehicle", "SUV", "Ford", "Freestyle"]], "token": 490}
+{"data_id": "infoseek_train_00887122", "questions": ["Which mountain is shown in the image?"], "image_id": "oven_00042509", "entities": [["mountain", "ski resort", "snow", "trees", "buildings", "ski lifts"]], "token": 847}
+{"data_id": "infoseek_train_00888319", "questions": ["What animal is shown in the image?"], "image_id": "oven_01378808", "entities": [["wombat"]], "token": 468}
+{"data_id": "infoseek_train_00889381", "questions": ["What type of plant is shown in the image?"], "image_id": "oven_04226054", "entities": [["plant", "flower", "purple flower", "green leaves"]], "token": 488}
+{"data_id": "infoseek_train_00889499", "questions": [], "image_id": "oven_04903035", "entities": [], "token": 0}
+{"data_id": "infoseek_train_00889750", "questions": [], "image_id": "oven_00919050", "entities": [], "token": 0}
+{"data_id": "infoseek_train_00890315", "questions": ["What sport is being played in the image?", "Which country is hosting the event shown in the image?"], "image_id": "oven_00407631", "entities": [["curling", "ice", "players", "Sochi 2014"], ["Sochi", "Russia"]], "token": 959}
+{"data_id": "infoseek_train_00892060", "questions": ["What type of plant is shown in the image?"], "image_id": "oven_00574065", "entities": [["plant", "flower", "yellow flower"]], "token": 887}
+{"data_id": "infoseek_train_00892275", "questions": ["What is the name of the flower shown in the image?"], "image_id": "oven_04507656", "entities": [["flower"]], "token": 471}
+{"data_id": "infoseek_train_00895175", "questions": ["What type of building is shown in the image?"], "image_id": "oven_03768562", "entities": [["building", "coffee shop", "cafe", "store"]], "token": 488}
+{"data_id": "infoseek_train_00898502", "questions": ["What type of plant is shown in the image?"], "image_id": "oven_00487923", "entities": [["plant", "tree", "mountains", "landscape"]], "token": 840}
+{"data_id": "infoseek_train_00898609", "questions": ["Which building is shown in the image?"], "image_id": "oven_00079291", "entities": [["building"]], "token": 828}
+{"data_id": "infoseek_train_00899799", "questions": ["What type of plant is shown in the image?"], "image_id": "oven_04546757", "entities": [["plant", "flower", "yellow flower", "chrysanthemum"]], "token": 483}
+{"data_id": "infoseek_train_00900264", "questions": ["What type of food is shown in the image?"], "image_id": "oven_04115481", "entities": [["food", "can", "drink", "plastic container", "spoon"]], "token": 484}
+{"data_id": "infoseek_train_00900428", "questions": ["What type of bird is shown in the image?"], "image_id": "oven_01200482", "entities": [["bird"]], "token": 469}
+{"data_id": "infoseek_train_00901515", "questions": ["What type of plant is shown in the image?"], "image_id": "oven_00518424", "entities": [["plant", "thorny branches"]], "token": 835}
+{"data_id": "infoseek_train_00903088", "questions": ["What type of insect is shown in the image?"], "image_id": "oven_00937271", "entities": [["insect", "stick insect", "tree"]], "token": 838}
+{"data_id": "infoseek_train_00906143", "questions": ["What is the identity of the figure depicted in the building in the image?"], "image_id": "oven_00011382", "entities": [["Jesus Christ", "statue"]], "token": 890}
+{"data_id": "infoseek_train_00906425", "questions": ["Which bridge is shown in the image?"], "image_id": "oven_00077740", "entities": [["bridge"]], "token": 828}
+{"data_id": "infoseek_train_00907236", "questions": ["What type of animal is shown in the image?"], "image_id": "oven_01378489", "entities": [["bear"]], "token": 469}
+{"data_id": "infoseek_train_00908153", "questions": ["What is the name of the bridge shown in the image?"], "image_id": "oven_00104735", "entities": [["bridge", "Paris", "Seine River"]], "token": 840}
+{"data_id": "infoseek_train_00908423", "questions": ["What is the name of the building shown in the image?"], "image_id": "oven_00039481", "entities": [["building"]], "token": 882}
+{"data_id": "infoseek_train_00908538", "questions": ["What is the make and model of the vehicle in the image?"], "image_id": "oven_00007809", "entities": [["vehicle", "make", "model"]], "token": 714}
+{"data_id": "infoseek_train_00909895", "questions": ["What type of organism is shown in the image?"], "image_id": "oven_00656108", "entities": [["organism", "fungus"]], "token": 885}
+{"data_id": "infoseek_train_00910731", "questions": ["What type of plant is shown in the image?"], "image_id": "oven_00608401", "entities": [["plant", "flower", "white flower", "green grass"]], "token": 941}
+{"data_id": "infoseek_train_00913059", "questions": ["What lake is shown in the image?", "Which country is the basin of the lake located in?"], "image_id": "oven_00110873", "entities": [["lake", "mountains"], ["lake", "basin", "country"]], "token": 1670}
+{"data_id": "infoseek_train_00913838", "questions": ["Which city or region is this building located in?"], "image_id": "oven_00030449", "entities": [[]], "token": 828}
+{"data_id": "infoseek_train_00915175", "questions": ["Which building is shown in the image?"], "image_id": "oven_00119717", "entities": [["building"]], "token": 878}
+{"data_id": "infoseek_train_00915515", "questions": ["What is the scientific name of the plant shown in the image?"], "image_id": "oven_00518436", "entities": [["plant"]], "token": 883}
+{"data_id": "infoseek_train_00915766", "questions": ["Which city is shown in the image?"], "image_id": "oven_00085389", "entities": [["city"]], "token": 878}
+{"data_id": "infoseek_train_00916904", "questions": ["What is the name of the building shown in the image?"], "image_id": "oven_00087726", "entities": [["building"]], "token": 832}
+{"data_id": "infoseek_train_00917860", "questions": ["What type of plant is shown in the image?"], "image_id": "oven_00527985", "entities": [["plant", "flower", "hand"]], "token": 886}
+{"data_id": "infoseek_train_00919011", "questions": ["What type of plant is shown in the image?"], "image_id": "oven_00985211", "entities": [["plant", "flower", "leaf", "rock"]], "token": 889}
+{"data_id": "infoseek_train_00919315", "questions": ["What type of plant is shown in the image?"], "image_id": "oven_04125935", "entities": [["cauliflower"]], "token": 471}
+{"data_id": "infoseek_train_00919320", "questions": ["Which mountain is shown in the image?"], "image_id": "oven_00042431", "entities": [["mountain"]], "token": 829}
+{"data_id": "infoseek_train_00919573", "questions": ["What type of animal is shown in the image?"], "image_id": "oven_01902411", "entities": [["camel"]], "token": 469}
+{"data_id": "infoseek_train_00921242", "questions": ["What is the name of the building shown in the image?", "In which country is this building located?"], "image_id": "oven_00055272", "entities": [["building"], ["building", "country"]], "token": 1663}
+{"data_id": "infoseek_train_00921561", "questions": ["What type of insect is shown in the image?"], "image_id": "oven_01788114", "entities": [["insect", "caterpillar", "leaf", "blood vessel", "abdomen", "heart"]], "token": 490}
+{"data_id": "infoseek_train_00923524", "questions": ["What type of insect is shown in the image?"], "image_id": "oven_00779511", "entities": [["insect", "ant"]], "token": 859}
+{"data_id": "infoseek_train_00923618", "questions": ["What is the name of the plant shown in the image?"], "image_id": "oven_04529005", "entities": [["plant", "white flowers", "green stems", "rocks"]], "token": 483}
+{"data_id": "infoseek_train_00925615", "questions": ["What type of plant is shown in the image?"], "image_id": "oven_04560099", "entities": [["plant", "flower", "white flower", "star-shaped flower"]], "token": 481}
+{"data_id": "infoseek_train_00927665", "questions": ["What is the species of the bird shown in the image?"], "image_id": "oven_00884510", "entities": [["bird", "species", "woodpecker", "red crown", "black and white feathers", "green leaves", "tree branch"]], "token": 908}
+{"data_id": "infoseek_train_00931663", "questions": ["What animal is shown in the image?"], "image_id": "oven_01927634", "entities": [["gorilla"]], "token": 468}
+{"data_id": "infoseek_train_00932592", "questions": ["What is the name of the building shown in the image?"], "image_id": "oven_03082655", "entities": [["building"]], "token": 471}
+{"data_id": "infoseek_train_00933378", "questions": ["What is the name of the building shown in the image?"], "image_id": "oven_00067907", "entities": [[]], "token": 880}
+{"data_id": "infoseek_val_00000699", "questions": ["What animal is shown in the image?"], "image_id": "oven_04978688", "entities": [["dog"]], "token": 467}
+{"data_id": "infoseek_val_00001888", "questions": ["What type of plant is shown in the image?"], "image_id": "oven_04965128", "entities": [["plant", "hand", "grass"]], "token": 886}
+{"data_id": "infoseek_val_00002557", "questions": ["What type of food is shown in the image?"], "image_id": "oven_04959297", "entities": [["pizza", "olives", "cheese", "tomato sauce", "lemon"]], "token": 486}
+{"data_id": "infoseek_val_00002687", "questions": ["What mountain is shown in the image?"], "image_id": "oven_04955114", "entities": [["mountain"]], "token": 804}
+{"data_id": "infoseek_val_00002708", "questions": ["What is the scientific name of the plant shown in the image?"], "image_id": "oven_04961981", "entities": [["plant", "cactus"]], "token": 887}
+{"data_id": "infoseek_val_00002883", "questions": ["What is written on the blue plaque in the image?"], "image_id": "oven_04958174", "entities": [["Sir Anthony Hope Hawkins", "ANTHONY HOPE", "1863-1933", "Novelist", "lived here", "1903-1917", "GREATER LONDON COUNCIL"]], "token": 932}
+{"data_id": "infoseek_val_00004543", "questions": ["What is the object shown in the image?"], "image_id": "oven_04988798", "entities": [["lens", "light", "lighthouse", "boat"]], "token": 479}
+{"data_id": "infoseek_val_00004885", "questions": ["Which city is shown in the image?"], "image_id": "oven_04955456", "entities": [["city"]], "token": 828}
+{"data_id": "infoseek_val_00005188", "questions": ["What is the species of the bird shown in the image?"], "image_id": "oven_04966074", "entities": [["bird", "species"]], "token": 960}
+{"data_id": "infoseek_val_00007033", "questions": ["Which mountain is shown in the image?"], "image_id": "oven_04951305", "entities": [[]], "token": 826}
+{"data_id": "infoseek_val_00007180", "questions": ["What type of vehicle is shown in the image?"], "image_id": "oven_04950832", "entities": [["vehicle", "SUV", "Volvo"]], "token": 490}
+{"data_id": "infoseek_val_00007199", "questions": ["What animal is shown in the image?"], "image_id": "oven_04972355", "entities": [["animal", "fox"]], "token": 470}
+{"data_id": "infoseek_val_00009278", "questions": ["What plant is shown in the image?"], "image_id": "oven_04962657", "entities": [["plant"]], "token": 978}
+{"data_id": "infoseek_val_00011470", "questions": ["What plant is shown in the image?"], "image_id": "oven_04964833", "entities": [["plant", "yellow flowers", "green leaves", "dry grass", "rock"]], "token": 768}
+{"data_id": "infoseek_val_00012012", "questions": ["What type of organism is shown in the image?"], "image_id": "oven_04962644", "entities": [["organism", "fungus", "mushroom"]], "token": 890}
+{"data_id": "infoseek_val_00012208", "questions": ["What is the airline or operator logo visible on the aircraft in the image?", "What is the registration number of the aircraft in the image?"], "image_id": "oven_00000295", "entities": [["airline", "operator", "aircraft", "logo", "tail", "EL-AKF"], ["EL-AKF"]], "token": 2140}
+{"data_id": "infoseek_val_00012440", "questions": ["What is the scientific name of the plant shown in the image?"], "image_id": "oven_04964843", "entities": [["plant", "yellow flower", "scientific name"]], "token": 891}
+{"data_id": "infoseek_val_00012514", "questions": ["What type of plant is shown in the image?"], "image_id": "oven_04966239", "entities": [["plant", "flower", "blossom", "stem", "leaf"]], "token": 483}
+{"data_id": "infoseek_val_00013417", "questions": ["What type of organism is shown in the image?"], "image_id": "oven_04962651", "entities": [["organism", "fungus", "mushroom"]], "token": 840}
+{"data_id": "infoseek_val_00014584", "questions": ["What is the aircraft model shown in the image?", "Which air force operates this aircraft?"], "image_id": "oven_00000231", "entities": [["aircraft", "South African Air Force", "1419"], ["South African Air Force"]], "token": 2723}
+{"data_id": "infoseek_val_00014679", "questions": ["What is the scientific name of the plant shown in the image?"], "image_id": "oven_04962628", "entities": [[]], "token": 881}
+{"data_id": "infoseek_val_00015521", "questions": ["Which city is shown in the image?"], "image_id": "oven_04955473", "entities": [["city"]], "token": 828}
+{"data_id": "infoseek_val_00015739", "questions": ["What plant is shown in the image?"], "image_id": "oven_04961983", "entities": [["plant", "cactus", "desert", "spines", "sand"]], "token": 893}
+{"data_id": "infoseek_val_00016201", "questions": ["What is the main structure shown in the image?", "What natural feature is the structure crossing?"], "image_id": "oven_04955036", "entities": [["bridge", "river", "trees"], ["bridge", "river"]], "token": 1667}
+{"data_id": "infoseek_val_00016741", "questions": ["What type of plant is shown in the image?"], "image_id": "oven_04966222", "entities": [["plant", "flower", "purple flower", "green leaves"]], "token": 480}
+{"data_id": "infoseek_val_00017847", "questions": ["What object is shown in the image?"], "image_id": "oven_04998492", "entities": [["object", "device", "metal detector", "detector", "electronic device", "handheld device", "probe", "screen", "button", "display", "dial", "scale", "handle", "brand", "model"]], "token": 515}
+{"data_id": "infoseek_val_00018236", "questions": ["What animal is shown in the image?"], "image_id": "oven_04978664", "entities": [["dog"]], "token": 467}
+{"data_id": "infoseek_val_00018457", "questions": ["What is the large structure spanning the water in the image?", "What body of water is beneath the structure in the image?"], "image_id": "oven_04955045", "entities": [["bridge", "water", "trees", "buildings"], ["body of water", "structure", "bridge"]], "token": 1456}
+{"data_id": "infoseek_val_00018501", "questions": ["What is the name of the prominent mountain in the background of the image?"], "image_id": "oven_04956499", "entities": [["mountain", "Corcovado"]], "token": 891}
+{"data_id": "infoseek_val_00018909", "questions": ["What species of bird is shown in the image?"], "image_id": "oven_05033150", "entities": [["bird", "species"]], "token": 908}
+{"data_id": "infoseek_val_00019678", "questions": ["What type of insect is shown in the image?"], "image_id": "oven_05039079", "entities": [["insect", "moth"]], "token": 884}
+{"data_id": "infoseek_val_00019735", "questions": ["What type of animal is shown in the image?"], "image_id": "oven_05051059", "entities": [["animal", "fish", "marine life", "ocean", "underwater"]], "token": 484}
+{"data_id": "infoseek_val_00020027", "questions": ["What type of insect is shown in the image?"], "image_id": "oven_05035102", "entities": [["insect", "dragonfly"]], "token": 885}
+{"data_id": "infoseek_val_00020228", "questions": ["What type of food is shown on the plate in the image?"], "image_id": "oven_04949557", "entities": [["food", "plate", "fries", "chicken", "potatoes"]], "token": 487}
+{"data_id": "infoseek_val_00020283", "questions": ["What type of plant is shown in the image?"], "image_id": "oven_05067957", "entities": [["plant", "flower", "yellow", "daylily"]], "token": 480}
+{"data_id": "infoseek_val_00020395", "questions": ["What type of plant is shown in the image?"], "image_id": "oven_05033820", "entities": [["plant", "tree", "forest"]], "token": 475}
+{"data_id": "infoseek_val_00020743", "questions": ["What type of plant is shown in the image?"], "image_id": "oven_05029837", "entities": [["plant"]], "token": 880}
+{"data_id": "infoseek_val_00020772", "questions": ["What is the logo on the front of the vehicle in the image?"], "image_id": "oven_05010680", "entities": [["Lamborghini", "vehicle", "logo"]], "token": 792}
+{"data_id": "infoseek_val_00020777", "questions": ["What is the species of the bird shown in the image?"], "image_id": "oven_05048282", "entities": [["bird", "species"]], "token": 474}
+{"data_id": "infoseek_val_00020796", "questions": ["What is the species of the bird shown in the image?"], "image_id": "oven_05033151", "entities": [["bird", "species"]], "token": 885}
+{"data_id": "infoseek_val_00020977", "questions": ["What type of food or drink is shown in the image?"], "image_id": "oven_05064748", "entities": [["mojito", "drink", "glass", "straw", "mint", "ice"]], "token": 489}
+{"data_id": "infoseek_val_00021481", "questions": ["What type of insect is shown in the image?"], "image_id": "oven_05030458", "entities": [["insect", "katydid"]], "token": 836}
+{"data_id": "infoseek_val_00021692", "questions": ["What is the name of the drink brand shown in the image?", "Which country is the brand 'Luxardo' from?", "Which country is the brand 'Chartreuse' from?"], "image_id": "oven_05064514", "entities": [["Luxardo", "Chartreuse", "Harry Johnson's"], ["Luxardo", "Italy"], ["Chartreuse", "France"]], "token": 1430}
+{"data_id": "infoseek_val_00021707", "questions": [], "image_id": "oven_05019208", "entities": [], "token": 0}
+{"data_id": "infoseek_val_00021813", "questions": ["What type of plant is shown in the image?"], "image_id": "oven_05063709", "entities": [["plant"]], "token": 469}
+{"data_id": "infoseek_val_00022159", "questions": ["What is the object shown in the image?"], "image_id": "oven_05046854", "entities": [["object"]], "token": 468}
+{"data_id": "infoseek_val_00022734", "questions": ["What species of bird is shown in the image?"], "image_id": "oven_05043983", "entities": [["bird"]], "token": 880}
+{"data_id": "infoseek_val_00023467", "questions": ["What is the name of the facility shown in the image?"], "image_id": "oven_05026183", "entities": [[]], "token": 830}
+{"data_id": "infoseek_val_00024040", "questions": ["What is the name of the facility shown in the image?"], "image_id": "oven_05026146", "entities": [[]], "token": 855}
+{"data_id": "infoseek_val_00024143", "questions": ["What type of animal is shown in the image?"], "image_id": "oven_05029432", "entities": [["snake"]], "token": 880}
+{"data_id": "infoseek_val_00024268", "questions": ["What type of plant is shown in the image?"], "image_id": "oven_05035482", "entities": [["plant", "leaf", "tree"]], "token": 475}
+{"data_id": "infoseek_val_00024282", "questions": ["What is the scientific name of the plant shown in the image?"], "image_id": "oven_05036710", "entities": [["Rhodiola integrifolia", "Rosy Sedum", "plant"]], "token": 822}
+{"data_id": "infoseek_val_00024321", "questions": ["What species of bird is shown in the image?"], "image_id": "oven_05043096", "entities": [["bird", "species"]], "token": 858}
+{"data_id": "infoseek_val_00024546", "questions": ["What type of plant is shown in the image?"], "image_id": "oven_05036707", "entities": [["plant", "succulent", "flower", "yellow flower"]], "token": 766}
+{"data_id": "infoseek_val_00024906", "questions": ["What type of geographical feature is shown in the image?"], "image_id": "oven_05020546", "entities": [["beach", "ocean", "coastline", "hill", "cove"]], "token": 673}
+{"data_id": "infoseek_val_00024930", "questions": ["What type of animal is shown in the image?"], "image_id": "oven_04945828", "entities": [["insect", "leafhopper"]], "token": 475}
+{"data_id": "infoseek_val_00025189", "questions": ["What animal is shown in the image?"], "image_id": "oven_05050740", "entities": [["gorilla"]], "token": 468}
+{"data_id": "infoseek_val_00025691", "questions": ["What building is shown in the image?"], "image_id": "oven_05022304", "entities": [["building"]], "token": 828}
+{"data_id": "infoseek_val_00026068", "questions": ["What is the name of the building shown in the image?"], "image_id": "oven_05017179", "entities": [["building"]], "token": 882}
+{"data_id": "infoseek_val_00026286", "questions": ["What is the species of the insect shown in the image?"], "image_id": "oven_05037390", "entities": [["insect", "moth"]], "token": 886}
+{"data_id": "infoseek_val_00026378", "questions": ["What is the name of the facility shown in the image?"], "image_id": "oven_05016911", "entities": [["facility"]], "token": 832}
+{"data_id": "infoseek_val_00026657", "questions": ["Which island is shown in the image?"], "image_id": "oven_05024259", "entities": [["island", "horses", "lighthouse"]], "token": 762}
+{"data_id": "infoseek_val_00027305", "questions": ["What type of plant is shown in the image?"], "image_id": "oven_05044375", "entities": [["plant", "mushroom"]], "token": 474}
+{"data_id": "infoseek_val_00027468", "questions": ["What is the name of the building shown in the image?"], "image_id": "oven_05023013", "entities": [["building", "tower", "flag"]], "token": 888}
+{"data_id": "infoseek_val_00027748", "questions": ["What type of animal is shown in the image?"], "image_id": "oven_05029456", "entities": [["snake"]], "token": 880}
+{"data_id": "infoseek_val_00029069", "questions": ["What specific mountain or peak is shown in the image?"], "image_id": "oven_05012112", "entities": [["mountain", "peak"]], "token": 835}
+{"data_id": "infoseek_val_00029942", "questions": ["What place is shown in the image?"], "image_id": "oven_05016843", "entities": [["place", "river", "trees", "rock", "landscape"]], "token": 840}
+{"data_id": "infoseek_val_00030174", "questions": ["What type of bird is shown in the image?"], "image_id": "oven_05048421", "entities": [["bird", "goose", "gobblers"]], "token": 478}
+{"data_id": "infoseek_val_00030211", "questions": ["What is the name of the facility shown in the image?"], "image_id": "oven_05020093", "entities": [["facility"]], "token": 832}
+{"data_id": "infoseek_val_00030789", "questions": [], "image_id": "oven_05019217", "entities": [], "token": 0}
+{"data_id": "infoseek_val_00030924", "questions": ["What type of plant is shown in the image?"], "image_id": "oven_05069120", "entities": [["plant", "flower", "purple"]], "token": 475}
+{"data_id": "infoseek_val_00031216", "questions": ["What is the scientific name of the plant shown in the image?"], "image_id": "oven_05042742", "entities": [["plant", "scientific name"]], "token": 787}
+{"data_id": "infoseek_val_00031218", "questions": ["What is the main structure shown in the image?", "What is the width of the main structure in the image?"], "image_id": "oven_05026254", "entities": [["structure", "dome", "domes", "sunset", "sky", "clouds"], ["main structure", "width"]], "token": 1685}
+{"data_id": "infoseek_val_00031249", "questions": ["What type of plant is shown in the image?"], "image_id": "oven_05038525", "entities": [["plant", "tree", "leaf", "maple", "red leaf", "branch", "trunk", "autumn", "season"]], "token": 497}
+{"data_id": "infoseek_val_00031253", "questions": ["What type of food is shown in the image?"], "image_id": "oven_04949545", "entities": [["sausage", "salad", "tomato", "plate"]], "token": 481}
+{"data_id": "infoseek_val_00031979", "questions": ["What type of bird is shown in the image?"], "image_id": "oven_05043846", "entities": [["bird"]], "token": 469}
+{"data_id": "infoseek_val_00032734", "questions": ["What is the name of the facility shown in the image?"], "image_id": "oven_05017339", "entities": [[]], "token": 830}
+{"data_id": "infoseek_val_00033409", "questions": ["What is the name of the building shown in the image?", "What country is the building located in?"], "image_id": "oven_05022289", "entities": [[], ["building", "country"]], "token": 1611}
+{"data_id": "infoseek_val_00033566", "questions": ["What type of equipment is shown in the image?"], "image_id": "oven_05054699", "entities": [["pool table", "pool cue", "pool balls", "people"]], "token": 481}
+{"data_id": "infoseek_val_00033633", "questions": ["What animal is shown in the image?"], "image_id": "oven_05035273", "entities": [["fox"]], "token": 828}
+{"data_id": "infoseek_val_00034818", "questions": ["What is written on the label of the drink bottle in the image?"], "image_id": "oven_05064547", "entities": [["American Honey"]], "token": 474}
+{"data_id": "infoseek_val_00035303", "questions": ["What type of insect is shown in the image?"], "image_id": "oven_05037386", "entities": [["insect", "moth", "leaf"]], "token": 762}
+{"data_id": "infoseek_val_00036191", "questions": ["What is the scientific name of the plant shown in the image?"], "image_id": "oven_05042741", "entities": [["plant"]], "token": 833}
+{"data_id": "infoseek_val_00036475", "questions": ["What type of plant is shown in the image?"], "image_id": "oven_05043348", "entities": [["plant", "water", "riverbank"]], "token": 887}
+{"data_id": "infoseek_val_00036512", "questions": ["What type of bird is shown in the image?"], "image_id": "oven_05035018", "entities": [["bird"]], "token": 830}
+{"data_id": "infoseek_val_00036582", "questions": ["What type of plant is shown in the image?"], "image_id": "oven_05066207", "entities": [["plant", "leaf", "butterfly"]], "token": 483}
+{"data_id": "infoseek_val_00036824", "questions": ["What type of plant is shown in the image?"], "image_id": "oven_05069143", "entities": [["plant", "flower", "pink", "white", "blossom"]], "token": 483}
+{"data_id": "infoseek_val_00036825", "questions": ["What is the scientific name of the animal in the image?"], "image_id": "oven_05030143", "entities": [["animal", "toad"]], "token": 911}
+{"data_id": "infoseek_val_00037258", "questions": ["What is the scientific name of the plant shown in the image?"], "image_id": "oven_05036708", "entities": [[]], "token": 881}
+{"data_id": "infoseek_val_00037320", "questions": ["What is the name of the building shown in the image?", "Which country is the building located in?"], "image_id": "oven_05012526", "entities": [["building"], ["country"]], "token": 2060}
+{"data_id": "infoseek_val_00038615", "questions": ["What type of plant is shown in the image?"], "image_id": "oven_05038115", "entities": [["plant", "mushroom", "leaf"]], "token": 483}
+{"data_id": "infoseek_val_00038859", "questions": ["What is the name of the building shown in the image?", "In which country is this building located?"], "image_id": "oven_05023733", "entities": [[], ["building", "country"]], "token": 1661}
+{"data_id": "infoseek_val_00039451", "questions": ["What type of insect is shown in the image?"], "image_id": "oven_05038610", "entities": [["insect", "bug", "insect", "insect"]], "token": 817}
+{"data_id": "infoseek_val_00040360", "questions": ["What type of plant is shown in the image?"], "image_id": "oven_05035476", "entities": [["plant", "leaf", "flower", "tree"]], "token": 478}
+{"data_id": "infoseek_val_00040515", "questions": ["What type of equipment is shown in the image?"], "image_id": "oven_05054671", "entities": [["pool cue"]], "token": 470}
+{"data_id": "infoseek_val_00041043", "questions": ["What is the name of the building shown in the image?"], "image_id": "oven_05021638", "entities": [[]], "token": 880}
+{"data_id": "infoseek_val_00041319", "questions": ["What building is shown in the image?"], "image_id": "oven_05020411", "entities": [["building", "ocean", "hill", "coastline"]], "token": 890}
+{"data_id": "infoseek_val_00041438", "questions": ["Which mountain is shown in the image?"], "image_id": "oven_05016591", "entities": [["mountain"]], "token": 829}
+{"data_id": "infoseek_val_00042013", "questions": ["What type of animal is shown in the image?"], "image_id": "oven_04945791", "entities": [["fish", "school", "sardine"]], "token": 477}
+{"data_id": "infoseek_val_00042106", "questions": ["What type of plant is shown in the image?"], "image_id": "oven_05036711", "entities": [["plant", "flower", "leaf", "grass"]], "token": 889}
+{"data_id": "infoseek_val_00042324", "questions": ["What is the species of the bird shown in the image?"], "image_id": "oven_05036591", "entities": [["bird"]], "token": 707}
+{"data_id": "infoseek_val_00043164", "questions": ["What is the scientific name of the plant shown in the image?"], "image_id": "oven_05029830", "entities": [["plant", "scientific name"]], "token": 887}
+{"data_id": "infoseek_val_00043226", "questions": ["What is the name of the building shown in the image?"], "image_id": "oven_05016249", "entities": [["building", "tower", "clock", "flag", "cars", "trees", "street", "architectural structure"]], "token": 906}
+{"data_id": "infoseek_val_00043449", "questions": ["What type of plant is shown in the image?"], "image_id": "oven_05066712", "entities": [["plant", "leaves", "fruits"]], "token": 491}
+{"data_id": "infoseek_val_00043771", "questions": ["What type of organism is shown in the image?"], "image_id": "oven_05043653", "entities": [["organism", "fungus", "mushroom", "tree"]], "token": 1043}
+{"data_id": "infoseek_val_00044059", "questions": ["What is the name of the facility shown in the image?"], "image_id": "oven_05016888", "entities": [[]], "token": 880}
+{"data_id": "infoseek_val_00044932", "questions": ["Which bridge is shown in the image?"], "image_id": "oven_05015073", "entities": [["bridge"]], "token": 878}
+{"data_id": "infoseek_val_00045100", "questions": ["What is the prominent body of water visible in the image?"], "image_id": "oven_05020547", "entities": [["body of water", "ocean", "sea", "beach", "coastline", "bay"]], "token": 853}
+{"data_id": "infoseek_val_00045299", "questions": ["What species of bird is shown in the image?"], "image_id": "oven_05039488", "entities": [["bird", "tropicbird", "rock"]], "token": 838}
+{"data_id": "infoseek_val_00045607", "questions": ["What type of plant is shown in the image?"], "image_id": "oven_05066717", "entities": [["plant", "yellow flowers"]], "token": 473}
+{"data_id": "infoseek_val_00045812", "questions": ["What building is shown in the image?"], "image_id": "oven_05022993", "entities": [["building", "castle", "fortress", "walls", "city"]], "token": 891}
+{"data_id": "infoseek_val_00046512", "questions": ["What is the item shown in the image?"], "image_id": "oven_05051616", "entities": [["alarm clock", "clock", "Westclox"]], "token": 477}
+{"data_id": "infoseek_val_00046526", "questions": ["What is the name of the building shown in the image?"], "image_id": "oven_05023769", "entities": [[]], "token": 830}
+{"data_id": "infoseek_val_00047100", "questions": ["What type of plant is shown in the image?"], "image_id": "oven_05036264", "entities": [["plant", "yellow flower", "flower", "blossom", "wildflower"]], "token": 485}
+{"data_id": "infoseek_val_00047428", "questions": ["What is the name of the building shown in the image?"], "image_id": "oven_05021607", "entities": [["Château de Selle-sur-Cher"]], "token": 840}
+{"data_id": "infoseek_val_00047434", "questions": ["What species of bird is shown in the image?"], "image_id": "oven_05045992", "entities": [["bird", "hummingbird", "species"]], "token": 888}
+{"data_id": "infoseek_val_00047438", "questions": ["What species of plant is shown in the image?"], "image_id": "oven_05044532", "entities": [["plant", "species"]], "token": 472}
+{"data_id": "infoseek_val_00047707", "questions": ["What is the scientific name of the bird in the image?"], "image_id": "oven_05048260", "entities": [["bird", "hoopoe"]], "token": 476}
+{"data_id": "infoseek_val_00048169", "questions": ["What is the name of the building shown in the image?"], "image_id": "oven_05026258", "entities": [[]], "token": 830}
+{"data_id": "infoseek_val_00048219", "questions": ["What type of insect is shown in the image?"], "image_id": "oven_05036341", "entities": [["insect", "moth"]], "token": 834}
+{"data_id": "infoseek_val_00048939", "questions": ["What is the name of the building shown in the image?"], "image_id": "oven_05020617", "entities": [["building"]], "token": 882}
+{"data_id": "infoseek_val_00048978", "questions": ["What type of plant is shown in the image?"], "image_id": "oven_05033843", "entities": [["plant", "tree", "shrub", "grass", "rock", "hill"]], "token": 485}
+{"data_id": "infoseek_val_00049890", "questions": ["Which village is shown in the image?"], "image_id": "oven_05012008", "entities": [[]], "token": 876}
+{"data_id": "infoseek_val_00050020", "questions": ["What type of plant is shown in the image?"], "image_id": "oven_05067443", "entities": [["plant", "fruit", "vine"]], "token": 475}
+{"data_id": "infoseek_val_00050138", "questions": ["What type of insect is shown in the image?"], "image_id": "oven_05039082", "entities": [["insect", "moth"]], "token": 1034}
+{"data_id": "infoseek_val_00050149", "questions": ["Which village is shown in the image?"], "image_id": "oven_05012013", "entities": [[]], "token": 826}
+{"data_id": "infoseek_val_00050371", "questions": ["What is the scientific name of the plant shown in the image?"], "image_id": "oven_05032953", "entities": [["plant", "scientific name"]], "token": 887}
+{"data_id": "infoseek_val_00050741", "questions": ["What is the name of the building shown in the image?"], "image_id": "oven_05012165", "entities": [["building"]], "token": 832}
+{"data_id": "infoseek_val_00050903", "questions": ["What type of bird is shown in the image?"], "image_id": "oven_05037452", "entities": [["bird"]], "token": 469}
+{"data_id": "infoseek_val_00051203", "questions": ["What type of insect is shown in the image?"], "image_id": "oven_05036343", "entities": [["insect", "moth"]], "token": 984}
+{"data_id": "infoseek_val_00051488", "questions": ["What facility is shown in the image?"], "image_id": "oven_05017348", "entities": [["facility", "rock formation", "cave"]], "token": 836}
+{"data_id": "infoseek_val_00051497", "questions": ["What is the species of the bird shown in the image?"], "image_id": "oven_05036592", "entities": [["bird", "species"]], "token": 1035}
+{"data_id": "infoseek_val_00051774", "questions": ["What is the species of the bird shown in the image?"], "image_id": "oven_05046027", "entities": [["bird"]], "token": 882}
+{"data_id": "infoseek_val_00051781", "questions": ["What bird is shown in the image?"], "image_id": "oven_05043068", "entities": [["bird", "water"]], "token": 1031}
+{"data_id": "infoseek_val_00051817", "questions": ["What is the scientific classification of the insect in the image?"], "image_id": "oven_05035135", "entities": [["insect", "dragonfly"]], "token": 837}
+{"data_id": "infoseek_val_00052156", "questions": ["What body of water is visible directly beneath the bridge in the image?"], "image_id": "oven_05015071", "entities": [["bridge", "body of water", "boats", "date: 06/09/2010"]], "token": 907}
+{"data_id": "infoseek_val_00052264", "questions": ["What is the name of the plant shown in the image?"], "image_id": "oven_05044553", "entities": [["plant"]], "token": 471}
+{"data_id": "infoseek_val_00053190", "questions": ["What type of plant is shown in the image?"], "image_id": "oven_05038122", "entities": [["mushroom", "tree"]], "token": 474}
+{"data_id": "infoseek_val_00053794", "questions": ["What type of plant is shown in the image?"], "image_id": "oven_05066851", "entities": [["plant", "bee"]], "token": 472}
+{"data_id": "infoseek_val_00053810", "questions": ["What is the name of the building shown in the image?"], "image_id": "oven_05017183", "entities": [["building"]], "token": 807}
+{"data_id": "infoseek_val_00054337", "questions": ["What is the name of the building shown in the image?"], "image_id": "oven_05012396", "entities": [["building"]], "token": 882}
+{"data_id": "infoseek_val_00054388", "questions": ["What type of animal is shown in the image?"], "image_id": "oven_05035424", "entities": [["snake"]], "token": 830}
+{"data_id": "infoseek_val_00054427", "questions": ["What is the species of the bird shown in the image?"], "image_id": "oven_05045662", "entities": [["bird", "species"]], "token": 835}
+{"data_id": "infoseek_val_00055487", "questions": ["What animal is shown in the image?"], "image_id": "oven_05041151", "entities": [["animal", "antelope"]], "token": 471}
+{"data_id": "infoseek_val_00055517", "questions": ["What type of plant is shown in the image?"], "image_id": "oven_05067442", "entities": [["plant", "flower", "fruit", "leaf", "blossom", "zucchini"]], "token": 487}
+{"data_id": "infoseek_val_00056144", "questions": ["What is the name of the facility shown in the image?"], "image_id": "oven_05020093", "entities": [["facility", "building", "statues", "water", "people"]], "token": 845}
+{"data_id": "infoseek_val_00056194", "questions": ["What species of bird is shown in the image?"], "image_id": "oven_05037414", "entities": [["bird"]], "token": 475}
+{"data_id": "infoseek_val_00056379", "questions": ["What type of animal is shown in the image?"], "image_id": "oven_05050712", "entities": [["gorilla"]], "token": 476}
+{"data_id": "infoseek_val_00056646", "questions": ["What is the object shown in the image?"], "image_id": "oven_05052952", "entities": [["girl", "uniform", "badges", "sash", "tights", "shoes", "costume"]], "token": 491}
+{"data_id": "infoseek_val_00057118", "questions": ["What animal is shown in the image?"], "image_id": "oven_05041162", "entities": [["animal", "deer"]], "token": 470}
+{"data_id": "infoseek_val_00057128", "questions": ["What is the name of the island shown in the image?", "What is the name of the large body of water adjacent to the island?"], "image_id": "oven_05024252", "entities": [["island", "lighthouse", "sunset", "sky", "ocean"], ["island", "large body of water", "lighthouse", "sky", "sunset"]], "token": 1551}
+{"data_id": "infoseek_val_00057540", "questions": ["What type of plant is shown in the image?"], "image_id": "oven_05069082", "entities": [["plant", "flower", "leaf"]], "token": 475}
+{"data_id": "infoseek_val_00057580", "questions": ["What type of insect is shown in the image?"], "image_id": "oven_05045846", "entities": [["insect"]], "token": 881}
+{"data_id": "infoseek_val_00057602", "questions": ["What type of plant is shown in the image?"], "image_id": "oven_05066414", "entities": [["plant", "artichoke", "Christmas tree", "ornament"]], "token": 482}
+{"data_id": "infoseek_val_00058628", "questions": ["What animal is shown in the image?"], "image_id": "oven_05035266", "entities": [["fox"]], "token": 853}
+{"data_id": "infoseek_val_00058640", "questions": ["What type of organism is shown in the image?"], "image_id": "oven_05043642", "entities": [["organism", "mushroom"]], "token": 911}
+{"data_id": "infoseek_val_00059397", "questions": ["What is written on the waistband of the underwear in the image?"], "image_id": "oven_05052981", "entities": [["CROCODILE"]], "token": 476}
+{"data_id": "infoseek_val_00059778", "questions": ["What is the scientific name of the plant shown in the image?"], "image_id": "oven_05032951", "entities": [["plant", "scientific name"]], "token": 837}
+{"data_id": "infoseek_val_00059891", "questions": ["What is the model name of the vehicle shown in the image?", "What is the model name of the vehicle that directly precedes this model in the manufacturer's lineup?"], "image_id": "oven_05010651", "entities": [["Lamborghini", "Gallardo", "Superglide", "Wheelsandmore"], ["Lamborghini", "vehicle", "model", "manufacturer's lineup", "Superga"]], "token": 5419}
+{"data_id": "infoseek_val_00060117", "questions": ["Which country is the building shown in the image located in?"], "image_id": "oven_05012533", "entities": [["Thailand"]], "token": 883}
+{"data_id": "infoseek_val_00060365", "questions": ["What type of insect is shown in the image?"], "image_id": "oven_05045841", "entities": [["insect", "beetle", "flower", "plant"]], "token": 892}
+{"data_id": "infoseek_val_00061038", "questions": ["What is the name of the building shown in the image?"], "image_id": "oven_05011855", "entities": [["building"]], "token": 882}
+{"data_id": "infoseek_val_00061052", "questions": ["What type of animal is shown in the image?"], "image_id": "oven_05035429", "entities": [["snake"]], "token": 880}
+{"data_id": "infoseek_val_00061362", "questions": ["What specific location or landmark in the image is being referred to as 'this place'?"], "image_id": "oven_05012129", "entities": [["this place", "mountain", "building", "horses"]], "token": 605}
+{"data_id": "infoseek_val_00062047", "questions": ["What type of plant is shown in the image?"], "image_id": "oven_05063728", "entities": [["plant", "leaf"]], "token": 472}
+{"data_id": "infoseek_val_00062186", "questions": ["What type of plant is shown in the image?"], "image_id": "oven_05038540", "entities": [["plant", "leaf", "maple"]], "token": 476}
+{"data_id": "infoseek_val_00062500", "questions": ["What is the species of the bird shown in the image?"], "image_id": "oven_05043986", "entities": [["bird"]], "token": 832}
+{"data_id": "infoseek_val_00062823", "questions": ["What is the species of the animal shown in the image?"], "image_id": "oven_05050424", "entities": [["animal", "species", "bull", "cow", "horn", "grass", "field", "hill"]], "token": 492}
+{"data_id": "infoseek_val_00063026", "questions": ["What type of object is shown in the image?"], "image_id": "oven_05046852", "entities": [["human body", "medical scan", "X-ray", "chest scan"]], "token": 490}
+{"data_id": "infoseek_val_00063116", "questions": ["What is the species of the bird shown in the image?"], "image_id": "oven_05043869", "entities": [["bird"]], "token": 471}
+{"data_id": "infoseek_val_00063241", "questions": ["Which building is shown in the image?"], "image_id": "oven_05020428", "entities": [["building", "Museu de Arte Contemporânea", "Rio de Janeiro", "Copacabana", "Sugarloaf Mountain"]], "token": 906}
+{"data_id": "infoseek_val_00063428", "questions": ["What type of animal is shown in the image?"], "image_id": "oven_05050447", "entities": [["yak"]], "token": 470}
+{"data_id": "infoseek_val_00063716", "questions": ["What place is shown in the image?"], "image_id": "oven_05016762", "entities": [["place"]], "token": 878}
+{"data_id": "infoseek_val_00063945", "questions": ["What is the scientific name of the animal in the image?"], "image_id": "oven_05030150", "entities": [["animal", "toad"]], "token": 886}
+{"data_id": "infoseek_val_00064158", "questions": ["What type of plant is shown in the image?"], "image_id": "oven_05043359", "entities": [["plant", "grass", "white flowers", "leaves"]], "token": 891}
+{"data_id": "infoseek_val_00064796", "questions": ["What is the name of the building shown in the image?"], "image_id": "oven_05011860", "entities": [[]], "token": 880}
+{"data_id": "infoseek_val_00065089", "questions": ["What type of plant is shown in the image?"], "image_id": "oven_05066413", "entities": [["plant", "flower", "red rose", "white daisy", "baby's breath"]], "token": 486}
+{"data_id": "infoseek_val_00065163", "questions": ["What species of bird is shown in the image?"], "image_id": "oven_05031475", "entities": [["bird"]], "token": 905}
+{"data_id": "infoseek_val_00065378", "questions": ["What type of plant is shown in the image?"], "image_id": "oven_05069059", "entities": [["plant", "flower", "leaf", "stem"]], "token": 486}
+{"data_id": "infoseek_val_00065823", "questions": ["What type of bird is shown in the image?"], "image_id": "oven_05031655", "entities": [["bird"]], "token": 469}
+{"data_id": "infoseek_val_00065921", "questions": ["What type of bird is shown in the image?"], "image_id": "oven_05035027", "entities": [["bird", "goose"]], "token": 1034}
+{"data_id": "infoseek_val_00066236", "questions": ["What is the name of the building shown in the image?"], "image_id": "oven_05012387", "entities": [["building"]], "token": 782}
+{"data_id": "infoseek_val_00066406", "questions": ["What type of insect is shown in the image?"], "image_id": "oven_05030460", "entities": [["insect", "grasshopper"]], "token": 886}
+{"data_id": "infoseek_val_00066446", "questions": ["What type of bird is shown in the image?"], "image_id": "oven_05039502", "entities": [["bird", "seabird", "tern", "ocean", "water"]], "token": 845}
+{"data_id": "infoseek_val_00066888", "questions": ["What place is shown in the image?"], "image_id": "oven_05016852", "entities": [["place", "waterfall", "river", "rocks", "trees", "people"]], "token": 680}
+{"data_id": "infoseek_val_00067303", "questions": ["What type of plant is shown in the image?"], "image_id": "oven_05066888", "entities": [["plant", "flower", "purple"]], "token": 475}
+{"data_id": "infoseek_val_00067455", "questions": ["What is the species of the bird shown in the image?"], "image_id": "oven_05045692", "entities": [["bird"]], "token": 832}
+{"data_id": "infoseek_val_00067638", "questions": ["Which country is the building in the image located in?"], "image_id": "oven_05020622", "entities": [["country"]], "token": 831}
+{"data_id": "infoseek_val_00067639", "questions": ["What species of bird is shown in the image?"], "image_id": "oven_05031683", "entities": [["bird"]], "token": 469}
+{"data_id": "infoseek_val_00067658", "questions": ["What is the name of the building shown in the image?"], "image_id": "oven_05016775", "entities": [["building"]], "token": 832}
+{"data_id": "infoseek_val_00067702", "questions": ["What is the item shown in the image?", "What is the purpose of this item?"], "image_id": "oven_05051611", "entities": [["fire alarm", "fire bell", "grille"], ["fire alarm", "fire", "alert", "safety", "emergency"]], "token": 958}
+{"data_id": "infoseek_val_00068049", "questions": ["What type of plant is shown in the image?"], "image_id": "oven_05065575", "entities": [["plant"]], "token": 469}
+{"data_id": "infoseek_val_00068675", "questions": ["What type of animal is shown in the image?"], "image_id": "oven_05051060", "entities": [["animal", "sea sponge"]], "token": 473}
+{"data_id": "infoseek_val_00069149", "questions": ["What type of plant is shown in the image?"], "image_id": "oven_05066246", "entities": [["butterfly", "plant", "flower"]], "token": 477}
+{"data_id": "infoseek_val_00069289", "questions": ["What type of plant is shown in the image?"], "image_id": "oven_05065566", "entities": [["plant"]], "token": 477}
+{"data_id": "infoseek_val_00069507", "questions": ["Which building is the main subject of the image?"], "image_id": "oven_05016231", "entities": [["building", "tower"]], "token": 833}
+{"data_id": "infoseek_val_00069969", "questions": ["What type of plant is shown in the image?"], "image_id": "oven_05036290", "entities": [["sunflower"]], "token": 470}
+{"data_id": "infoseek_val_00070339", "questions": ["What type of food or drink is shown in the image?"], "image_id": "oven_05064700", "entities": [["drink", "mint", "ice", "glass", "coaster"]], "token": 484}
+{"data_id": "infoseek_val_00070776", "questions": ["What type of plant is shown in the image?"], "image_id": "oven_05067992", "entities": [["plant", "flower", "yellow", "daylily"]], "token": 486}
+{"data_id": "infoseek_val_00070880", "questions": ["What is the species of the bird shown in the image?"], "image_id": "oven_05031483", "entities": [["bird"]], "token": 832}
+{"data_id": "infoseek_val_00070991", "questions": ["What is the scientific name of the bird shown in the image?", "What is the taxonomic classification level immediately above the species level for this bird?"], "image_id": "oven_05048437", "entities": [["bird", "duck", "mallard", "Anas platyrhynchos"], ["genus", "bird", "duck"]], "token": 970}
+{"data_id": "infoseek_val_00071059", "questions": ["What is the scientific name of the insect in the image?"], "image_id": "oven_05038611", "entities": [["insect", "scientific name", "Periferia Presa Constitución 1917", "San Juan del Río", "Querétaro", "Laura Uribe", "Grupo Vasconcelos"]], "token": 926}
+{"data_id": "infoseek_val_00072086", "questions": ["What type of building is shown in the image?"], "image_id": "oven_05012596", "entities": [["church", "altar", "stained glass", "crucifix", "apse", "pulpit", "candles", "religious iconography"]], "token": 910}
+{"data_id": "infoseek_val_00072323", "questions": ["Which mountain is shown in the image?"], "image_id": "oven_05016594", "entities": [["mountain"]], "token": 554}
+{"data_id": "infoseek_val_00072812", "questions": ["What building is shown in the image?"], "image_id": "oven_05012144", "entities": [["building", "flame"]], "token": 832}
+{"data_id": "infoseek_val_00073080", "questions": ["What is the name of the building shown in the image?"], "image_id": "oven_05012603", "entities": [[]], "token": 880}
+{"data_id": "infoseek_val_00073102", "questions": ["What type of plant is shown in the image?"], "image_id": "oven_05044369", "entities": [["plant", "mushroom"]], "token": 482}

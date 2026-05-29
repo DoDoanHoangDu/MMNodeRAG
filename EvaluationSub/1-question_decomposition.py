@@ -7,62 +7,25 @@ from LLM.call_api import call_api
 from LLM.prompts.question_decompose_prompt import question_decompose_prompt
 import base64
 
-#hyper parameters
-QUESTION_LEVEL = int(input("Question Level: "))
-KNN = int(input("KNN: "))
-
 #paths and load data
 DIR_PATH = os.path.dirname(os.path.abspath(__file__))
 BASE_PATH = os.path.dirname(DIR_PATH)
 question_path = os.path.normpath(os.path.join(DIR_PATH, "data", "subquestions.jsonl"))
-decompoistion_path = os.path.normpath(os.path.join(DIR_PATH, "data", f"decomposed_questions_{KNN}nn_{QUESTION_LEVEL}.jsonl"))
+decompoistion_path = os.path.normpath(os.path.join(DIR_PATH, "data", "decomposed_questions.jsonl"))
 oven_path = os.path.normpath(os.path.join(BASE_PATH, "InfoSeek", "oven_images_sampled"))
 
-print(decompoistion_path)
-input("Confirm?")
-
-#load subquestions at a level, merge with answers of previous levels
 questions = {}
 with open(question_path, "r", encoding="utf-8") as f:
     for line in f:
         line = json.loads(line)
-        subquestions = line["subquestions"]
-        if len(subquestions) < QUESTION_LEVEL:
-            continue
-        elif len(subquestions) == QUESTION_LEVEL:
-            questions[line["qid"]] = (line["question"], line["image_id"])
-        else:
-            questions[line["qid"]] = (subquestions[QUESTION_LEVEL],line["image_id"])
-    if len(questions) == 0:
-        raise RuntimeError("No questions left to decompose")
-    print(f"Number of questions: {len(questions)}")
+        questions[line["qid"]] = (line["subquestions"],line["image_id"])
 
-#load previous answers
-for level in range(QUESTION_LEVEL-1,-1, -1):
-    previous_answer_path = os.path.normpath(os.path.join(DIR_PATH, "data", f"answers_{KNN}nn_{level}.jsonl"))
-    if os.path.exists(previous_answer_path):
-        prev_answer_count = 0
-        with open(previous_answer_path, "r", encoding="utf-8") as f:
-            for line in f:
-                line = json.loads(line)
-                qid = line["qid"]
-                if qid not in questions:
-                    continue
-                answer = line["answer"]
-                questions[qid] = (answer + "\n" + questions[qid][0], questions[qid][1])
-                prev_answer_count += 1
-        if len(questions) != prev_answer_count:
-            raise RuntimeError(f"Previous answers and questions at level {level} mismatch: {prev_answer_count}/{len(questions)}")
-    else:
-        raise RuntimeError(f"Previous answers not exist for question level: {level}")
-
-
-decompositions = {}
+decompositions = set()
 if os.path.exists(decompoistion_path):
     with open(decompoistion_path, "r", encoding="utf-8") as f:
         for line in f:
             line = json.loads(line)
-            decompositions[line["data_id"]] = line["entities"]
+            decompositions.add(line["data_id"])
 
 #load images
 IMAGE_EXTENSIONS = {".jpg", ".jpeg", ".png", ".bmp", ".gif", ".webp"}
@@ -122,34 +85,39 @@ with open(decompoistion_path, "a", encoding="utf-8") as f:
     for qid in tqdm(questions.keys()):
         if qid in decompositions:
             continue
-        question = questions[qid][0]
+        subquestions = questions[qid][0]
         image, mime = images[questions[qid][1]]
-        prompt = question_decompose_prompt(question)
-        content = [
-            {"type": "text", "text": prompt},
-            {
-                "type": "image_url",
-                "image_url": {"url": f"data:{mime};base64,{image}"}
-            }
-        ]
-        for attempt in range(1,MAX_ATTEMPTS+1):
-            try:
-                response_text, token = call_api(content=content, model="", mode="self-host")
-                response = ast.literal_eval(simple_strip(response_text))
-                if not validate_list(response):
-                    raise ValueError("Invalid response")
-                else:
-                    decompositions[qid] = response
-                    data = {"data_id": qid, "question": questions[qid][0], "image_id": questions[qid][1], "entities": response, "token": token}
-                    f.write(json.dumps(data, ensure_ascii=False) + "\n")
-                    f.flush()
+        responses = []
+        tokens = 0
+        for question in subquestions:
+            prompt = question_decompose_prompt(question)
+            content = [
+                {"type": "text", "text": prompt},
+                {
+                    "type": "image_url",
+                    "image_url": {"url": f"data:{mime};base64,{image}"}
+                }
+            ]
+            for attempt in range(1,MAX_ATTEMPTS+1):
+                response_text = None
+                try:
+                    response_text, token = call_api(content=content, model="", mode="self-host")
+                    response = ast.literal_eval(simple_strip(response_text))
+                    if not validate_list(response):
+                        raise ValueError("Invalid response")
+                    responses.append(response)
+                    tokens += token
                     break
-            except Exception as e:
-                print(f"Attempt {attempt} failed for question {qid}-{questions[qid][1]}: {e}")
-                print(response_text)
-                if attempt == MAX_ATTEMPTS:
-                    print(f"Failed on question {qid}: {question}: {e}")
-                    raise TimeoutError("A question failed")
-                time.sleep(5)
+                except Exception as e:
+                    print(f"Attempt {attempt} failed for question {qid}-{questions[qid][1]}: {e}")
+                    print(response_text)
+                    if attempt == MAX_ATTEMPTS:
+                        print(f"Failed on question {qid}: {question}: {e}")
+                        raise TimeoutError("A question failed")
+                    time.sleep(2)
+        decompositions.add(qid)
+        data = {"data_id": qid, "questions": questions[qid][0], "image_id": questions[qid][1], "entities": responses, "token": tokens}
+        f.write(json.dumps(data, ensure_ascii=False) + "\n")
+        f.flush()
 
 print(f"Completed: {len(decompositions)}/{len(questions)}")

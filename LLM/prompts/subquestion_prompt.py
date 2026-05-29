@@ -6,9 +6,6 @@ You are a question decomposition module.
 [INPUT FORMAT] 
 An image and a question about the image.
 
-[REAL INPUT]
-{question}
-
 [TASK]
 Generate the prerequisite sub-questions needed to answer the question.
 
@@ -56,4 +53,7 @@ Output:
 [
   "Which city is shown in the image?"
 ]
+
+[REAL INPUT]
+{question}
 """

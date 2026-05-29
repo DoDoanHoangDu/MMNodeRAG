@@ -7,56 +7,25 @@ import pickle
 import torch
 from LLM.qwen3_vl_embedding import Qwen3VLEmbedder
 
-#hyper parameters
-QUESTION_LEVEL = int(input("Question Level: "))
-KNN = int(input("KNN: "))
+K = 16
 
 #paths
 DIR_PATH = os.path.dirname(os.path.abspath(__file__))
 BASE_PATH = os.path.dirname(DIR_PATH)
 question_path = os.path.normpath(os.path.join(DIR_PATH, "data", "subquestions.jsonl"))
 oven_path = os.path.normpath(os.path.join(BASE_PATH, "InfoSeek", "oven_images_sampled"))
-output_path = f"{DIR_PATH}/data/{KNN}nn_{QUESTION_LEVEL}.jsonl"
+output_path = f"{DIR_PATH}/data/knn.jsonl"
 print(question_path)
 print(output_path)
 input("Confirm?")
 
 #load questions
 start = time.time()
-#load subquestions at a level, merge with answers of previous levels
 questions = {}
 with open(question_path, "r", encoding="utf-8") as f:
     for line in f:
         line = json.loads(line)
-        subquestions = line["subquestions"]
-        if len(subquestions) < QUESTION_LEVEL:
-            continue
-        elif len(subquestions) == QUESTION_LEVEL:
-            questions[line["qid"]] = (line["question"], line["image_id"])
-        else:
-            questions[line["qid"]] = (subquestions[QUESTION_LEVEL],line["image_id"])
-    if len(questions) == 0:
-        raise RuntimeError("No questions left to decompose")
-    print(f"Number of questions: {len(questions)}")
-
-#load previous answers
-for level in range(QUESTION_LEVEL-1,-1, -1):
-    previous_answer_path = os.path.normpath(os.path.join(DIR_PATH, "data", f"answers_{KNN}nn_{level}.jsonl"))
-    if os.path.exists(previous_answer_path):
-        prev_answer_count = 0
-        with open(previous_answer_path, "r", encoding="utf-8") as f:
-            for line in f:
-                line = json.loads(line)
-                qid = line["qid"]
-                if qid not in questions:
-                    continue
-                answer = line["answer"]
-                questions[qid] = (answer + "\n" + questions[qid][0], questions[qid][1])
-                prev_answer_count += 1
-        if len(questions) != prev_answer_count:
-            raise RuntimeError(f"Previous answers and questions at level {level} mismatch: {prev_answer_count}/{len(questions)}")
-    else:
-        raise RuntimeError(f"Previous answers not exist for question level: {level}")
+        questions[line["data_id"]] = (line["subquestions"], line["image_id"])
 
 #load images
 IMAGE_EXTENSIONS = {".jpg", ".jpeg", ".png", ".bmp", ".gif", ".webp"}
@@ -106,12 +75,15 @@ with open(output_path,"a", encoding = "utf-8") as f:
     for qid in tqdm(questions):
         if qid in processed_qids:
             continue
-        question = questions[qid][0]
+        subquestions = questions[qid][0]
         image = images[questions[qid][1]]
-        full_question = [{"text": question, "image": image, "instruction": "Retrieve images or text relevant to the user's query."}]
-        query_embedding = model.process(full_question).to(torch.float32).cpu().numpy()
-        similarity, idx = hnsw.search(query_embedding, KNN)
-        embedding_node_ids = [embedding_ids[i] for i in idx[0]]
-        data = {"qid": qid, "knn": embedding_node_ids}
+        knns = []
+        for question in subquestions:
+            full_question = [{"text": question, "image": image, "instruction": "Retrieve images or text relevant to the user's query."}]
+            query_embedding = model.process(full_question).to(torch.float32).cpu().numpy()
+            similarity, idx = hnsw.search(query_embedding, K)
+            embedding_node_ids = [embedding_ids[i] for i in idx[0]]
+            knns.append(embedding_node_ids)
+        data = {"qid": qid, "knn": knns}
         f.write(json.dumps(data, ensure_ascii=False) + "\n")
         f.flush()
