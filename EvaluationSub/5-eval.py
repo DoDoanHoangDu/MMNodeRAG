@@ -1,48 +1,93 @@
+import base64
 import os
 import json
 from LLM.prompts.evaluation_prompt import evaluation_prompt
 from LLM.call_api import call_api
 from tqdm import tqdm
 import time
+from Metrics.fuzzy_accuracy import fuzzy_accuracy
+import pickle
 
 #parameters
 KNN = int(input("KNN: "))
+COT = True if input("Chain-of-thought instruction (y/n): ").lower() == "y" else False
 REASONING = False
+LIMIT = 0.5
 
 #paths
 DIR_PATH = os.path.dirname(os.path.abspath(__file__))
 BASE_PATH = os.path.dirname(DIR_PATH)
-original_question_path = os.path.normpath(os.path.join(BASE_PATH, "InfoSeek", "sampled_questions.jsonl"))
-output_path = os.path.normpath(os.path.join(DIR_PATH, "data", f"evaluation_{KNN}nn.jsonl"))
+g4_path = os.path.join(BASE_PATH, "2-Build_Graph/data/g4.pkl")
+question_path = os.path.normpath(os.path.join(BASE_PATH, "InfoSeek", "sampled_questions.jsonl"))
+subquestions_path = os.path.normpath(os.path.join(DIR_PATH, "data", "subquestions.jsonl"))
+oven_path = os.path.normpath(os.path.join(BASE_PATH, "InfoSeek", "oven_images_sampled"))
+reranked_path_sub = os.path.join(DIR_PATH, "data", f"context_{KNN}nn{"_reasoning" if REASONING else ""}_reranked.jsonl")
+reranked_path = os.path.join(BASE_PATH, "Evaluation", "data", f"context_{KNN}nn{"_reasoning" if REASONING else ""}_reranked.jsonl")
+answers_path = os.path.normpath(os.path.join(DIR_PATH, "data", f"answers_{KNN}nn{'_COT' if COT else ''}.jsonl"))
+output_path = os.path.normpath(os.path.join(DIR_PATH, "data", f"evaluation_{KNN}nn{'_COT' if COT else ''}.jsonl"))
+print(answers_path)
 input("Confirm?")
 
-#load data
-original_questions = {}
-with open(original_question_path, "r", encoding="utf-8") as f:
+#load questions
+questions = {}
+with open(answers_path, "r", encoding="utf-8") as f:
     for line in f:
         line = json.loads(line)
-        original_questions[line["data_id"]] = line["question"]
+        answer_eval = line["answer_eval"]
+        if not isinstance(answer_eval, list):
+            print(f"Invalid answer_eval for question {line['qid']}: {answer_eval}")
+            raise ValueError("Invalid answer_eval format")
+        for i in range(len(answer_eval)):
+            val = answer_eval[i]
+            if not (isinstance(val, (str, int, float)) or (isinstance(val, dict) and "wikidata" in val and "range" in val)):
+                print(f"Invalid answer_eval value for question {line['qid']}: {val}")
+                raise ValueError("Invalid answer_eval value format")
+            if isinstance(val, dict):
+                answer_eval[i]["value"] = answer_eval[i].pop("wikidata")
+        questions[line["qid"]] = (line["question"],line["answer"],answer_eval)
 
-questions = {}
-for level in range(100):
-    answers_path = os.path.normpath(os.path.join(DIR_PATH, "data", f"answers_{KNN}nn_{level}.jsonl"))
-    if not os.path.exists(answers_path):
-        break
-    with open(answers_path, "r", encoding="utf-8") as f:
-        for line in f:
-            line = json.loads(line)
-            answer_eval = line["answer_eval"]
-            if not isinstance(answer_eval, list):
-                print(f"Invalid answer_eval for question {line['qid']}: {answer_eval}")
-                raise ValueError("Invalid answer_eval format")
-            for i in range(len(answer_eval)):
-                val = answer_eval[i]
-                if not (isinstance(val, (str, int, float)) or (isinstance(val, dict) and "wikidata" in val and "range" in val)):
-                    print(f"Invalid answer_eval value for question {line['qid']}: {val}")
-                    raise ValueError("Invalid answer_eval value format")
-                if isinstance(val, dict):
-                    answer_eval[i]["value"] = answer_eval[i].pop("wikidata")
-            questions[line["qid"]] = (original_questions[line["qid"]],line["answer"],answer_eval)
+#load knn and contexts
+with open(g4_path, "rb") as f:
+    nodes = pickle.load(f)
+
+contexts = {}
+with open(reranked_path, "r", encoding="utf-8") as f:
+    for line in f:
+        line = json.loads(line)
+        current_context = []
+        for i in range(len(line["sorted_context_nodes"])):
+            if line["sorted_relevance_scores"][i] >= LIMIT:
+                current_context.append((line["sorted_context_nodes"][i], line["sorted_relevance_scores"][i]))
+        contexts[line["qid"]] = current_context
+
+with open(reranked_path_sub, "r", encoding="utf-8") as f:
+    for line in f:
+        line = json.loads(line)
+        current_context = []
+        for i in range(len(line["sorted_context_nodes"])):
+            for j in range(len(line["sorted_context_nodes"][i])):
+                if line["sorted_relevance_scores"][i][j] >= LIMIT:
+                    current_context.append((line["sorted_context_nodes"][i][j], line["sorted_relevance_scores"][i][j]))
+        contexts[line["qid"]].extend(current_context)
+
+for qid in contexts.keys():
+    contexts[qid] = sorted(contexts[qid], key=lambda x: x[1], reverse=True)
+    current_context = []
+    collected_context_nodes = set()
+    for node_id, score in contexts[qid]:
+        if node_id not in collected_context_nodes:
+            current_context.append(node_id)
+            collected_context_nodes.add(node_id)
+    contexts[qid] = current_context
+
+image_entity_mapping_path = os.path.join(BASE_PATH, "1-Preprocess", "data", "image_entity_mapping.jsonl")
+image_entity_mapping = {}
+with open(image_entity_mapping_path, "r", encoding="utf-8") as f:
+    for line in f:
+        line = json.loads(line)
+        image_path = line["image_file"]
+        entities = "\n".join(line["entities"])
+        image_entity_mapping[image_path] = entities
 
 #load_progress:
 processed_questions = {}
@@ -53,35 +98,72 @@ if os.path.exists(output_path):
             processed_questions[line["qid"]] = int(line["score"])
 
 #run loop:
+def encode_image(path):
+    ext = os.path.splitext(path)[1].lower()
+    mime = {
+        ".jpg": "image/jpeg",
+        ".jpeg": "image/jpeg",
+        ".png": "image/png",
+        ".webp": "image/webp",
+        ".bmp": "image/bmp",
+        ".gif": "image/gif"
+    }.get(ext, "image/jpeg")
+
+    with open(path, "rb") as f:
+        return base64.b64encode(f.read()).decode("utf-8"), mime
+
 MAX_ATTEMPTS = 30
 with open(output_path, "a", encoding="utf-8") as f:
     for qid in tqdm(questions.keys()):
         if qid in processed_questions:
             continue
         question,answer,answer_eval = questions[qid]
+        fuzzy_score = fuzzy_accuracy(answer, answer_eval)
+        if fuzzy_score == 1:
+            processed_questions[qid] = 1
+            data = {"qid": qid, "score": 1, "token": 0}
+            f.write(json.dumps(data, ensure_ascii=False) + "\n")
+            f.flush()
+            continue
+
+        content = []
+        if len(contexts[qid]) > 0:
+            content.append({"type": "text", "text": "[CONTEXT]"})
+        for i in range(len(contexts[qid])):
+            context_node_id = contexts[qid][i]
+            content.append({"type": "text", "text": f"---Context {i+1}---"})
+            context_node = nodes[context_node_id]
+            if context_node.node_type == "V":
+                content.append({"type": "text", "text": f"This is an image of: {image_entity_mapping[os.path.basename(context_node.content)]}"})
+                context_image, context_image_mime = encode_image(context_node.content)
+                content.append({"type": "image_url", "image_url": {"url": f"data:{context_image_mime};base64,{context_image}"}})
+            else:
+                content.append({"type": "text", "text": context_node.content})
+
         evaluation_input = {
             "question": question,
             "model_answer": answer,
             "acceptable_answers": answer_eval
         }
-        content = [
-            {"type": "text", "text": f"[USER INPUT]\n{json.dumps(evaluation_input)}"},
-        ]
+        content.append({"type": "text", "text": f"[USER INPUT]\n{json.dumps(evaluation_input, indent=2, ensure_ascii=False)}"})
 
         for attempt in range(1,MAX_ATTEMPTS+1):
+            response_text = None
             try:
-                response_text, token = call_api(content=content, system_prompt=evaluation_prompt(), model="", mode="self-host")
-                response = int(response_text.strip())
-                if not isinstance(response, int) or response not in [0, 1]:
-                    raise ValueError("Invalid response")
-                else:
-                    processed_questions[qid] = response
-                    data = {"qid": qid, "score": response, "token": token}
-                    f.write(json.dumps(data, ensure_ascii=False) + "\n")
-                    f.flush()
-
-                    processed_questions[qid] = response
-                    break
+                for _ in range(2):
+                    response_text, token = call_api(content=content, system_prompt=evaluation_prompt(), model="", mode="self-host")
+                    response = int(response_text.strip())
+                    if not isinstance(response, int) or response not in [0, 1]:
+                        raise ValueError("Invalid response")
+                    if response == 1:
+                        break
+            
+                processed_questions[qid] = response
+                data = {"qid": qid, "score": response, "token": token}
+                f.write(json.dumps(data, ensure_ascii=False) + "\n")
+                f.flush()
+                processed_questions[qid] = response
+                break
             except Exception as e:
                 print(f"Attempt {attempt} failed for question {qid}-{questions[qid][1]}: {e}")
                 print(response_text)

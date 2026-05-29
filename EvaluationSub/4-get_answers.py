@@ -23,7 +23,7 @@ subquestions_path = os.path.normpath(os.path.join(DIR_PATH, "data", "subquestion
 oven_path = os.path.normpath(os.path.join(BASE_PATH, "InfoSeek", "oven_images_sampled"))
 reranked_path_sub = os.path.join(DIR_PATH, "data", f"context_{KNN}nn{"_reasoning" if REASONING else ""}_reranked.jsonl")
 reranked_path = os.path.join(BASE_PATH, "Evaluation", "data", f"context_{KNN}nn{"_reasoning" if REASONING else ""}_reranked.jsonl")
-output_path = os.path.normpath(os.path.join(DIR_PATH, "data", f"answers_{KNN}nn.jsonl"))
+output_path = os.path.normpath(os.path.join(DIR_PATH, "data", f"answers_{KNN}nn{'_COT' if COT else ''}.jsonl"))
 print(question_path)
 print(reranked_path_sub)
 print(output_path)
@@ -62,8 +62,9 @@ with open(reranked_path_sub, "r", encoding="utf-8") as f:
         line = json.loads(line)
         current_context = []
         for i in range(len(line["sorted_context_nodes"])):
-            if line["sorted_relevance_scores"][i] >= LIMIT:
-                current_context.append((line["sorted_context_nodes"][i], line["sorted_relevance_scores"][i]))
+            for j in range(len(line["sorted_context_nodes"][i])):
+                if line["sorted_relevance_scores"][i][j] >= LIMIT:
+                    current_context.append((line["sorted_context_nodes"][i][j], line["sorted_relevance_scores"][i][j]))
         contexts[line["qid"]].extend(current_context)
 
 for qid in contexts.keys():
