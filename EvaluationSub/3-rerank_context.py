@@ -29,7 +29,7 @@ questions = {}
 with open(question_path, "r", encoding="utf-8") as f:
     for line in f:
         line = json.loads(line)
-        questions[line["data_id"]] = (line["subquestions"],line["image_id"])
+        questions[line["qid"]] = (line["subquestions"],line["image_id"])
 
 contexts = {}
 with open(context_path, "r", encoding="utf-8") as f:
