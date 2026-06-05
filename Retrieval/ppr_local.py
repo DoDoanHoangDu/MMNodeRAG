@@ -43,7 +43,7 @@ def shallow_ppr_local(nodes_dict, entry_ids, ppr_context, debug=True):
             pi_value = node[1]
             if pi_value <=0:
                 break
-            if mass >= 0.25 * total_mass and pi_value < pi_sorted[0][1]:
+            if mass >= 0.1 * total_mass and pi_value < pi_sorted[0][1]:
                 break
             top_nodes.append(node)
             mass += pi_value
