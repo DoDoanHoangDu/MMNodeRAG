@@ -99,9 +99,6 @@ with open(eval_sub_path, "a", encoding="utf-8") as f:
                 if nodes[c].node_type == "V":
                     continue
                 content = nodes[c].content
-                if any(isinstance(ans,str) and re.search(rf"\b{re.escape(ans)}\b", content, re.IGNORECASE) for ans in answer_eval):
-                    context_recall = 1
-                    tokens = 0
                 context_nodes_content.append(nodes[c].content)
 
             if context_recall == 0:

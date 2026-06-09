@@ -110,6 +110,15 @@ for file in os.listdir(oven_path):
     else:
         print(f"Invalid file: {file}")
 
+image_entity_mapping_path = os.path.join(BASE_PATH, "1-Preprocess", "data", "image_entity_mapping.jsonl")
+image_entity_mapping = {}
+with open(image_entity_mapping_path, "r", encoding="utf-8") as f:
+    for line in f:
+        line = json.loads(line)
+        image_path = line["image_file"]
+        entities = "\n".join(line["entities"])
+        image_entity_mapping[image_path] = entities
+
 #load_progress:
 processed_questions = set()
 if os.path.exists(output_path):
@@ -127,23 +136,26 @@ with open(output_path, "a", encoding="utf-8") as f:
             continue
         question = questions[qid][0]
         image, mime = images[questions[qid][1]]
-        prompt = answer_prompt()
-        content = [
+        content = [{"type": "text", "text": "[CONTEXT]"}]
+        for i in range(len(contexts[qid])):
+            context_node_id, score = contexts[qid][i]
+            if score >= 0.5:
+                content.append({"type": "text", "text": f"---Context {i+1}---"})
+                context_node = nodes[context_node_id]
+                if context_node.node_type == "V":
+                    content.append({"type": "text", "text": f"This is an image of: {image_entity_mapping[os.path.basename(context_node.content)]}"})
+                    context_image, context_image_mime = encode_image(context_node.content)
+                    content.append({"type": "image_url", "image_url": {"url": f"data:{context_image_mime};base64,{context_image}"}})
+                else:
+                    content.append({"type": "text", "text": context_node.content})
+        content.extend([
             {"type": "text", "text": f"[QUESTION]\n{question}"},
             {"type": "text", "text": "[QUESTION IMAGE]"},
             {"type": "image_url", "image_url": {"url": f"data:{mime};base64,{image}"}},
-            {"type": "text", "text": "[CONTEXT]"},
-        ]
-        for i in range(len(contexts[qid])):
-            context_node_id, score = contexts[qid][i]
-            content.append({"type": "text", "text": f"---Context {i+1} (Relevance score: {score})---"})
-            context_node = nodes[context_node_id]
-            if context_node.node_type == "V":
-                context_image, context_image_mime = encode_image(context_node.content)
-                content.append({"type": "image_url", "image_url": {"url": f"data:{context_image_mime};base64,{context_image}"}})
-            else:
-                content.append({"type": "text", "text": context_node.content})
+            {"type": "text", "text": f"[QUESTION]\n{question}"}
+        ])
         for attempt in range(1,MAX_ATTEMPTS+1):
+            response_text = None
             try:
                 response_text, token = call_api(content=content, system_prompt=answer_prompt(), model="", mode="self-host")
                 response = response_text.strip()
@@ -161,6 +173,6 @@ with open(output_path, "a", encoding="utf-8") as f:
                 if attempt == MAX_ATTEMPTS:
                     print(f"Failed on question {qid}: {question}: {e}")
                     raise TimeoutError("A question failed")
-                time.sleep(5)
+                time.sleep(2)
 
 print(f"Completed: {len(processed_questions)}/{len(questions)}")
