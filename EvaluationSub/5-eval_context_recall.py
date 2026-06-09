@@ -50,7 +50,11 @@ for level in range(100):
     with open(context_sub_path, "r", encoding="utf-8") as f:
         for line in f:
             line = json.loads(line)
-            contexts_sub[line["qid"]] = line["sorted_context_nodes"]
+            current_context = []
+            for i in range(len(line["sorted_context_nodes"])):
+                if line["sorted_relevance_scores"][i] >= 0.5:
+                    current_context.append(line["sorted_context_nodes"][i])
+            contexts_sub[line["qid"]] = current_context
 
 evaluated_sub = {}
 if os.path.exists(evaluated_sub_path):
@@ -90,8 +94,8 @@ with open(eval_sub_path, "a", encoding="utf-8") as f:
                 if isinstance(item, str):
                     answer_str.append(f"An acceptable answer is: {item}.")
                 elif isinstance(item, dict):
-                    answer_str.append(f"The exact answer is {item["value"]}. The answer lies in the range from {item["range"][0]} to {item["range"][1]}.")
-            answer_str = " ".join(answer_str)
+                    answer_str.append(f"The exact answer is {item["value"]}. Any answer lying in the range from {item["range"][0]} to {item["range"][1]} is acceptable.")
+            answer_str = "\n".join(answer_str)
 
             context_nodes = contexts_sub[qid]
             context_nodes_content = []
