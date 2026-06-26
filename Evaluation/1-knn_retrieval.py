@@ -7,7 +7,7 @@ import pickle
 import torch
 from LLM.qwen3_vl_embedding import Qwen3VLEmbedder
 
-K = 16
+K = 8
 
 #paths
 DIR_PATH = os.path.dirname(os.path.abspath(__file__))
@@ -44,8 +44,8 @@ for file in os.listdir(oven_path):
         print(f"Invalid file: {file}")
 
 #load embeddings
-hnsw = faiss.read_index(f"{BASE_PATH}/2-Build_Graph/data/embeddings_hnsw.faiss")
-with open(f"{BASE_PATH}/2-Build_Graph/data/embedding_processed_ids.txt", "r") as f:
+hnsw = faiss.read_index(f"{BASE_PATH}/2-Build_Graph/data/t_embeddings_hnsw.faiss")
+with open(f"{BASE_PATH}/2-Build_Graph/data/t_ids.txt", "r") as f:
     embedding_ids = [line.strip() for line in f]
 embeddings = hnsw.reconstruct_n(0, hnsw.ntotal)
 
