@@ -5,7 +5,7 @@ from LLM.qwen3_vl_reranker import Qwen3VLReranker
 from tqdm import tqdm
 
 #parameters
-KNN = 16
+KNN = 8
 REASONING = False
 
 #paths
