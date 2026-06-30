@@ -4,7 +4,7 @@ import time
 import pickle
 import faiss
 import torch
-
+import gc
 from LLM.qwen3_vl_embedding import Qwen3VLEmbedder
 from LLM.qwen3_vl_reranker import Qwen3VLReranker
 
@@ -45,12 +45,9 @@ def load_resources():
         embedding_ids = [line.strip() for line in f]
 
     device = "cuda" if torch.cuda.is_available() else "cpu"
-    embedding_model = Qwen3VLEmbedder(model_name_or_path="Qwen/Qwen3-VL-Embedding-2B")
-    reranker_model = Qwen3VLReranker(model_name_or_path="Qwen/Qwen3-VL-Reranker-2B")
+    return (nodes, hnsw, embedding_ids, device)
 
-    return (nodes, hnsw, embedding_ids, embedding_model, reranker_model, device)
-
-(nodes, hnsw, embedding_ids, embedding_model, reranker_model, device) = load_resources()
+(nodes, hnsw, embedding_ids, device) = load_resources()
 st.success(f"Models loaded on **{device}**")
 
 
@@ -59,7 +56,7 @@ st.success(f"Models loaded on **{device}**")
 #########################################
 
 st.sidebar.header("Settings")
-knn = st.sidebar.slider("KNN",min_value=1, max_value=20, value=8)
+knn = st.sidebar.slider("KNN",min_value=1, max_value=20, value=4)
 generate_subquestions = st.sidebar.checkbox("Generate Subquestions", value=False)
 show_context = st.sidebar.checkbox("Show Retrieved Context", value=True)
 show_entities = st.sidebar.checkbox("Show Question Entities", value=True)
@@ -107,30 +104,60 @@ if st.button("Run"):
             st.write("### Question")
             st.write(q)
             full_q = "\n".join(answers + [q])
-            entities, token = question_decomposition(full_q, image_path)
-            if not isinstance(entities, list): 
-                st.error("Entity extraction failed")
-                st.stop()
-            total_tokens += token
-            if show_entities:
-                st.write("### Question Entities")
-                st.write(entities)
+            with st.status("Running GraphRAG...", expanded=True) as status:
+                status.write("Extracting entities...")
+                entities, token = question_decomposition(full_q, image_path)
+                if not isinstance(entities, list): 
+                    st.error("Entity extraction failed")
+                    st.stop()
+                total_tokens += token
+                if show_entities:
+                    st.write("### Question Entities")
+                    st.write(entities)
 
-            embedding_node_ids = knn_retrieval(embedding_model, hnsw, embedding_ids, knn, full_q, image_path)
-            context_nodes = graph_retrieval(nodes, embedding_node_ids, entities)
-            reranked_contexts = rerank_context(reranker_model, nodes, full_q, image_path, context_nodes)
-            if show_context:
-                st.write("### Retrieved Context")
-                st.write(reranked_contexts)
+                status.write("🔍 Loading embedding model...")
+                embedding_model = Qwen3VLEmbedder(model_name_or_path="Qwen/Qwen3-VL-Embedding-2B")
+                st.write("Done ✅")
+                status.write("Embedding retrieval...")
+                embedding_node_ids = knn_retrieval(embedding_model, hnsw, embedding_ids, knn, full_q, image_path)
+                del embedding_model
+                gc.collect()
 
-            answer, token = get_answer(nodes, full_q, image_path, reranked_contexts)
-            if not answer: 
-                st.error("Answer failed")
-                st.stop()
-            total_tokens += token
-            answers.append(answer)
-            st.write("### Answer")
-            st.success(answer)
+                st.write("Done ✅")
+                status.write("Graph retrieval...")
+                context_nodes = graph_retrieval(nodes, embedding_node_ids, entities)
+                st.write("Done ✅")
+                status.write("🔍 Loading reranker model...")
+                reranker_model = Qwen3VLReranker(model_name_or_path="Qwen/Qwen3-VL-Reranker-2B")
+                st.write("Done ✅")
+                status.write("Reranking context...")
+                reranked_contexts = rerank_context(reranker_model, nodes, full_q, image_path, context_nodes)
+                del reranker_model
+                gc.collect()
+                st.write("Done ✅")
+                if show_context:
+                    st.write("### Retrieved Context")
+                    for c, s in reranked_contexts:
+                        if s < 0.5:
+                            break
+                        st.markdown(f"**ID:** `{c}`")
+                        st.markdown(f"**Score:** `{s:.3f}`")
+                        if "V" not in c:
+                            st.write(nodes[c].content)
+                        else:
+                            st.image(nodes[c].content, caption=f"{c} (score={s:.3f})", use_container_width=True)
+                        st.divider()
+
+                status.write("Generating answer...")
+                answer, token = get_answer(nodes, full_q, image_path, reranked_contexts)
+                if not answer: 
+                    st.error("Answer failed")
+                    st.stop()
+                total_tokens += token
+                answers.append(answer)
+                st.write("### Answer")
+                st.success(answer)
+                st.write("Done ✅")
 
         st.divider()
         st.header("Final Answer")
